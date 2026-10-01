@@ -4,6 +4,7 @@ import {
   Alert,
   FlatList,
   Image,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -15,14 +16,51 @@ import { StatusBar } from 'expo-status-bar';
 
 import { getArchetypeCards, getArchetypes, getCardsByName, isExtraDeck, searchCards } from './src/api';
 import { STAPLE_NAMES, analyzeDeck, count, maxCopies, optimizeDeck } from './src/optimizer';
-import { deleteDeck, isCloudEnabled, listDecks, saveDeck } from './src/back4app';
+import {
+  deleteDeck,
+  getUser,
+  isCloudEnabled,
+  listDecks,
+  logIn,
+  logOut,
+  registerPushDevice,
+  restoreUser,
+  saveDeck,
+  sendPushNotification,
+  signUp,
+  unregisterPushDevice,
+} from './src/back4app';
+import { deviceName, getExpoPushToken } from './src/notifications';
 
-const TABS = ['Optimize', 'Deck', 'Search', 'Saved'];
+const TABS = ['Optimize', 'Deck', 'Search', 'Saved', 'Account'];
 const emptyDeck = { objectId: null, name: 'My Deck', archetype: '', main: [], extra: [] };
 
 export default function App() {
   const [tab, setTab] = useState('Optimize');
   const [deck, setDeck] = useState(emptyDeck);
+  const [user, setUser] = useState(null);
+  const [push, setPush] = useState({ token: null, error: null });
+
+  // Get this device's Expo Push Token and save it to Back4App (PushDevice class).
+  const registerPush = useCallback(async () => {
+    try {
+      const token = await getExpoPushToken();
+      await registerPushDevice(token, Platform.OS, deviceName());
+      setPush({ token, error: null });
+    } catch (e) {
+      setPush({ token: null, error: e.message });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isCloudEnabled) return;
+    restoreUser()
+      .then((u) => {
+        setUser(u);
+        if (u) registerPush();
+      })
+      .catch(() => {});
+  }, [registerPush]);
 
   const addCard = useCallback((card, delta = 1) => {
     setDeck((d) => {
@@ -62,6 +100,23 @@ export default function App() {
                 setDeck(d);
                 setTab('Deck');
               }}
+            />
+          )}
+          {tab === 'Account' && (
+            <AccountScreen
+              user={user}
+              push={push}
+              onLogin={(u) => {
+                setUser(u);
+                registerPush();
+              }}
+              onLogout={async () => {
+                if (push.token) await unregisterPushDevice(push.token).catch(() => {});
+                await logOut().catch(() => {});
+                setUser(null);
+                setPush({ token: null, error: null });
+              }}
+              onRetryPush={registerPush}
             />
           )}
         </View>
@@ -158,7 +213,7 @@ function DeckScreen({ deck, setDeck, addCard }) {
     try {
       const objectId = await saveDeck(deck);
       setDeck((d) => ({ ...d, objectId }));
-      Alert.alert('Saved', isCloudEnabled ? 'Deck saved to Back4App.' : 'Deck saved on this device.');
+      Alert.alert('Saved', getUser() ? 'Deck saved to Back4App.' : 'Deck saved on this device.');
     } catch (e) {
       Alert.alert('Save failed', e.message);
     } finally {
@@ -304,7 +359,9 @@ function SavedScreen({ onOpen }) {
   return (
     <View style={styles.flex}>
       <Text style={styles.p}>
-        {isCloudEnabled ? 'Synced with Back4App.' : 'Saved on this device (add Back4App keys to sync).'}
+        {getUser()
+          ? 'Synced with Back4App.'
+          : 'Saved on this device. Log in on the Account tab to sync with Back4App.'}
       </Text>
       <FlatList
         data={decks}
@@ -321,6 +378,110 @@ function SavedScreen({ onOpen }) {
         )}
         ListEmptyComponent={<Text style={styles.p}>No saved decks yet.</Text>}
       />
+    </View>
+  );
+}
+
+// ---------------------------------------------------------------------------
+
+function AccountScreen({ user, push, onLogin, onLogout, onRetryPush }) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  const run = async (fn) => {
+    setBusy(true);
+    try {
+      await fn();
+    } catch (e) {
+      Alert.alert('Error', e.message);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  if (!isCloudEnabled) {
+    return (
+      <Text style={styles.p}>
+        Back4App isn't connected. Copy .env.example to .env, add your App ID and REST API Key, then
+        restart Expo.
+      </Text>
+    );
+  }
+
+  if (!user) {
+    const auth = (fn) => run(async () => onLogin(await fn(username.trim(), password)));
+    return (
+      <View style={styles.flex}>
+        <Text style={styles.p}>Log in to sync decks and get push notifications.</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Username"
+          placeholderTextColor="#888"
+          autoCapitalize="none"
+          autoCorrect={false}
+          value={username}
+          onChangeText={setUsername}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="#888"
+          secureTextEntry
+          value={password}
+          onChangeText={setPassword}
+        />
+        <Pressable style={styles.button} disabled={busy} onPress={() => auth(logIn)}>
+          {busy ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Log In</Text>}
+        </Pressable>
+        <Pressable style={[styles.button, styles.secondary]} disabled={busy} onPress={() => auth(signUp)}>
+          <Text style={styles.buttonText}>Create Account</Text>
+        </Pressable>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.flex}>
+      <Text style={styles.p}>
+        Logged in as <Text style={styles.highlight}>{user.username}</Text>
+      </Text>
+      <View style={styles.statsBox}>
+        <Text style={styles.cardName}>Push notifications</Text>
+        {push.token ? (
+          <Text style={styles.sub} selectable>
+            Registered: {push.token}
+          </Text>
+        ) : (
+          <Text style={styles.warning}>{push.error ?? 'Registering…'}</Text>
+        )}
+      </View>
+      {push.token ? (
+        <Pressable
+          style={styles.button}
+          disabled={busy}
+          onPress={() =>
+            run(async () => {
+              const res = await sendPushNotification({
+                token: push.token,
+                title: 'Test notification',
+                message: 'Back4App → Expo Push → your phone. It works!',
+                data: { screen: 'Account' },
+              });
+              if (res.failed.length) throw new Error(res.failed.join('\n'));
+            })
+          }
+        >
+          {busy ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Send Test Notification</Text>}
+        </Pressable>
+      ) : (
+        <Pressable style={styles.button} onPress={onRetryPush}>
+          <Text style={styles.buttonText}>Retry Push Setup</Text>
+        </Pressable>
+      )}
+      <Pressable style={[styles.button, styles.secondary]} disabled={busy} onPress={() => run(onLogout)}>
+        <Text style={styles.buttonText}>Log Out</Text>
+      </Pressable>
     </View>
   );
 }
@@ -370,6 +531,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 12,
   },
+  secondary: { backgroundColor: '#3a3459', marginTop: 0 },
   buttonText: { color: '#fff', fontWeight: '700', fontSize: 16 },
   statsBox: { backgroundColor: '#1d1a2e', borderRadius: 10, padding: 12, gap: 2 },
   section: { color: '#e0b341', fontWeight: '700', fontSize: 16, marginTop: 14, marginBottom: 4 },

@@ -1,5 +1,5 @@
-// Saves decks to Back4App (hosted Parse Server) through its REST API.
-// Using plain fetch keeps the app 100% Expo Go compatible (no native modules).
+// Talks to Back4App (hosted Parse Server) through its REST API.
+// Using plain fetch keeps the app Expo Go compatible (the Parse JS SDK needs Node's crypto).
 // If no keys are set, decks are saved on the device with AsyncStorage instead.
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -8,17 +8,53 @@ const REST_KEY = process.env.EXPO_PUBLIC_BACK4APP_REST_KEY;
 const SERVER = process.env.EXPO_PUBLIC_BACK4APP_SERVER_URL || 'https://parseapi.back4app.com';
 const CLASS = 'Deck';
 const LOCAL_KEY = 'decks.v1';
+const USER_KEY = 'user.v1';
 
 export const isCloudEnabled = Boolean(APP_ID && REST_KEY);
 
+// --- Session --------------------------------------------------------------
+
+let currentUser = null; // { objectId, username, sessionToken }
+
+export async function restoreUser() {
+  const raw = await AsyncStorage.getItem(USER_KEY);
+  currentUser = raw ? JSON.parse(raw) : null;
+  if (currentUser) {
+    try {
+      await api('GET', '/users/me'); // throws if the session expired
+    } catch {
+      await clearUser();
+    }
+  }
+  return currentUser;
+}
+
+async function setUser({ objectId, username, sessionToken }) {
+  currentUser = { objectId, username, sessionToken };
+  await AsyncStorage.setItem(USER_KEY, JSON.stringify(currentUser));
+  return currentUser;
+}
+
+async function clearUser() {
+  currentUser = null;
+  await AsyncStorage.removeItem(USER_KEY);
+}
+
+export const getUser = () => currentUser;
+
+// --- REST helper ----------------------------------------------------------
+
 async function api(method, path, body) {
+  if (!isCloudEnabled) throw new Error('Add your Back4App keys to .env first.');
+  const headers = {
+    'X-Parse-Application-Id': APP_ID,
+    'X-Parse-REST-API-Key': REST_KEY,
+    'Content-Type': 'application/json',
+  };
+  if (currentUser) headers['X-Parse-Session-Token'] = currentUser.sessionToken;
   const res = await fetch(`${SERVER}${path}`, {
     method,
-    headers: {
-      'X-Parse-Application-Id': APP_ID,
-      'X-Parse-REST-API-Key': REST_KEY,
-      'Content-Type': 'application/json',
-    },
+    headers,
     body: body ? JSON.stringify(body) : undefined,
   });
   const json = await res.json();
@@ -26,8 +62,33 @@ async function api(method, path, body) {
   return json;
 }
 
-// Store only ids/counts plus the slim card data so a saved deck renders offline.
+export const callFunction = async (name, params = {}) =>
+  (await api('POST', `/functions/${name}`, params)).result;
+
+// --- Auth -----------------------------------------------------------------
+
+export async function signUp(username, password) {
+  const res = await api('POST', '/users', { username, password });
+  return setUser({ ...res, username });
+}
+
+export async function logIn(username, password) {
+  const res = await api('POST', '/login', { username, password });
+  return setUser(res);
+}
+
+export async function logOut() {
+  try {
+    await api('POST', '/logout');
+  } finally {
+    await clearUser();
+  }
+}
+
+// --- Decks ----------------------------------------------------------------
+
 const serialize = (entries) => entries.map(({ card, count }) => ({ card, count }));
+const useCloud = () => isCloudEnabled && currentUser;
 
 async function readLocal() {
   const raw = await AsyncStorage.getItem(LOCAL_KEY);
@@ -35,14 +96,17 @@ async function readLocal() {
 }
 
 export async function listDecks() {
-  if (!isCloudEnabled) return readLocal();
-  const { results } = await api('GET', `/classes/${CLASS}?order=-updatedAt&limit=100`);
+  if (!useCloud()) return readLocal();
+  const where = encodeURIComponent(
+    JSON.stringify({ owner: { __type: 'Pointer', className: '_User', objectId: currentUser.objectId } }),
+  );
+  const { results } = await api('GET', `/classes/${CLASS}?where=${where}&order=-updatedAt&limit=100`);
   return results;
 }
 
 export async function saveDeck({ objectId, name, archetype, main, extra }) {
   const data = { name, archetype: archetype || '', main: serialize(main), extra: serialize(extra) };
-  if (!isCloudEnabled) {
+  if (!useCloud()) {
     const decks = await readLocal();
     const id = objectId || String(Date.now());
     const now = new Date().toISOString();
@@ -50,19 +114,33 @@ export async function saveDeck({ objectId, name, archetype, main, extra }) {
     await AsyncStorage.setItem(LOCAL_KEY, JSON.stringify(next));
     return id;
   }
-  if (objectId) {
+  // Decks saved before logging in have local ids, so create them in the cloud.
+  if (objectId && !/^\d+$/.test(objectId)) {
     await api('PUT', `/classes/${CLASS}/${objectId}`, data);
     return objectId;
   }
-  const created = await api('POST', `/classes/${CLASS}`, data);
+  const created = await api('POST', `/classes/${CLASS}`, {
+    ...data,
+    owner: { __type: 'Pointer', className: '_User', objectId: currentUser.objectId },
+    ACL: { [currentUser.objectId]: { read: true, write: true } },
+  });
   return created.objectId;
 }
 
 export async function deleteDeck(objectId) {
-  if (!isCloudEnabled) {
+  if (!useCloud()) {
     const decks = await readLocal();
     await AsyncStorage.setItem(LOCAL_KEY, JSON.stringify(decks.filter((d) => d.objectId !== objectId)));
     return;
   }
   await api('DELETE', `/classes/${CLASS}/${objectId}`);
 }
+
+// --- Push notifications (see cloud/main.js) ------------------------------
+
+export const registerPushDevice = (token, platform, deviceName) =>
+  callFunction('registerPushDevice', { token, platform, deviceName });
+
+export const unregisterPushDevice = (token) => callFunction('unregisterPushDevice', { token });
+
+export const sendPushNotification = (params) => callFunction('sendPushNotification', params);

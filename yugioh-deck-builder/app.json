@@ -7,7 +7,8 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ajhy2003.ygodeckoptimizer"
     },
     "android": {
       "adaptiveIcon": {
@@ -15,7 +16,8 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.ajhy2003.ygodeckoptimizer"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -24,6 +26,14 @@
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#14121f"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#6b3fd4"
+        }
+      ]
+    ]
   }
 }
