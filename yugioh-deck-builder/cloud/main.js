@@ -7,6 +7,36 @@ const EXPO_PUSH_URL = 'https://exp.host/--/api/v2/push/send';
 
 const isExpoToken = (t) => typeof t === 'string' && /^Expo(nent)?PushToken\[.+\]$/.test(t);
 
+// POST JSON to a URL. Newer Parse Server versions removed Parse.Cloud.httpRequest,
+// so use Node's built-in fetch, falling back to the old helper or the https module.
+async function postJson(url, body) {
+  const headers = { Accept: 'application/json', 'Content-Type': 'application/json' };
+  if (typeof fetch === 'function') {
+    const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+    return res.json();
+  }
+  if (Parse.Cloud.httpRequest) {
+    const res = await Parse.Cloud.httpRequest({ method: 'POST', url, headers, body });
+    return res.data;
+  }
+  const https = require('https');
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, { method: 'POST', headers }, (res) => {
+      let raw = '';
+      res.on('data', (chunk) => (raw += chunk));
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(raw));
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+    req.on('error', reject);
+    req.end(JSON.stringify(body));
+  });
+}
+
 function requireUser(request) {
   if (!request.user && !request.master) {
     throw new Parse.Error(Parse.Error.INVALID_SESSION_TOKEN, 'You must be logged in.');
@@ -76,13 +106,12 @@ Parse.Cloud.define('sendPushNotification', async (request) => {
   const messages = tokens.map((to) => ({ to, title, body: message, data: data || {}, sound: 'default' }));
   const tickets = [];
   for (let i = 0; i < messages.length; i += 100) {
-    const res = await Parse.Cloud.httpRequest({
-      method: 'POST',
-      url: EXPO_PUSH_URL,
-      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-      body: messages.slice(i, i + 100),
-    });
-    tickets.push(...res.data.data);
+    const json = await postJson(EXPO_PUSH_URL, messages.slice(i, i + 100));
+    if (!Array.isArray(json.data)) {
+      const reason = (json.errors || []).map((e) => e.message).join('; ') || JSON.stringify(json);
+      throw new Parse.Error(Parse.Error.SCRIPT_FAILED, `Expo Push API error: ${reason}`);
+    }
+    tickets.push(...json.data);
   }
 
   // Clean up tokens for uninstalled apps.
