@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Push Sender</title>
+<meta name="description" content="Send push notifications to the YGO Deck Optimizer app through Back4App.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #14121f;
+    --panel: #1d1a2e;
+    --field: #24213a;
+    --line: #2c2945;
+    --text: #eeeaf8;
+    --muted: #9c97b3;
+    --gold: #e0b341;
+    --purple: #6b3fd4;
+    --purple-hover: #7d55e0;
+    --green: #7ee787;
+    --red: #ff8a80;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 560px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { color: var(--gold); font-size: 26px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 14px; }
+  label { display: block; font-size: 14px; color: var(--muted); margin: 12px 0 6px; }
+  input, textarea, select {
+    width: 100%;
+    background: var(--field);
+    color: var(--text);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 12px;
+    font: inherit;
+  }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--purple); }
+  textarea { resize: vertical; min-height: 96px; }
+  button {
+    background: var(--purple);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 13px 18px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 16px;
+  }
+  button:hover { background: var(--purple-hover); }
+  button:disabled { opacity: .6; cursor: wait; }
+  button.ghost { white-space: nowrap; background: transparent; border: 1px solid var(--line); color: var(--muted); width: auto; margin: 0; padding: 6px 12px; font-weight: 600; }
+  button.ghost:hover { color: var(--text); }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .hint { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .count { text-align: right; font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .msg { margin-top: 14px; padding: 12px; border-radius: 10px; font-size: 14px; display: none; }
+  .msg.ok { display: block; background: rgba(126, 231, 135, .12); color: var(--green); }
+  .msg.err { display: block; background: rgba(255, 138, 128, .12); color: var(--red); }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--gold); color: #1a1500; margin-left: 6px; }
+  .who strong { color: var(--green); }
+  .preview {
+    display: flex; gap: 12px; align-items: flex-start;
+    background: rgba(255, 255, 255, .07);
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-top: 16px;
+  }
+  .preview .icon { width: 36px; height: 36px; border-radius: 9px; background: var(--purple); flex: none; display: grid; place-items: center; font-weight: 800; color: var(--gold); }
+  .preview .t { font-weight: 700; font-size: 15px; overflow-wrap: anywhere; }
+  .preview .b { font-size: 14px; color: #d6d2e6; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .preview .app { font-size: 12px; color: var(--muted); }
+  ul.history { list-style: none; margin: 0; padding: 0; }
+  ul.history li { border-top: 1px solid var(--line); padding: 10px 0; font-size: 14px; }
+  ul.history li:first-child { border-top: 0; }
+  ul.history .meta { color: var(--muted); font-size: 12px; }
+  .status { font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
+  .status.sent { color: var(--green); }
+  .status.partial { color: var(--gold); }
+  .status.failed { color: var(--red); }
+  details summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Push Sender</h1>
+  <p class="sub">Type a message and send it to the YGO Deck Optimizer app.</p>
+
+  <!-- 1. Back4App keys (saved in this browser only) -->
+  <section id="setup">
+    <h2>Back4App keys</h2>
+    <p class="hint">From Back4App → App Settings → Security &amp; Keys. Saved only in this browser.</p>
+    <label for="appId">Application ID</label>
+    <input id="appId" autocomplete="off" spellcheck="false">
+    <label for="jsKey">JavaScript Key</label>
+    <input id="jsKey" autocomplete="off" spellcheck="false">
+    <button id="saveKeys">Save keys</button>
+    <div id="setupMsg" class="msg"></div>
+  </section>
+
+  <!-- 2. Log in with an app account -->
+  <section id="login" hidden>
+    <h2>Log in</h2>
+    <p class="hint">Use the same username and password as in the app.</p>
+    <label for="username">Username</label>
+    <input id="username" autocomplete="username" autocapitalize="none" spellcheck="false">
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password">
+    <button id="loginBtn">Log in</button>
+    <div id="loginMsg" class="msg"></div>
+  </section>
+
+  <!-- 3. Compose and send -->
+  <section id="compose" hidden>
+    <div class="row">
+      <div class="who">Logged in as <strong id="whoName"></strong><span id="adminBadge" class="badge" hidden>ADMIN</span></div>
+      <button id="logoutBtn" class="ghost">Log out</button>
+    </div>
+    <p id="deviceInfo" class="hint"></p>
+
+    <label for="target">Send to</label>
+    <select id="target">
+      <option value="me">My devices</option>
+      <option value="all" data-admin>Everyone</option>
+      <option value="user" data-admin>A specific user</option>
+    </select>
+    <div id="userField" hidden>
+      <label for="toUser">Username</label>
+      <input id="toUser" autocapitalize="none" spellcheck="false">
+    </div>
+
+    <label for="title">Title</label>
+    <input id="title" maxlength="65" placeholder="New deck idea!">
+    <label for="message">Message</label>
+    <textarea id="message" maxlength="240" placeholder="Try the Snake-Eye optimizer tonight."></textarea>
+    <div class="count"><span id="msgCount">0</span>/240</div>
+
+    <div class="preview" aria-hidden="true">
+      <div class="icon">Y</div>
+      <div>
+        <div class="app">YGO DECK OPTIMIZER · now</div>
+        <div class="t" id="pvTitle">Title</div>
+        <div class="b" id="pvBody">Your message appears here.</div>
+      </div>
+    </div>
+
+    <button id="sendBtn">Send notification</button>
+    <div id="sendMsg" class="msg"></div>
+  </section>
+
+  <section id="historyBox" hidden>
+    <div class="row"><h2>Sent notifications</h2><button id="refreshHistory" class="ghost">Refresh</button></div>
+    <p class="hint" style="margin-top:0">Saved in Back4App → Database → Notification.</p>
+    <ul id="history" class="history"></ul>
+  </section>
+
+  <details id="keysDetails" hidden>
+    <summary>Change Back4App keys</summary>
+    <button id="resetKeys" class="ghost" style="margin-top:10px">Clear saved keys</button>
+  </details>
+</main>
+
+<script>
+  const SERVER = 'https://parseapi.back4app.com';
+  const $ = (id) => document.getElementById(id);
+
+  // localStorage can throw (private mode, blocked storage), so wrap it.
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} },
+  };
+
+  let keys = store.get('push.keys');
+  let session = store.get('push.session');
+
+  function show(el, text, ok) {
+    el.textContent = text;
+    el.className = 'msg ' + (ok ? 'ok' : 'err');
+  }
+
+  async function api(method, path, body) {
+    const headers = {
+      'X-Parse-Application-Id': keys.appId,
+      'X-Parse-Javascript-Key': keys.jsKey,
+      'Content-Type': 'application/json',
+    };
+    if (session) headers['X-Parse-Session-Token'] = session.sessionToken;
+    const res = await fetch(SERVER + path, { method, headers, body: body ? JSON.stringify(body) : undefined });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      if (json.code === 209) logout(); // session expired
+      if (json.error === 'unauthorized') throw new Error('Back4App rejected the keys. Check the Application ID and JavaScript Key.');
+      throw new Error(json.error || 'Request failed (' + res.status + ')');
+    }
+    return json;
+  }
+  const call = async (fn, params) => (await api('POST', '/functions/' + fn, params)).result;
+
+  function render() {
+    $('setup').hidden = Boolean(keys);
+    $('keysDetails').hidden = !keys;
+    $('login').hidden = !keys || Boolean(session);
+    $('compose').hidden = !session;
+    if (keys) { $('appId').value = keys.appId; $('jsKey').value = keys.jsKey; }
+    if (session) {
+      $('whoName').textContent = session.username;
+      loadInfo();
+    }
+    renderHistory();
+    store.del('push.history'); // old browser-only history
+  }
+
+  async function loadInfo() {
+    $('deviceInfo').textContent = 'Checking devices…';
+    try {
+      const info = await call('getPushInfo', {});
+      $('adminBadge').hidden = !info.isAdmin;
+      document.querySelectorAll('#target [data-admin]').forEach((o) => (o.hidden = o.disabled = !info.isAdmin));
+      if (!info.isAdmin) $('target').value = 'me';
+      $('deviceInfo').textContent = info.isAdmin
+        ? `Your devices: ${info.myDevices} · All registered devices: ${info.allDevices}`
+        : `Your devices: ${info.myDevices}`;
+    } catch (e) {
+      $('deviceInfo').textContent = e.message.includes('Invalid function')
+        ? 'Cloud Code is out of date: deploy the latest cloud/main.js to Back4App.'
+        : e.message;
+    }
+    syncTarget();
+  }
+
+  function syncTarget() {
+    $('userField').hidden = $('target').value !== 'user';
+  }
+
+  function logout() {
+    if (session) api('POST', '/logout').catch(() => {});
+    session = null;
+    store.del('push.session');
+    render();
+  }
+
+  // History is saved by Cloud Code in Back4App's Notification class.
+  const TARGET_LABEL = { me: 'my devices', device: 'one device', all: 'everyone', user: 'user' };
+  async function renderHistory() {
+    if (!session) { $('historyBox').hidden = true; return; }
+    let items;
+    try {
+      items = await call('getNotificationHistory', { limit: 20 });
+    } catch (e) {
+      $('historyBox').hidden = false;
+      $('history').replaceChildren(Object.assign(document.createElement('li'), {
+        className: 'meta',
+        textContent: e.message.includes('Invalid function')
+          ? 'Deploy the latest cloud/main.js to Back4App to see saved history.'
+          : e.message,
+      }));
+      return;
+    }
+    $('historyBox').hidden = !items.length;
+    $('history').replaceChildren(...items.map((h) => {
+      const li = document.createElement('li');
+      const t = document.createElement('div');
+      t.textContent = (h.title ? h.title + ': ' : '') + (h.message || '');
+      const m = document.createElement('div');
+      m.className = 'meta';
+      const to = h.target === 'user' && h.targetUsername ? h.targetUsername : TARGET_LABEL[h.target] || h.target;
+      const from = h.senderUsername !== session.username ? ` · from ${h.senderUsername}` : '';
+      m.textContent = `${new Date(h.createdAt.iso || h.createdAt).toLocaleString()} · to ${to}${from} · ${h.sent}/${h.devices} delivered`;
+      const st = document.createElement('span');
+      st.className = 'status ' + h.status;
+      st.textContent = h.status;
+      m.append(' ', st);
+      li.append(t, m);
+      return li;
+    }));
+  }
+
+  function updatePreview() {
+    $('pvTitle').textContent = $('title').value || 'Title';
+    $('pvBody').textContent = $('message').value || 'Your message appears here.';
+    $('msgCount').textContent = $('message').value.length;
+  }
+
+  $('saveKeys').onclick = async () => {
+    const appId = $('appId').value.trim();
+    const jsKey = $('jsKey').value.trim();
+    if (!appId || !jsKey) return show($('setupMsg'), 'Fill in both keys.', false);
+    keys = { appId, jsKey };
+    try {
+      await api('GET', '/classes/PushDevice?limit=0'); // throws if the keys are wrong
+      store.set('push.keys', keys);
+      render();
+    } catch (e) {
+      keys = null;
+      show($('setupMsg'), e.message, false);
+    }
+  };
+
+  $('loginBtn').onclick = async () => {
+    const btn = $('loginBtn');
+    btn.disabled = true;
+    try {
+      const res = await api('POST', '/login', { username: $('username').value.trim(), password: $('password').value });
+      session = { username: res.username, sessionToken: res.sessionToken };
+      store.set('push.session', session);
+      $('password').value = '';
+      render();
+    } catch (e) {
+      show($('loginMsg'), e.message, false);
+    } finally {
+      btn.disabled = false;
+    }
+  };
+  $('password').addEventListener('keydown', (e) => e.key === 'Enter' && $('loginBtn').click());
+
+  $('sendBtn').onclick = async () => {
+    const title = $('title').value.trim();
+    const message = $('message').value.trim();
+    const target = $('target').value;
+    const toUser = $('toUser').value.trim();
+    if (!title && !message) return show($('sendMsg'), 'Type a title or a message.', false);
+    if (target === 'user' && !toUser) return show($('sendMsg'), 'Type the username to send to.', false);
+
+    const btn = $('sendBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const params = { title, message, data: { source: 'web' } };
+      const res = target === 'me'
+        ? await call('sendPushNotification', params)
+        : await call('broadcastPushNotification', target === 'user' ? { ...params, username: toUser } : params);
+      const result = `${res.sent} sent` + (res.failed.length ? `, ${res.failed.length} failed` : '');
+      show($('sendMsg'), result + (res.failed.length ? ': ' + res.failed.join('; ') : ''), !res.failed.length);
+    } catch (e) {
+      show($('sendMsg'), e.message, false);
+    } finally {
+      renderHistory(); // failed sends are saved too
+      btn.disabled = false;
+      btn.textContent = 'Send notification';
+    }
+  };
+
+  $('target').onchange = syncTarget;
+  $('title').oninput = updatePreview;
+  $('message').oninput = updatePreview;
+  $('logoutBtn').onclick = logout;
+  $('refreshHistory').onclick = renderHistory;
+  $('resetKeys').onclick = () => {
+    store.del('push.keys');
+    keys = null;
+    logout();
+  };
+
+  render();
+</script>
+</body>
+</html>
