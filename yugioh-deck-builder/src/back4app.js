@@ -6,13 +6,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const APP_ID = process.env.EXPO_PUBLIC_BACK4APP_APP_ID;
 const REST_KEY = process.env.EXPO_PUBLIC_BACK4APP_REST_KEY;
 const JS_KEY = process.env.EXPO_PUBLIC_BACK4APP_JS_KEY;
+const CLIENT_KEY = process.env.EXPO_PUBLIC_BACK4APP_CLIENT_KEY;
+const KEY = (REST_KEY || JS_KEY || CLIENT_KEY || '').trim();
 const SERVER = process.env.EXPO_PUBLIC_BACK4APP_SERVER_URL || 'https://parseapi.back4app.com';
 const CLASS = 'Deck';
 const LOCAL_KEY = 'decks.v1';
 const USER_KEY = 'user.v1';
 
-// Either client key works with Parse Server's REST API.
-export const isCloudEnabled = Boolean(APP_ID && (REST_KEY || JS_KEY));
+// Any one client key (REST API, JavaScript or Client Key) works with Parse Server's REST API.
+export const isCloudEnabled = Boolean(APP_ID && KEY);
 
 // --- Session --------------------------------------------------------------
 
@@ -48,12 +50,15 @@ export const getUser = () => currentUser;
 
 async function api(method, path, body) {
   if (!isCloudEnabled) throw new Error('Add your Back4App keys to .env first.');
+  // Parse Server accepts the request if any of these matches, so the same key is sent
+  // under each name; that way it works whichever key type was copied from Back4App.
   const headers = {
-    'X-Parse-Application-Id': APP_ID,
+    'X-Parse-Application-Id': APP_ID.trim(),
+    'X-Parse-REST-API-Key': KEY,
+    'X-Parse-Javascript-Key': KEY,
+    'X-Parse-Client-Key': KEY,
     'Content-Type': 'application/json',
   };
-  if (REST_KEY) headers['X-Parse-REST-API-Key'] = REST_KEY;
-  else headers['X-Parse-Javascript-Key'] = JS_KEY;
   if (currentUser) headers['X-Parse-Session-Token'] = currentUser.sessionToken;
   const res = await fetch(`${SERVER}${path}`, {
     method,
@@ -61,6 +66,11 @@ async function api(method, path, body) {
     body: body ? JSON.stringify(body) : undefined,
   });
   const json = await res.json();
+  if (res.status === 403 && json.error === 'unauthorized') {
+    throw new Error(
+      'Back4App rejected the App ID or key. Check .env against App Settings → Security & Keys, then restart with --clear.',
+    );
+  }
   if (!res.ok) throw new Error(json.error || `Back4App error ${res.status}`);
   return json;
 }
