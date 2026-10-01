@@ -26,7 +26,7 @@ Scan the QR code with your phone.
 
 ## Connect Back4App
 1. Create an app at [back4app.com](https://www.back4app.com/).
-2. Open **App Settings → Security & Keys** and copy the **Application ID** and **REST API Key**.
+2. Open **App Settings → Security & Keys** and copy the **Application ID** and the **JavaScript Key** (the REST API Key also works).
 3. `cp .env.example .env` and paste the keys in.
 4. Restart Expo. The app creates the `Deck` class the first time you save.
 

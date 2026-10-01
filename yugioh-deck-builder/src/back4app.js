@@ -5,12 +5,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const APP_ID = process.env.EXPO_PUBLIC_BACK4APP_APP_ID;
 const REST_KEY = process.env.EXPO_PUBLIC_BACK4APP_REST_KEY;
+const JS_KEY = process.env.EXPO_PUBLIC_BACK4APP_JS_KEY;
 const SERVER = process.env.EXPO_PUBLIC_BACK4APP_SERVER_URL || 'https://parseapi.back4app.com';
 const CLASS = 'Deck';
 const LOCAL_KEY = 'decks.v1';
 const USER_KEY = 'user.v1';
 
-export const isCloudEnabled = Boolean(APP_ID && REST_KEY);
+// Either client key works with Parse Server's REST API.
+export const isCloudEnabled = Boolean(APP_ID && (REST_KEY || JS_KEY));
 
 // --- Session --------------------------------------------------------------
 
@@ -48,9 +50,10 @@ async function api(method, path, body) {
   if (!isCloudEnabled) throw new Error('Add your Back4App keys to .env first.');
   const headers = {
     'X-Parse-Application-Id': APP_ID,
-    'X-Parse-REST-API-Key': REST_KEY,
     'Content-Type': 'application/json',
   };
+  if (REST_KEY) headers['X-Parse-REST-API-Key'] = REST_KEY;
+  else headers['X-Parse-Javascript-Key'] = JS_KEY;
   if (currentUser) headers['X-Parse-Session-Token'] = currentUser.sessionToken;
   const res = await fetch(`${SERVER}${path}`, {
     method,

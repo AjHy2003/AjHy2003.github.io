@@ -403,7 +403,7 @@ function AccountScreen({ user, push, onLogin, onLogout, onRetryPush }) {
   if (!isCloudEnabled) {
     return (
       <Text style={styles.p}>
-        Back4App isn't connected. Copy .env.example to .env, add your App ID and REST API Key, then
+        Back4App isn't connected. Copy .env.example to .env, add your App ID and JavaScript Key, then
         restart Expo.
       </Text>
     );
