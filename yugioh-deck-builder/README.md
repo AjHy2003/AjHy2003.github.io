@@ -19,7 +19,8 @@ Card data comes from the free [YGOPRODeck API](https://ygoprodeck.com/api-guide/
 ```bash
 cd yugioh-deck-builder
 npm install
-npm run start:go     # Expo Go
+npm run start:go     # Expo Go (same Wi-Fi)
+npm run tunnel       # Expo Go over a tunnel (school/campus Wi-Fi)
 # or: npx expo start  (development build, needed for Android push; see below)
 ```
 Scan the QR code with your phone.
