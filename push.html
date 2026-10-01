@@ -90,6 +90,10 @@
   ul.history li { border-top: 1px solid var(--line); padding: 10px 0; font-size: 14px; }
   ul.history li:first-child { border-top: 0; }
   ul.history .meta { color: var(--muted); font-size: 12px; }
+  .status { font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
+  .status.sent { color: var(--green); }
+  .status.partial { color: var(--gold); }
+  .status.failed { color: var(--red); }
   details summary { cursor: pointer; color: var(--muted); font-size: 14px; }
   [hidden] { display: none !important; }
 </style>
@@ -162,7 +166,8 @@
   </section>
 
   <section id="historyBox" hidden>
-    <h2>Recent</h2>
+    <div class="row"><h2>Sent notifications</h2><button id="refreshHistory" class="ghost">Refresh</button></div>
+    <p class="hint" style="margin-top:0">Saved in Back4App → Database → Notification.</p>
     <ul id="history" class="history"></ul>
   </section>
 
@@ -220,6 +225,7 @@
       loadInfo();
     }
     renderHistory();
+    store.del('push.history'); // old browser-only history
   }
 
   async function loadInfo() {
@@ -251,16 +257,37 @@
     render();
   }
 
-  function renderHistory() {
-    const items = store.get('push.history') || [];
-    $('historyBox').hidden = !session || !items.length;
+  // History is saved by Cloud Code in Back4App's Notification class.
+  const TARGET_LABEL = { me: 'my devices', device: 'one device', all: 'everyone', user: 'user' };
+  async function renderHistory() {
+    if (!session) { $('historyBox').hidden = true; return; }
+    let items;
+    try {
+      items = await call('getNotificationHistory', { limit: 20 });
+    } catch (e) {
+      $('historyBox').hidden = false;
+      $('history').replaceChildren(Object.assign(document.createElement('li'), {
+        className: 'meta',
+        textContent: e.message.includes('Invalid function')
+          ? 'Deploy the latest cloud/main.js to Back4App to see saved history.'
+          : e.message,
+      }));
+      return;
+    }
+    $('historyBox').hidden = !items.length;
     $('history').replaceChildren(...items.map((h) => {
       const li = document.createElement('li');
       const t = document.createElement('div');
       t.textContent = (h.title ? h.title + ': ' : '') + (h.message || '');
       const m = document.createElement('div');
       m.className = 'meta';
-      m.textContent = `${new Date(h.at).toLocaleString()} · ${h.to} · ${h.result}`;
+      const to = h.target === 'user' && h.targetUsername ? h.targetUsername : TARGET_LABEL[h.target] || h.target;
+      const from = h.senderUsername !== session.username ? ` · from ${h.senderUsername}` : '';
+      m.textContent = `${new Date(h.createdAt.iso || h.createdAt).toLocaleString()} · to ${to}${from} · ${h.sent}/${h.devices} delivered`;
+      const st = document.createElement('span');
+      st.className = 'status ' + h.status;
+      st.textContent = h.status;
+      m.append(' ', st);
       li.append(t, m);
       return li;
     }));
@@ -322,13 +349,10 @@
         : await call('broadcastPushNotification', target === 'user' ? { ...params, username: toUser } : params);
       const result = `${res.sent} sent` + (res.failed.length ? `, ${res.failed.length} failed` : '');
       show($('sendMsg'), result + (res.failed.length ? ': ' + res.failed.join('; ') : ''), !res.failed.length);
-      const to = target === 'me' ? 'my devices' : target === 'all' ? 'everyone' : toUser;
-      const history = [{ title, message, to, result, at: Date.now() }, ...(store.get('push.history') || [])].slice(0, 10);
-      store.set('push.history', history);
-      renderHistory();
     } catch (e) {
       show($('sendMsg'), e.message, false);
     } finally {
+      renderHistory(); // failed sends are saved too
       btn.disabled = false;
       btn.textContent = 'Send notification';
     }
@@ -338,6 +362,7 @@
   $('title').oninput = updatePreview;
   $('message').oninput = updatePreview;
   $('logoutBtn').onclick = logout;
+  $('refreshHistory').onclick = renderHistory;
   $('resetKeys').onclick = () => {
     store.del('push.keys');
     keys = null;

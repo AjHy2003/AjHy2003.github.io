@@ -49,6 +49,9 @@ In Back4App, open **Cloud Code**, replace `cloud/main.js` with [`cloud/main.js`]
 | `sendPushNotification({ token?, userId?, title, message, data? })` | Sends through `https://exp.host/--/api/v2/push/send` |
 | `getPushInfo()` | Returns whether you're an admin, plus device counts (used by `push.html`) |
 | `broadcastPushNotification({ title, message, data?, username? })` | **Admins only:** send to everyone, or to one user |
+| `getNotificationHistory({ limit? })` | Sent-notification history (admins see all, others see their own) |
+
+Every send, from the app, the webpage or curl, is saved in the **`Notification`** class with the title, message, sender, target, devices, delivered count, errors, and status (`sent` / `partial` / `failed`). Failed sends are saved too.
 
 `sendPushNotification` targets:
 - `token`: that one device.

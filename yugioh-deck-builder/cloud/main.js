@@ -59,7 +59,7 @@ function requireContent({ title, message }) {
 }
 
 // Send one notification to many Expo Push Tokens and remove tokens of uninstalled apps.
-async function sendToTokens(tokens, { title, message, data }) {
+async function deliver(tokens, { title, message, data }) {
   if (!tokens.length) throw new Parse.Error(Parse.Error.OBJECT_NOT_FOUND, 'No registered devices found.');
 
   const messages = tokens.map((to) => ({ to, title, body: message, data: data || {}, sound: 'default' }));
@@ -85,6 +85,43 @@ async function sendToTokens(tokens, { title, message, data }) {
     sent: tickets.filter((t) => t.status === 'ok').length,
     failed: tickets.filter((t) => t.status === 'error').map((t) => t.message),
   };
+}
+
+/**
+ * Send, then save a record of it in the Notification class (also when sending fails).
+ * target: 'me' | 'device' | 'user' | 'all'
+ */
+async function sendAndLog(request, tokens, content, target, targetUsername) {
+  const record = new Parse.Object('Notification');
+  const acl = new Parse.ACL();
+  if (request.user) acl.setReadAccess(request.user.id, true); // senders can read their own history
+  record.setACL(acl);
+  record.set({
+    title: content.title || '',
+    message: content.message || '',
+    data: content.data || {},
+    senderUsername: request.user ? request.user.get('username') : 'master key',
+    target,
+    targetUsername: targetUsername || '',
+    devices: tokens.length,
+  });
+  if (request.user) record.set('sender', request.user);
+
+  try {
+    const result = await deliver(tokens, content);
+    record.set({
+      sent: result.sent,
+      failedCount: result.failed.length,
+      errors: result.failed,
+      status: result.failed.length ? (result.sent ? 'partial' : 'failed') : 'sent',
+    });
+    await record.save(null, { useMasterKey: true });
+    return { ...result, notificationId: record.id };
+  } catch (e) {
+    record.set({ sent: 0, failedCount: tokens.length, errors: [e.message], status: 'failed' });
+    await record.save(null, { useMasterKey: true }).catch(() => {});
+    throw e;
+  }
 }
 
 // Save (or move) this device's Expo Push Token to the logged-in user.
@@ -145,7 +182,8 @@ Parse.Cloud.define('sendPushNotification', async (request) => {
   // The master key may also send to a raw token that was never registered.
   let tokens = devices.map((d) => d.get('token'));
   if (!tokens.length && token && request.master && isExpoToken(token)) tokens = [token];
-  return sendToTokens(tokens, { title, message, data });
+  const target = token ? 'device' : userId ? 'user' : 'me';
+  return sendAndLog(request, tokens, { title, message, data }, target, userId || '');
 });
 
 // Who am I and how many devices can I reach? Used by push.html.
@@ -175,8 +213,36 @@ Parse.Cloud.define('broadcastPushNotification', async (request) => {
     query.equalTo('user', user);
   }
   const devices = await query.find({ useMasterKey: true });
-  return sendToTokens(
+  return sendAndLog(
+    request,
     devices.map((d) => d.get('token')),
     { title, message, data },
+    username ? 'user' : 'all',
+    username,
   );
+});
+
+/**
+ * Sent-notification history, newest first. Admins see everything; others see their own.
+ * Params: { limit? } (max 100)
+ */
+Parse.Cloud.define('getNotificationHistory', async (request) => {
+  requireUser(request);
+  const query = new Parse.Query('Notification').descending('createdAt');
+  query.limit(Math.min(Number(request.params.limit) || 20, 100));
+  if (!isAdmin(request)) query.equalTo('sender', request.user);
+  const rows = await query.find({ useMasterKey: true });
+  return rows.map((n) => ({
+    id: n.id,
+    title: n.get('title'),
+    message: n.get('message'),
+    senderUsername: n.get('senderUsername'),
+    target: n.get('target'),
+    targetUsername: n.get('targetUsername'),
+    devices: n.get('devices'),
+    sent: n.get('sent'),
+    failedCount: n.get('failedCount'),
+    status: n.get('status'),
+    createdAt: n.createdAt,
+  }));
 });
