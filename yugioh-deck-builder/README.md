@@ -47,6 +47,8 @@ In Back4App, open **Cloud Code**, replace `cloud/main.js` with [`cloud/main.js`]
 | `registerPushDevice({ token, platform, deviceName })` | Saves or updates this device's token in `PushDevice`, linked to the logged-in user |
 | `unregisterPushDevice({ token })` | Removes the device (called on logout) |
 | `sendPushNotification({ token?, userId?, title, message, data? })` | Sends through `https://exp.host/--/api/v2/push/send` |
+| `getPushInfo()` | Returns whether you're an admin, plus device counts (used by `push.html`) |
+| `broadcastPushNotification({ title, message, data?, username? })` | **Admins only:** send to everyone, or to one user |
 
 `sendPushNotification` targets:
 - `token`: that one device.
@@ -63,6 +65,14 @@ curl -X POST https://parseapi.back4app.com/functions/sendPushNotification \
   -d '{"token":"ExponentPushToken[...]","title":"Hello","message":"From Back4App"}'
 ```
 Never put the master key in the app.
+
+### Send from a webpage (`push.html`)
+[`push.html`](../push.html) in the root of this repo is a send page. Once merged, it's live at **https://ajhy2003.github.io/push.html**. You can also double-click the file to open it locally.
+1. The first time, enter your **Application ID** and **JavaScript Key**. They're saved only in that browser.
+2. Log in with your app account.
+3. Pick who to send to, type a title and message, and press **Send**.
+
+Anyone can send to **their own devices**. Usernames listed in `ADMIN_USERNAMES` at the top of `cloud/main.js` can also send to **everyone** or to **one user** through `broadcastPushNotification`. The Master Key is never used in the page.
 
 ### 2. Link an Expo (EAS) project
 ```bash

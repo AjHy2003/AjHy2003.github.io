@@ -5,6 +5,9 @@
 
 const EXPO_PUSH_URL = 'https://exp.host/--/api/v2/push/send';
 
+// Usernames allowed to send notifications to other users (e.g. from push.html).
+const ADMIN_USERNAMES = ['andrhenry449'];
+
 const isExpoToken = (t) => typeof t === 'string' && /^Expo(nent)?PushToken\[.+\]$/.test(t);
 
 // POST JSON to a URL. Newer Parse Server versions removed Parse.Cloud.httpRequest,
@@ -41,6 +44,47 @@ function requireUser(request) {
   if (!request.user && !request.master) {
     throw new Parse.Error(Parse.Error.INVALID_SESSION_TOKEN, 'You must be logged in.');
   }
+}
+
+const isAdmin = (request) =>
+  request.master || Boolean(request.user && ADMIN_USERNAMES.includes(request.user.get('username')));
+
+function requireAdmin(request) {
+  requireUser(request);
+  if (!isAdmin(request)) throw new Parse.Error(Parse.Error.OPERATION_FORBIDDEN, 'Admins only.');
+}
+
+function requireContent({ title, message }) {
+  if (!title && !message) throw new Parse.Error(Parse.Error.VALIDATION_ERROR, 'title or message is required.');
+}
+
+// Send one notification to many Expo Push Tokens and remove tokens of uninstalled apps.
+async function sendToTokens(tokens, { title, message, data }) {
+  if (!tokens.length) throw new Parse.Error(Parse.Error.OBJECT_NOT_FOUND, 'No registered devices found.');
+
+  const messages = tokens.map((to) => ({ to, title, body: message, data: data || {}, sound: 'default' }));
+  const tickets = [];
+  for (let i = 0; i < messages.length; i += 100) {
+    const json = await postJson(EXPO_PUSH_URL, messages.slice(i, i + 100));
+    if (!Array.isArray(json.data)) {
+      const reason = (json.errors || []).map((e) => e.message).join('; ') || JSON.stringify(json);
+      throw new Parse.Error(Parse.Error.SCRIPT_FAILED, `Expo Push API error: ${reason}`);
+    }
+    tickets.push(...json.data);
+  }
+
+  const dead = tickets
+    .map((t, i) => (t.details && t.details.error === 'DeviceNotRegistered' ? tokens[i] : null))
+    .filter(Boolean);
+  if (dead.length) {
+    const stale = await new Parse.Query('PushDevice').containedIn('token', dead).find({ useMasterKey: true });
+    await Parse.Object.destroyAll(stale, { useMasterKey: true });
+  }
+
+  return {
+    sent: tickets.filter((t) => t.status === 'ok').length,
+    failed: tickets.filter((t) => t.status === 'error').map((t) => t.message),
+  };
 }
 
 // Save (or move) this device's Expo Push Token to the logged-in user.
@@ -86,7 +130,7 @@ Parse.Cloud.define('unregisterPushDevice', async (request) => {
 Parse.Cloud.define('sendPushNotification', async (request) => {
   requireUser(request);
   const { token, userId, title, message, data } = request.params;
-  if (!title && !message) throw new Parse.Error(Parse.Error.VALIDATION_ERROR, 'title or message is required.');
+  requireContent(request.params);
 
   const query = new Parse.Query('PushDevice');
   if (token) query.equalTo('token', token);
@@ -101,30 +145,38 @@ Parse.Cloud.define('sendPushNotification', async (request) => {
   // The master key may also send to a raw token that was never registered.
   let tokens = devices.map((d) => d.get('token'));
   if (!tokens.length && token && request.master && isExpoToken(token)) tokens = [token];
-  if (!tokens.length) throw new Parse.Error(Parse.Error.OBJECT_NOT_FOUND, 'No registered devices found.');
+  return sendToTokens(tokens, { title, message, data });
+});
 
-  const messages = tokens.map((to) => ({ to, title, body: message, data: data || {}, sound: 'default' }));
-  const tickets = [];
-  for (let i = 0; i < messages.length; i += 100) {
-    const json = await postJson(EXPO_PUSH_URL, messages.slice(i, i + 100));
-    if (!Array.isArray(json.data)) {
-      const reason = (json.errors || []).map((e) => e.message).join('; ') || JSON.stringify(json);
-      throw new Parse.Error(Parse.Error.SCRIPT_FAILED, `Expo Push API error: ${reason}`);
-    }
-    tickets.push(...json.data);
+// Who am I and how many devices can I reach? Used by push.html.
+Parse.Cloud.define('getPushInfo', async (request) => {
+  requireUser(request);
+  const admin = isAdmin(request);
+  const mine = new Parse.Query('PushDevice');
+  if (request.user) mine.equalTo('user', request.user);
+  const info = { isAdmin: admin, myDevices: request.user ? await mine.count({ useMasterKey: true }) : 0 };
+  if (admin) info.allDevices = await new Parse.Query('PushDevice').count({ useMasterKey: true });
+  return info;
+});
+
+/**
+ * Admin only: send to every registered device, or to one user by username.
+ * Params: { title, message, data?, username? }
+ */
+Parse.Cloud.define('broadcastPushNotification', async (request) => {
+  requireAdmin(request);
+  const { title, message, data, username } = request.params;
+  requireContent(request.params);
+
+  const query = new Parse.Query('PushDevice').limit(10000);
+  if (username) {
+    const user = await new Parse.Query(Parse.User).equalTo('username', username).first({ useMasterKey: true });
+    if (!user) throw new Parse.Error(Parse.Error.OBJECT_NOT_FOUND, `No user named "${username}".`);
+    query.equalTo('user', user);
   }
-
-  // Clean up tokens for uninstalled apps.
-  const dead = tickets
-    .map((t, i) => (t.details && t.details.error === 'DeviceNotRegistered' ? tokens[i] : null))
-    .filter(Boolean);
-  if (dead.length) {
-    const stale = await new Parse.Query('PushDevice').containedIn('token', dead).find({ useMasterKey: true });
-    await Parse.Object.destroyAll(stale, { useMasterKey: true });
-  }
-
-  return {
-    sent: tickets.filter((t) => t.status === 'ok').length,
-    failed: tickets.filter((t) => t.status === 'error').map((t) => t.message),
-  };
+  const devices = await query.find({ useMasterKey: true });
+  return sendToTokens(
+    devices.map((d) => d.get('token')),
+    { title, message, data },
+  );
 });
