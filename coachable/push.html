@@ -76,6 +76,13 @@
   .msg.err { display: block; background: rgba(255, 138, 128, .12); color: var(--red); }
   .badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--gold); color: #1a1500; margin-left: 6px; }
   .who strong { color: var(--green); }
+  .inline { display: flex; gap: 10px; }
+  .inline > * { flex: 1; }
+  .check { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; color: var(--text); font-size: 15px; }
+  .check input { width: auto; }
+  .status.scheduled { color: var(--gold); }
+  .status.cancelled { color: var(--muted); }
+  .cancel { margin-left: 8px; padding: 2px 10px !important; font-size: 12px; }
   .preview {
     display: flex; gap: 12px; align-items: flex-start;
     background: rgba(255, 255, 255, .07);
@@ -170,8 +177,59 @@
       </div>
     </div>
 
+    <label for="when">When</label>
+    <select id="when">
+      <option value="now">Send now</option>
+      <option value="later">Schedule for later</option>
+    </select>
+    <div id="laterField" hidden>
+      <label for="sendAt">Date and time (your time zone)</label>
+      <input id="sendAt" type="datetime-local">
+      <p class="hint">Needs the <code>sendScheduledNotifications</code> job running in Back4App (see PUSH_SETUP.md).</p>
+    </div>
+
     <button id="sendBtn">Send notification</button>
     <div id="sendMsg" class="msg"></div>
+  </section>
+
+  <section id="timingBox" hidden>
+    <div class="row"><h2>Notification timing</h2><button id="loadTiming" class="ghost">Reload</button></div>
+    <p class="hint" style="margin-top:0">When the app's automatic notifications fire. Saved to the account's Profile; the phone picks it up next time the app opens.</p>
+    <div id="timingUserField" hidden>
+      <label for="timingUser">Account (email), leave empty for yours</label>
+      <input id="timingUser" type="email" autocapitalize="none" spellcheck="false" placeholder="you">
+    </div>
+
+    <label class="check"><input type="checkbox" id="tSession"> Session reminders</label>
+    <label for="tMinutes">Remind me before each workout</label>
+    <select id="tMinutes">
+      <option value="0">At start time</option><option value="5">5 minutes before</option>
+      <option value="10">10 minutes before</option><option value="15">15 minutes before</option>
+      <option value="20">20 minutes before</option><option value="30">30 minutes before</option>
+      <option value="45">45 minutes before</option><option value="60">1 hour before</option>
+      <option value="90">1.5 hours before</option><option value="120">2 hours before</option>
+    </select>
+
+    <label class="check"><input type="checkbox" id="tConflict"> Alerts when the calendar moves a session</label>
+
+    <label class="check"><input type="checkbox" id="tWeekly"> Weekly summary</label>
+    <div class="inline">
+      <div>
+        <label for="tDay">Day</label>
+        <select id="tDay">
+          <option value="0">Sunday</option><option value="1">Monday</option><option value="2">Tuesday</option>
+          <option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option>
+          <option value="6">Saturday</option>
+        </select>
+      </div>
+      <div>
+        <label for="tHour">Time</label>
+        <select id="tHour"></select>
+      </div>
+    </div>
+
+    <button id="saveTiming">Save timing</button>
+    <div id="timingMsg" class="msg"></div>
   </section>
 
   <section id="historyBox" hidden>
@@ -223,15 +281,50 @@
   }
   const call = async (fn, params) => (await api('POST', '/functions/' + fn, params)).result;
 
+  // Hour dropdown 12 AM ... 11 PM
+  for (let h = 0; h < 24; h++) {
+    const o = document.createElement('option');
+    o.value = h;
+    o.textContent = `${h % 12 === 0 ? 12 : h % 12}:00 ${h < 12 ? 'AM' : 'PM'}`;
+    $('tHour').append(o);
+  }
+
+  let isAdminUser = false;
+
+  async function loadTiming() {
+    const username = $('timingUser').value.trim().toLowerCase();
+    try {
+      const t = await call('getNotificationSettings', username ? { username } : {});
+      $('tSession').checked = t.session;
+      $('tConflict').checked = t.conflict;
+      $('tWeekly').checked = t.weekly;
+      $('tMinutes').value = String(t.reminderMinutes);
+      if (!$('tMinutes').value) {
+        const o = document.createElement('option');
+        o.value = t.reminderMinutes; o.textContent = t.reminderMinutes + ' minutes before';
+        $('tMinutes').append(o); $('tMinutes').value = String(t.reminderMinutes);
+      }
+      $('tDay').value = String(t.weeklyDay);
+      $('tHour').value = String(t.weeklyHour);
+      $('timingMsg').className = 'msg';
+    } catch (e) {
+      show($('timingMsg'), e.message.includes('Invalid function')
+        ? 'Deploy the latest cloud/main.js to Back4App to edit timing.'
+        : e.message, false);
+    }
+  }
+
   function render() {
     $('setup').hidden = Boolean(keys);
     $('keysDetails').hidden = !keys;
     $('login').hidden = !keys || Boolean(session);
     $('compose').hidden = !session;
     if (keys) { $('appId').value = keys.appId; $('jsKey').value = keys.jsKey; }
+    $('timingBox').hidden = !session;
     if (session) {
       $('whoName').textContent = session.username;
       loadInfo();
+      loadTiming();
     }
     renderHistory();
     store.del('coachable.push.history'); // old browser-only history
@@ -242,6 +335,8 @@
     try {
       const info = await call('getPushInfo', {});
       $('adminBadge').hidden = !info.isAdmin;
+      isAdminUser = info.isAdmin;
+      $('timingUserField').hidden = !info.isAdmin;
       document.querySelectorAll('#target [data-admin]').forEach((o) => (o.hidden = o.disabled = !info.isAdmin));
       if (!info.isAdmin) $('target').value = 'me';
       $('deviceInfo').textContent = info.isAdmin
@@ -292,11 +387,26 @@
       m.className = 'meta';
       const to = h.target === 'user' && h.targetUsername ? h.targetUsername : TARGET_LABEL[h.target] || h.target;
       const from = h.senderUsername !== session.username ? ` · from ${h.senderUsername}` : '';
-      m.textContent = `${new Date(h.createdAt.iso || h.createdAt).toLocaleString()} · to ${to}${from} · ${h.sent}/${h.devices} delivered`;
+      const when = h.status === 'scheduled' || h.status === 'cancelled'
+        ? `for ${new Date(h.sendAt?.iso || h.sendAt).toLocaleString()}`
+        : new Date(h.createdAt.iso || h.createdAt).toLocaleString();
+      const count = h.status === 'scheduled' || h.status === 'cancelled' ? '' : ` · ${h.sent}/${h.devices} delivered`;
+      m.textContent = `${when} · to ${to}${from}${count}`;
       const st = document.createElement('span');
       st.className = 'status ' + h.status;
       st.textContent = h.status;
       m.append(' ', st);
+      if (h.status === 'scheduled') {
+        const c = document.createElement('button');
+        c.className = 'ghost cancel';
+        c.textContent = 'Cancel';
+        c.onclick = async () => {
+          c.disabled = true;
+          try { await call('cancelScheduledNotification', { id: h.id }); } catch (e) { alert(e.message); }
+          renderHistory();
+        };
+        m.append(c);
+      }
       li.append(t, m);
       return li;
     }));
@@ -348,26 +458,70 @@
     if (!title && !message) return show($('sendMsg'), 'Type a title or a message.', false);
     if (target === 'user' && !toUser) return show($('sendMsg'), 'Type the email to send to.', false);
 
+    let sendAt;
+    if ($('when').value === 'later') {
+      if (!$('sendAt').value) return show($('sendMsg'), 'Pick a date and time.', false);
+      const d = new Date($('sendAt').value);
+      if (d.getTime() <= Date.now() + 60 * 1000) return show($('sendMsg'), 'Pick a time at least a minute from now.', false);
+      sendAt = d.toISOString();
+    }
+
     const btn = $('sendBtn');
     btn.disabled = true;
-    btn.textContent = 'Sending…';
+    btn.textContent = sendAt ? 'Scheduling…' : 'Sending…';
     try {
-      const params = { title, message, data: { source: 'web', screen: $('screen').value } };
+      const params = { title, message, data: { source: 'web', screen: $('screen').value }, ...(sendAt ? { sendAt } : {}) };
       const res = target === 'me'
         ? await call('sendPushNotification', params)
         : await call('broadcastPushNotification', target === 'user' ? { ...params, username: toUser } : params);
-      const result = `${res.sent} sent` + (res.failed.length ? `, ${res.failed.length} failed` : '');
-      show($('sendMsg'), result + (res.failed.length ? ': ' + res.failed.join('; ') : ''), !res.failed.length);
+      if (res.scheduled) {
+        show($('sendMsg'), 'Scheduled for ' + new Date(res.sendAt).toLocaleString() + '.', true);
+      } else {
+        const result = `${res.sent} sent` + (res.failed.length ? `, ${res.failed.length} failed` : '');
+        show($('sendMsg'), result + (res.failed.length ? ': ' + res.failed.join('; ') : ''), !res.failed.length);
+      }
     } catch (e) {
       show($('sendMsg'), e.message, false);
     } finally {
       renderHistory(); // failed sends are saved too
       btn.disabled = false;
-      btn.textContent = 'Send notification';
+      btn.textContent = $('when').value === 'later' ? 'Schedule notification' : 'Send notification';
     }
   };
 
   $('target').onchange = syncTarget;
+  $('when').onchange = () => {
+    $('laterField').hidden = $('when').value !== 'later';
+    $('sendBtn').textContent = $('when').value === 'later' ? 'Schedule notification' : 'Send notification';
+    if (!$('sendAt').value) {
+      const d = new Date(Date.now() + 60 * 60 * 1000);
+      d.setMinutes(0, 0, 0);
+      $('sendAt').value = new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+    }
+  };
+  $('loadTiming').onclick = loadTiming;
+  $('timingUser').onchange = loadTiming;
+  $('saveTiming').onclick = async () => {
+    const btn = $('saveTiming');
+    btn.disabled = true;
+    const username = $('timingUser').value.trim().toLowerCase();
+    try {
+      const t = await call('updateNotificationSettings', {
+        ...(username ? { username } : {}),
+        session: $('tSession').checked,
+        conflict: $('tConflict').checked,
+        weekly: $('tWeekly').checked,
+        reminderMinutes: Number($('tMinutes').value),
+        weeklyDay: Number($('tDay').value),
+        weeklyHour: Number($('tHour').value),
+      });
+      show($('timingMsg'), 'Saved. The app uses it next time it opens' + '.', true);
+    } catch (e) {
+      show($('timingMsg'), e.message, false);
+    } finally {
+      btn.disabled = false;
+    }
+  };
   $('title').oninput = updatePreview;
   $('message').oninput = updatePreview;
   $('logoutBtn').onclick = logout;
