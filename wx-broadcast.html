@@ -297,7 +297,7 @@
       m.className = 'meta';
       const to = h.target === 'user' && h.targetUsername ? h.targetUsername : TARGET_LABEL[h.target] || h.target;
       const from = h.senderUsername !== session.username ? ` · from ${h.senderUsername}` : '';
-      m.textContent = `${new Date(h.createdAt.iso || h.createdAt).toLocaleString()} · to ${to}${from} · ${h.sent}/${h.devices} delivered`;
+      m.textContent = `${new Date(h.createdAt.iso || h.createdAt).toLocaleString()} · to ${to}${from} · ${h.sent}/${h.devices} sent` + (h.receiptStatus && h.receiptStatus !== 'none' ? ` · Apple/Google: ${h.receiptStatus}` : '');
       const st = document.createElement('span');
       st.className = 'status ' + h.status;
       st.textContent = h.status;
@@ -345,6 +345,7 @@
   };
   $('password').addEventListener('keydown', (e) => e.key === 'Enter' && $('loginBtn').click());
 
+  let sendSeq = 0;
   $('sendBtn').onclick = async () => {
     const title = $('title').value.trim();
     const message = $('message').value.trim();
@@ -357,12 +358,32 @@
     btn.disabled = true;
     btn.textContent = 'Sending…';
     try {
-      const params = { title, message, data: { source: 'web', type: 'weather' } };
+      const params = { title, message, subtitle: 'WX Radio · Broadcast Desk', data: { source: 'web', type: 'weather', title, message } };
       const res = target === 'me'
         ? await call('sendPushNotification', params)
         : await call('broadcastPushNotification', target === 'user' ? { ...params, username: toUser } : params);
       const result = `${res.sent} sent` + (res.failed.length ? `, ${res.failed.length} failed` : '');
       show($('sendMsg'), result + (res.failed.length ? ': ' + res.failed.join('; ') : ''), !res.failed.length);
+      // Expo Push Receipts API: confirm Apple/Google actually delivered it.
+      const seq = ++sendSeq;
+      if (res.notificationId && res.sent) {
+        $('sendMsg').textContent += ' · checking delivery with Apple/Google…';
+        setTimeout(async () => {
+          if (seq !== sendSeq) return; // a newer send is showing its own result
+          try {
+            const rc = await call('getPushReceipts', { notificationId: res.notificationId });
+            const text = rc.receiptStatus === 'delivered'
+              ? `${result} · delivered by Apple/Google ✓`
+              : rc.receiptStatus === 'error'
+                ? `${result} · delivery error: ${rc.errors.map((e) => e.error + ' (' + e.message + ')').join('; ')}`
+                : `${result} · Apple/Google hasn't confirmed yet (try Refresh in a minute)`;
+            show($('sendMsg'), text, rc.receiptStatus !== 'error');
+          } catch (e) {
+            show($('sendMsg'), `${result} · couldn't check delivery: ${e.message}`, false);
+          }
+          renderHistory();
+        }, 5000);
+      }
     } catch (e) {
       show($('sendMsg'), e.message, false);
     } finally {

@@ -3,6 +3,7 @@ import {
   ActivityIndicator,
   Alert,
   FlatList,
+  Modal,
   Platform,
   Pressable,
   RefreshControl,
@@ -14,6 +15,8 @@ import {
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import * as Location from 'expo-location';
+import * as Notifications from 'expo-notifications';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFonts } from 'expo-font';
 import { Righteous_400Regular } from '@expo-google-fonts/righteous';
 import {
@@ -51,6 +54,41 @@ export default function App() {
   const [selectedId, setSelectedId] = useState(null);
   const [wx, setWx] = useState({}); // objectId -> { forecast, official, error }
   const [push, setPush] = useState({ token: null, error: null });
+  const [inbox, setInbox] = useState([]); // notifications received on this phone
+  const [openNote, setOpenNote] = useState(null); // full notification shown in a popup
+
+  // Keep every notification this phone receives, so the full text can be read in the app
+  // (iPhone banners cut long messages short). Tapping a notification opens it.
+  useEffect(() => {
+    AsyncStorage.getItem(INBOX_KEY)
+      .then((raw) => raw && setInbox(JSON.parse(raw)))
+      .catch(() => {});
+    const save = (n) => {
+      const note = toNote(n);
+      setInbox((list) => {
+        const next = [note, ...list.filter((x) => x.id !== note.id)].slice(0, 30);
+        AsyncStorage.setItem(INBOX_KEY, JSON.stringify(next)).catch(() => {});
+        return next;
+      });
+      return note;
+    };
+    const open = (response) => {
+      const note = save(response.notification);
+      setOpenNote(note);
+      setTab('alerts');
+    };
+    const subs = [];
+    try {
+      subs.push(Notifications.addNotificationReceivedListener(save));
+      subs.push(Notifications.addNotificationResponseReceivedListener(open));
+      Notifications.getLastNotificationResponseAsync()
+        .then((r) => r && open(r))
+        .catch(() => {});
+    } catch {
+      // notifications unavailable on this platform (e.g. web)
+    }
+    return () => subs.forEach((sub) => sub.remove());
+  }, []);
 
   const registerPush = useCallback(async () => {
     try {
@@ -147,7 +185,15 @@ export default function App() {
                 />
               )}
               {tab === 'alerts' && (
-                <AlertsScreen user={user} setUser={setUser} push={push} onRetryPush={registerPush} onSignOut={signOut} />
+                <AlertsScreen
+                  user={user}
+                  setUser={setUser}
+                  push={push}
+                  onRetryPush={registerPush}
+                  onSignOut={signOut}
+                  inbox={inbox}
+                  onOpenNote={setOpenNote}
+                />
               )}
             </View>
             <SafeAreaView edges={['bottom']} style={{ backgroundColor: C.walnut }}>
@@ -167,8 +213,42 @@ export default function App() {
             </SafeAreaView>
           </>
         )}
+        <NoteModal note={openNote} onClose={() => setOpenNote(null)} />
       </SafeAreaView>
     </SafeAreaProvider>
+  );
+}
+
+const INBOX_KEY = 'wx.inbox.v1';
+
+function toNote(n) {
+  const c = n.request.content;
+  return {
+    id: n.request.identifier,
+    title: c.title || '',
+    subtitle: c.subtitle || '',
+    body: c.body || c.data?.message || '',
+    date: n.date || Date.now(),
+  };
+}
+
+// Full notification text in a ticker-tape popup.
+function NoteModal({ note, onClose }) {
+  return (
+    <Modal visible={Boolean(note)} transparent animationType="fade" onRequestClose={onClose}>
+      <View style={{ flex: 1, backgroundColor: 'rgba(28,23,20,0.75)', justifyContent: 'center', padding: 20 }}>
+        {note && (
+          <Dial style={{ gap: 8 }}>
+            <Text style={s.sectionLabel}>EMERGENCY BROADCAST</Text>
+            <Text style={{ fontFamily: F.display, fontSize: 24, color: C.ink }}>{note.title}</Text>
+            {note.subtitle ? <Text style={{ fontFamily: F.labelBold, fontSize: 16, color: C.muted }}>{note.subtitle}</Text> : null}
+            <Text style={{ fontFamily: F.mono, fontSize: 16, lineHeight: 22, color: C.ink }}>{note.body}</Text>
+            <Text style={{ fontFamily: F.mono, fontSize: 12, color: C.muted }}>{new Date(note.date).toLocaleString()}</Text>
+            <Button label="CLOSE" variant="secondary" onPress={onClose} style={{ marginTop: 6 }} />
+          </Dial>
+        )}
+      </View>
+    </Modal>
   );
 }
 
@@ -572,6 +652,22 @@ function StationsScreen({ stations, wx, selectedId, onSelect, onChanged }) {
 // ---------------------------------------------------------------------------
 // Alerts + account
 
+// What to do about common Expo push receipt errors.
+function receiptHelp(code) {
+  switch (code) {
+    case 'DeviceNotRegistered':
+      return 'This phone is no longer registered. Sign off and sign back on to get a new push token.';
+    case 'InvalidCredentials':
+      return 'The Apple/Firebase push keys in EAS are missing or wrong. Re-run: npx eas-cli@latest credentials';
+    case 'MessageTooBig':
+      return 'The message is too long. Shorten it.';
+    case 'MessageRateExceeded':
+      return 'Too many notifications at once. Wait a minute and try again.';
+    default:
+      return 'Check that notifications are allowed for Expo Go in iPhone Settings → Notifications.';
+  }
+}
+
 const SWITCHES = [
   ['enabled', 'All alerts', 'MASTER SWITCH'],
   ['rain', 'Rain', 'CHANCE ≥ 60% IN 12 HRS'],
@@ -581,7 +677,7 @@ const SWITCHES = [
   ['official', 'Official warnings', 'NATIONAL WEATHER SERVICE'],
 ];
 
-function AlertsScreen({ user, setUser, push, onRetryPush, onSignOut }) {
+function AlertsScreen({ user, setUser, push, onRetryPush, onSignOut, inbox, onOpenNote }) {
   const [log, setLog] = useState(null);
   const [busy, setBusy] = useState(false);
   const prefs = user.alertPrefs;
@@ -629,10 +725,20 @@ function AlertsScreen({ user, setUser, push, onRetryPush, onSignOut }) {
       );
     });
 
+  // Send a test alert, then ask the Expo Push Receipts API whether Apple/Google delivered it.
   const testBroadcast = () =>
     run(async () => {
       const r = await B4A.callFunction('sendTestWeatherAlert');
-      Alert.alert('Test broadcast sent', `Delivered to ${r.sent} device(s). Check your notifications.`);
+      if (!r.sent) throw new Error(r.failed?.join('\n') || 'Expo did not accept the notification.');
+      await new Promise((ok) => setTimeout(ok, 5000));
+      const rc = await B4A.getPushReceipts(r.notificationId).catch((e) => ({ receiptStatus: 'unknown', errors: [{ message: e.message }] }));
+      if (rc.receiptStatus === 'delivered') {
+        Alert.alert('Delivered ✓', 'Apple/Google accepted the test alert. Tap the notification to read it in full.');
+      } else if (rc.receiptStatus === 'error') {
+        Alert.alert('Delivery problem', rc.errors.map((e) => `${e.error}: ${e.message}`).join('\n') + `\n\n${receiptHelp(rc.errors[0]?.error)}`);
+      } else {
+        Alert.alert('Sent', 'Expo accepted it; Apple has not confirmed yet. It should arrive in a moment.');
+      }
     });
 
   const rows = useMemo(() => SWITCHES.filter(([k]) => k === 'enabled' || prefs.enabled), [prefs.enabled]);
@@ -661,6 +767,27 @@ function AlertsScreen({ user, setUser, push, onRetryPush, onSignOut }) {
 
       <View style={al.tape}>
         <Text style={{ fontFamily: F.mono, fontSize: 12, letterSpacing: 2, color: C.muted, textAlign: 'center' }}>
+          — RECEIVED ON THIS PHONE —
+        </Text>
+        {inbox.length === 0 ? (
+          <Text style={{ fontFamily: F.mono, fontSize: 13, color: C.muted }}>Nothing received yet. Try TEST ALERT.</Text>
+        ) : (
+          inbox.slice(0, 10).map((n) => (
+            <Pressable
+              key={n.id}
+              onPress={() => onOpenNote(n)}
+              style={{ borderBottomWidth: 1, borderStyle: 'dotted', borderColor: C.rule, paddingBottom: 6 }}
+            >
+              <Text style={{ fontFamily: F.monoBold, fontSize: 14, color: C.ink }}>{n.title}</Text>
+              <Text style={{ fontFamily: F.mono, fontSize: 13, color: C.ink }}>{n.body}</Text>
+              <Text style={{ fontFamily: F.mono, fontSize: 11, color: C.muted }}>{new Date(n.date).toLocaleString()} · TAP TO OPEN</Text>
+            </Pressable>
+          ))
+        )}
+      </View>
+
+      <View style={al.tape}>
+        <Text style={{ fontFamily: F.mono, fontSize: 12, letterSpacing: 2, color: C.muted, textAlign: 'center' }}>
           — BROADCAST LOG —
         </Text>
         {log === null ? (
@@ -673,6 +800,7 @@ function AlertsScreen({ user, setUser, push, onRetryPush, onSignOut }) {
               <Text style={{ fontFamily: F.monoBold, fontSize: 14, color: C.ink }}>{(l.title || l.message).toUpperCase()}</Text>
               <Text style={{ fontFamily: F.mono, fontSize: 12, color: C.muted }}>
                 {new Date(l.createdAt.iso || l.createdAt).toLocaleString()} · {l.status.toUpperCase()}
+                {l.receiptStatus && l.receiptStatus !== 'none' ? ` · APPLE/GOOGLE: ${l.receiptStatus.toUpperCase()}` : ''}
               </Text>
             </View>
           ))

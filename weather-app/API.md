@@ -10,6 +10,7 @@ WX Radio uses **3 public weather APIs**, **the Back4App API** (including our own
 | 4 | Back4App (Parse) REST API | Sign up, login, saved cities, alert prefs | App ID + JavaScript Key (+ session token) | `src/back4app.js` |
 | 5 | Back4App Cloud Functions (our API) | Push devices, weather alerts, test alert, history | same | `cloud/main.js` |
 | 6 | Expo Push API | Deliver notifications to iPhone/Android | none (Expo Push Token) | `cloud/main.js` → `deliver()` |
+| 7 | Expo Push Receipts API | Confirm Apple (APNs) / Google (FCM) delivered each notification | none (ticket ids) | `cloud/main.js` → `fetchReceipts()`, `getPushReceipts` |
 
 ---
 
@@ -80,6 +81,7 @@ Called with `POST https://parseapi.back4app.com/functions/<name>`, using the sam
 | `unregisterPushDevice` | `{"token"}` | `{"removed":1}` |
 | `checkMyWeatherAlerts` | `{"force":false}` | `{"locations":1,"found":[{"title":"🌧️ Rain likely in Newark",...}],"sent":1,"skipped":0}` |
 | `sendTestWeatherAlert` | `{}` | `{"sent":1,"failed":[],"notificationId":"..."}` |
+| `getPushReceipts` | `{"notificationId":"..."}` | `{"receiptStatus":"delivered","delivered":1,"pending":0,"errors":[]}` |
 | `getNotificationHistory` | `{"limit":20}` | `[{"title","message","status","createdAt",...}]` |
 | `sendPushNotification` | `{"title","message"}` | `{"sent","failed"}` (own devices) |
 | `broadcastPushNotification` *(admin)* | `{"title","message","username?"}` | `{"sent","failed"}` (everyone or one user) |
@@ -94,8 +96,33 @@ Invoke-RestMethod -Method Post https://parseapi.back4app.com/functions/sendTestW
 ## 6. Expo Push API
 `POST https://exp.host/--/api/v2/push/send` (sent by Cloud Code, never by the phone)
 ```json
-[ { "to": "ExponentPushToken[wvMEgfDSi0zFdYjVGl0jgH]", "title": "🌧️ Rain likely in Newark",
+[ { "to": "ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]", "title": "🌧️ Rain likely in Newark",
+    "subtitle": "WX Radio · Newark", "priority": "high", "channelId": "default",
     "body": "85% chance of rain around 4 PM. Grab an umbrella!", "sound": "default",
     "data": { "type": "weather", "alert": "rain" } } ]
 ```
 Response: `{ "data": [ { "status": "ok", "id": "..." } ] }`. Tokens that come back as `DeviceNotRegistered` are deleted from `PushDevice`.
+
+## 7. Expo Push Receipts API
+`POST https://exp.host/--/api/v2/push/getReceipts` (from Cloud Code, a few seconds after sending)
+
+The send call above only says Expo **accepted** the message. The receipt says whether **Apple (APNs) / Google (FCM) delivered** it.
+```json
+{ "ids": ["XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"] }
+```
+Response:
+```json
+{ "data": { "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX": { "status": "ok" } } }
+```
+or, on failure:
+```json
+{ "data": { "XXXXXXXX-...": { "status": "error", "message": "...", "details": { "error": "DeviceNotRegistered" } } } }
+```
+Our Cloud Function `getPushReceipts` saves the result on the `Notification` row (`receiptStatus`: delivered / error / pending, plus `receiptErrors`). The app's **Test Alert** button and `wx-broadcast.html` check it automatically about 5 seconds after sending.
+
+| Receipt error | Meaning / fix |
+|---|---|
+| `DeviceNotRegistered` | The app was removed or the token changed. Sign off and sign back on. |
+| `InvalidCredentials` | APNs/FCM keys in EAS are missing or wrong. Run `npx eas-cli@latest credentials`. |
+| `MessageTooBig` | The payload is over 4 KB. |
+| `MessageRateExceeded` | Too many messages to one device. Slow down. |

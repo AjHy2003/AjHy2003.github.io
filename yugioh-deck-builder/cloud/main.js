@@ -4,6 +4,7 @@
 // Rows are only readable with the master key; the app goes through these functions.
 
 const EXPO_PUSH_URL = 'https://exp.host/--/api/v2/push/send';
+const EXPO_RECEIPTS_URL = 'https://exp.host/--/api/v2/push/getReceipts';
 
 // Usernames allowed to send notifications to other users (e.g. from push.html).
 const ADMIN_USERNAMES = ['andrhenry449'];
@@ -59,10 +60,16 @@ function requireContent({ title, message }) {
 }
 
 // Send one notification to many Expo Push Tokens and remove tokens of uninstalled apps.
-async function deliver(tokens, { title, message, data }) {
+async function deliver(tokens, { title, message, subtitle, data }) {
   if (!tokens.length) throw new Parse.Error(Parse.Error.OBJECT_NOT_FOUND, 'No registered devices found.');
 
-  const messages = tokens.map((to) => ({ to, title, body: message, data: data || {}, sound: 'default' }));
+  // priority "high" + the "default" Android channel make alerts pop up on the lock screen;
+  // subtitle shows under the title on iPhone.
+  const messages = tokens.map((to) => {
+    const m = { to, title, body: message, data: data || {}, sound: 'default', priority: 'high', channelId: 'default' };
+    if (subtitle) m.subtitle = subtitle;
+    return m;
+  });
   const tickets = [];
   for (let i = 0; i < messages.length; i += 100) {
     const json = await postJson(EXPO_PUSH_URL, messages.slice(i, i + 100));
@@ -84,7 +91,16 @@ async function deliver(tokens, { title, message, data }) {
   return {
     sent: tickets.filter((t) => t.status === 'ok').length,
     failed: tickets.filter((t) => t.status === 'error').map((t) => t.message),
+    ticketIds: tickets.filter((t) => t.status === 'ok' && t.id).map((t) => t.id),
   };
+}
+
+// Expo Push Receipts API: did Apple (APNs) / Google (FCM) actually take the notification?
+// Receipts are ready a few seconds after sending.
+async function fetchReceipts(ids) {
+  if (!ids.length) return {};
+  const json = await postJson(EXPO_RECEIPTS_URL, { ids });
+  return json.data || {};
 }
 
 /**
@@ -99,6 +115,7 @@ async function sendAndLog(request, tokens, content, target, targetUsername) {
   record.set({
     title: content.title || '',
     message: content.message || '',
+    subtitle: content.subtitle || '',
     data: content.data || {},
     senderUsername: request.user ? request.user.get('username') : 'master key',
     target,
@@ -114,6 +131,8 @@ async function sendAndLog(request, tokens, content, target, targetUsername) {
       failedCount: result.failed.length,
       errors: result.failed,
       status: result.failed.length ? (result.sent ? 'partial' : 'failed') : 'sent',
+      ticketIds: result.ticketIds,
+      receiptStatus: result.ticketIds.length ? 'pending' : 'none',
     });
     await record.save(null, { useMasterKey: true });
     return { ...result, notificationId: record.id };
@@ -166,7 +185,7 @@ Parse.Cloud.define('unregisterPushDevice', async (request) => {
  */
 Parse.Cloud.define('sendPushNotification', async (request) => {
   requireUser(request);
-  const { token, userId, title, message, data } = request.params;
+  const { token, userId, title, message, subtitle, data } = request.params;
   requireContent(request.params);
 
   const query = new Parse.Query('PushDevice');
@@ -183,7 +202,7 @@ Parse.Cloud.define('sendPushNotification', async (request) => {
   let tokens = devices.map((d) => d.get('token'));
   if (!tokens.length && token && request.master && isExpoToken(token)) tokens = [token];
   const target = token ? 'device' : userId ? 'user' : 'me';
-  return sendAndLog(request, tokens, { title, message, data }, target, userId || '');
+  return sendAndLog(request, tokens, { title, message, subtitle, data }, target, userId || '');
 });
 
 // Who am I and how many devices can I reach? Used by push.html.
@@ -203,7 +222,7 @@ Parse.Cloud.define('getPushInfo', async (request) => {
  */
 Parse.Cloud.define('broadcastPushNotification', async (request) => {
   requireAdmin(request);
-  const { title, message, data, username } = request.params;
+  const { title, message, subtitle, data, username } = request.params;
   requireContent(request.params);
 
   const query = new Parse.Query('PushDevice').limit(10000);
@@ -216,7 +235,7 @@ Parse.Cloud.define('broadcastPushNotification', async (request) => {
   return sendAndLog(
     request,
     devices.map((d) => d.get('token')),
-    { title, message, data },
+    { title, message, subtitle, data },
     username ? 'user' : 'all',
     username,
   );
@@ -243,6 +262,7 @@ Parse.Cloud.define('getNotificationHistory', async (request) => {
     sent: n.get('sent'),
     failedCount: n.get('failedCount'),
     status: n.get('status'),
+    receiptStatus: n.get('receiptStatus') || 'none',
     createdAt: n.createdAt,
   }));
 });
@@ -415,7 +435,7 @@ async function checkUserWeather(user, { force = false } = {}) {
         const sent = await sendAndLog(
           { user },
           tokens,
-          { title: alert.title, message: alert.message, data: { type: 'weather', alert: alert.type, locationId: loc.id } },
+          { title: alert.title, message: alert.message, subtitle: `WX Radio · ${loc.get('name')}`, data: { type: 'weather', alert: alert.type, locationId: loc.id, title: alert.title, message: alert.message } },
           'alert',
           user.get('username'),
         );
@@ -459,6 +479,7 @@ Parse.Cloud.define('sendTestWeatherAlert', async (request) => {
     {
       title: `🌤️ Weather check: ${loc.get('name')}`,
       message: `It's ${Math.round(wx.current.temperature_2m)}°F right now. Alerts are on and watching your cities.`,
+      subtitle: 'WX Radio · Test broadcast',
       data: { type: 'weather', alert: 'test', locationId: loc.id },
     },
     'alert',
@@ -487,4 +508,33 @@ Parse.Cloud.job('weatherAlerts', async (request) => {
   const summary = `Checked ${users.size} users / ${locations.length} cities, sent ${sent} notifications.`;
   if (message) message(summary);
   return summary;
+});
+
+/**
+ * Check delivery of a sent notification with the Expo Push Receipts API and save the result.
+ * Params: { notificationId } (from any send function's result). Senders and admins only.
+ * Returns { receiptStatus: 'delivered' | 'error' | 'pending' | 'none', delivered, pending, errors: [{ error, message }] }
+ */
+Parse.Cloud.define('getPushReceipts', async (request) => {
+  requireUser(request);
+  const record = await new Parse.Query('Notification').get(request.params.notificationId, { useMasterKey: true });
+  const sender = record.get('sender');
+  if (!isAdmin(request) && (!sender || sender.id !== request.user.id)) {
+    throw new Parse.Error(Parse.Error.OPERATION_FORBIDDEN, 'Not your notification.');
+  }
+  const ids = record.get('ticketIds') || [];
+  const receipts = await fetchReceipts(ids);
+  let delivered = 0;
+  const errors = [];
+  for (const id of ids) {
+    const r = receipts[id];
+    if (!r) continue;
+    if (r.status === 'ok') delivered++;
+    else errors.push({ error: (r.details && r.details.error) || 'Error', message: r.message || '' });
+  }
+  const pending = ids.length - delivered - errors.length;
+  const receiptStatus = !ids.length ? 'none' : errors.length ? 'error' : pending ? 'pending' : 'delivered';
+  record.set({ receiptStatus, receiptErrors: errors, delivered });
+  await record.save(null, { useMasterKey: true });
+  return { receiptStatus, delivered, pending, errors };
 });

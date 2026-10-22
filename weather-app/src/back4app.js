@@ -149,3 +149,4 @@ export const registerPushDevice = (token, platform, deviceName) =>
 export const unregisterPushDevice = (token) => callFunction('unregisterPushDevice', { token });
 export const checkMyWeatherAlerts = (force = false) => callFunction('checkMyWeatherAlerts', { force });
 export const getNotificationHistory = (limit = 20) => callFunction('getNotificationHistory', { limit });
+export const getPushReceipts = (notificationId) => callFunction('getPushReceipts', { notificationId });
