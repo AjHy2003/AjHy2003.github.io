@@ -1,14 +1,13 @@
 # WX Radio — App Documentation
 
-*Web App Development for Mobile — Midterm. The app spec I gave Claude, plus how the finished app works.*
+*Web App Development for Mobile — Midterm.*
 
-Also included: **[PROMPTS.md](PROMPTS.md)** (every prompt I sent Claude) and **[API.md](API.md)** (the API reference).
+See also: **[PROMPTS.md](PROMPTS.md)** (prompts given to Claude) and **[API.md](API.md)** (API reference).
 
-## 1. The brief I gave Claude
+## 1. App brief
 
 > Build a **full Expo app** that is a **weather app** with a **unique theme** designed in **Claude Design** (not the default weather look).
 > It must have **logins and sign-ups**, and **push notifications for weather alerts sent from the backend using Back4App**.
-> Reuse the Back4App app, Expo account and push setup from my earlier project.
 
 **Theme chosen:** *Retro radio / weather-station dashboard.* A 1940s tabletop radio with a walnut cabinet, cream dial face and brass trim. The temperature is an analog gauge with a needle, saved cities are radio "stations" and "presets", and alerts arrive as an "Emergency Broadcast" on red ticker tape.
 
