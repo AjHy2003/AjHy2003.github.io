@@ -1,0 +1,10 @@
+{
+  "name": "ajhy2003-projects",
+  "private": true,
+  "description": "Shortcuts: run the apps from the repo root.",
+  "scripts": {
+    "weather": "cd weather-app && npx expo start --go --tunnel --clear",
+    "weather:install": "cd weather-app && npm install",
+    "yugioh": "cd yugioh-deck-builder && npx expo start --go --tunnel --clear"
+  }
+}
