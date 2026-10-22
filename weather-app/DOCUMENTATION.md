@@ -2,6 +2,8 @@
 
 *Web App Development for Mobile — Midterm. The app spec I gave Claude, plus how the finished app works.*
 
+Also included: **[PROMPTS.md](PROMPTS.md)** (every prompt I sent Claude) and **[API.md](API.md)** (the API reference).
+
 ## 1. The brief I gave Claude
 
 > Build a **full Expo app** that is a **weather app** with a **unique theme** designed in **Claude Design** (not the default weather look).
