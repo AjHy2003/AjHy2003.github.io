@@ -24,8 +24,15 @@ Scan the QR code with the iPhone Camera app. It opens in Expo Go.
 2. **Schedule the alert job:** Back4App → **Server Settings → Background Jobs** (or **Cloud Code → Jobs**) → **Schedule a job** → pick `weatherAlerts` → repeat **every 1 hour**.
 3. Tables are created automatically the first time they're used: `WeatherLocation`, `WeatherAlertSent`, `Notification`.
 
+## Send alerts from a web page
+Open **[`wx-broadcast.html`](../wx-broadcast.html)**, the WX Radio Broadcast Desk (in the repo root).
+After merging the pull request, it's also live at **https://ajhy2003.github.io/wx-broadcast.html**.
+- Log in with your app account, then use the **Quick bulletins** (Rain, Freeze, Heat, Wind, Storm, Snow, Fog, All clear) or **Random weather alert**, and press **Send**.
+- Send to: my devices / everyone / one user (the last two are admin only: `ADMIN_USERNAMES` in `cloud/main.js`).
+- Every send is saved in Back4App → `Notification` and listed under **Sent notifications**.
+
 ## Midterm submission checklist
-- [ ] **Video of the app working** (screen-record on the iPhone): sign up → add a city → Now / 7-Day → Alerts → **Test Alert** → the notification arrives → **Check Now**
+- [ ] **Video of the app working** (screen-record on the iPhone): sign up → add a city → Now / 7-Day → Alerts → **Test Alert** → the notification arrives → send a **Random weather alert** from `wx-broadcast.html` → it arrives
 - [ ] **App documentation:** `DOCUMENTATION.md` + `API.md`
 - [ ] **Design files:** the Claude Design link plus the `design/` folder
 - [ ] **Back4App screenshots:**
