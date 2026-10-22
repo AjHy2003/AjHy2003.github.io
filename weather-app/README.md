@@ -34,7 +34,8 @@ After merging the pull request, it's also live at **https://ajhy2003.github.io/w
 ## Midterm submission checklist
 - [ ] **Video of the app working** (screen-record on the iPhone): sign up → add a city → Now / 7-Day → Alerts → **Test Alert** → the notification arrives → send a **Random weather alert** from `wx-broadcast.html` → it arrives
 - [ ] **App documentation:** `DOCUMENTATION.md` + `API.md` + `PROMPTS.md` (the prompts I gave Claude)
-- [ ] **Design files:** the Claude Design link plus the `design/` folder
+- [ ] **Design files:** the Claude Design link, the `design/` folder (PNGs in `design/screens/`)
+- [ ] **All-in-one PDF:** `WX-Radio-Midterm.pdf` (design + documentation + APIs + prompts)
 - [ ] **Back4App screenshots:**
   - Database → `_User` (your sign-ups)
   - Database → `PushDevice` (phone tokens)
