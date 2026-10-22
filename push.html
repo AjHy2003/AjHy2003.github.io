@@ -258,7 +258,7 @@
   }
 
   // History is saved by Cloud Code in Back4App's Notification class.
-  const TARGET_LABEL = { me: 'my devices', device: 'one device', all: 'everyone', user: 'user' };
+  const TARGET_LABEL = { me: 'my devices', device: 'one device', all: 'everyone', user: 'user', alert: 'weather alert' };
   async function renderHistory() {
     if (!session) { $('historyBox').hidden = true; return; }
     let items;

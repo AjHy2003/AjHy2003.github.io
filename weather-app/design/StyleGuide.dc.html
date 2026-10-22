@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Style guide — Weather Station Radio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7a2e1d}a:hover{color:#5a2014}
+</style>
+</helmet>
+<div style="width: 1280px; height: 760px; box-sizing: border-box; background: #f3e6c8; padding: 48px; font-family: 'Barlow Condensed', sans-serif; color: #2a1d14; display: flex; flex-direction: column; gap: 32px">
+  <div style="display: flex; flex-direction: column; gap: 4px">
+    <span style="font-family: 'Righteous', sans-serif; font-size: 44px">Weather Station Radio — style guide</span>
+    <span style="font-size: 20px; color: #6b5642">A 1940s tabletop radio: walnut cabinet, cream dial face, brass trim, an analog needle and ticker-tape bulletins.</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 14px">
+    <sc-for list="{{colors}}" as="c" hint-placeholder-count="8">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="height: 90px; border-radius: 14px; border: 2px solid #2a1d14; background: {{c.hex}}"></div>
+        <span style="font-size: 17px; font-weight: 700">{{c.name}}</span>
+        <span style="font-family: 'Courier Prime', monospace; font-size: 13px; color: #6b5642">{{c.hex}} · {{c.use}}</span>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 6px; border-top: 3px solid #2a1d14; padding-top: 12px">
+      <span style="font-size: 14px; letter-spacing: 3px; color: #6b5642">DISPLAY · RIGHTEOUS</span>
+      <span style="font-family: 'Righteous', sans-serif; font-size: 56px; line-height: 1">54°F</span>
+      <span style="font-size: 16px; color: #6b5642">Temperatures, screen titles, city names, big buttons.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px; border-top: 3px solid #2a1d14; padding-top: 12px">
+      <span style="font-size: 14px; letter-spacing: 3px; color: #6b5642">LABELS · BARLOW CONDENSED</span>
+      <span style="font-size: 34px; font-weight: 700; letter-spacing: 3px">FEELS LIKE · HUMIDITY</span>
+      <span style="font-size: 16px; color: #6b5642">Uppercase with wide tracking, like stamped panel labels.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px; border-top: 3px solid #2a1d14; padding-top: 12px">
+      <span style="font-size: 14px; letter-spacing: 3px; color: #6b5642">READOUTS · COURIER PRIME</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 30px; font-weight: 700">RAIN LIKELY 4 PM</span>
+      <span style="font-size: 16px; color: #6b5642">Gauge readouts, ticker-tape bulletins, the broadcast log.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 16px; align-items: center">
+    <button style="min-height: 52px; padding: 0 28px; border-radius: 14px; border: 0; background: #c8402a; color: #fff7e6; font-family: 'Righteous', sans-serif; font-size: 18px; letter-spacing: 2px">PRIMARY · GO ON AIR</button>
+    <button style="min-height: 52px; padding: 0 28px; border-radius: 14px; border: 2px solid #c9a24a; background: #1c1714; color: #f3e6c8; font-family: 'Righteous', sans-serif; font-size: 18px; letter-spacing: 2px">SECONDARY · TEST</button>
+    <span style="min-height: 44px; padding: 0 24px; border-radius: 12px; background: #c9a24a; color: #1c1714; font-weight: 700; font-size: 16px; letter-spacing: 1px; display: flex; align-items: center">TAB · SELECTED</span>
+    <div style="flex: 1; background: #c8402a; border-radius: 10px; padding: 12px 16px; border: 2px dashed #f3e6c8; display: flex; gap: 12px">
+      <span style="font-family: 'Righteous', sans-serif; color: #f3e6c8">BULLETIN</span>
+      <span style="font-family: 'Courier Prime', monospace; color: #fff7e6">WIND ADVISORY UNTIL 8 PM</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":760}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      colors: [
+        { name: 'Walnut', hex: '#3b2416', use: 'cabinet' },
+        { name: 'Bakelite', hex: '#1c1714', use: 'gauges, nav' },
+        { name: 'Dial cream', hex: '#f3e6c8', use: 'dial face' },
+        { name: 'Brass', hex: '#c9a24a', use: 'trim, selected' },
+        { name: 'Marquee gold', hex: '#e9c46a', use: 'titles' },
+        { name: 'Tube amber', hex: '#f2a93b', use: 'readouts' },
+        { name: 'Signal red', hex: '#c8402a', use: 'alerts, CTA' },
+        { name: 'Cold steel', hex: '#2f5d73', use: 'lows, rain' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

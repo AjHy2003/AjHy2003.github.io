@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stations — Weather Station Radio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7a2e1d}a:hover{color:#5a2014}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #3b2416; padding: 14px; font-family: 'Barlow Condensed', sans-serif; color: #2a1d14; display: flex; flex-direction: column; gap: 12px">
+
+  <div style="display: flex; flex-direction: column; padding: 6px 6px 0">
+    <span style="font-family: 'Righteous', sans-serif; font-size: 26px; letter-spacing: 1px; color: #e9c46a">Tune a Station</span>
+    <span style="font-size: 15px; letter-spacing: 3px; color: #d8c4a0; text-transform: uppercase">Your saved cities</span>
+  </div>
+
+  <div style="background: #f3e6c8; border: 4px solid #c9a24a; border-radius: 22px; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+    <label for="city" style="font-size: 13px; letter-spacing: 3px; color: #6b5642">SEARCH THE DIAL</label>
+    <div style="display: flex; gap: 8px">
+      <input id="city" placeholder="City name…" value="Hob" style="flex: 1; min-width: 0; font-family: 'Courier Prime', monospace; font-size: 17px; padding: 12px; border-radius: 12px; border: 2px solid #2a1d14; background: #fffaf0; color: #2a1d14">
+      <button style="min-width: 88px; min-height: 48px; border-radius: 12px; border: 0; background: #c8402a; color: #fff7e6; font-family: 'Righteous', sans-serif; font-size: 16px; letter-spacing: 1px">TUNE</button>
+    </div>
+    <div style="display: flex; flex-direction: column; border-top: 2px solid #2a1d14">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 2px; border-bottom: 1px dashed #b39a72">
+        <span style="font-size: 18px; font-weight: 600">Hoboken <span style="color: #6b5642; font-weight: 500">· New Jersey, US</span></span>
+        <button style="min-height: 44px; padding: 0 14px; border-radius: 10px; border: 2px solid #2a1d14; background: #e9c46a; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; color: #2a1d14">+ ADD</button>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 2px">
+        <span style="font-size: 18px; font-weight: 600">Hobart <span style="color: #6b5642; font-weight: 500">· Tasmania, AU</span></span>
+        <button style="min-height: 44px; padding: 0 14px; border-radius: 10px; border: 2px solid #2a1d14; background: #e9c46a; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; color: #2a1d14">+ ADD</button>
+      </div>
+    </div>
+  </div>
+
+  <button style="min-height: 48px; border-radius: 14px; border: 2px solid #c9a24a; background: #1c1714; color: #f3e6c8; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 2px">USE MY LOCATION</button>
+
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 13px; letter-spacing: 3px; color: #d8c4a0">PRESETS</span>
+    <sc-for list="{{stations}}" as="s" hint-placeholder-count="3">
+      <div style="display: flex; align-items: center; gap: 12px; background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 12px">
+        <span style="width: 40px; height: 40px; border-radius: 50%; background: #c9a24a; display: flex; align-items: center; justify-content: center; font-family: 'Righteous', sans-serif; font-size: 18px; color: #1c1714">{{s.n}}</span>
+        <div style="flex: 1; display: flex; flex-direction: column">
+          <span style="font-size: 19px; font-weight: 700; color: #f3e6c8">{{s.city}}</span>
+          <span style="font-family: 'Courier Prime', monospace; font-size: 12px; color: #d8c4a0">{{s.sky}}</span>
+        </div>
+        <span style="font-family: 'Righteous', sans-serif; font-size: 26px; color: #f2a93b">{{s.temp}}</span>
+      </div>
+    </sc-for>
+    <span style="font-size: 14px; color: #d8c4a0">Long-press a preset to remove it. Alerts watch every preset.</span>
+  </div>
+
+  <nav style="margin-top: auto; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; background: #1c1714; border-radius: 18px; padding: 8px">
+    <a href="Main.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">NOW</a>
+    <a href="Forecast.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">7-DAY</a>
+    <a href="Stations.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #c9a24a; color: #1c1714; font-weight: 700; letter-spacing: 1px; font-size: 14px">STATIONS</a>
+    <a href="Alerts.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">ALERTS</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      stations: [
+        { n: '1', city: 'Newark, NJ', sky: 'PARTLY CLOUDY', temp: '54°' },
+        { n: '2', city: 'Miami, FL', sky: 'CLEAR SKY', temp: '81°' },
+        { n: '3', city: 'Chicago, IL', sky: 'RAIN SHOWERS', temp: '46°' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

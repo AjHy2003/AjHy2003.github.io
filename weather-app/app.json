@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "WX Radio",
+    "slug": "yugioh-deck-builder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#3b2416",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3b2416"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ajhy2003.wxradio",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "WX Radio uses your location to add your city as a weather station."
+      }
+    },
+    "android": {
+      "package": "com.ajhy2003.wxradio",
+      "adaptiveIcon": {
+        "backgroundColor": "#3b2416",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      ["expo-notifications", { "color": "#c8402a" }],
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "WX Radio uses your location to add your city as a weather station." }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e2a05207-aea2-40e1-a62b-8dc410f5bbc0"
+      }
+    }
+  }
+}
