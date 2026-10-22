@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>7-Day — Weather Station Radio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7a2e1d}a:hover{color:#5a2014}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #3b2416; padding: 14px; font-family: 'Barlow Condensed', sans-serif; color: #2a1d14; display: flex; flex-direction: column; gap: 12px">
+
+  <div style="display: flex; flex-direction: column; padding: 6px 6px 0">
+    <span style="font-family: 'Righteous', sans-serif; font-size: 26px; letter-spacing: 1px; color: #e9c46a">The 7-Day Program</span>
+    <span style="font-size: 15px; letter-spacing: 3px; color: #d8c4a0; text-transform: uppercase">Newark, NJ · Station 1</span>
+  </div>
+
+  <div style="background: #f3e6c8; border: 4px solid #c9a24a; border-radius: 22px; padding: 6px 14px; display: flex; flex-direction: column">
+    <sc-for list="{{days}}" as="d" hint-placeholder-count="7">
+      <div style="display: grid; grid-template-columns: 64px minmax(0, 1fr) 54px 92px; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px dashed #b39a72">
+        <span style="font-family: 'Righteous', sans-serif; font-size: 20px; color: #2a1d14">{{d.day}}</span>
+        <div style="display: flex; flex-direction: column">
+          <span style="font-size: 17px; font-weight: 600; color: #2a1d14">{{d.sky}}</span>
+          <span style="font-family: 'Courier Prime', monospace; font-size: 12px; color: #2f5d73">RAIN {{d.rain}}</span>
+        </div>
+        <span style="font-family: 'Courier Prime', monospace; font-size: 13px; color: #6b5642; text-align: right">{{d.wind}}</span>
+        <div style="display: flex; align-items: baseline; justify-content: flex-end; gap: 6px">
+          <span style="font-family: 'Righteous', sans-serif; font-size: 22px; color: #a3321f">{{d.hi}}</span>
+          <span style="font-family: 'Righteous', sans-serif; font-size: 18px; color: #2f5d73">{{d.lo}}</span>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+    <div style="background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+      <span style="font-size: 12px; letter-spacing: 2px; color: #d8c4a0">SUNRISE / SUNSET</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 18px; font-weight: 700; color: #f2a93b">7:18A · 6:07P</span>
+    </div>
+    <div style="background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+      <span style="font-size: 12px; letter-spacing: 2px; color: #d8c4a0">UV INDEX</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 18px; font-weight: 700; color: #f2a93b">3 · MODERATE</span>
+    </div>
+  </div>
+
+  <nav style="margin-top: auto; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; background: #1c1714; border-radius: 18px; padding: 8px">
+    <a href="Main.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">NOW</a>
+    <a href="Forecast.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #c9a24a; color: #1c1714; font-weight: 700; letter-spacing: 1px; font-size: 14px">7-DAY</a>
+    <a href="Stations.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">STATIONS</a>
+    <a href="Alerts.dc.html" style="text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px">ALERTS</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      days: [
+        { day: 'TODAY', sky: 'Partly cloudy', rain: '85%', wind: '22 mph', hi: '61°', lo: '47°' },
+        { day: 'FRI', sky: 'Showers', rain: '70%', wind: '18 mph', hi: '58°', lo: '45°' },
+        { day: 'SAT', sky: 'Clear sky', rain: '5%', wind: '9 mph', hi: '63°', lo: '44°' },
+        { day: 'SUN', sky: 'Mostly clear', rain: '10%', wind: '11 mph', hi: '66°', lo: '49°' },
+        { day: 'MON', sky: 'Overcast', rain: '25%', wind: '14 mph', hi: '60°', lo: '50°' },
+        { day: 'TUE', sky: 'Thunderstorm', rain: '80%', wind: '31 mph', hi: '64°', lo: '52°' },
+        { day: 'WED', sky: 'Fog', rain: '15%', wind: '6 mph', hi: '57°', lo: '46°' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

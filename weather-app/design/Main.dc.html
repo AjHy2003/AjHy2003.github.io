@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Now — Weather Station Radio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7a2e1d}a:hover{color:#5a2014}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #3b2416; padding: 14px; font-family: 'Barlow Condensed', sans-serif; color: #2a1d14; display: flex; flex-direction: column; gap: 12px">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 6px 0">
+    <div style="display: flex; flex-direction: column">
+      <span style="font-family: 'Righteous', sans-serif; font-size: 22px; letter-spacing: 2px; color: #e9c46a">WX·RADIO</span>
+      <span style="font-size: 13px; letter-spacing: 3px; color: #d8c4a0; text-transform: uppercase">Now tuned to</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; background: #1c1714; border: 2px solid #c9a24a; border-radius: 999px; padding: 6px 12px">
+      <span style="width: 10px; height: 10px; border-radius: 50%; background: #f2a93b; box-shadow: 0 0 8px #f2a93b"></span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 13px; color: #f3e6c8; letter-spacing: 1px">ON AIR</span>
+    </div>
+  </div>
+
+  <div style="background: #f3e6c8; border: 4px solid #c9a24a; border-radius: 22px; padding: 14px 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 4px">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; width: 100%">
+      <span style="font-family: 'Righteous', sans-serif; font-size: 24px; color: #2a1d14">Newark, NJ</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 13px; color: #6b5642">STN 1 · 40.74°N</span>
+    </div>
+    <svg width="300" height="168" viewBox="0 0 300 168" role="img" aria-label="Temperature gauge reading 54 degrees">
+      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#d9c49a" stroke-width="18" stroke-linecap="round"></path>
+      <path d="M 30 150 A 120 120 0 0 1 90 46" fill="none" stroke="#5b8fa8" stroke-width="18" stroke-linecap="round"></path>
+      <path d="M 210 46 A 120 120 0 0 1 270 150" fill="none" stroke="#c8402a" stroke-width="18" stroke-linecap="round"></path>
+      <g stroke="#2a1d14" stroke-width="2.5" stroke-linecap="round">
+        <line x1="41.8" y1="121" x2="30.2" y2="117.9"></line>
+        <line x1="70.8" y1="70.8" x2="62.3" y2="62.3"></line>
+        <line x1="121" y1="41.8" x2="117.9" y2="30.2"></line>
+        <line x1="179" y1="41.8" x2="182.1" y2="30.2"></line>
+        <line x1="229.2" y1="70.8" x2="237.7" y2="62.3"></line>
+        <line x1="258.2" y1="121" x2="269.8" y2="117.9"></line>
+      </g>
+      <g font-family="Courier Prime, monospace" font-size="12" fill="#6b5642" text-anchor="middle">
+        <text x="62" y="128">0</text>
+        <text x="88" y="92">20</text>
+        <text x="127" y="70">40</text>
+        <text x="173" y="70">60</text>
+        <text x="212" y="92">80</text>
+        <text x="238" y="128">100</text>
+      </g>
+      <line x1="150" y1="150" x2="161.5" y2="40.6" stroke="#c8402a" stroke-width="4" stroke-linecap="round"></line>
+      <circle cx="150" cy="150" r="13" fill="#c9a24a" stroke="#2a1d14" stroke-width="2"></circle>
+    </svg>
+    <div style="display: flex; align-items: flex-start; gap: 4px; margin-top: -10px">
+      <span style="font-family: 'Righteous', sans-serif; font-size: 72px; line-height: 1; color: #2a1d14">54</span>
+      <span style="font-family: 'Righteous', sans-serif; font-size: 28px; color: #2a1d14; margin-top: 6px">°F</span>
+    </div>
+    <span style="font-size: 20px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #6b5642">Partly cloudy · H 61° L 47°</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+    <div style="background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px">
+      <span style="font-size: 12px; letter-spacing: 2px; color: #d8c4a0">FEELS LIKE</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 24px; font-weight: 700; color: #f2a93b">51°</span>
+    </div>
+    <div style="background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px">
+      <span style="font-size: 12px; letter-spacing: 2px; color: #d8c4a0">HUMIDITY</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 24px; font-weight: 700; color: #f2a93b">68%</span>
+    </div>
+    <div style="background: #1c1714; border: 2px solid #c9a24a; border-radius: 16px; padding: 10px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px">
+      <span style="font-size: 12px; letter-spacing: 2px; color: #d8c4a0">WIND</span>
+      <span style="font-family: 'Courier Prime', monospace; font-size: 24px; font-weight: 700; color: #f2a93b">12 mph</span>
+    </div>
+  </div>
+
+  <div style="background: #c8402a; border-radius: 10px; padding: 8px 12px; display: flex; align-items: center; gap: 10px; border: 2px dashed #f3e6c8">
+    <span style="font-family: 'Righteous', sans-serif; font-size: 14px; color: #f3e6c8; letter-spacing: 1px; white-space: nowrap">BULLETIN</span>
+    <span style="font-family: 'Courier Prime', monospace; font-size: 13px; color: #fff7e6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">RAIN LIKELY 4 PM — 85% CHANCE — GRAB AN UMBRELLA</span>
+  </div>
+
+  <div style="background: #f3e6c8; border: 3px solid #c9a24a; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px">
+    <span style="font-size: 13px; letter-spacing: 3px; color: #6b5642">TUNING BAND · NEXT HOURS</span>
+    <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px; border-top: 2px solid #2a1d14; padding-top: 6px">
+      <sc-for list="{{hours}}" as="h" hint-placeholder-count="6">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 2px">
+          <span style="font-family: 'Courier Prime', monospace; font-size: 12px; color: #6b5642">{{h.t}}</span>
+          <span style="font-family: 'Righteous', sans-serif; font-size: 20px; color: #2a1d14">{{h.temp}}</span>
+          <span style="font-family: 'Courier Prime', monospace; font-size: 12px; color: #2f5d73">{{h.rain}}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <nav style="margin-top: auto; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; background: #1c1714; border-radius: 18px; padding: 8px">
+    <a href="Main.dc.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0; border-radius: 12px; background: #c9a24a; color: #1c1714; font-weight: 700; letter-spacing: 1px; font-size: 14px; min-height: 44px; justify-content: center">NOW</a>
+    <a href="Forecast.dc.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px; min-height: 44px; justify-content: center">7-DAY</a>
+    <a href="Stations.dc.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px; min-height: 44px; justify-content: center">STATIONS</a>
+    <a href="Alerts.dc.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0; border-radius: 12px; background: #3b2416; color: #e9d8b4; font-weight: 600; letter-spacing: 1px; font-size: 14px; min-height: 44px; justify-content: center">ALERTS</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      hours: [
+        { t: 'NOW', temp: '54°', rain: '10%' },
+        { t: '2P', temp: '57°', rain: '20%' },
+        { t: '3P', temp: '58°', rain: '45%' },
+        { t: '4P', temp: '56°', rain: '85%' },
+        { t: '5P', temp: '53°', rain: '70%' },
+        { t: '6P', temp: '51°', rain: '30%' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
