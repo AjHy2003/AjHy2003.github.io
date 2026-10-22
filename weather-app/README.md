@@ -1,6 +1,6 @@
 # WX Radio — retro radio weather app (Expo + Back4App)
 
-A weather app themed like a 1940s weather-station radio, with logins and push weather alerts sent from Back4App. Full write-up: **[DOCUMENTATION.md](DOCUMENTATION.md)**. Design files: **[design/](design/)**.
+A weather app themed like a 1940s weather-station radio, with logins and push weather alerts sent from Back4App. Full write-up: **[DOCUMENTATION.md](DOCUMENTATION.md)**. APIs: **[API.md](API.md)**. Design files: **[design/](design/)**.
 
 ## Run it (Windows PowerShell)
 
@@ -26,7 +26,7 @@ Scan the QR code with the iPhone Camera app. It opens in Expo Go.
 
 ## Midterm submission checklist
 - [ ] **Video of the app working** (screen-record on the iPhone): sign up → add a city → Now / 7-Day → Alerts → **Test Alert** → the notification arrives → **Check Now**
-- [ ] **App documentation:** `DOCUMENTATION.md`
+- [ ] **App documentation:** `DOCUMENTATION.md` + `API.md`
 - [ ] **Design files:** the Claude Design link plus the `design/` folder
 - [ ] **Back4App screenshots:**
   - Database → `_User` (your sign-ups)
