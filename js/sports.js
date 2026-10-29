@@ -9,7 +9,7 @@ export const LEAGUES = [
   { id: "nfl", name: "NFL", group: "Football", espn: "football/nfl", kind: "team", markets: "football", deep: "nfl", icon: "🏈" },
   { id: "ncaaf", name: "College Football", group: "Football", espn: "football/college-football", kind: "team", markets: "football", icon: "🏈" },
   { id: "mlb", name: "MLB", group: "Baseball", espn: "baseball/mlb", kind: "team", markets: "baseball", icon: "⚾" },
-  { id: "nhl", name: "NHL", group: "Hockey", espn: "hockey/nhl", kind: "team", markets: "hockey", icon: "🏒" },
+  { id: "nhl", name: "NHL", group: "Hockey", espn: "hockey/nhl", kind: "team", markets: "hockey", deep: "nhl", icon: "🏒" },
   { id: "epl", name: "Premier League", group: "Soccer", espn: "soccer/eng.1", kind: "team", markets: "soccer", icon: "⚽" },
   { id: "laliga", name: "La Liga", group: "Soccer", espn: "soccer/esp.1", kind: "team", markets: "soccer", icon: "⚽" },
   { id: "seriea", name: "Serie A", group: "Soccer", espn: "soccer/ita.1", kind: "team", markets: "soccer", icon: "⚽" },

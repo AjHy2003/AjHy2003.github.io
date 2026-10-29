@@ -218,17 +218,33 @@ function nbaPanel(deep, p, next) {
   const avg = (ws, k) => mean(ws.map((g) => g[k]).filter((v) => v != null));
   const k = (ws) => [
     ["Usage %", fx(avg(ws, "usg"), 1)], ["Reb %", fx(avg(ws, "rebp"), 1)], ["OReb %", fx(avg(ws, "orebp"), 1)],
-    ["DReb %", fx(avg(ws, "drebp"), 1)], ["Ast %", fx(avg(ws, "astp"), 1)], ["Reb chances/g", fx(avg(ws, "rch"))],
-    ["Reb conv.", pct(sum(ws.map((g) => g.reb || 0)) / sum(ws.map((g) => g.rch || 0)), 1)], ["Team misses/g", fx(avg(ws, "tm_miss"))], ["Opp misses/g", fx(avg(ws, "opp_miss"))],
+    ["DReb %", fx(avg(ws, "drebp"), 1)], ["Ast %", fx(avg(ws, "astp"), 1)], ["Misses on floor/g", fx(avg(ws, "rch"))],
+    ["Team misses/g", fx(avg(ws, "tm_miss"))], ["Opp misses/g", fx(avg(ws, "opp_miss"))], ["Min/g", fx(avg(ws, "min"))],
   ];
   const kp = (ws, title) => `<h3 style="margin-top:12px">${title} <span class="faint" style="text-transform:none;letter-spacing:0">(${ws.length} games)</span></h3><div class="kpis" style="margin-top:6px">${k(ws).map(([a, b]) => `<div class="kpi"><div class="k">${a}</div><div class="v" style="font-size:17px">${b}</div></div>`).join("")}</div>`;
-  const rows = [...games].reverse().slice(0, 15).map((g) => `<tr class="${next?.opp && g.opp === next.opp ? "hl" : ""}"><td>${fmtDate(g.date)}</td><td>${g.home ? "vs" : "@"} ${esc(g.opp)}</td><td class="r">${fx(g.min, 0)}</td><td class="r">${fx(g.usg, 1)}</td><td class="r">${g.reb ?? "—"}</td><td class="r">${fx(g.rch, 1)}</td><td class="r">${fx(g.rebp, 1)}</td><td class="r">${g.opp_miss ?? "—"}</td><td class="r">${g.ast ?? "—"}</td><td class="r">${fx(g.astp, 1)}</td></tr>`).join("");
+  const rows = [...games].reverse().slice(0, 15).map((g) => `<tr class="${next?.opp && g.opp === next.opp ? "hl" : ""}"><td>${fmtDate(g.date)}</td><td>${g.home ? "vs" : "@"} ${esc(g.opp)}</td><td class="r">${fx(g.min, 0)}</td><td class="r">${fx(g.usg, 1)}</td><td class="r">${g.reb ?? "—"}</td><td class="r">${fx(g.rch, 1)}</td><td class="r">${fx(g.rebp, 1)}</td><td class="r">${g.tm_miss ?? "—"}</td><td class="r">${g.opp_miss ?? "—"}</td><td class="r">${g.ast ?? "—"}</td><td class="r">${fx(g.astp, 1)}</td></tr>`).join("");
+
+  // Next-game rebound outlook: expected misses from both teams -> share while he plays -> his conversion rate.
+  let outlook = "";
+  const mine = deep.teams?.[p.team], opp = next?.opp && deep.teams?.[next.opp];
+  const recent = games.slice(-10);
+  const conv = sum(recent.map((g) => g.reb || 0)) / sum(recent.map((g) => g.rch || 0));
+  const perMin = sum(recent.map((g) => g.rch || 0)) / sum(recent.map((g) => g.min || 0));
+  const avgGameMiss = avg(recent, "tm_miss") + avg(recent, "opp_miss");
+  if (mine && opp && isFinite(conv) && isFinite(perMin) && avgGameMiss > 0) {
+    const ourMiss = (mine.fg_miss + opp.opp_fg_miss) / 2;
+    const theirMiss = (opp.fg_miss + mine.opp_fg_miss) / 2;
+    const expMin = avg(recent, "min");
+    const avail = perMin * expMin * ((ourMiss + theirMiss) / avgGameMiss);
+    outlook = `<div class="notice" style="margin-top:12px"><b>Rebound outlook vs ${esc(next.opp)}:</b> expect about <b>${fx(ourMiss)}</b> ${esc(p.team)} misses + <b>${fx(theirMiss)}</b> ${esc(next.opp)} misses (${fx(ourMiss + theirMiss)} total vs his recent ${fx(avgGameMiss)}). In ~${fx(expMin, 0)} minutes that's ~<b>${fx(avail)}</b> missed shots while he's on the floor; at his recent ${pct(conv, 1)} conversion ≈ <b>${fx(avail * conv)} rebounds</b>.</div>`;
+  }
   return `<div class="card" style="margin-top:14px">
     <div class="row" style="justify-content:space-between"><h3 style="margin:0">Advanced · usage & rebounding</h3><span class="pill gold">Computed from box scores</span></div>
     ${kp(games, "This season")}${games.length > 10 ? kp(last10, "Last 10") : ""}
     ${next?.opp ? `<h3 style="margin-top:14px">Matchup: ${esc(next.opp)}</h3>${nbaTeamLine(deep, next.opp)}` : ""}
-    <div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Date</th><th>Opp</th><th class="r">Min</th><th class="r">Usg%</th><th class="r">Reb</th><th class="r">Reb chances</th><th class="r">Reb%</th><th class="r">Opp misses</th><th class="r">Ast</th><th class="r">Ast%</th></tr></thead><tbody>${rows}</tbody></table></div>
-    <p class="small faint" style="margin:8px 0 0">Reb chances = missed shots (both teams' missed FGs plus missed final free throws) while he was on the floor; Reb % = share of those he grabbed. Usage % = share of team plays (shots, free-throw trips, turnovers) he used while on the floor. NBA.com's tracking stats ("potential rebounds/assists") block automated access, so these are the closest box-score equivalents.</p>
+    ${outlook}
+    <div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Date</th><th>Opp</th><th class="r">Min</th><th class="r">Usg%</th><th class="r">Reb</th><th class="r">Misses on floor</th><th class="r">Reb%</th><th class="r">Team misses</th><th class="r">Opp misses</th><th class="r">Ast</th><th class="r">Ast%</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="small faint" style="margin:8px 0 0">Misses on floor = both teams' missed shots (FGs plus ~44% of missed free throws) while he was playing, i.e. the rebounds available to anyone. Reb % = share of all rebounds he grabbed while on the floor. Usage % = share of team plays (shots, free-throw trips, turnovers) he used. NBA.com's tracking stats ("potential rebounds/assists", which only count chances near the player) block automated access, so these are the closest box-score equivalents.</p>
   </div>`;
 }
 
@@ -243,11 +259,93 @@ function nbaGamePanel(deep, H, A) {
     </tbody></table></div></div>`;
 }
 
+// ---------------- NHL ----------------
+const NHL_POS = { C: "F", LW: "F", RW: "F", F: "F", W: "F", D: "D", G: "G" };
+
+// Per-game fields ESPN's NHL game log lacks, keyed by event id, for merging into it.
+export function deepGameStats(L, deepPlayer) {
+  if (L.deep !== "nhl" || !deepPlayer?.games) return null;
+  const m = new Map();
+  for (const g of deepPlayer.games) m.set(String(g.ev), { hits: g.hits ?? null, blk: g.blk ?? null, pptoi: g.pptoi ?? null });
+  return m;
+}
+
+function nhlOpp(deep, m, next, athlete) {
+  const t = deep.teams?.[next.opp], lg = deep.league;
+  if (!t || !lg) return null;
+  const pos = NHL_POS[athlete?.position?.abbreviation] || "F";
+  const gp = t.gp || 0;
+  let raw = null, why = "";
+  if (m.key === "sog" && t.allowed?.[pos] && lg.allowed?.[pos]) {
+    raw = t.allowed[pos].sog / lg.allowed[pos].sog;
+    why = `${next.opp} allows ${fx(t.allowed[pos].sog)} SOG/game to ${pos === "F" ? "forwards" : "defensemen"} vs league ${fx(lg.allowed[pos].sog)} (${ord(t.rank?.sa)} fewest shots allowed overall)`;
+  } else if (["pts", "g", "a"].includes(m.key) && t.allowed?.[pos] && lg.allowed?.[pos]) {
+    raw = t.allowed[pos].pts / lg.allowed[pos].pts;
+    why = `${next.opp} allows ${fx(t.allowed[pos].pts, 2)} points/game to ${pos === "F" ? "forwards" : "defensemen"} vs league ${fx(lg.allowed[pos].pts, 2)}`;
+  } else if (m.key === "hits" && lg.hits) {
+    raw = t.hits_a / lg.hits;
+    why = `${next.opp} absorbs ${fx(t.hits_a)} hits/game vs league ${fx(lg.hits)}`;
+  } else if (m.key === "blk" && lg.sf) {
+    raw = t.sf / lg.sf;
+    why = `${next.opp} takes ${fx(t.sf)} shots/game vs league ${fx(lg.sf)} (more shots → more to block)`;
+  } else if (m.key === "saves" && lg.sf) {
+    raw = t.sf / lg.sf;
+    why = `${next.opp} averages ${fx(t.sf)} shots on goal vs league ${fx(lg.sf)} (${ord(t.rank?.sf)} most)`;
+  } else if (m.key === "ga" && lg.gf) {
+    raw = t.gf / lg.gf;
+    why = `${next.opp} scores ${fx(t.gf, 2)} goals/game vs league ${fx(lg.gf, 2)}`;
+  }
+  if (raw == null || !isFinite(raw)) return null;
+  const factor = shrink(raw, gp, 12);
+  return { factor, why: `${why} over ${gp} games → ×${factor.toFixed(3)}.`, extra: nhlTeamLine(deep, next.opp) };
+}
+
+function nhlTeamLine(deep, abbr) {
+  const t = deep.teams?.[abbr];
+  if (!t) return "";
+  const r = t.rank || {};
+  return `<div><b>${esc(abbr)}:</b> shots for ${fx(t.sf)}/g · shots against ${fx(t.sa)}/g ${rankTag(r.sa, 32, "fewest")} · goals against ${fx(t.ga, 2)}/g ${rankTag(r.ga, 32, "fewest")} · hits ${fx(t.hits)}/g</div>`;
+}
+
+function nhlPanel(deep, p, next) {
+  const games = p.games || [];
+  if (!games.length) return "";
+  const goalie = p.pos === "G";
+  const avg = (ws, k) => mean(ws.map((g) => g[k]).filter((v) => v != null));
+  const last10 = games.slice(-10);
+  const kp = (ws, title) => {
+    const items = goalie
+      ? [["Shots against/g", fx(avg(ws, "sa"))], ["Saves/g", fx(avg(ws, "saves"))], ["Save %", pct(sum(ws.map((g) => g.saves || 0)) / sum(ws.map((g) => g.sa || 0)), 1)], ["GA/g", fx(avg(ws, "ga"), 2)]]
+      : [["TOI/g", fx(avg(ws, "toi"))], ["PP TOI/g", fx(avg(ws, "pptoi"), 2)], ["SOG/g", fx(avg(ws, "sog"), 2)], ["Shot attempts/g", fx(avg(ws.map((g) => ({ v: (g.sog || 0) + (g.miss || 0) })), "v"), 2)],
+        ["SOG per 60", fx((60 * sum(ws.map((g) => g.sog || 0))) / sum(ws.map((g) => g.toi || 0)), 2)], ["Hits/g", fx(avg(ws, "hits"), 2)], ["Blocks/g", fx(avg(ws, "blk"), 2)], ["Points/g", fx(avg(ws.map((g) => ({ v: (g.g || 0) + (g.a || 0) })), "v"), 2)]];
+    return `<h3 style="margin-top:12px">${title} <span class="faint" style="text-transform:none;letter-spacing:0">(${ws.length} games)</span></h3><div class="kpis" style="margin-top:6px">${items.map(([a, b]) => `<div class="kpi"><div class="k">${a}</div><div class="v" style="font-size:17px">${b}</div></div>`).join("")}</div>`;
+  };
+  const cols = goalie ? [["toi", "TOI"], ["sa", "SA"], ["saves", "SV"], ["ga", "GA"]] : [["toi", "TOI"], ["pptoi", "PP TOI"], ["sog", "SOG"], ["miss", "Missed"], ["hits", "Hits"], ["blk", "Blk"], ["g", "G"], ["a", "A"]];
+  const rows = [...games].reverse().slice(0, 15).map((g) => `<tr class="${next?.opp && g.opp === next.opp ? "hl" : ""}"><td>${fmtDate(g.date)}</td><td>${g.home ? "vs" : "@"} ${esc(g.opp)}</td>${cols.map(([k]) => `<td class="r">${g[k] == null ? "—" : Number.isInteger(g[k]) ? g[k] : fx(g[k])}</td>`).join("")}</tr>`).join("");
+  return `<div class="card" style="margin-top:14px">
+    <div class="row" style="justify-content:space-between"><h3 style="margin:0">Advanced · ${goalie ? "goaltending" : "ice time, shots, hits & blocks"}</h3><span class="pill gold">From box scores</span></div>
+    ${kp(games, "This season")}${games.length > 10 ? kp(last10, "Last 10") : ""}
+    ${next?.opp ? `<h3 style="margin-top:14px">Matchup: ${esc(next.opp)}</h3>${nhlTeamLine(deep, next.opp)}` : ""}
+    <div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Date</th><th>Opp</th>${cols.map(([, l]) => `<th class="r">${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>
+  </div>`;
+}
+
+function nhlGamePanel(deep, H, A) {
+  const h = deep.teams?.[H.abbreviation], a = deep.teams?.[A.abbreviation];
+  if (!h || !a) return "";
+  const row = (label, k, d = 1, good = "best") => `<tr><td>${label}</td><td class="r">${fx(a[k], d)} ${rankTag(a.rank?.[k], 32, good)}</td><td class="r">${fx(h[k], d)} ${rankTag(h.rank?.[k], 32, good)}</td></tr>`;
+  return `<div class="card" style="margin-top:14px"><h3>Team profile (box scores)</h3>
+    <div class="table-wrap"><table><thead><tr><th></th><th class="r">${esc(A.abbreviation)}</th><th class="r">${esc(H.abbreviation)}</th></tr></thead><tbody>
+      ${row("Shots on goal/g", "sf", 1, "most")}${row("Shots against/g", "sa", 1, "fewest")}${row("Goals/g", "gf", 2, "most")}${row("Goals against/g", "ga", 2, "fewest")}${row("Hits/g", "hits")}${row("Blocks/g", "blk")}
+    </tbody></table></div></div>`;
+}
+
 // ---------------- dispatch ----------------
 export function deepOppFactor(L, deep, m, next, athlete) {
   if (!deep || !next?.opp) return null;
   if (deep.kind === "nfl") return nflOpp(deep, m, next, athlete);
   if (deep.kind === "nba") return nbaOpp(deep, m, next, athlete);
+  if (deep.kind === "nhl") return nhlOpp(deep, m, next, athlete);
   return null;
 }
 
@@ -255,6 +353,7 @@ export function deepPlayerPanel(L, deep, deepPlayer, next) {
   if (!deep || !deepPlayer) return "";
   if (deep.kind === "nfl") return nflPanel(deep, deepPlayer, next);
   if (deep.kind === "nba") return nbaPanel(deep, deepPlayer, next);
+  if (deep.kind === "nhl") return nhlPanel(deep, deepPlayer, next);
   return "";
 }
 
@@ -262,5 +361,6 @@ export function deepGamePanel(L, deep, H, A) {
   if (!deep) return "";
   if (deep.kind === "nfl") return nflGamePanel(deep, H, A);
   if (deep.kind === "nba") return nbaGamePanel(deep, H, A);
+  if (deep.kind === "nhl") return nhlGamePanel(deep, H, A);
   return "";
 }

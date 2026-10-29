@@ -67,10 +67,12 @@ export function opponentFactor({ L, fam, m, next, standings, deep, athlete }) {
   return { factor, why: `${next.opp} ${what} vs league avg ${fx(standings.leagueAvg)} (${t.gp} games, shrunk toward average) → ×${factor.toFixed(3)}.` };
 }
 
-export function runProp(fam, m, games, { line, oddsOver, oddsUnder, opp, role = 0, minutes = null }) {
+export function runProp(fam, m, games, { line, oddsOver, oddsUnder, opp, role = 0, minutes = null, posted = null }) {
   const withVal = games.map((g) => ({ ...g, value: marketValue(m, g) })).filter((g) => g.value != null);
+  // A sportsbook's posted main line without prices still says "about 50/50 here".
+  const marketProb = posted && Number(line) === posted.line && (posted.over == null || posted.under == null) ? 0.5 : null;
   const res = M.analyzeProp(withVal.slice(0, MODEL_SAMPLE), {
-    line, oddsOver, oddsUnder, dist: m.dist,
+    line, oddsOver, oddsUnder, dist: m.dist, marketProb,
     oppFactor: opp?.factor ?? 1, roleAdj: role, perMinute: m.perMinute, minutesOverride: Number(minutes) || null,
     halfLife: fam === "football" ? 6 : 10,
   });

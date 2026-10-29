@@ -274,24 +274,43 @@ const PROP_TYPES = [
   [/total bases/i, "tb"],
   [/hits \+ runs \+ rbis/i, "hrr"],
   [/shots on goal/i, "sog"],
+  [/shots on target/i, "sot"],
+  [/blocked shots/i, "blk"],
   [/saves/i, "saves"],
+  [/^total goals/i, "g"],
+  [/^total hits$/i, "hits"],
+  [/^total shots$/i, "shots"],
+  [/home runs/i, "hr"],
+  [/^total rbis/i, "rbi"],
+  [/^total runs/i, "r"],
 ];
 
-export function propMarketKey(typeName) {
+// Same ESPN prop name, different stat per sport.
+const FAMILY_ALIAS = {
+  hockey: { ast: "a" },
+  soccer: { ast: "a" },
+  baseball: { hits: "h", ast: null },
+};
+
+export function propMarketKey(typeName, family) {
   // Full-game props only: skip halves, quarters, periods, innings, first-X specials.
   if (/half|quarter|period|inning|\b(1st|2nd|3rd|4th|first|last)\b|\bq[1-4]\b|milestone|alt(ernate)?\b|\+\s*$/i.test(typeName)) return null;
-  for (const [re, key] of PROP_TYPES) if (re.test(typeName)) return key;
+  for (const [re, key] of PROP_TYPES) {
+    if (!re.test(typeName)) continue;
+    const alias = FAMILY_ALIAS[family];
+    return alias && key in alias ? alias[key] : key;
+  }
   return null;
 }
 
 // Items arrive in Over/Under pairs (same athlete, type and line; Over first —
 // confirmed by line moves: when a line drops, the first price shortens).
 // Alternate lines are collapsed to the one priced closest to even.
-export function parseProps(items) {
+export function parseProps(items, family) {
   const cands = new Map(); // `${aid}|${market}` -> [{line, over, under, ...}]
   for (const it of items) {
     const aid = it.athlete?.$ref?.match(/athletes\/(\d+)/)?.[1];
-    const market = propMarketKey(it.type?.name || "");
+    const market = propMarketKey(it.type?.name || "", family);
     if (!aid || !market) continue;
     const line = it.current?.target?.value ?? Number(it.odds?.total?.value);
     if (line == null || !isFinite(line)) continue;

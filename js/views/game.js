@@ -3,7 +3,8 @@ import { MARKETS } from "../sports.js";
 import * as M from "../model.js";
 import { esc, loading, errorBox, setTitle, pct, fx, signed, fmtDate, fmtTime, cmpRow, toast } from "../ui.js";
 import { addPick } from "../store.js";
-import { loadDeep, deepGamePanel } from "../deep.js";
+import { loadDeep, loadDeepPlayer, deepGamePanel } from "../deep.js";
+import { mergeDeepStats } from "./player.js";
 import { marketsFor, opponentFactor, runProp, playedGames } from "../props.js";
 
 // Games of shrinkage toward league average for team scoring rates.
@@ -32,7 +33,7 @@ export async function renderGame(ctx, L, ev, q) {
     api.schedule(L, home.team.id).catch(() => null),
     api.schedule(L, away.team.id).catch(() => null),
     loadDeep(L).catch(() => null),
-    status.state !== "post" ? api.propBets(L, ev).then(parseProps).catch(() => null) : null,
+    status.state !== "post" ? api.propBets(L, ev).then((items) => parseProps(items, L.markets)).catch(() => null) : null,
   ]);
   if (!ctx.alive()) return;
 
@@ -319,8 +320,13 @@ async function renderPropsBoard(ctx, L, ev, comp, H, A, propsAll, standings, dee
     let done = 0;
     btn.textContent = `Scanning 0/${ids.length}…`;
     const logs = new Map();
+    const deepPlayers = new Map();
     await pool(ids, 4, async (aid) => {
-      try { logs.set(aid, await loadGamelogs(L, aid, fam)); } catch { logs.set(aid, null); }
+      try {
+        const [lg, dp] = await Promise.all([loadGamelogs(L, aid, fam), loadDeepPlayer(L, aid).catch(() => null)]);
+        logs.set(aid, lg);
+        deepPlayers.set(aid, dp);
+      } catch { logs.set(aid, null); }
       done++;
       if (ctx.alive()) btn.textContent = `Scanning ${done}/${ids.length}…`;
     });
@@ -328,14 +334,15 @@ async function renderPropsBoard(ctx, L, ev, comp, H, A, propsAll, standings, dee
     for (const r of rows) {
       const log = logs.get(r.aid);
       if (!log) { r.err = true; continue; }
-      const games = playedGames(log);
+      const games = playedGames(log, r.who.team?.id);
+      mergeDeepStats(L, games, deepPlayers.get(r.aid));
       const fam2 = log.family;
       const ok = marketsFor(fam2, games).some((x) => x.key === r.key);
       if (!ok && !games.length) { r.err = true; continue; }
       const myTeamIsHome = r.who.team && String(r.who.team.id) === String(H.id);
       const next = r.who.team ? { oppId: myTeamIsHome ? A.id : H.id, opp: myTeamIsHome ? A.abbreviation : H.abbreviation, home: myTeamIsHome, date: comp.date } : null;
       const opp = opponentFactor({ L, fam: fam2, m: r.m, next, standings, deep, athlete: { id: r.aid, position: { abbreviation: r.who.pos } } });
-      const { res } = runProp(fam2, r.m, games, { line: r.p.line, oddsOver: r.p.over, oddsUnder: r.p.under, opp });
+      const { res } = runProp(fam2, r.m, games, { line: r.p.line, oddsOver: r.p.over, oddsUnder: r.p.under, opp, posted: r.p });
       if (res.n) { r.res = res; r.edge = res.verdict?.edge; }
     }
     draw();

@@ -10,13 +10,11 @@ Outputs (under <out>/nba/):
   players/<espn_id>.json  per-game advanced rows for the current season
 """
 import datetime as dt
-import json
 import os
-from concurrent.futures import ThreadPoolExecutor
 
-from common import clean, get, ranks, write_json
+from common import clean, ranks, write_json
+from espn_boxes import load_boxes, season_events
 
-SITE = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 POS = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "GF": "F", "C": "C", "FC": "C", "CF": "C"}
 DVP_STATS = ["pts", "reb", "ast", "fg3m", "stl", "blk", "tov", "fgm", "fga", "ftm", "fg3a"]
 
@@ -111,54 +109,10 @@ def possessions(t, o):
     return 0.5 * (one(t, o) + one(o, t))
 
 
-def season_events(cache_dir):
-    """Completed regular/post-season event ids for the current season, via daily scoreboards."""
-    sb = get(f"{SITE}/scoreboard")
-    lg = sb["leagues"][0]
-    start = dt.date.fromisoformat(lg["season"]["startDate"][:10])
-    today = dt.date.today()
-    events = []
-    d = start
-    sb_dir = os.path.join(cache_dir, "espn_nba", "scoreboards")
-    os.makedirs(sb_dir, exist_ok=True)
-    while d < today:
-        ymd = d.strftime("%Y%m%d")
-        path = os.path.join(sb_dir, f"{ymd}.json")
-        data = None
-        if os.path.exists(path):
-            with open(path) as f:
-                data = json.load(f)
-        else:
-            js = get(f"{SITE}/scoreboard?dates={ymd}") or {}
-            data = [{"id": e["id"], "type": e.get("season", {}).get("type"), "done": e["status"]["type"]["completed"]} for e in js.get("events", [])]
-            # Only cache days that are fully final (yesterday's late games may still be running).
-            if all(e["done"] for e in data) and d < today - dt.timedelta(days=1):
-                with open(path, "w") as f:
-                    json.dump(data, f)
-        events += [e["id"] for e in data if e["done"] and e["type"] in (2, 3)]
-        d += dt.timedelta(days=1)
-    return lg["season"]["year"], events
-
-
-def load_box(cache_dir, ev):
-    path = os.path.join(cache_dir, "espn_nba", "box", f"{ev}.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    js = get(f"{SITE}/summary?event={ev}")
-    box = parse_summary(js) if js else None
-    if box:
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w") as f:
-            json.dump(box, f)
-    return box
-
-
 def build(out, cache):
-    season, events = season_events(cache)
+    season, events = season_events("basketball/nba", cache, "nba")
     print(f"NBA season {season}: {len(events)} completed games", flush=True)
-    with ThreadPoolExecutor(6) as pool:
-        boxes = [b for b in pool.map(lambda e: (e, load_box(cache, e)), events) if b[1]]
+    boxes = load_boxes("basketball/nba", cache, "nba", events, parse_summary)
 
     team_games = {}   # abbr -> list of per-game team rows
     dvp = {}          # abbr -> pos -> list of per-game sums allowed

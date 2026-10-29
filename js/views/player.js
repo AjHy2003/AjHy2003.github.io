@@ -2,8 +2,8 @@ import { api, loadGamelogs, parseProps, standingsTable } from "../espn.js";
 import * as M from "../model.js";
 import { esc, loading, errorBox, setTitle, pct, fx, signed, fmtDate, fmtTime, hitTile, gameChart, wireChartTips, toast } from "../ui.js";
 import { addPick } from "../store.js";
-import { loadDeep, loadDeepPlayer, deepPlayerPanel } from "../deep.js";
-import { MODEL_SAMPLE, marketValue, marketsFor, defaultMarket, opponentFactor, runProp, playedGames, PREV_SEASON_W, OLD_TEAM_W } from "../props.js";
+import { loadDeep, loadDeepPlayer, deepPlayerPanel, deepGameStats } from "../deep.js";
+import { MODEL_SAMPLE, marketsFor, defaultMarket, opponentFactor, runProp, playedGames, PREV_SEASON_W, OLD_TEAM_W } from "../props.js";
 
 export async function renderPlayer(ctx, L, id, q) {
   const { app } = ctx;
@@ -32,13 +32,14 @@ export async function renderPlayer(ctx, L, id, q) {
   if (!ctx.alive()) return;
 
   const [propsAll, standings, deep, deepPlayer] = await Promise.all([
-    next && next.state !== "post" ? api.propBets(L, next.id).then(parseProps).catch(() => null) : null,
+    next && next.state !== "post" ? api.propBets(L, next.id).then((items) => parseProps(items, L.markets)).catch(() => null) : null,
     api.standings(L).then(standingsTable).catch(() => null),
     loadDeep(L).catch(() => null),
     loadDeepPlayer(L, id).catch(() => null),
   ]);
   if (!ctx.alive()) return;
   const myProps = propsAll?.get(String(id)) || {};
+  mergeDeepStats(L, games, deepPlayer);
   if (deepPlayer) {
     if (!a.position && deepPlayer.pos) a.position = { abbreviation: deepPlayer.pos };
     if (!a.team?.abbreviation && deepPlayer.team) a.team = { ...(a.team || {}), abbreviation: deepPlayer.team };
@@ -122,15 +123,18 @@ export async function renderPlayer(ctx, L, id, q) {
       state.line = p.line;
       state.oddsOver = p.over;
       state.oddsUnder = p.under;
+      state.lineSource = "book";
     } else {
-      const vals = games.slice(0, 10).map((g) => marketValue(m, g)).filter((v) => v != null);
-      const med = M.median(vals);
-      state.line = isFinite(med) ? Math.max(0.5, Math.round(med) - 0.5) : 0.5;
+      state.lineSource = "seed";
+      // Placeholder near the projection (books hang main lines close to the expected value).
+      const proj = runProp(fam, m, games, { line: 0.5 }).res.projection;
+      state.line = isFinite(proj) ? Math.max(0.5, Math.floor(proj) + 0.5) : 0.5;
       state.oddsOver = null;
       state.oddsUnder = null;
     }
   }
   if (state.line == null) seedLine();
+  else state.lineSource = "user";
 
   function syncInputs() {
     $("#f-line").value = state.line ?? "";
@@ -164,24 +168,27 @@ export async function renderPlayer(ctx, L, id, q) {
     const m = market();
     const line = Number(state.line);
     const opp = state.useOpp ? oppAdjust(m) : { factor: 1, why: "Opponent adjustment turned off." };
-    const { res, withVal } = runProp(fam, m, games, { line, oddsOver: state.oddsOver, oddsUnder: state.oddsUnder, opp, role: state.role, minutes: state.minutes });
+    const { res, withVal } = runProp(fam, m, games, { line, oddsOver: state.oddsOver, oddsUnder: state.oddsUnder, opp, role: state.role, minutes: state.minutes, posted: myProps[m.key] });
 
     // Book info
     const p = myProps[m.key];
     $("#book").innerHTML = p
       ? `DraftKings: <b>${p.line}</b> (o ${M.fmtOdds(p.over)} / u ${M.fmtOdds(p.under)})${p.open != null && p.open !== p.line ? ` · opened ${p.open}` : ""}${p.alts > 1 ? ` · ${p.alts} lines posted, showing the main one` : ""}`
-      : next ? `No posted ${esc(m.label.toLowerCase())} line found for the next game; using a starting line near the recent median.` : "";
+      : next ? `No posted ${esc(m.label.toLowerCase())} line found for the next game; the starting line is set near the projection.` : "";
 
-    // Verdict
-    const v = res.verdict || {};
+    // Verdict (no grade on a placeholder line the user hasn't confirmed)
+    const v = state.lineSource === "seed" ? { ...(res.verdict || {}), side: null, grade: "—", placeholder: true } : res.verdict || {};
     const sideCls = v.lean === "OVER" ? "over" : "under";
     const hrAll = M.hitRate(withVal.slice(0, 10).map((g) => g.value), line);
     $("#verdict").innerHTML = `
       <div class="verdict">
         <div class="grade ${v.grade}">${v.grade || "—"}</div>
         <div>
-          <div class="call">${v.side ? `<span class="${sideCls}">${v.side}</span> ${line} ${esc(m.label)}` : `PASS <span class="muted" style="font-size:14px;font-weight:600">· leans ${v.lean === "OVER" ? "over" : "under"}</span>`}</div>
+          <div class="call">${v.placeholder ? `Enter your line <span class="muted" style="font-size:14px;font-weight:600">· leans ${v.lean === "OVER" ? "over" : "under"} ${line}</span>` : v.side ? `<span class="${sideCls}">${v.side}</span> ${line} ${esc(m.label)}` : `PASS <span class="muted" style="font-size:14px;font-weight:600">· leans ${v.lean === "OVER" ? "over" : "under"}</span>`}</div>
+          ${v.placeholder ? `<div class="small muted">No sportsbook line is posted for this market yet. Type the line and odds from your book above to get a grade.</div>` : ""}
+          ${v.capped && !v.placeholder ? `<div class="small faint">Capped at B: no market price to compare against.</div>` : ""}
           <div class="small muted">${v.lean ? `Model ${pct(v.prob, 1)} vs ${pct(M.impliedProb(v.lean === "OVER" ? res.oddsOver : res.oddsUnder), 1)} needed to break even · edge ${signed(v.edge * 100, 1)} pts · EV ${signed(v.ev * 100, 1)}%` : ""}</div>
+          ${res.statsOver != null ? `<div class="small faint">Over: stats only ${pct(res.statsOver)}${res.marketProb != null ? ` · market ${pct(res.marketProb)} · blended ${pct(res.pOver / (1 - res.pPush))}` : " · no market anchor"}</div>` : ""}
         </div>
       </div>
       <div class="kpis">
@@ -278,7 +285,7 @@ export async function renderPlayer(ctx, L, id, q) {
       <li>Break-even at ${M.fmtOdds(res.oddsOver)} is ${pct(M.impliedProb(res.oddsOver), 1)}; no-vig market says over ${pct(res.bookFair?.a, 1)}.</li>
       ${games.some((g) => g.oldTeam) ? `<li>Changed teams: games for a previous team count ${OLD_TEAM_W * 100}% as much.</li>` : ""}
       <li>Last season's games count ${PREV_SEASON_W * 100}% as much as this season's.</li>
-      ${res.marketWeight ? `<li>Stats alone say over ${pct(res.statsOver, 1)}; blended ${Math.round(res.marketWeight * 100)}% with the book's no-vig ${pct(res.bookFair?.a, 1)} because sportsbook prices already include news the box score can't see.</li>` : `<li>No two-sided price entered, so this is the stats model alone (no market blend).</li>`}
+      ${res.marketWeight ? `<li>Stats alone say over ${pct(res.statsOver, 1)}; blended ${Math.round(res.marketWeight * 100)}% with the market's ${pct(res.marketProb, 1)}${res.marketProb === 0.5 && !(state.oddsOver && state.oddsUnder) ? " (a posted main line without prices is treated as 50/50)" : " (no-vig)"}, because sportsbooks already price in news the box score can't see, like injuries and role changes.</li>` : `<li>No market price to anchor to (custom line without both odds), so this is the stats model alone. Treat it with extra caution.</li>`}
       <li>Grades: A ≥ 8 pts of edge, B ≥ 5, C ≥ 2.5, otherwise PASS. Fewer than 5 games caps the grade at C.</li>
     </ul>`;
     syncInputs();
@@ -296,6 +303,7 @@ export async function renderPlayer(ctx, L, id, q) {
   $("#loc").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { state.loc = b.dataset.l; render(); } });
   $("#vsopp")?.addEventListener("click", () => { state.vsOpp = !state.vsOpp; render(); });
   const bind = (sel, key, parse = (v) => v) => $(sel).addEventListener("input", (e) => { state[key] = parse(e.target.value); render(); });
+  $("#f-line").addEventListener("input", () => { state.lineSource = "user"; });
   bind("#f-line", "line", (v) => (v === "" ? null : Number(v)));
   bind("#f-oo", "oddsOver", (v) => (v === "" ? null : Number(v)));
   bind("#f-uo", "oddsUnder", (v) => (v === "" ? null : Number(v)));
@@ -304,6 +312,17 @@ export async function renderPlayer(ctx, L, id, q) {
   $("#f-opp").addEventListener("change", (e) => { state.useOpp = e.target.value === "1"; render(); });
 
   render();
+}
+
+// Fill stats ESPN's game log lacks (NHL hits/blocks) from pipeline rows, matched by event id.
+export function mergeDeepStats(L, games, deepPlayer) {
+  const extra = deepGameStats(L, deepPlayer);
+  if (!extra) return;
+  for (const g of games) {
+    const x = extra.get(String(g.eventId));
+    if (!x) continue;
+    for (const [k, v] of Object.entries(x)) if (g.stats[k] == null && v != null) g.stats[k] = v;
+  }
 }
 
 // Upcoming (or in-progress) game: athlete overview first, team schedule as fallback.
@@ -336,7 +355,7 @@ function logColumns(fam) {
     football: [["pass_att", "ATT"], ["pass_yds", "PYD"], ["rush_att", "CAR"], ["rush_yds", "RYD"], ["tgt", "TGT"], ["rec", "REC"], ["rec_yds", "YDS"]],
     baseball: [["ab", "AB"], ["h", "H"], ["tb", "TB"], ["hr", "HR"], ["rbi", "RBI"], ["so", "K"]],
     baseballPitching: [["ip", "IP"], ["k", "K"], ["p_h", "H"], ["er", "ER"], ["p_bb", "BB"]],
-    hockey: [["min", "TOI"], ["g", "G"], ["a", "A"], ["sog", "SOG"], ["saves", "SV"]],
+    hockey: [["min", "TOI"], ["g", "G"], ["a", "A"], ["sog", "SOG"], ["hits", "HIT"], ["blk", "BLK"], ["saves", "SV"]],
     soccer: [["g", "G"], ["a", "A"], ["shots", "SH"], ["sot", "SOT"]],
   }[fam] || [];
 }

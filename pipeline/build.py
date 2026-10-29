@@ -1,6 +1,6 @@
 """Build every league's data files. One league failing keeps its last good output.
 
-Usage: python pipeline/build.py --out _site/data --cache cache [--only nfl,nba,nascar]
+Usage: python pipeline/build.py --out _site/data --cache cache [--only nfl,nba,nhl,nascar]
 """
 import argparse
 import datetime as dt
@@ -14,9 +14,10 @@ sys.path.insert(0, os.path.dirname(__file__))
 import nascar  # noqa: E402
 import nba  # noqa: E402
 import nfl  # noqa: E402
+import nhl  # noqa: E402
 from common import write_json  # noqa: E402
 
-BUILDERS = {"nfl": nfl.build, "nba": nba.build, "nascar": nascar.build}
+BUILDERS = {"nfl": nfl.build, "nba": nba.build, "nhl": nhl.build, "nascar": nascar.build}
 
 
 def main():

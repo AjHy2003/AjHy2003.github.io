@@ -236,13 +236,16 @@ export function analyzeProp(games, opts) {
     const decided = model.over + model.under;
     const mOver = decided > 0 ? model.over / decided : 0.5;
     statsOver = wModel * mOver + (1 - wModel) * emp;
-    // Anchor to the book's no-vig price when both sides are real prices:
-    // the market knows things the box score doesn't (injuries, role news).
+    // Anchor to the market: the book knows things the box score doesn't
+    // (injuries, role changes). Use the no-vig price when both sides are priced,
+    // or the caller's marketProb (a posted main line is roughly a 50/50 market).
     let final = statsOver;
-    if (hasOver && hasUnder && fair) {
-      marketWeight = opts.marketWeight ?? (n >= 10 ? 0.35 : 0.5);
-      final = (1 - marketWeight) * statsOver + marketWeight * fair.a;
+    const mkt = hasOver && hasUnder && fair ? fair.a : opts.marketProb ?? null;
+    if (mkt != null) {
+      marketWeight = opts.marketWeight ?? (n >= 10 ? 0.5 : 0.6);
+      final = (1 - marketWeight) * statsOver + marketWeight * mkt;
     }
+    var marketProb = mkt;
     pPush = model.push;
     pOver = final * (1 - pPush);
     pUnder = (1 - final) * (1 - pPush);
@@ -251,12 +254,14 @@ export function analyzeProp(games, opts) {
   const evOver = expectedValue(pOver, pPush, oddsOver);
   const evUnder = expectedValue(pUnder, pPush, oddsUnder);
   const verdict = makeVerdict(pOver, pUnder, pPush, oddsOver, oddsUnder, evOver, evUnder, n);
+  // Without any market price to anchor to, a stats-only model doesn't earn an A.
+  if (marketWeight === 0 && verdict.grade === "A") { verdict.grade = "B"; verdict.capped = true; }
 
   return {
     n, avg, median: median(vals), sd: n >= 2 ? stdev(vals) : NaN,
     min: Math.min(...vals), max: Math.max(...vals),
     recent, projection, expMinutes, dist,
-    pOver, pUnder, pPush, empirical: emp, statsOver, marketWeight,
+    pOver, pUnder, pPush, empirical: emp, statsOver, marketWeight, marketProb: typeof marketProb === "undefined" ? null : marketProb,
     fairOver: toAmerican(pOver != null ? pOver / (1 - pPush) : null),
     fairUnder: toAmerican(pUnder != null ? pUnder / (1 - pPush) : null),
     oddsOver, oddsUnder, bookFair: fair, evOver, evUnder, verdict, notes,
