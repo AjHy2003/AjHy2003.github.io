@@ -1,0 +1,263 @@
+[
+ {
+  "name": "home",
+  "hash": "#/",
+  "url": "http://localhost:8765/#/",
+  "errors": [],
+  "failed": [],
+  "text": "Research the bet before you make it. Game logs, hit rates, matchups and a projection for any prop, spread or total. Lines load automatically from DraftKings via ESPN when they're posted. Search any player above, or pick a league. Today's NBA This week's NFL Custom calculator BASKETBALL 🏀 NBA PRO 🏀 WNBA 🏀 College Basketball 🏀 Women's College BB FOOTBALL 🏈 NFL PRO 🏈 College Football BASEBALL ⚾ MLB HOCKEY 🏒 NHL SOCCER ⚽ Premier League ⚽ La Liga ⚽ Serie A ⚽ Bundesliga ⚽ Ligue 1 ⚽ Champions League ⚽ MLS ⚽ Liga MX RACING 🏎️ Formula 1 PRO 🏁 NASCAR Cup PRO 🏁 IndyCar GOLF ⛳ PGA Tour ⛳ LPGA TENNIS 🎾 ATP Tennis 🎾 WTA Tennis COMBAT 🥊 UFC OTHER 🧮 Any sport (custom) How the projection works Starts from the player's recent average, weighted toward the latest games, blended with the longer-term average. Basketball and hockey scale by expected minutes, which you can override for injuries or blowouts. Adjusts for the opponent: points allowed, opponent misses and pace (NBA), pass/run defense (NFL). Turns the projection into an over/under probability using the player's own game-to-game variance, then blends it with the actual hit rate. Compares that to the sportsbook price to get edge and expected value. A–C grades need a real edge; anything smaller says PASS. Tips Install it like an app: on iPhone tap Share → Add to Home Screen; on Android tap ⋮ → Install app. Tap ★ Save on any analysis to track it. The Picks page grades your saved picks automatically after the games. Small sample"
+ },
+ {
+  "name": "nba-slate",
+  "hash": "#/l/nba",
+  "url": "http://localhost:8765/#/l/nba",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set "
+  ],
+  "failed": [],
+  "text": "Home › NBA 🏀 NBA Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "lebron",
+  "hash": "#/l/nba/p/1966",
+  "url": "http://localhost:8765/#/l/nba/p/1966",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/basketball/nba/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to"
+  ],
+  "failed": [],
+  "text": "Home › NBA › LeBron James LeBron James Philadelphia 76ers · F · #23 Next: @ IND · Wed, Oct 28 11:00 PM LIVE · game page › Latest: James finished with 18 points (8-15 FG, 0-3 3Pt, 2-6 FT), two rebounds, five assists and two steals across 33 minutes in Sunday's 106-93 loss to the Pistons. James returned after sitting out Saturday's win over Milwaukee, taking on a larger offensive role with Joel Embiid (heel) and VJ Edgecombe (abdomen) unavailable. He's yet to score 20 or more points in a game this season, though that's expected since he has to share the court with Embiid, Tyrese Maxey and Jaylen Brown. His production should remain useful across multiple categories, but James' days of being a go-to scorer and 20-point producer seem to be gone. MARKET Points 17.5 Rebounds 6.5 Assists 6.5 3-Pointers Made 2 Pts + Reb + Ast 30.5 Pts + Reb 25 Pts + Ast 25 Reb + Ast 13 Steals Blocks Steals + Blocks Turnovers Field Goals Made Field Goal Attempts Free Throws Made 3-Point Attempts Minutes YOUR LINE Line Over odds Under odds DraftKings: 17.5 (o -101 / u -126) Expected minutes Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. B OVER 17.5 Points Model 56.8% vs 50.2% needed to break even · edge +6.6 pts · EV +13.1% PROJECTION 20.4 P(OVER) 57% FAIR ODDS -132 o AVG / MED 19.0 / 19.0 L10 OVER 7/10 EXP. MIN 35.3 ★ Save pick HIT RATE Showing over hit rates at 17.5 L5 60% 3/5 L10 70% 7/10 L20"
+ },
+ {
+  "name": "embiid",
+  "hash": "#/l/nba/p/3059318",
+  "url": "http://localhost:8765/#/l/nba/p/3059318",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/basketball/nba/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to"
+  ],
+  "failed": [],
+  "text": "Home › NBA › Joel Embiid Joel Embiid Philadelphia 76ers · C · #21 Next: @ IND · Wed, Oct 28 11:00 PM LIVE · game page › Latest: Embiid (foot) is off the injury report for Wednesday's game against the Pacers. The star big man is set to return Wednesday after sitting out the second leg of Philadelphia's most recent back-to-back. With the 76ers back at full strength, Dean Wade and Adem Bona should fall into lesser roles. MARKET Points 24.5 Rebounds 8.5 Assists 12.5 3-Pointers Made 2 Pts + Reb + Ast 37.5 Pts + Reb 33.5 Pts + Ast 30 Reb + Ast 13 Steals Blocks Steals + Blocks Turnovers Field Goals Made Field Goal Attempts Free Throws Made 3-Point Attempts Minutes YOUR LINE Line Over odds Under odds DraftKings: 24.5 (o -112 / u -114) · opened 23.5 Expected minutes Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. C OVER 24.5 Points Model 55.9% vs 52.8% needed to break even · edge +3.1 pts · EV +5.9% PROJECTION 26.4 P(OVER) 56% FAIR ODDS -127 o AVG / MED 27.6 / 27.5 L10 OVER 4/10 EXP. MIN 33.6 ★ Save pick HIT RATE Showing over hit rates at 24.5 L5 20% 1/5 L10 40% 4/10 L20 60% 12/20 This season 33% 1/3 Last season 62% 28/45 Away 65% 13/20 vs IND 100% 3/3 L5 L10 L20 Season Last season All All Home Away vs IND only 0 10 20 30 24 LAC 2/3 35 LAL 2/6 33 PHX 2/8 27 IND 2/25 26 MIA 2/27 35 CHI 3/25 29 CHA 3/28 26 MIA 3/30 19 MIN 4/3 34 SA 4/7 26 BOS 4/26 33 BOS 4/28 19 BOS 5/1 34 BOS 5/"
+ },
+ {
+  "name": "nfl-slate",
+  "hash": "#/l/nfl",
+  "url": "http://localhost:8765/#/l/nfl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mod"
+  ],
+  "failed": [],
+  "text": "Home › NFL 🏈 NFL Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "chase",
+  "hash": "#/l/nfl/p/4362628",
+  "url": "http://localhost:8765/#/l/nfl/p/4362628",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/football/nfl/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to '"
+  ],
+  "failed": [],
+  "text": "Home › NFL › Ja'Marr Chase Ja'Marr Chase Cincinnati Bengals · WR · #1 Next: vs TEN · Sun, Nov 1 6:00 PM · game page › Injury: Questionable Ankle Latest: Chase was listed as a non-participant in Wednesday's practice due to an ankle injury and rest, Ben Baby of ESPN.com reports. Though Chase was absent to kick off Week 8 prep, Jay Morrison of SI.com notes that the star wideout was presumably held out for maintenance-related reasons rather than out of concern about his ankle. As long as Chase is able to get back on the field in some capacity Thursday or Friday, he should be ready to go for Sunday's game against the Titans. MARKET Receptions 6.5 Receiving Yards 80.5 Targets Longest Reception Rush + Rec Yards Total TDs (rush + rec) YOUR LINE Line Over odds Under odds DraftKings: 80.5 (o — / u —) · opened 75.5 · 21 lines posted, showing the main one Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. PASS PASS · leans under Model 52.9% vs 52.4% needed to break even · edge +0.5 pts · EV +1.0% PROJECTION 82.8 P(OVER) 47% FAIR ODDS -112 u AVG / MED 80.1 / 84.0 L10 OVER 4/10 ★ Save pick HIT RATE Showing under hit rates at 80.5 L5 80% 4/5 L10 60% 6/10 L20 50% 10/20 This season 83% 5/6 Last season 38% 6/16 Home 30% 3/10 vs TEN — no games L5 L10 L20 Season Last season All All Home Away vs TEN only 0 50 100 150 50 MIN 9/21 23 DEN 9/30 110 DET 10/5 94 GB 10/12 161 PIT 10/17 91 NYJ 10/26 "
+ },
+ {
+  "name": "lamar",
+  "hash": "#/l/nfl/p/3916387",
+  "url": "http://localhost:8765/#/l/nfl/p/3916387",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/football/nfl/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to '"
+  ],
+  "failed": [],
+  "text": "Home › NFL › Lamar Jackson Lamar Jackson Baltimore Ravens · QB · #8 Next: @ BUF · Sun, Nov 1 6:00 PM · game page › Injury: Questionable Ankle Latest: Jackson (ankle) was listed as a full participant in Wednesday's practice. Jackson, who hasn't played since Week 4, was able to practice in a limited fashion last week, so his upgrade to full participation Wednesday is a significant development ahead of Sunday's game against the Bills. Assuming he's able to maintain that level activity Thursday and Friday, Jackson has a chance to approach Week 8 action minus an injury designation. MARKET Passing Yards 235.5 Pass Attempts 30.5 Completions 20.5 Passing TDs 1.5 Interceptions 0.5 Rushing Yards 26.5 Rush Attempts 4.5 Longest Rush Pass + Rush Yards YOUR LINE Line Over odds Under odds DraftKings: 235.5 (o — / u —) · 28 lines posted, showing the main one Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. PASS PASS · leans under Model 52.8% vs 52.4% needed to break even · edge +0.4 pts · EV +0.7% PROJECTION 246.1 P(OVER) 47% FAIR ODDS -112 u AVG / MED 206.8 / 209.0 L10 OVER 3/10 ★ Save pick HIT RATE Showing under hit rates at 235.5 L5 60% 3/5 L10 70% 7/10 L20 76% 13/17 This season 75% 3/4 Last season 77% 10/13 Away 75% 6/8 vs BUF 100% 1/1 L5 L10 L20 Season Last season All All Home Away vs BUF only 0 100 200 300 209 BUF 9/8 225 CLE 9/14 288 DET 9/23 147 KC 9/28 204 MIA 10/31 176 MIN 11"
+ },
+ {
+  "name": "mahomes",
+  "hash": "#/l/nfl/p/3139477",
+  "url": "http://localhost:8765/#/l/nfl/p/3139477",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/football/nfl/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to '"
+  ],
+  "failed": [],
+  "text": "Home › NFL › Patrick Mahomes Patrick Mahomes Kansas City Chiefs · QB · #15 Next: @ DEN · Sun, Nov 1 9:25 PM · game page › Latest: Mahomes completed 19 of 33 passes for 165 yards, no touchdowns and one interception in Sunday's 20-3 loss to the Seahawks. He added two rushing attempts for 14 yards. Mahomes was picked off in the second quarter and remarkably recovered his own fumble in a pile of bodies to avoid a second turnover in the third quarter, setting up a Harrison Butker field goal on the next play for the Chiefs' only points of the night. This was the first start in Mahomes' career during which Kansas City failed to reach the red zone, and he hasn't thrown a touchdown pass in two games since KC's Week 5 bye. Seattle's defense dominated while Kansas City struggled to move the ball in the absence of No. 1 WR Rashee Rice (hamstring/knee), whom the Chiefs will hope to get back for a Week 8 road game against the Broncos. MARKET Passing Yards 223.5 Pass Attempts 33.5 Completions 20.5 Passing TDs 1.5 Interceptions 0.5 Rushing Yards 12.5 Rush Attempts Longest Rush Pass + Rush Yards YOUR LINE Line Over odds Under odds DraftKings: 223.5 (o — / u —) · opened 221.5 · 26 lines posted, showing the main one Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. A OVER 223.5 Passing Yards Model 65.6% vs 52.4% needed to break even · edge +13.2 pts · EV +25.2% PROJECTION 248.1 P(OVER) 66%"
+ },
+ {
+  "name": "mlb-judge",
+  "hash": "#/l/mlb/p/33192",
+  "url": "http://localhost:8765/#/l/mlb/p/33192",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/10/schedule' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the reques",
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/baseball/mlb/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to '"
+  ],
+  "failed": [],
+  "text": "Home › MLB › Aaron Judge Aaron Judge New York Yankees · RF · #99 Latest: Yankees general manager Brian Cashman said Wednesday that Judge has a follow-up exam scheduled with Dr. Gregory Pearl regarding his rib, Bryan Hoch of MLB.com reports. A calf strain prematurely ended his season, but Judge missed more than three months of action during the regular season with a stress fracture in his ribs. Cashman noted that the team feels like it's \"in a good place\" with Judge's injury and they expect the slugger to be ready to go for spring training. Barring any surprises, Judge should receive clearance from Dr. Pearl to go through his normal offseason workouts. MARKET Hits Total Bases Hits + Runs + RBIs Home Runs RBIs Runs Walks (batter) Strikeouts (batter) YOUR LINE Line Over odds Under odds Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. B OVER 0.5 Total Bases Model 59.6% vs 52.4% needed to break even · edge +7.2 pts · EV +13.8% PROJECTION 1.5 P(OVER) 60% FAIR ODDS -147 o AVG / MED 1.7 / 1.0 L10 OVER 5/10 ★ Save pick HIT RATE Showing over hit rates at 0.5 L5 40% 2/5 L10 50% 5/10 L20 45% 9/20 This season 64% 42/66 Last season 71% 114/160 L5 L10 L20 Season Last season All All Home Away 0 2 4 0 NYM 5/17 1 TOR 5/18 0 TOR 5/19 0 TOR 5/20 0 TOR 5/21 0 TB 5/22 5 TB 5/24 2 KC 5/25 3 KC 5/26 0 KC 5/27 1 ATH 5/30 0 ATH 5/31 1 ATH 5/31 0 COL 9/8 2 COL 9/9 1 NYM 9/11 0 NYM 9/12 0 NYM 9/13"
+ },
+ {
+  "name": "nhl-slate",
+  "hash": "#/l/nhl",
+  "url": "http://localhost:8765/#/l/nhl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the "
+  ],
+  "failed": [],
+  "text": "Home › NHL 🏒 NHL Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "mcdavid",
+  "hash": "#/l/nhl/p/3895074",
+  "url": "http://localhost:8765/#/l/nhl/p/3895074",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/hockey/nhl/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no"
+  ],
+  "failed": [],
+  "text": "Home › NHL › Connor McDavid Connor McDavid Edmonton Oilers · C · #97 Next: vs CGY · Thu, Oct 29 12:30 AM LIVE · game page › Latest: McDavid had two assists in a 7-2 loss to Toronto on Saturday. McDavid has played significantly better than all other NHLers this season. He now has a whopping 33 points (eight goals, 25 assists) in just 11 games. McDavid is on pace to be only the second NHLer to top the 200-point mark. He's the only player ever to be on pace to break (and maybe shatter) Wayne Gretzky's all-time single-season point record (212; 1985-86). Right now he's on pace for more than 250 points. McDavid's ascension into the all-time elite on hockey's Mt. Rushmore continues. MARKET Shots on Goal 3.5 Points 1.5 Goals Assists Time on Ice (min) YOUR LINE Line Over odds Under odds DraftKings: 3.5 (o -115 / u -120) · 2 lines posted, showing the main one Expected minutes Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. B UNDER 3.5 Shots on Goal Model 60.3% vs 54.5% needed to break even · edge +5.8 pts · EV +10.6% PROJECTION 3.0 P(OVER) 40% FAIR ODDS -152 u AVG / MED 3.3 / 3.0 L10 OVER 3/10 EXP. MIN 23.9 ★ Save pick HIT RATE Showing under hit rates at 3.5 L5 80% 4/5 L10 70% 7/10 L20 70% 14/20 This season 75% 9/12 Last season 53% 47/88 Home 50% 10/20 vs CGY 0% 0/4 L5 L10 L20 Season Last season All All Home Away vs CGY only 0 2 4 5 COL 4/14 3 VAN 4/17 3 ANA 4/21 4 ANA 4/23 3 AN"
+ },
+ {
+  "name": "epl-slate",
+  "hash": "#/l/epl",
+  "url": "http://localhost:8765/#/l/epl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set th"
+  ],
+  "failed": [],
+  "text": "Home › Premier League ⚽ Premier League Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "haaland",
+  "hash": "#/l/epl/p/253989",
+  "url": "http://localhost:8765/#/l/epl/p/253989",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to '"
+  ],
+  "failed": [],
+  "text": "Home › Premier League › Erling Haaland Erling Haaland Manchester City · F · #9 Next: vs BHA · Sat, Oct 31 3:00 PM · game page › MARKET Shots Shots on Target Goals Goals + Assists Fouls Committed YOUR LINE Line Over odds Under odds No posted shots line found for the next game; using a starting line near the recent median. Role / injury adj. % Opponent adj. On Off Role adj.: e.g. +15 if a teammate who takes shots/targets is out, −20 if returning from injury on a minutes limit. PASS PASS · leans over Model 51.3% vs 52.4% needed to break even · edge -1.0 pts · EV -2.0% PROJECTION 3.6 P(OVER) 51% FAIR ODDS -105 o AVG / MED 3.6 / 4.0 L10 OVER 6/10 ★ Save pick HIT RATE Showing over hit rates at 3.5 L5 40% 2/5 L10 60% 6/10 L20 61% 11/18 This season 63% 5/8 Last season 60% 6/10 Home 89% 8/9 vs BHA — no games L5 L10 L20 Season Last season All All Home Away vs BHA only 0 2 4 6 4 NAP 9/18 4 MON 10/1 4 VIL 10/21 4 DOR 11/5 4 B04 11/25 3 RMA 12/10 3 BODO 1/20 2 GAL 1/28 0 RMA 3/11 7 RMA 3/17 5 BOU 8/23 5 CRY 8/28 4 COV 9/5 2 MAN 9/13 4 SUN 9/20 2 LIV 10/11 5 IPS 10/17 3 AVL 10/24 Line 3.5 Proj 3.6 SPLITS SPLIT G AVG OVER 3.5 Home 9 4.3 8/9 Away 9 2.9 3/9 Wins 12 3.7 8/12 Losses 5 3.4 2/5 vs BHA 0 — — MATCHUP & CONTEXT Next: vs Brighton & Hove Albion · Sat, Oct 31 3:00 PM Opponent: No opponent adjustment for this market. Sample: 18 games (most recent 40 max, newer games weigh more). SD 1.5, range 0–7. GAME LOG DATE OPP RESULT G SH SOT SHOTS Oct 24 @ AVL L 2-1 1 3 2 3 U Oct 17 vs IPS W 3-2 2"
+ },
+ {
+  "name": "f1",
+  "hash": "#/l/f1",
+  "url": "http://localhost:8765/#/l/f1",
+  "errors": [],
+  "failed": [],
+  "text": "Home › Formula 1 🏎️ Formula 1 Next: Mexico City Grand Prix Autódromo Hermanos Rodríguez · Sun, Nov 1 Probabilities update once qualifying is posted. BET CHECKER Driver Andrea Kimi Antonelli Max Verstappen Charles Leclerc George Russell Lewis Hamilton Lando Norris Isack Hadjar Oscar Piastri Nico Hülkenberg Liam Lawson Pierre Gasly Yuki Tsunoda Franco Colapinto Arvid Lindblad Gabriel Bortoleto Esteban Ocon Fernando Alonso Oliver Bearman Carlos Sainz Sergio Pérez Alexander Albon Lance Stroll Valtteri Bottas Market Win Podium / Top 3 Top 5 Top 10 Head to head Odds Andrea Kimi Antonelli wins: 20.9% fair +378 ANDREA KIMI ANTONELLI · RECENT FINISHES AVG FINISH 3.3 TOP 10S 16/18 MODEL AVG 5.2 Bars are finishing positions (lower is better); green = top 10. 0 5 10 15 5 Lusai 11/30 15 Yas 12/7 2 Alber 3/8 1 Shang 3/15 1 Suzuk 3/29 1 Miami 5/3 1 Circu 5/24 1 Circu 6/7 16 Circu 6/14 3 Red 6/28 15 Silve 7/5 1 Circu 7/19 3 Hunga 7/26 2 Circu 8/23 1 Autod 9/6 1 Madri 9/13 5 Baku 9/26 2 Sepan 10/4 3 Marin 10/11 1 Circu 10/25 Line 10.5 Proj 4.7 FIELD · 5,000 SIMULATED RACES DRIVER WIN TOP 3 TOP 5 TOP 10 FAIR WIN AVG FIN AT TRACK WINS DNF LAST 5 Andrea Kimi Antonelli Mercedes 20.9% 52% 69% 87% +378 3.3 6.0 (1) 9 1 1 3 2 5 1 Max Verstappen Red Bull 20.4% 41% 52% 68% +391 6.9 3.0 (1) 2 4 3 1 1 2 2 Charles Leclerc Ferrari 14.6% 37% 52% 71% +585 6.2 2.0 (1) 1 3 2 2 4 4 4 George Russell Mercedes 10.9% 28% 41% 61% +821 6.9 7.0 (1) 3 3 8 9 20 1 5 Lewis Hamilton Ferrari 10.3% 34% 53% 78% +867 5.1 8.0 "
+ },
+ {
+  "name": "nascar",
+  "hash": "#/l/nascar",
+  "url": "http://localhost:8765/#/l/nascar",
+  "errors": [],
+  "failed": [],
+  "text": "Home › NASCAR Cup 🏁 NASCAR Cup Next: Xfinity 500 Martinsville Speedway · Sun, Nov 1 Probabilities update once qualifying is posted. BET CHECKER Driver Kyle Larson Ryan Blaney Chandler Smith William Byron Tyler Reddick Chase Briscoe Gray Gaulding Christopher Bell Chase Elliott Ross Chastain Joey Logano Josh Berry Carson Hocevar Anthony Alfredo Corey Heim Ty Gibbs Alex Bowman Austin Cindric Denny Hamlin Kevin Magnussen Bubba Wallace Ryan Preece Austin Dillon Kyle Busch Justin Allgaier Corey LaJoie Ricky Stenhouse Jr Daniel Suárez Cole Custer Michael McDowell JJ Yeley Todd Gilliland Shane Van Gisbergen Connor Zilisch Chris Buescher Erik Jones BJ McLeod Casey Mears Brad Keselowski Noah Gragson Zane Smith AJ Allmendinger John H. Nemechek Austin Hill Harrison Burton Ty Dillon Jesse Love Joey Gase Daniel Dye Jimmie Johnson Riley Herbst Katherine Legge Cody Ware Timmy Hill Josh Bilicki Chad Finchum Market Win Podium / Top 3 Top 5 Top 10 Head to head Odds Kyle Larson wins: 12.8% fair +679 KYLE LARSON · RECENT FINISHES AVG FINISH 14.7 TOP 10S 20/34 MODEL AVG 16.9 LAPS LED 1238 DRIVER RATING 96.8 Bars are finishing positions (lower is better); green = top 10. 0 20 40 4 Michi 6/7 5 Pocon 6/14 3 San 6/21 4 Sonom 6/28 34 Chica 7/5 34 Atlan 7/12 15 North 7/19 39 India 7/26 33 Iowa 8/9 6 Richm 8/15 5 New 8/23 31 Dayto 8/29 5 Darli 9/6 1 World 9/13 2 Brist 9/19 1 Kansa 9/27 2 Las 10/4 6 Charl 10/11 34 Phoen 10/18 1 Talla 10/25 Line 10.5 Proj 10.3 FIELD · 5,000 SIMULATED RACES DRIVER WIN TOP "
+ },
+ {
+  "name": "indycar",
+  "hash": "#/l/indycar",
+  "url": "http://localhost:8765/#/l/indycar",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/racing/irl/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode "
+  ],
+  "failed": [],
+  "text": "Home › IndyCar 🏁 IndyCar Loading race results… Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "pga",
+  "hash": "#/l/pga",
+  "url": "http://localhost:8765/#/l/pga",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to"
+  ],
+  "failed": [],
+  "text": "Home › PGA Tour ⛳ PGA Tour Loading tournament… Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "atp",
+  "hash": "#/l/atp",
+  "url": "http://localhost:8765/#/l/atp",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode "
+  ],
+  "failed": [],
+  "text": "Home › ATP Tennis 🎾 ATP Tennis Loading events… Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "ufc",
+  "hash": "#/l/ufc",
+  "url": "http://localhost:8765/#/l/ufc",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to "
+  ],
+  "failed": [],
+  "text": "Home › UFC 🥊 UFC Loading events… Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "ncaaf",
+  "hash": "#/l/ncaaf",
+  "url": "http://localhost:8765/#/l/ncaaf",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=80&limit=300' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves "
+  ],
+  "failed": [],
+  "text": "Home › College Football 🏈 College Football Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "custom",
+  "hash": "#/custom",
+  "url": "http://localhost:8765/#/custom",
+  "errors": [],
+  "failed": [],
+  "text": "Home › Custom calculator 🧮 Custom prop calculator For any sport or stat that isn't covered automatically — boxing, cricket, swimming, darts, esports, tennis aces. Paste recent results (most recent first) and your line. What are you betting? Recent results (most recent first) Tennis — aces UFC — significant strikes Cricket — batter runs Boxing — rounds lasted Darts — 180s Line Over odds Under odds Stat type Auto-detect Count (strikes, aces, shots) Rare count (goals, TDs, 180s) Large total (yards, runs, points) Time / decimal (seconds, distance) Matchup adj. % Matchup adj.: your read on the opponent, venue or conditions, e.g. −10 vs an elite returner, +10 on a fast court. Enter at least 3 results and a line. HIT RATE RESULTS ODDS TOOLS American odds Implied % Parlay legs (odds, comma separated)"
+ },
+ {
+  "name": "picks",
+  "hash": "#/picks",
+  "url": "http://localhost:8765/#/picks",
+  "errors": [],
+  "failed": [],
+  "text": "Home › Saved picks ★ Saved picks Auto-grade finished games Stored in this browser only. Units assume 1 unit per pick at the saved odds. RECORD 0-0 WIN % — UNITS 0.00 ROI — PENDING 0 No saved picks yet. Hit ★ Save on any analysis."
+ },
+ {
+  "name": "nba-game",
+  "hash": "#/l/nba",
+  "url": "http://localhost:8765/#/l/nba",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set "
+  ],
+  "failed": [],
+  "text": "Home › NBA 🏀 NBA Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "nfl-game",
+  "hash": "#/l/nfl",
+  "url": "http://localhost:8765/#/l/nfl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mod"
+  ],
+  "failed": [],
+  "text": "Home › NFL 🏈 NFL Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "nhl-game",
+  "hash": "#/l/nhl",
+  "url": "http://localhost:8765/#/l/nhl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the "
+  ],
+  "failed": [],
+  "text": "Home › NHL 🏒 NHL Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "epl-game",
+  "hash": "#/l/epl",
+  "url": "http://localhost:8765/#/l/epl",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set th"
+  ],
+  "failed": [],
+  "text": "Home › Premier League ⚽ Premier League Custom calculator Couldn't load this data: Failed to fetch."
+ },
+ {
+  "name": "mlb-game",
+  "hash": "#/l/mlb",
+  "url": "http://localhost:8765/#/l/mlb",
+  "errors": [
+   "console: Access to fetch at 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20261029' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set th"
+  ],
+  "failed": [],
+  "text": "Home › MLB ⚾ MLB Custom calculator Couldn't load this data: Failed to fetch."
+ }
+]
