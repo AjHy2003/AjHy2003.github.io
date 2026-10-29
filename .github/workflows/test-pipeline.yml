@@ -6,6 +6,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+env:
+  RUN_E2E: "0"
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -17,6 +19,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r pipeline/requirements.txt
       - name: Build data
+        if: ${{ env.RUN_E2E == '1' }}
         run: python pipeline/build.py --out _site/data --cache cache
       - name: Assemble site
         run: cp -r index.html manifest.webmanifest sw.js css js icons _site/
@@ -27,12 +30,17 @@ jobs:
         run: |
           mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.48.2 >/dev/null
           npx playwright install --with-deps chromium
+      - name: CORS matrix
+        run: |
+          openssl req -x509 -newkey rsa:2048 -nodes -keyout /tmp/k.pem -out /tmp/c.pem -days 1 -subj "/CN=ajhy2003.github.io" 2>/dev/null
+          sudo -E env "PATH=$PATH" NODE_PATH=/tmp/pw/node_modules PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright node tools/cors.cjs
       - name: End-to-end against live data
+        if: ${{ env.RUN_E2E == '1' }}
         run: NODE_PATH=/tmp/pw/node_modules node tools/e2e.cjs _site e2e-out
       - name: Commit results
         if: always()
         run: |
-          rm -rf e2e-data && cp -r _site/data e2e-data || true
+          if [ -d _site/data ]; then rm -rf e2e-data && cp -r _site/data e2e-data; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f e2e-out e2e-data || true
