@@ -1,0 +1,52 @@
+name: Build data and deploy site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 9 * * *"   # ~5am ET: after last night's games, nflverse nightly update
+    - cron: "23 16 * * *"  # ~noon ET refresh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r pipeline/requirements.txt
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: data-cache-${{ github.run_id }}
+          restore-keys: data-cache-
+      - name: Build data
+        run: python pipeline/build.py --out _site/data --cache cache
+      - name: Assemble site
+        run: mkdir -p _site && cp -r index.html manifest.webmanifest sw.js css js icons _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
