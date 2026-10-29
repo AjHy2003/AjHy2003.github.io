@@ -1,0 +1,406 @@
+{
+ "MRData": {
+  "xmlns": "",
+  "series": "f1",
+  "url": "https://api.jolpi.ca/ergast/f1/current/results.json",
+  "limit": "100",
+  "offset": "0",
+  "total": "396",
+  "RaceTable": {
+   "season": "2026",
+   "Races": [
+    {
+     "season": "2026",
+     "round": "1",
+     "url": "https://en.wikipedia.org/wiki/2026_Australian_Grand_Prix",
+     "raceName": "Australian Grand Prix",
+     "Circuit": {
+      "circuitId": "albert_park",
+      "url": "https://en.wikipedia.org/wiki/Albert_Park_Circuit",
+      "circuitName": "Albert Park Grand Prix Circuit",
+      "Location": {
+       "lat": "-37.8497",
+       "long": "144.968",
+       "locality": "Melbourne",
+       "country": "Australia"
+      }
+     },
+     "date": "2026-03-08",
+     "time": "04:00:00Z",
+     "Results": [
+      {
+       "number": "63",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "russell",
+        "permanentNumber": "63",
+        "code": "RUS",
+        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)",
+        "givenName": "George",
+        "familyName": "Russell",
+        "dateOfBirth": "1998-02-15",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "1",
+       "laps": "58",
+       "status": "Finished",
+       "Time": {
+        "millis": "4986801",
+        "time": "1:23:06.801"
+       },
+       "FastestLap": {
+        "rank": "6",
+        "lap": "21",
+        "Time": {
+         "time": "1:22.670"
+        }
+       }
+      },
+      {
+       "number": "12",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "antonelli",
+        "permanentNumber": "12",
+        "code": "ANT",
+        "url": "https://en.wikipedia.org/wiki/Andrea_Kimi_Antonelli",
+        "givenName": "Andrea Kimi",
+        "familyName": "Antonelli",
+        "dateOfBirth": "2006-08-25",
+        "nationality": "Italian"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "2",
+       "laps": "58",
+       "status": "Finished",
+       "Time": {
+        "millis": "4989775",
+        "time": "+2.974"
+       },
+       "FastestLap": {
+        "rank": "3",
+        "lap": "57",
+        "Time": {
+         "time": "1:22.417"
+        }
+       }
+      },
+      {
+       "number": "16",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "leclerc",
+        "permanentNumber": "16",
+        "code": "LEC",
+        "url": "http://en.wikipedia.org/wiki/Charles_Leclerc",
+        "givenName": "Charles",
+        "familyName": "Leclerc",
+        "dateOfBirth": "1997-10-16",
+        "nationality": "Monegasque"
+       },
+       "Constructor": {
+        "constructorId": "ferrari",
+        "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+        "name": "Ferrari",
+        "nationality": "Italian"
+       },
+       "grid": "4",
+       "laps": "58",
+       "status": "Finished",
+       "Time": {
+        "millis": "5002320",
+        "time": "+15.519"
+       },
+       "FastestLap": {
+        "rank": "5",
+        "lap": "38",
+        "Time": {
+         "time": "1:22.579"
+        }
+       }
+      },
+      "\u2026(+19 more, len=22)"
+     ]
+    },
+    {
+     "season": "2026",
+     "round": "2",
+     "url": "https://en.wikipedia.org/wiki/2026_Chinese_Grand_Prix",
+     "raceName": "Chinese Grand Prix",
+     "Circuit": {
+      "circuitId": "shanghai",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_International_Circuit",
+      "circuitName": "Shanghai International Circuit",
+      "Location": {
+       "lat": "31.3389",
+       "long": "121.22",
+       "locality": "Shanghai",
+       "country": "China"
+      }
+     },
+     "date": "2026-03-15",
+     "time": "07:00:00Z",
+     "Results": [
+      {
+       "number": "12",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "antonelli",
+        "permanentNumber": "12",
+        "code": "ANT",
+        "url": "https://en.wikipedia.org/wiki/Andrea_Kimi_Antonelli",
+        "givenName": "Andrea Kimi",
+        "familyName": "Antonelli",
+        "dateOfBirth": "2006-08-25",
+        "nationality": "Italian"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "1",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5595607",
+        "time": "1:33:15.607"
+       },
+       "FastestLap": {
+        "rank": "1",
+        "lap": "52",
+        "Time": {
+         "time": "1:35.275"
+        }
+       }
+      },
+      {
+       "number": "63",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "russell",
+        "permanentNumber": "63",
+        "code": "RUS",
+        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)",
+        "givenName": "George",
+        "familyName": "Russell",
+        "dateOfBirth": "1998-02-15",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "2",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5601122",
+        "time": "+5.515"
+       },
+       "FastestLap": {
+        "rank": "2",
+        "lap": "56",
+        "Time": {
+         "time": "1:35.400"
+        }
+       }
+      },
+      {
+       "number": "44",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "hamilton",
+        "permanentNumber": "44",
+        "code": "HAM",
+        "url": "http://en.wikipedia.org/wiki/Lewis_Hamilton",
+        "givenName": "Lewis",
+        "familyName": "Hamilton",
+        "dateOfBirth": "1985-01-07",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "ferrari",
+        "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+        "name": "Ferrari",
+        "nationality": "Italian"
+       },
+       "grid": "3",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5620874",
+        "time": "+25.267"
+       },
+       "FastestLap": {
+        "rank": "5",
+        "lap": "55",
+        "Time": {
+         "time": "1:36.092"
+        }
+       }
+      },
+      "\u2026(+19 more, len=22)"
+     ]
+    },
+    {
+     "season": "2026",
+     "round": "3",
+     "url": "https://en.wikipedia.org/wiki/2026_Japanese_Grand_Prix",
+     "raceName": "Japanese Grand Prix",
+     "Circuit": {
+      "circuitId": "suzuka",
+      "url": "https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course",
+      "circuitName": "Suzuka Circuit",
+      "Location": {
+       "lat": "34.8431",
+       "long": "136.541",
+       "locality": "Suzuka",
+       "country": "Japan"
+      }
+     },
+     "date": "2026-03-29",
+     "time": "05:00:00Z",
+     "Results": [
+      {
+       "number": "12",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "antonelli",
+        "permanentNumber": "12",
+        "code": "ANT",
+        "url": "https://en.wikipedia.org/wiki/Andrea_Kimi_Antonelli",
+        "givenName": "Andrea Kimi",
+        "familyName": "Antonelli",
+        "dateOfBirth": "2006-08-25",
+        "nationality": "Italian"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "1",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "5283403",
+        "time": "1:28:03.403"
+       },
+       "FastestLap": {
+        "rank": "1",
+        "lap": "49",
+        "Time": {
+         "time": "1:32.432"
+        }
+       }
+      },
+      {
+       "number": "81",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "piastri",
+        "permanentNumber": "81",
+        "code": "PIA",
+        "url": "http://en.wikipedia.org/wiki/Oscar_Piastri",
+        "givenName": "Oscar",
+        "familyName": "Piastri",
+        "dateOfBirth": "2001-04-06",
+        "nationality": "Australian"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "3",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "5297125",
+        "time": "+13.722"
+       },
+       "FastestLap": {
+        "rank": "5",
+        "lap": "49",
+        "Time": {
+         "time": "1:32.996"
+        }
+       }
+      },
+      {
+       "number": "16",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "leclerc",
+        "permanentNumber": "16",
+        "code": "LEC",
+        "url": "http://en.wikipedia.org/wiki/Charles_Leclerc",
+        "givenName": "Charles",
+        "familyName": "Leclerc",
+        "dateOfBirth": "1997-10-16",
+        "nationality": "Monegasque"
+       },
+       "Constructor": {
+        "constructorId": "ferrari",
+        "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+        "name": "Ferrari",
+        "nationality": "Italian"
+       },
+       "grid": "4",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "5298673",
+        "time": "+15.270"
+       },
+       "FastestLap": {
+        "rank": "3",
+        "lap": "53",
+        "Time": {
+         "time": "1:32.634"
+        }
+       }
+      },
+      "\u2026(+19 more, len=22)"
+     ]
+    },
+    "\u2026(+2 more, len=5)"
+   ]
+  }
+ }
+}

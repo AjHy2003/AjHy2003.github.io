@@ -1,0 +1,233 @@
+{
+ "leagues": [
+  {
+   "id": "2040",
+   "uid": "s:2000~l:2040",
+   "name": "IndyCar Series",
+   "abbreviation": "IRL",
+   "slug": "irl",
+   "season": {
+    "year": 2026,
+    "startDate": "2026-01-01T08:00Z",
+    "endDate": "2026-12-31T08:00Z",
+    "displayName": "IndyCar Series",
+    "type": {
+     "id": "2",
+     "type": 2,
+     "name": "Regular Season",
+     "abbreviation": "reg"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/combiner/i?img=/i/espn/teamlogos/500/indycar_series.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2026-10-28T03:27Z"
+    }
+   ],
+   "calendarType": "list",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-01-01T08:00Z",
+   "calendarEndDate": "2026-12-31T08:00Z",
+   "calendar": [
+    {
+     "label": "Grand Prix of St. Petersburg",
+     "startDate": "2026-03-01T20:00Z",
+     "endDate": "2026-03-01T20:00Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/racing/leagues/irl/events/202603010104?lang=en&region=us"
+     }
+    },
+    {
+     "label": "Grand Prix of Phoenix",
+     "startDate": "2026-03-07T23:00Z",
+     "endDate": "2026-03-07T23:00Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/racing/leagues/irl/events/202603070103?lang=en&region=us"
+     }
+    },
+    {
+     "label": "Grand Prix of Arlington",
+     "startDate": "2026-03-15T19:30Z",
+     "endDate": "2026-03-15T19:30Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/racing/leagues/irl/events/202603154263?lang=en&region=us"
+     }
+    },
+    "\u2026(+15 more, len=18)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 2,
+  "year": 2026
+ },
+ "day": {
+  "date": "2026-09-06"
+ },
+ "events": [
+  {
+   "id": "202609061784",
+   "uid": "s:2000~l:2040~e:202609061784",
+   "date": "2026-09-06T18:30Z",
+   "name": "Grand Prix of Monterey",
+   "shortName": "Grand Prix of Monterey",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "202609061784",
+     "uid": "s:2000~l:2040~e:202609061784~c:202609061784",
+     "date": "2026-09-06T18:30Z",
+     "timeValid": true,
+     "recent": false,
+     "competitors": [
+      {
+       "id": "5648",
+       "uid": "s:2000~a:5648",
+       "type": "athlete",
+       "order": 1,
+       "winner": true,
+       "athlete": {
+        "fullName": "Scott McLaughlin",
+        "displayName": "Scott McLaughlin",
+        "shortName": "S. McLaughlin",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+         "alt": "New Zealand",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "statistics": []
+      },
+      {
+       "id": "5704",
+       "uid": "s:2000~a:5704",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Kyle Kirkwood",
+        "displayName": "Kyle Kirkwood",
+        "shortName": "K. Kirkwood",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "statistics": []
+      },
+      {
+       "id": "4667",
+       "uid": "s:2000~a:4667",
+       "type": "athlete",
+       "order": 3,
+       "winner": false,
+       "athlete": {
+        "fullName": "Alexander Rossi",
+        "displayName": "Alexander Rossi",
+        "shortName": "A. Rossi",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "statistics": []
+      },
+      "\u2026(+22 more, len=25)"
+     ],
+     "status": {
+      "period": 95,
+      "type": {
+       "id": "3",
+       "name": "STATUS_FINAL",
+       "state": "post",
+       "completed": true,
+       "description": "Final",
+       "detail": "Final",
+       "shortDetail": "Final"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "FOX"
+       ]
+      }
+     ],
+     "startDate": "2026-09-06T18:30Z",
+     "broadcast": "FOX",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "FOX"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "tickets",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.vividseats.com/sports/izod-indycar-series-championship-tickets.html",
+     "text": "Tickets",
+     "shortText": "Tickets",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "status": {
+    "period": 95,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   }
+  }
+ ],
+ "provider": {
+  "id": "100",
+  "name": "Draft Kings",
+  "displayName": "Draft Kings",
+  "priority": 1
+ }
+}

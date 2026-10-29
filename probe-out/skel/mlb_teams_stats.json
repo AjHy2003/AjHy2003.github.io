@@ -1,0 +1,151 @@
+{
+ "stats": [
+  {
+   "type": {
+    "displayName": "season"
+   },
+   "group": {
+    "displayName": "hitting"
+   },
+   "totalSplits": 30,
+   "exemptions": [],
+   "splits": [
+    {
+     "season": "2026",
+     "stat": {
+      "gamesPlayed": 162,
+      "groundOuts": 1480,
+      "airOuts": 1299,
+      "runs": 832,
+      "doubles": 279,
+      "triples": 26,
+      "homeRuns": 154,
+      "strikeOuts": 1383,
+      "baseOnBalls": 668,
+      "intentionalWalks": 29,
+      "hits": 1422,
+      "hitByPitch": 40,
+      "avg": ".258",
+      "atBats": 5502,
+      "obp": ".341",
+      "slg": ".403",
+      "ops": ".744",
+      "caughtStealing": 54,
+      "stolenBases": 162,
+      "stolenBasePercentage": ".750",
+      "caughtStealingPercentage": ".250",
+      "groundIntoDoublePlay": 99,
+      "numberOfPitches": 25065,
+      "plateAppearances": 6299,
+      "totalBases": 2215,
+      "rbi": 788,
+      "leftOnBase": 1209,
+      "sacBunts": 37,
+      "sacFlies": 45,
+      "babip": ".316",
+      "groundOutsToAirouts": "1.14",
+      "catchersInterference": 7,
+      "atBatsPerHomeRun": "35.73"
+     },
+     "team": {
+      "id": 158,
+      "name": "Milwaukee Brewers",
+      "link": "/api/v1/teams/158"
+     },
+     "rank": 1
+    },
+    {
+     "season": "2026",
+     "stat": {
+      "gamesPlayed": 162,
+      "groundOuts": 1462,
+      "airOuts": 1519,
+      "runs": 736,
+      "doubles": 230,
+      "triples": 22,
+      "homeRuns": 169,
+      "strikeOuts": 1145,
+      "baseOnBalls": 514,
+      "intentionalWalks": 27,
+      "hits": 1405,
+      "hitByPitch": 58,
+      "avg": ".258",
+      "atBats": 5444,
+      "obp": ".326",
+      "slg": ".402",
+      "ops": ".728",
+      "caughtStealing": 54,
+      "stolenBases": 164,
+      "stolenBasePercentage": ".752",
+      "caughtStealingPercentage": ".248",
+      "groundIntoDoublePlay": 111,
+      "numberOfPitches": 22987,
+      "plateAppearances": 6106,
+      "totalBases": 2186,
+      "rbi": 700,
+      "leftOnBase": 1112,
+      "sacBunts": 45,
+      "sacFlies": 42,
+      "babip": ".296",
+      "groundOutsToAirouts": "0.96",
+      "catchersInterference": 3,
+      "atBatsPerHomeRun": "32.21"
+     },
+     "team": {
+      "id": 139,
+      "name": "Tampa Bay Rays",
+      "link": "/api/v1/teams/139"
+     },
+     "rank": 2
+    },
+    {
+     "season": "2026",
+     "stat": {
+      "gamesPlayed": 162,
+      "groundOuts": 1283,
+      "airOuts": 1566,
+      "runs": 801,
+      "doubles": 266,
+      "triples": 18,
+      "homeRuns": 204,
+      "strikeOuts": 1267,
+      "baseOnBalls": 628,
+      "intentionalWalks": 31,
+      "hits": 1399,
+      "hitByPitch": 68,
+      "avg": ".257",
+      "atBats": 5451,
+      "obp": ".338",
+      "slg": ".424",
+      "ops": ".762",
+      "caughtStealing": 21,
+      "stolenBases": 72,
+      "stolenBasePercentage": ".774",
+      "caughtStealingPercentage": ".226",
+      "groundIntoDoublePlay": 128,
+      "numberOfPitches": 24417,
+      "plateAppearances": 6214,
+      "totalBases": 2313,
+      "rbi": 756,
+      "leftOnBase": 1165,
+      "sacBunts": 15,
+      "sacFlies": 49,
+      "babip": ".297",
+      "groundOutsToAirouts": "0.82",
+      "catchersInterference": 3,
+      "atBatsPerHomeRun": "26.72"
+     },
+     "team": {
+      "id": 119,
+      "name": "Los Angeles Dodgers",
+      "link": "/api/v1/teams/119"
+     },
+     "rank": 3
+    },
+    "\u2026(+27 more, len=30)"
+   ],
+   "splitsTiedWithOffset": [],
+   "splitsTiedWithLimit": []
+  }
+ ]
+}

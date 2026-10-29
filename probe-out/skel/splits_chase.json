@@ -1,0 +1,184 @@
+{
+ "filters": [
+  {
+   "displayName": "League",
+   "name": "league",
+   "value": "nfl",
+   "options": [
+    {
+     "value": "college-football",
+     "displayValue": "NCAA - Football",
+     "shortDisplayName": "NCAAF"
+    },
+    {
+     "value": "nfl",
+     "displayValue": "National Football League",
+     "shortDisplayName": "NFL"
+    }
+   ]
+  },
+  {
+   "displayName": "Season",
+   "name": "season",
+   "value": "2026",
+   "options": [
+    {
+     "value": "2026",
+     "displayValue": "2026"
+    },
+    {
+     "value": "2025",
+     "displayValue": "2025"
+    },
+    {
+     "value": "2024",
+     "displayValue": "2024"
+    },
+    "\u2026(+3 more, len=6)"
+   ]
+  }
+ ],
+ "displayName": "2026 Splits",
+ "categories": [
+  {
+   "name": "receiving",
+   "displayName": "Receiving",
+   "count": 5
+  },
+  {
+   "name": "rushing",
+   "displayName": "Rushing",
+   "count": 5
+  },
+  {
+   "name": "fumbles",
+   "displayName": "Fumbles",
+   "count": 2
+  }
+ ],
+ "labels": [
+  "REC",
+  "YDS",
+  "AVG",
+  "\u2026(+9 more, len=12)"
+ ],
+ "names": [
+  "receptions",
+  "receivingYards",
+  "yardsPerReception",
+  "\u2026(+9 more, len=12)"
+ ],
+ "displayNames": [
+  "Receptions",
+  "Receiving Yards",
+  "Yards Per Reception",
+  "\u2026(+9 more, len=12)"
+ ],
+ "descriptions": [
+  "The total number of receptions.",
+  "The total receiving yards.",
+  "The average number of yards per reception.",
+  "\u2026(+9 more, len=12)"
+ ],
+ "splitCategories": [
+  {
+   "name": "split",
+   "displayName": "split",
+   "splits": [
+    {
+     "displayName": "All Splits",
+     "stats": [
+      "32",
+      "351",
+      "11.0",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Any"
+    },
+    {
+     "displayName": "Home",
+     "stats": [
+      "5",
+      "39",
+      "7.8",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Home"
+    },
+    {
+     "displayName": "Away",
+     "stats": [
+      "27",
+      "312",
+      "11.6",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Away"
+    }
+   ]
+  },
+  {
+   "name": "byOutcome",
+   "displayName": "Outcome",
+   "splits": [
+    {
+     "displayName": "Wins/Ties",
+     "stats": [
+      "20",
+      "226",
+      "11.3",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "In Win"
+    },
+    {
+     "displayName": "Losses",
+     "stats": [
+      "12",
+      "125",
+      "10.4",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "In Loss"
+    }
+   ]
+  },
+  {
+   "name": "byVictoryMargin",
+   "displayName": "Victory Margin",
+   "splits": [
+    {
+     "displayName": "0-7",
+     "stats": [
+      "8",
+      "89",
+      "11.1",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Mgn<8"
+    },
+    {
+     "displayName": "8-14",
+     "stats": [
+      "7",
+      "75",
+      "10.7",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Mgn 8-14"
+    },
+    {
+     "displayName": "15+",
+     "stats": [
+      "5",
+      "62",
+      "12.4",
+      "\u2026(+9 more, len=12)"
+     ],
+     "abbreviation": "Mgn>14"
+    }
+   ]
+  },
+  "\u2026(+25 more, len=28)"
+ ]
+}

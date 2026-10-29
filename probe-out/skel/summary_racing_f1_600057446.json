@@ -1,0 +1,4 @@
+{
+ "code": 404,
+ "message": "Error invoking GET: http://sports.core.api.espn.pvt/v2/sports/racing/leagues/f1/events/600057446/competitions/600057446/\u2026"
+}

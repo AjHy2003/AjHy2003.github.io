@@ -1,0 +1,2111 @@
+{
+ "filters": [
+  {
+   "displayName": "Season",
+   "name": "season",
+   "value": "2027",
+   "options": [
+    {
+     "value": "2027",
+     "displayValue": "2026-27"
+    },
+    {
+     "value": "2026",
+     "displayValue": "2025-26"
+    },
+    {
+     "value": "2025",
+     "displayValue": "2024-25"
+    },
+    "\u2026(+9 more, len=12)"
+   ]
+  }
+ ],
+ "labels": [
+  "G",
+  "A",
+  "PTS",
+  "\u2026(+11 more, len=14)"
+ ],
+ "names": [
+  "goals",
+  "assists",
+  "points",
+  "\u2026(+11 more, len=14)"
+ ],
+ "displayNames": [
+  "Goals",
+  "Assists",
+  "Points",
+  "\u2026(+11 more, len=14)"
+ ],
+ "events": {
+  "401892584": {
+   "id": "401892584",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892584/red-wings-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892584",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892584",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-27T01:30:00.000+00:00",
+   "score": "4-3 SO",
+   "homeTeamId": "6",
+   "awayTeamId": "5",
+   "homeTeamScore": "3",
+   "awayTeamScore": "4",
+   "gameResult": "L",
+   "opponent": {
+    "id": "5",
+    "uid": "s:70~l:90~t:5",
+    "displayName": "Detroit Red Wings",
+    "abbreviation": "DET",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/det/detroit-red-wings",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=5",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/det/detroit-red-wings",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/det.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892574": {
+   "id": "401892574",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892574/maple-leafs-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892574",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892574",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-24T23:00:00.000+00:00",
+   "score": "7-2",
+   "homeTeamId": "6",
+   "awayTeamId": "21",
+   "homeTeamScore": "2",
+   "awayTeamScore": "7",
+   "gameResult": "L",
+   "opponent": {
+    "id": "21",
+    "uid": "s:70~l:90~t:21",
+    "displayName": "Toronto Maple Leafs",
+    "abbreviation": "TOR",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/tor/toronto-maple-leafs",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=21",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/tor/toronto-maple-leafs",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892561": {
+   "id": "401892561",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892561/hurricanes-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892561",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892561",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+11 more, len=14)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-23T01:00:00.000+00:00",
+   "score": "6-5 SO",
+   "homeTeamId": "6",
+   "awayTeamId": "7",
+   "homeTeamScore": "6",
+   "awayTeamScore": "5",
+   "gameResult": "W",
+   "opponent": {
+    "id": "7",
+    "uid": "s:70~l:90~t:7",
+    "displayName": "Carolina Hurricanes",
+    "abbreviation": "CAR",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/car/carolina-hurricanes",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=7",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/car/carolina-hurricanes",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/car.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892546": {
+   "id": "401892546",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892546/wild-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892546",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892546",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-21T01:00:00.000+00:00",
+   "score": "4-3 OT",
+   "homeTeamId": "6",
+   "awayTeamId": "30",
+   "homeTeamScore": "4",
+   "awayTeamScore": "3",
+   "gameResult": "W",
+   "opponent": {
+    "id": "30",
+    "uid": "s:70~l:90~t:30",
+    "displayName": "Minnesota Wild",
+    "abbreviation": "MIN",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/min/minnesota-wild",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=30",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/min/minnesota-wild",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892531": {
+   "id": "401892531",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892531/oilers-mammoth",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892531",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892531",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-18T02:00:00.000+00:00",
+   "score": "6-2",
+   "homeTeamId": "129764",
+   "awayTeamId": "6",
+   "homeTeamScore": "2",
+   "awayTeamScore": "6",
+   "gameResult": "W",
+   "opponent": {
+    "id": "129764",
+    "uid": "s:70~l:90~t:129764",
+    "displayName": "Utah Mammoth",
+    "abbreviation": "UTA",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/utah/utah-mammoth",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=129764",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/utah/utah-mammoth",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892515": {
+   "id": "401892515",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892515/mammoth-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892515",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892515",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-16T01:00:00.000+00:00",
+   "score": "4-2",
+   "homeTeamId": "6",
+   "awayTeamId": "129764",
+   "homeTeamScore": "2",
+   "awayTeamScore": "4",
+   "gameResult": "L",
+   "opponent": {
+    "id": "129764",
+    "uid": "s:70~l:90~t:129764",
+    "displayName": "Utah Mammoth",
+    "abbreviation": "UTA",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/utah/utah-mammoth",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=129764",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/utah/utah-mammoth",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892502": {
+   "id": "401892502",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892502/oilers-kings",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892502",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892502",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-14T02:30:00.000+00:00",
+   "score": "4-1",
+   "homeTeamId": "8",
+   "awayTeamId": "6",
+   "homeTeamScore": "1",
+   "awayTeamScore": "4",
+   "gameResult": "W",
+   "opponent": {
+    "id": "8",
+    "uid": "s:70~l:90~t:8",
+    "displayName": "Los Angeles Kings",
+    "abbreviation": "LA",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/la/los-angeles-kings",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=8",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/la/los-angeles-kings",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892471": {
+   "id": "401892471",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892471/oilers-sharks",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892471",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892471",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-10T20:00:00.000+00:00",
+   "score": "3-1",
+   "homeTeamId": "18",
+   "awayTeamId": "6",
+   "homeTeamScore": "1",
+   "awayTeamScore": "3",
+   "gameResult": "W",
+   "opponent": {
+    "id": "18",
+    "uid": "s:70~l:90~t:18",
+    "displayName": "San Jose Sharks",
+    "abbreviation": "SJ",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/sj/san-jose-sharks",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=18",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/sj/san-jose-sharks",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892456": {
+   "id": "401892456",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892456/oilers-ducks",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892456",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892456",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-08T02:00:00.000+00:00",
+   "score": "5-2",
+   "homeTeamId": "25",
+   "awayTeamId": "6",
+   "homeTeamScore": "2",
+   "awayTeamScore": "5",
+   "gameResult": "W",
+   "opponent": {
+    "id": "25",
+    "uid": "s:70~l:90~t:25",
+    "displayName": "Anaheim Ducks",
+    "abbreviation": "ANA",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/ana/anaheim-ducks",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=25",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/ana/anaheim-ducks",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401892437": {
+   "id": "401892437",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892437/kraken-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401892437",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892437",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-03T23:00:00.000+00:00",
+   "score": "3-1",
+   "homeTeamId": "6",
+   "awayTeamId": "124292",
+   "homeTeamScore": "3",
+   "awayTeamScore": "1",
+   "gameResult": "W",
+   "opponent": {
+    "id": "124292",
+    "uid": "s:70~l:90~t:124292",
+    "displayName": "Seattle Kraken",
+    "abbreviation": "SEA",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/sea/seattle-kraken",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=124292",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/sea/seattle-kraken",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401891829": {
+   "id": "401891829",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401891829/oilers-canucks",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401891829",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401891829",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-02T02:00:00.000+00:00",
+   "score": "9-7",
+   "homeTeamId": "22",
+   "awayTeamId": "6",
+   "homeTeamScore": "7",
+   "awayTeamScore": "9",
+   "gameResult": "W",
+   "opponent": {
+    "id": "22",
+    "uid": "s:70~l:90~t:22",
+    "displayName": "Vancouver Canucks",
+    "abbreviation": "VAN",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/van/vancouver-canucks",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=22",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/van/vancouver-canucks",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  },
+  "401891804": {
+   "id": "401891804",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401891804/canucks-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=hockey&leagueAbbrev=nhl&gameId=401891804",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "now",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401891804",
+     "text": "Now",
+     "shortText": "Now",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-09-30T02:00:00.000+00:00",
+   "score": "6-5 OT",
+   "homeTeamId": "6",
+   "awayTeamId": "22",
+   "homeTeamScore": "5",
+   "awayTeamScore": "6",
+   "gameResult": "L",
+   "opponent": {
+    "id": "22",
+    "uid": "s:70~l:90~t:22",
+    "displayName": "Vancouver Canucks",
+    "abbreviation": "VAN",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/van/vancouver-canucks",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=22",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/van/vancouver-canucks",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png"
+   },
+   "leagueName": "National Hockey League",
+   "leagueAbbreviation": "NHL",
+   "leagueShortName": "NHL",
+   "team": {
+    "id": "6",
+    "uid": "s:70~l:90~t:6",
+    "abbreviation": "EDM",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "mobile",
+       "team"
+      ],
+      "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "roster",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "text": "Roster",
+      "shortText": "Roster",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "isAllStar": false
+   },
+   "type": {
+    "id": "1",
+    "text": "Standard",
+    "abbreviation": "STD",
+    "type": "standard",
+    "slug": "standard"
+   }
+  }
+ },
+ "seasonTypes": [
+  {
+   "displayName": "2026-27 Regular Season",
+   "displayTeam": "EDM",
+   "categories": [
+    {
+     "displayName": "October",
+     "type": "event",
+     "splitType": "october",
+     "events": [
+      {
+       "eventId": "401892584",
+       "stats": [
+        "0",
+        "1",
+        "1",
+        "\u2026(+11 more, len=14)"
+       ],
+       "type": {
+        "id": "1",
+        "text": "Standard",
+        "abbreviation": "STD",
+        "type": "standard",
+        "slug": "standard"
+       }
+      },
+      {
+       "eventId": "401892574",
+       "stats": [
+        "0",
+        "2",
+        "2",
+        "\u2026(+11 more, len=14)"
+       ],
+       "type": {
+        "id": "1",
+        "text": "Standard",
+        "abbreviation": "STD",
+        "type": "standard",
+        "slug": "standard"
+       }
+      },
+      {
+       "eventId": "401892561",
+       "stats": [
+        "2",
+        "3",
+        "5",
+        "\u2026(+11 more, len=14)"
+       ],
+       "type": {
+        "id": "1",
+        "text": "Standard",
+        "abbreviation": "STD",
+        "type": "standard",
+        "slug": "standard"
+       }
+      },
+      "\u2026(+8 more, len=11)"
+     ],
+     "totals": [
+      "8",
+      "24",
+      "32",
+      "\u2026(+11 more, len=14)"
+     ]
+    },
+    {
+     "displayName": "September",
+     "type": "event",
+     "splitType": "september",
+     "events": [
+      {
+       "eventId": "401891804",
+       "stats": [
+        "0",
+        "2",
+        "2",
+        "\u2026(+11 more, len=14)"
+       ],
+       "type": {
+        "id": "1",
+        "text": "Standard",
+        "abbreviation": "STD",
+        "type": "standard",
+        "slug": "standard"
+       }
+      }
+     ]
+    }
+   ],
+   "summary": {
+    "displayName": "Regular Season Stats",
+    "stats": [
+     {
+      "displayName": "Totals",
+      "stats": [
+       "8",
+       "26",
+       "34",
+       "\u2026(+11 more, len=14)"
+      ],
+      "type": "total"
+     }
+    ]
+   }
+  }
+ ],
+ "glossary": [
+  {
+   "abbreviation": "+/-",
+   "displayName": "Plus/Minus Rating"
+  },
+  {
+   "abbreviation": "A",
+   "displayName": "Assists"
+  },
+  {
+   "abbreviation": "G",
+   "displayName": "Goals"
+  },
+  "\u2026(+11 more, len=14)"
+ ]
+}

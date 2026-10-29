@@ -1,0 +1,742 @@
+{
+ "filters": [
+  {
+   "displayName": "League",
+   "name": "league",
+   "value": "nba",
+   "options": [
+    {
+     "value": "nba",
+     "displayValue": "National Basketball Association",
+     "shortDisplayName": "NBA"
+    }
+   ]
+  },
+  {
+   "displayName": "Season",
+   "name": "seasontype",
+   "value": "2",
+   "options": [
+    {
+     "value": "2",
+     "displayValue": "Regular Season"
+    },
+    {
+     "value": "3",
+     "displayValue": "Postseason"
+    }
+   ]
+  }
+ ],
+ "teams": {
+  "cleveland-cavaliers": {
+   "id": "5",
+   "uid": "s:40~l:46~t:5",
+   "guid": "ec79ad1f-e6d2-7762-a2db-7fe97d35126b",
+   "slug": "cleveland-cavaliers",
+   "location": "Cleveland",
+   "name": "Cavaliers",
+   "abbreviation": "CLE",
+   "displayName": "Cleveland Cavaliers",
+   "shortDisplayName": "Cavaliers",
+   "color": "061642",
+   "alternateColor": "bc945c",
+   "isActive": true,
+   "isAllStar": false,
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/cle.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "dark"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "scoreboard"
+     ]
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "clubhouse",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/_/name/cle/cleveland-cavaliers",
+     "text": "Clubhouse",
+     "shortText": "Clubhouse",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/roster/_/name/cle/cleveland-cavaliers",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:5&section=roster",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+11 more, len=14)"
+   ],
+   "groups": {},
+   "coaches": {},
+   "record": {},
+   "againstTheSpreadRecords": {},
+   "ranks": {},
+   "franchise": {}
+  },
+  "philadelphia-76ers": {
+   "id": "20",
+   "uid": "s:40~l:46~t:20",
+   "guid": "ca1685ed-b799-53e4-7924-e58ea6eb8f3a",
+   "slug": "philadelphia-76ers",
+   "location": "Philadelphia",
+   "name": "76ers",
+   "abbreviation": "PHI",
+   "displayName": "Philadelphia 76ers",
+   "shortDisplayName": "76ers",
+   "color": "1d428a",
+   "alternateColor": "e01234",
+   "isActive": true,
+   "isAllStar": false,
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/phi.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "dark"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "scoreboard"
+     ]
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "clubhouse",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers",
+     "text": "Clubhouse",
+     "shortText": "Clubhouse",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/roster/_/name/phi/philadelphia-76ers",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20&section=roster",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+11 more, len=14)"
+   ],
+   "groups": {},
+   "coaches": {},
+   "venue": {
+    "id": "1845",
+    "fullName": "Xfinity Mobile Arena",
+    "shortName": "Wells Fargo Center",
+    "address": {
+     "city": "Philadelphia",
+     "state": "PA"
+    },
+    "grass": false,
+    "indoor": true,
+    "images": [
+     {
+      "href": "https://a.espncdn.com/i/venues/nba/day/1845.jpg",
+      "width": 2000,
+      "height": 1125,
+      "rel": [
+       "full",
+       "day"
+      ]
+     }
+    ]
+   },
+   "record": {},
+   "athletes": {},
+   "againstTheSpreadRecords": {},
+   "ranks": {},
+   "franchise": {}
+  },
+  "miami-heat": {
+   "id": "14",
+   "uid": "s:40~l:46~t:14",
+   "guid": "81e3212c-30ef-9b1b-5edb-453b13ff265a",
+   "slug": "miami-heat",
+   "location": "Miami",
+   "name": "Heat",
+   "abbreviation": "MIA",
+   "displayName": "Miami Heat",
+   "shortDisplayName": "Heat",
+   "color": "000000",
+   "alternateColor": "000000",
+   "isActive": true,
+   "isAllStar": false,
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/mia.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "dark"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "scoreboard"
+     ]
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "clubhouse",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/_/name/mia/miami-heat",
+     "text": "Clubhouse",
+     "shortText": "Clubhouse",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/roster/_/name/mia/miami-heat",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:14&section=roster",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+11 more, len=14)"
+   ],
+   "groups": {},
+   "coaches": {},
+   "venue": {
+    "id": "3438",
+    "fullName": "Kaseya Center",
+    "shortName": "AmericanAirlines Are",
+    "address": {
+     "city": "Miami",
+     "state": "FL"
+    },
+    "grass": false,
+    "indoor": true,
+    "images": [
+     {
+      "href": "https://a.espncdn.com/i/venues/nba/day/3438.jpg",
+      "width": 2000,
+      "height": 1125,
+      "rel": [
+       "full",
+       "day"
+      ]
+     }
+    ]
+   },
+   "record": {},
+   "againstTheSpreadRecords": {},
+   "ranks": {},
+   "franchise": {}
+  },
+  "los-angeles-lakers": {
+   "id": "13",
+   "uid": "s:40~l:46~t:13",
+   "guid": "2876e98b-b9bc-2920-4319-46e6943f8be4",
+   "slug": "los-angeles-lakers",
+   "location": "Los Angeles",
+   "name": "Lakers",
+   "abbreviation": "LAL",
+   "displayName": "Los Angeles Lakers",
+   "shortDisplayName": "Lakers",
+   "color": "542582",
+   "alternateColor": "fdb927",
+   "isActive": true,
+   "isAllStar": false,
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/lal.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "dark"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+     "width": 500,
+     "height": 500,
+     "rel": [
+      "full",
+      "scoreboard"
+     ]
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "clubhouse",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/_/name/lal/los-angeles-lakers",
+     "text": "Clubhouse",
+     "shortText": "Clubhouse",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "desktop",
+      "team"
+     ],
+     "href": "https://www.espn.com/nba/team/roster/_/name/lal/los-angeles-lakers",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "roster",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:13&section=roster",
+     "text": "Roster",
+     "shortText": "Roster",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+11 more, len=14)"
+   ],
+   "groups": {},
+   "coaches": {},
+   "venue": {
+    "id": "1841",
+    "fullName": "crypto.com Arena",
+    "shortName": "Staples Center",
+    "address": {
+     "city": "Los Angeles",
+     "state": "CA"
+    },
+    "grass": false,
+    "indoor": true,
+    "images": [
+     {
+      "href": "https://a.espncdn.com/i/venues/nba/day/1841.jpg",
+      "width": 2000,
+      "height": 1125,
+      "rel": [
+       "full",
+       "day"
+      ]
+     }
+    ]
+   },
+   "record": {},
+   "againstTheSpreadRecords": {},
+   "ranks": {},
+   "franchise": {}
+  }
+ },
+ "categories": [
+  {
+   "name": "averages",
+   "displayName": "Regular Season Averages",
+   "labels": [
+    "GP",
+    "GS",
+    "MIN",
+    "\u2026(+15 more, len=18)"
+   ],
+   "names": [
+    "gamesPlayed",
+    "gamesStarted",
+    "avgMinutes",
+    "\u2026(+15 more, len=18)"
+   ],
+   "displayNames": [
+    "Games Played",
+    "Games Started",
+    "Minutes Per Game",
+    "\u2026(+15 more, len=18)"
+   ],
+   "descriptions": [
+    "Games Played",
+    "The number of games started by an athlete.",
+    "The average number of minutes per game.",
+    "\u2026(+15 more, len=18)"
+   ],
+   "statistics": [
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2004,
+      "displayName": "2003-04"
+     },
+     "stats": [
+      "79",
+      "79",
+      "39.5",
+      "\u2026(+15 more, len=18)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2005,
+      "displayName": "2004-05"
+     },
+     "stats": [
+      "80",
+      "80",
+      "42.4",
+      "\u2026(+15 more, len=18)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2006,
+      "displayName": "2005-06"
+     },
+     "stats": [
+      "79",
+      "79",
+      "42.5",
+      "\u2026(+15 more, len=18)"
+     ],
+     "position": "F"
+    },
+    "\u2026(+21 more, len=24)"
+   ],
+   "totals": [
+    "1625",
+    "1623",
+    "37.6",
+    "\u2026(+15 more, len=18)"
+   ],
+   "sortKey": "averages"
+  },
+  {
+   "name": "totals",
+   "displayName": "Regular Season Totals",
+   "labels": [
+    "FG",
+    "FG%",
+    "3PT",
+    "\u2026(+12 more, len=15)"
+   ],
+   "names": [
+    "fieldGoalsMade-fieldGoalsAttempted",
+    "fieldGoalPct",
+    "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+    "\u2026(+12 more, len=15)"
+   ],
+   "displayNames": [
+    "Field Goals Made-Attempted",
+    "Field Goal Percentage",
+    "3-Point Field Goals Made-Attempted",
+    "\u2026(+12 more, len=15)"
+   ],
+   "descriptions": [
+    "The number of times a 2pt field goal was made.-The number of times a 2pt field goal was attempted.",
+    "The ratio of field goals made to field goals attempted: FGM / FGA",
+    "The number of times a 3pt field goal was made.-The number of times a 3pt field goal was attempted.",
+    "\u2026(+12 more, len=15)"
+   ],
+   "statistics": [
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2004,
+      "displayName": "2003-04"
+     },
+     "stats": [
+      "622-1492",
+      "41.7",
+      "63-217",
+      "\u2026(+12 more, len=15)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2005,
+      "displayName": "2004-05"
+     },
+     "stats": [
+      "795-1684",
+      "47.2",
+      "108-308",
+      "\u2026(+12 more, len=15)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2006,
+      "displayName": "2005-06"
+     },
+     "stats": [
+      "875-1823",
+      "48.0",
+      "127-379",
+      "\u2026(+12 more, len=15)"
+     ],
+     "position": "F"
+    },
+    "\u2026(+21 more, len=24)"
+   ],
+   "totals": [
+    "15979-31544",
+    "50.7",
+    "2637-7575",
+    "\u2026(+12 more, len=15)"
+   ],
+   "sortKey": "totals"
+  },
+  {
+   "name": "miscellaneous",
+   "displayName": "Regular Season Misc Totals",
+   "labels": [
+    "DD2",
+    "TD3",
+    "DQ",
+    "\u2026(+7 more, len=10)"
+   ],
+   "names": [
+    "doubleDouble",
+    "tripleDouble",
+    "disqualifications",
+    "\u2026(+7 more, len=10)"
+   ],
+   "displayNames": [
+    "Double Double",
+    "Triple Double",
+    "Disqualifications",
+    "\u2026(+7 more, len=10)"
+   ],
+   "descriptions": [
+    "The number of times double digit values were accumulated in 2 of the following categories: points, rebounds, assists, st\u2026",
+    "The number of times double digit values were accumulated in 3 of the following categories: points, rebounds, assists, st\u2026",
+    "The number of times a player reached the foul limit.",
+    "\u2026(+7 more, len=10)"
+   ],
+   "statistics": [
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2004,
+      "displayName": "2003-04"
+     },
+     "stats": [
+      "12",
+      "0",
+      "0",
+      "\u2026(+7 more, len=10)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2005,
+      "displayName": "2004-05"
+     },
+     "stats": [
+      "25",
+      "4",
+      "1",
+      "\u2026(+7 more, len=10)"
+     ],
+     "position": "F"
+    },
+    {
+     "teamId": "5",
+     "teamSlug": "cleveland-cavaliers",
+     "season": {
+      "year": 2006,
+      "displayName": "2005-06"
+     },
+     "stats": [
+      "21",
+      "5",
+      "0",
+      "\u2026(+7 more, len=10)"
+     ],
+     "position": "F"
+    },
+    "\u2026(+21 more, len=24)"
+   ],
+   "totals": [
+    "623",
+    "125",
+    "6",
+    "\u2026(+7 more, len=10)"
+   ],
+   "sortKey": "miscellaneous"
+  }
+ ],
+ "glossary": [
+  {
+   "abbreviation": "3P%",
+   "displayName": "3-Point Field Goal Percentage"
+  },
+  {
+   "abbreviation": "3PT",
+   "displayName": "3-Point Field Goals Made-Attempted Per Game"
+  },
+  {
+   "abbreviation": "AST",
+   "displayName": "Assists Per Game"
+  },
+  "\u2026(+25 more, len=28)"
+ ]
+}

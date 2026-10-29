@@ -1,0 +1,155 @@
+{
+ "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/types/2/teams/20/statistics/0?lang=en&regi\u2026",
+ "season": {
+  "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027?lang=en&region=us"
+ },
+ "team": {
+  "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/teams/20?lang=en&region=us"
+ },
+ "splits": {
+  "id": "0",
+  "name": "All Splits",
+  "abbreviation": "Total",
+  "type": "total",
+  "categories": [
+   {
+    "name": "defensive",
+    "displayName": "Defensive",
+    "shortDisplayName": "Defensive",
+    "abbreviation": "def",
+    "summary": "",
+    "stats": [
+     {
+      "name": "blocks",
+      "displayName": "Blocks",
+      "shortDisplayName": "BLK",
+      "description": "Short for blocked shot, number of times when a defensive player legally deflects a field goal attempt from an offensive \u2026",
+      "abbreviation": "BLK",
+      "value": 23.0,
+      "displayValue": "23",
+      "perGameValue": 5.0,
+      "perGameDisplayValue": "5",
+      "rank": 1,
+      "rankDisplayValue": "1st"
+     },
+     {
+      "name": "defensiveRebounds",
+      "displayName": "Defensive Rebounds",
+      "shortDisplayName": "DREB",
+      "description": "The number of times when the defense obtains the possession of the ball after a missed shot by the offense.",
+      "abbreviation": "DR",
+      "value": 131.0,
+      "displayValue": "131",
+      "perGameValue": 32.0,
+      "perGameDisplayValue": "32",
+      "rank": 2,
+      "rankDisplayValue": "2nd"
+     },
+     {
+      "name": "steals",
+      "displayName": "Steals",
+      "shortDisplayName": "STL",
+      "description": "The number of times a defensive player forced a turnover by intercepting or deflecting a pass or a dribble of an offensi\u2026",
+      "abbreviation": "STL",
+      "value": 42.0,
+      "displayValue": "42",
+      "perGameValue": 10.0,
+      "perGameDisplayValue": "10",
+      "rank": 1,
+      "rankDisplayValue": "Tied-1st"
+     },
+     "\u2026(+8 more, len=11)"
+    ]
+   },
+   {
+    "name": "general",
+    "displayName": "General",
+    "shortDisplayName": "General",
+    "abbreviation": "gen",
+    "summary": "",
+    "stats": [
+     {
+      "name": "disqualifications",
+      "displayName": "Disqualifications",
+      "shortDisplayName": "DQ",
+      "description": "The number of times a player reached the foul limit.",
+      "abbreviation": "DQ",
+      "value": 0.0,
+      "displayValue": "0"
+     },
+     {
+      "name": "flagrantFouls",
+      "displayName": "Flagrant Fouls",
+      "shortDisplayName": "FLAG",
+      "description": "The number of fouls that the officials thought were unnecessary or excessive.",
+      "abbreviation": "FLAG",
+      "value": 0.0,
+      "displayValue": "0"
+     },
+     {
+      "name": "fouls",
+      "displayName": "Fouls",
+      "shortDisplayName": "PF",
+      "description": "The number of times a player had illegal contact with the opponent.",
+      "abbreviation": "PF",
+      "value": 92.0,
+      "displayValue": "92",
+      "perGameValue": 23.0,
+      "perGameDisplayValue": "23",
+      "rank": 3,
+      "rankDisplayValue": "3rd"
+     },
+     "\u2026(+35 more, len=38)"
+    ]
+   },
+   {
+    "name": "offensive",
+    "displayName": "Offensive",
+    "shortDisplayName": "Offensive",
+    "abbreviation": "off",
+    "summary": "",
+    "stats": [
+     {
+      "name": "assists",
+      "displayName": "Assists",
+      "shortDisplayName": "AST",
+      "description": "The number of times a player who passes the ball to a teammate in a way that leads to a score by field goal, meaning tha\u2026",
+      "abbreviation": "AST",
+      "value": 100.0,
+      "displayValue": "100",
+      "perGameValue": 25.0,
+      "perGameDisplayValue": "25",
+      "rank": 3,
+      "rankDisplayValue": "3rd"
+     },
+     {
+      "name": "effectiveFGPct",
+      "displayName": "Effective Field Goal Percentage",
+      "shortDisplayName": "EFF FG%",
+      "description": "Metric that gives 3pt field goals more worth than 2pt field goals: (FGM + (0.5 x 3PTM)) / FGA",
+      "abbreviation": "EFF FG%",
+      "value": 47.967,
+      "displayValue": "48.0",
+      "rank": 4,
+      "rankDisplayValue": "4th"
+     },
+     {
+      "name": "fieldGoals",
+      "displayName": "Field Goals",
+      "shortDisplayName": "FG",
+      "description": "Field Goal makes and attempts.",
+      "abbreviation": "FG",
+      "value": 0.420054,
+      "displayValue": "155/369",
+      "perGameValue": 0.413043,
+      "perGameDisplayValue": "0.413"
+     },
+     "\u2026(+57 more, len=60)"
+    ]
+   }
+  ]
+ },
+ "seasonType": {
+  "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/types/2?lang=en&region=us"
+ }
+}

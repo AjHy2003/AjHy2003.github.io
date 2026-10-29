@@ -1,0 +1,1056 @@
+{
+ "count": 5,
+ "pageIndex": 1,
+ "pageSize": 50,
+ "pageCount": 1,
+ "items": [
+  {
+   "id": "1966",
+   "uuid": "1f6592b3-ff53-d321-8dc5-6038d48c1786",
+   "guid": "1f6592b3-ff53-d321-8dc5-6038d48c1786",
+   "displayName": "LeBron James",
+   "shortName": "L. James",
+   "type": "player",
+   "sport": "basketball",
+   "league": "nba",
+   "leagueRelationships": [
+    {
+     "type": "league",
+     "displayName": "NBA",
+     "core": {
+      "id": "46",
+      "uid": "s:40~l:46",
+      "name": "National Basketball Association",
+      "displayName": "NBA",
+      "abbreviation": "NBA",
+      "slug": "nba",
+      "isTournament": false,
+      "season": {
+       "year": 2027,
+       "startDate": "2026-09-30T07:00:00.000+00:00",
+       "endDate": "2027-06-26T06:59:00.000+00:00",
+       "type": {
+        "id": "2",
+        "type": 2,
+        "name": "Regular Season",
+        "abbreviation": "reg",
+        "slug": "regular-season",
+        "startDate": "2026-10-20T07:00:00.000+00:00",
+        "endDate": "2027-04-12T06:59:00.000+00:00",
+        "hasGroups": false,
+        "hasStandings": true,
+        "hasLegs": false,
+        "week": {
+         "number": 2,
+         "startDate": "2026-10-27T07:00:00.000+00:00",
+         "endDate": "2026-11-03T07:59:00.000+00:00",
+         "text": "Week 2"
+        },
+        "weeks": {},
+        "year": 2027
+       },
+       "types": {
+        "count": 5,
+        "pageIndex": 1,
+        "pageSize": 5,
+        "pageCount": 1,
+        "items": [
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "week": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         "\u2026(+2 more, len=5)"
+        ]
+       },
+       "displayName": "2026-27"
+      },
+      "seasons": {},
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500-dark/nba.png&w=500&h=500&transparent=true",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/nba/",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "schedule",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/nba/schedule",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+16 more, len=19)"
+      ],
+      "franchises": {},
+      "shortName": "NBA",
+      "events": {},
+      "gender": "MALE",
+      "calendar": {}
+     }
+    }
+   ],
+   "teamRelationships": [
+    {
+     "type": "team",
+     "displayName": "Philadelphia 76ers",
+     "core": {
+      "id": "20",
+      "uid": "s:40~l:46~t:20",
+      "guid": "ca1685ed-b799-53e4-7924-e58ea6eb8f3a",
+      "slug": "philadelphia-76ers",
+      "location": "Philadelphia",
+      "name": "76ers",
+      "abbreviation": "PHI",
+      "displayName": "Philadelphia 76ers",
+      "shortDisplayName": "76ers",
+      "color": "1d428a",
+      "alternateColor": "e01234",
+      "isActive": true,
+      "isAllStar": false,
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/phi.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "scoreboard"
+        ]
+       },
+       "\u2026(+13 more, len=16)"
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "clubhouse",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/nba/team/roster/_/name/phi/philadelphia-76ers",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20&section=roster",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+11 more, len=14)"
+      ],
+      "groups": {},
+      "coaches": {},
+      "venue": {
+       "id": "1845",
+       "fullName": "Xfinity Mobile Arena",
+       "shortName": "Wells Fargo Center",
+       "address": {
+        "city": "Philadelphia",
+        "state": "PA"
+       },
+       "grass": false,
+       "indoor": true,
+       "images": [
+        {
+         "href": "https://a.espncdn.com/i/venues/nba/day/1845.jpg",
+         "width": 2000,
+         "height": 1125,
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      "record": {},
+      "athletes": {},
+      "againstTheSpreadRecords": {},
+      "ranks": {},
+      "franchise": {}
+     }
+    }
+   ],
+   "jersey": "23",
+   "position": {
+    "id": "7",
+    "name": "Forward",
+    "displayName": "Forward",
+    "abbreviation": "F",
+    "leaf": false,
+    "slug": "forward"
+   },
+   "relevance": "1000000000",
+   "isActive": true,
+   "isRetired": false,
+   "defaultLeagueSlug": "nba",
+   "label": "NBA - Philadelphia 76ers",
+   "uid": "s:40~l:46~a:1966",
+   "headshot": {
+    "href": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
+    "alt": "LeBron James"
+   },
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "playercard",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/nba/player/_/id/1966/lebron-james",
+     "text": "Player Card",
+     "shortText": "Player Card",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/nba/player/stats/_/id/1966/lebron-james",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:1966&section=stats",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+10 more, len=13)"
+   ],
+   "includeSponsor": false,
+   "showKey": false,
+   "isLocked": false
+  },
+  {
+   "id": "5313200",
+   "uuid": "d1e86462-6d90-3949-a017-ece1bf9e95c4",
+   "guid": "d1e86462-6d90-3949-a017-ece1bf9e95c4",
+   "displayName": "LeBron Thomas",
+   "shortName": "L. Thomas",
+   "type": "player",
+   "sport": "basketball",
+   "league": "mens-college-basketball",
+   "leagueRelationships": [
+    {
+     "type": "league",
+     "displayName": "NCAA Men's Basketball",
+     "core": {
+      "id": "41",
+      "uid": "s:40~l:41",
+      "name": "NCAA Men's Basketball",
+      "displayName": "NCAA Men's Basketball",
+      "abbreviation": "NCAAM",
+      "slug": "mens-college-basketball",
+      "isTournament": false,
+      "season": {
+       "year": 2027,
+       "startDate": "2026-07-13T07:00:00.000+00:00",
+       "endDate": "2027-04-07T06:59:00.000+00:00",
+       "type": {
+        "id": "1",
+        "type": 1,
+        "name": "Preseason",
+        "abbreviation": "pre",
+        "slug": "preseason",
+        "startDate": "2026-07-13T07:00:00.000+00:00",
+        "endDate": "2026-11-01T06:59:00.000+00:00",
+        "hasGroups": false,
+        "hasStandings": false,
+        "hasLegs": false,
+        "week": {
+         "number": 1,
+         "startDate": "2026-07-13T07:00:00.000+00:00",
+         "endDate": "2026-11-01T06:59:00.000+00:00",
+         "text": "Week 1"
+        },
+        "weeks": {},
+        "year": 2027
+       },
+       "types": {
+        "count": 4,
+        "pageIndex": 1,
+        "pageSize": 4,
+        "pageCount": 1,
+        "items": [
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "week": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "displayName": "2026-27"
+      },
+      "seasons": {},
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_MensBasketball.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_MensBasketball.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "schedule",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/schedule",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+21 more, len=24)"
+      ],
+      "franchises": {},
+      "midsizeName": "NCAAM Basketball",
+      "shortName": "NCAAM",
+      "events": {},
+      "gender": "MALE",
+      "calendar": {}
+     }
+    }
+   ],
+   "teamRelationships": [
+    {
+     "type": "team",
+     "displayName": "Green Bay Phoenix",
+     "core": {
+      "id": "2739",
+      "uid": "s:40~l:41~t:2739",
+      "guid": "80a8f2a5-71ee-595e-5428-0ad7c949dccd",
+      "slug": "green-bay-phoenix",
+      "location": "Green Bay",
+      "name": "Phoenix",
+      "nickname": "Green Bay",
+      "abbreviation": "GB",
+      "displayName": "Green Bay Phoenix",
+      "shortDisplayName": "Green Bay",
+      "color": "006633",
+      "alternateColor": "ffffff",
+      "isActive": true,
+      "isAllStar": false,
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2739.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2739.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/guid/80a8f2a5-71ee-595e-5428-0ad7c949dccd/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "rel": [
+         "full",
+         "primary_logo_on_white_color"
+        ]
+       },
+       "\u2026(+11 more, len=14)"
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "clubhouse",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2739/green-bay-phoenix",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2739",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41~t:2739&section=roster",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+5 more, len=8)"
+      ],
+      "groups": {},
+      "college": {},
+      "coaches": {},
+      "venue": {
+       "id": "522",
+       "fullName": "Resch Center",
+       "address": {
+        "city": "Ashwaubenon",
+        "state": "WI"
+       },
+       "grass": false,
+       "indoor": true
+      },
+      "record": {},
+      "athletes": {},
+      "againstTheSpreadRecords": {},
+      "ranks": {},
+      "franchise": {}
+     }
+    }
+   ],
+   "jersey": "22",
+   "position": {
+    "id": "3",
+    "name": "Guard",
+    "displayName": "Guard",
+    "abbreviation": "G",
+    "leaf": false,
+    "slug": "guard"
+   },
+   "relevance": "3",
+   "isActive": true,
+   "isRetired": false,
+   "defaultLeagueSlug": "mens-college-basketball",
+   "label": "NCAAM - Green Bay",
+   "uid": "s:40~l:41~a:5313200",
+   "headshot": {
+    "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5313200.png",
+    "alt": "LeBron Thomas"
+   },
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "playercard",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/player/_/id/5313200/lebron-thomas",
+     "text": "Player Card",
+     "shortText": "Player Card",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5313200/lebron-thomas",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41~a:5313200&section=stats",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+9 more, len=12)"
+   ],
+   "includeSponsor": false,
+   "showKey": false,
+   "isLocked": false,
+   "flag": {
+    "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+    "alt": "USA",
+    "rel": [
+     "country-flag"
+    ]
+   }
+  },
+  {
+   "id": "5198939",
+   "uuid": "045c0728-93a7-3ddd-a4f0-0042a3ffd900",
+   "guid": "045c0728-93a7-3ddd-a4f0-0042a3ffd900",
+   "displayName": "Justin Lebron",
+   "shortName": "J. Lebron",
+   "type": "player",
+   "sport": "baseball",
+   "league": "mlb",
+   "leagueRelationships": [
+    {
+     "type": "league",
+     "displayName": "MLB",
+     "core": {
+      "id": "10",
+      "uid": "s:1~l:10",
+      "name": "Major League Baseball",
+      "displayName": "MLB",
+      "abbreviation": "MLB",
+      "slug": "mlb",
+      "isTournament": false,
+      "season": {
+       "year": 2026,
+       "startDate": "2026-02-19T08:00:00.000+00:00",
+       "endDate": "2026-11-12T07:59:00.000+00:00",
+       "type": {
+        "id": "3",
+        "type": 3,
+        "name": "Postseason",
+        "abbreviation": "post",
+        "slug": "post-season",
+        "startDate": "2026-09-29T07:00:00.000+00:00",
+        "endDate": "2026-11-12T07:59:00.000+00:00",
+        "hasGroups": false,
+        "hasStandings": false,
+        "hasLegs": false,
+        "weeks": {},
+        "year": 2026
+       },
+       "types": {
+        "count": 4,
+        "pageIndex": 1,
+        "pageSize": 4,
+        "pageCount": 1,
+        "items": [
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "week": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         {
+          "id": "\u2026",
+          "type": "\u2026",
+          "name": "\u2026",
+          "abbreviation": "\u2026",
+          "slug": "\u2026",
+          "startDate": "\u2026",
+          "endDate": "\u2026",
+          "hasGroups": "\u2026",
+          "hasStandings": "\u2026",
+          "hasLegs": "\u2026",
+          "weeks": "\u2026",
+          "year": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "displayName": "2026"
+      },
+      "seasons": {},
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500-dark/mlb.png&w=500&h=500&transparent=true",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/mlb/",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "index",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "schedule",
+         "desktop",
+         "league"
+        ],
+        "href": "https://www.espn.com/mlb/schedule",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+16 more, len=19)"
+      ],
+      "franchises": {},
+      "midsizeName": "MLB",
+      "shortName": "MLB",
+      "events": {},
+      "gender": "MALE",
+      "calendar": {}
+     }
+    }
+   ],
+   "teamRelationships": [
+    {
+     "type": "team",
+     "displayName": "Cincinnati Reds",
+     "core": {
+      "id": "17",
+      "uid": "s:1~l:10~t:17",
+      "guid": "04b65a0b-3cca-d795-0e21-23606470418a",
+      "slug": "cincinnati-reds",
+      "location": "Cincinnati",
+      "name": "Reds",
+      "abbreviation": "CIN",
+      "displayName": "Cincinnati Reds",
+      "shortDisplayName": "Reds",
+      "color": "c6011f",
+      "alternateColor": "ffffff",
+      "isActive": true,
+      "isAllStar": false,
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "default"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/cin.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "dark"
+        ]
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
+        "width": 500,
+        "height": 500,
+        "rel": [
+         "full",
+         "scoreboard"
+        ]
+       },
+       "\u2026(+13 more, len=16)"
+      ],
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "clubhouse",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/mlb/team/_/name/cin/cincinnati-reds",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "desktop",
+         "team"
+        ],
+        "href": "https://www.espn.com/mlb/team/roster/_/name/cin/cincinnati-reds",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "roster",
+         "sportscenter",
+         "app",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:17&section=roster",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+       },
+       "\u2026(+10 more, len=13)"
+      ],
+      "groups": {},
+      "coaches": {},
+      "record": {},
+      "athletes": {},
+      "ranks": {},
+      "franchise": {}
+     }
+    }
+   ],
+   "position": {
+    "id": "6",
+    "name": "Shortstop",
+    "displayName": "Shortstop",
+    "abbreviation": "SS",
+    "leaf": true,
+    "parent": {
+     "leaf": false
+    },
+    "slug": "shortstop"
+   },
+   "isActive": true,
+   "isRetired": false,
+   "defaultLeagueSlug": "mlb",
+   "label": "MLB - Cincinnati Reds",
+   "uid": "s:1~l:10~a:5198939",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "playercard",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/mlb/player/_/id/5198939",
+     "text": "Player Card",
+     "shortText": "Player Card",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "desktop",
+      "athlete"
+     ],
+     "href": "https://www.espn.com/mlb/player/stats/_/id/5198939/justin-lebron",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "stats",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~a:5198939&section=stats",
+     "text": "Stats",
+     "shortText": "Stats",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+10 more, len=13)"
+   ],
+   "includeSponsor": false,
+   "showKey": false,
+   "isLocked": false
+  },
+  "\u2026(+2 more, len=5)"
+ ]
+}

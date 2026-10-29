@@ -1,0 +1,2394 @@
+{
+ "statistics": {
+  "displayName": "2026 Batting",
+  "labels": [
+   "GP",
+   "AB",
+   "R",
+   "\u2026(+7 more, len=10)"
+  ],
+  "names": [
+   "gamesPlayed",
+   "atBats",
+   "runs",
+   "\u2026(+7 more, len=10)"
+  ],
+  "displayNames": [
+   "Games Played",
+   "At Bats",
+   "Runs",
+   "\u2026(+7 more, len=10)"
+  ],
+  "splits": [
+   {
+    "displayName": "Regular Season",
+    "stats": [
+     "66",
+     "237",
+     "45",
+     "\u2026(+7 more, len=10)"
+    ]
+   },
+   {
+    "displayName": "Career",
+    "stats": [
+     "1211",
+     "4342",
+     "918",
+     "\u2026(+7 more, len=10)"
+    ]
+   }
+  ]
+ },
+ "news": [
+  {
+   "headline": "Yankees, Brian Cashman reach contract; owner blames players for playoff exit",
+   "lastModified": "2026-10-21T21:09:50.000+00:00",
+   "root": "mlb",
+   "premium": false,
+   "links": {
+    "api": {
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/sports/news/50238406"
+     }
+    },
+    "mobile": {
+     "href": "http://m.espn.go.com/mlb/story?storyId=50238406"
+    },
+    "web": {
+     "href": "https://www.espn.com/mlb/story/_/id/50238406/yankees-gm-brian-cashman-agree-new-contract"
+    }
+   },
+   "type": "HeadlineNews",
+   "section": "MLB",
+   "id": 50238406,
+   "linkText": "Yankees, Cashman reach new contract; Steinbrenner puts blame on offense",
+   "categorized": "2026-10-28T16:47:56Z",
+   "description": "Yankees GM Brian Cashman reached a deal to stay in the post he has held since 1998, while owner Hal Steinbrenner blamed \u2026",
+   "nowId": "1-50238406",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 1296,
+     "height": 729,
+     "url": "https://a.espncdn.com/photo/2026/0128/r1607094_1296x729_16-9.jpg",
+     "name": "Brian Cashman [1296x729]",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/0128/r1607094_1296x1296_1-1.jpg",
+       "name": "Brian Cashman [1296x1296]"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2026/0128/r1607094_1296x729_16-9.jpg",
+       "name": "Brian Cashman [1296x729]"
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/0128/r1607094_864x1296_2-3.jpg",
+       "name": "Brian Cashman [864x1296]"
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 1296,
+     "height": 729,
+     "url": "https://a.espncdn.com/photo/2026/1021/r1734061_1296x729_16-9.jpg",
+     "name": "261021 Stanton [1296x729]",
+     "caption": "Yankees owner Hal Steinbrenner said the \"players didn't live up to their end of the bargain,\" especially on offense as G\u2026",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1021/r1734061_1296x1296_1-1.jpg",
+       "name": "261021 Stanton [1296x1296]",
+       "caption": "Yankees owner Hal Steinbrenner said the \"players didn't live up to their end of the bargain,\" especially on offense as G\u2026"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2026/1021/r1734061_1296x729_16-9.jpg",
+       "name": "261021 Stanton [1296x729]",
+       "caption": "Yankees owner Hal Steinbrenner said the \"players didn't live up to their end of the bargain,\" especially on offense as G\u2026"
+      },
+      {
+       "width": 1296,
+       "height": 864,
+       "url": "https://a.espncdn.com/photo/2026/1021/r1734061_1296x864_3-2.jpg",
+       "name": "261021 Stanton [1296x864]",
+       "caption": "Yankees owner Hal Steinbrenner said the \"players didn't live up to their end of the bargain,\" especially on offense as G\u2026"
+      },
+      "\u2026(+1 more, len=4)"
+     ]
+    },
+    {
+     "width": 576,
+     "height": 324,
+     "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026",
+     "name": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement",
+     "caption": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement"
+    }
+   ],
+   "categories": [
+    {
+     "id": 61,
+     "uid": "s:1~l:10~t:10",
+     "description": "New York Yankees",
+     "type": "team",
+     "sportId": 10,
+     "team": {
+      "id": 10,
+      "abbreviation": "NYY",
+      "links": {
+       "web": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       },
+       "mobile": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": 80311,
+     "uid": "s:1~l:10",
+     "description": "MLB",
+     "type": "league",
+     "sportId": 10,
+     "leagueId": 10,
+     "league": {
+      "id": 10,
+      "abbreviation": "MLB",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 125428,
+     "uid": "s:1~l:10~a:33192",
+     "description": "Aaron Judge",
+     "type": "athlete",
+     "sportId": 10,
+     "athleteId": 33192,
+     "athlete": {
+      "id": 33192,
+      "links": {
+       "web": {
+        "athletes": {
+         "href": "https://www.espn.com/mlb/player/_/id/33192"
+        }
+       },
+       "mobile": {
+        "athletes": {
+         "href": "https://www.espn.com/mlb/player/_/id/33192"
+        }
+       }
+      }
+     }
+    },
+    "\u2026(+1 more, len=4)"
+   ],
+   "published": "2026-10-21T21:09:50.000+00:00",
+   "video": [
+    {
+     "source": "espn",
+     "id": 50238814,
+     "headline": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement",
+     "title": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement",
+     "caption": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement",
+     "description": "Steinbrenner says Cashman is 'great every season' after reaching contract agreement",
+     "premium": false,
+     "ad": {
+      "sport": "mlb",
+      "bundle": "sportscenter"
+     },
+     "tracking": {
+      "sportName": "baseball",
+      "leagueName": "MLB",
+      "coverageType": "PressConference",
+      "trackingName": "COM_MLB Presser (Steinbrenner says Cashman is 'great every season' after reaching contract agreement) 2026/10/21",
+      "trackingId": "dm_MLB_cash_stays"
+     },
+     "cerebroId": "6ad8e3225337f73c2d0828ae",
+     "lastModified": "2026-10-21T16:45:12.000+00:00",
+     "originalPublishDate": "2026-10-21T16:06:59.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-21T16:06:51.000+00:00",
+      "expirationDate": "2026-12-31T18:06:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "geoRestrictions": {
+      "type": "whitelist",
+      "countries": [
+       "PR",
+       "HN",
+       "PY",
+       "\u2026(+102 more, len=105)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 49,
+     "categories": [
+      {
+       "id": 80311,
+       "uid": "s:1~l:10",
+       "description": "MLB",
+       "type": "league",
+       "sportId": 10,
+       "leagueId": 10,
+       "league": {
+        "id": 10,
+        "abbreviation": "MLB",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 711826,
+       "description": "2 Star Rating",
+       "type": "editorialindicator"
+      },
+      {
+       "id": 757286,
+       "uid": "s:1",
+       "description": "Baseball",
+       "type": "league",
+       "sportId": 1,
+       "leagueId": 1,
+       "league": {
+        "id": 1
+       }
+      },
+      "\u2026(+2 more, len=5)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704660/thu\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50238814&videoDSI=916a5dbe6b2f2"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50238814/steinbrenner-says-cashman-great-every-season-reaching-contract-agreement",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50238814/steinbrenner-says-cashman-great-every-season-reaching-contract-agreement"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/8c739623-d2a9-4ad5-b7df-3832b5c514f9/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50238814"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/8c739623-d2a9-4ad5-b7df-3832b5c514f9/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/8c739623-d2a9-4ad5-b7df-3832b5c514f9/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/8c739623-d2a9-4ad5-b7df-3832b5c514f9"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50238814"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_370466\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704660/pla\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1021/ss_20261021_120703305_3704660/ss_20261021_120703305_3704660/pla\u2026"
+        }
+       }
+      }
+     }
+    },
+    {
+     "source": "espn",
+     "id": 50132952,
+     "headline": "Stephen A. disgusted, says Yankees need to change after being swept by Rays",
+     "title": "Stephen A. disgusted, says Yankees need to change after being swept by Rays",
+     "caption": "Stephen A. disgusted, says Yankees need to change after being swept by Rays",
+     "description": "Stephen A. disgusted, says Yankees need to change after being swept by Rays",
+     "premium": false,
+     "ad": {
+      "sport": "mlb",
+      "bundle": "sportscenter"
+     },
+     "tracking": {
+      "sportName": "baseball",
+      "leagueName": "MLB",
+      "coverageType": "Analysis",
+      "trackingName": "COM_MLB Analysis (Stephen A. disgusted, says Yankees need to change after being swept by Rays) 2026/10/08 FT",
+      "trackingId": "dm_MLB_stephen_a_disgusted_says_yankees_need_to_change_after_being_swept_by_rays"
+     },
+     "cerebroId": "6ac7a808e63fd6586c56cca5",
+     "lastModified": "2026-10-08T14:34:24.000+00:00",
+     "originalPublishDate": "2026-10-08T14:26:16.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-08T14:26:09.000+00:00",
+      "expirationDate": "2026-11-10T16:26:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 141,
+     "categories": [
+      {
+       "id": 80311,
+       "uid": "s:1~l:10",
+       "description": "MLB",
+       "type": "league",
+       "sportId": 10,
+       "leagueId": 10,
+       "league": {
+        "id": 10,
+        "abbreviation": "MLB",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 711826,
+       "description": "2 Star Rating",
+       "type": "editorialindicator"
+      },
+      {
+       "id": 61,
+       "uid": "s:1~l:10~t:10",
+       "description": "New York Yankees",
+       "type": "team",
+       "sportId": 10,
+       "team": {
+        "id": 10,
+        "abbreviation": "NYY",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      "\u2026(+2 more, len=5)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688717/thu\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50132952&videoDSI=b4c45aea0d71f"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50132952/stephen-disgusted-says-yankees-need-change-being-swept-rays",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50132952/stephen-disgusted-says-yankees-need-change-being-swept-rays"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27d33b38-2981-4070-904a-f15ead1bc19d/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50132952"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27d33b38-2981-4070-904a-f15ead1bc19d/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27d33b38-2981-4070-904a-f15ead1bc19d/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/27d33b38-2981-4070-904a-f15ead1bc19d"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50132952"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_368871\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688717/pla\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_102621929_3688717/ss_20261008_102621929_3688717/pla\u2026"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "byline": "Jorge Castillo",
+   "authors": [
+    {
+     "firstName": "Jorge",
+     "lastName": "Castillo",
+     "displayName": "Jorge Castillo",
+     "shortName": "J. Castillo",
+     "contactInfo": "jorge.castillo@espn.com",
+     "biography": "ESPN baseball reporter. Covered the Washington Wizards from 2014 to 2016 and the Washington Nationals from 2016 to 2018 \u2026",
+     "sourceLine": "ESPN Staff Writer ",
+     "images": [
+      {
+       "url": "https://a.espncdn.com/photo/2024/1022/r1404132_4_130x180_smallmug.png"
+      }
+     ],
+     "links": {
+      "api": {
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/sports/news/39708247"
+       }
+      }
+     }
+    }
+   ],
+   "dataSourceIdentifier": "abef23795218e"
+  },
+  {
+   "headline": "Aaron Judge: Yankees front office should go 'all-in'",
+   "lastModified": "2026-10-08T12:49:38.000+00:00",
+   "root": "mlb",
+   "premium": false,
+   "links": {
+    "api": {
+     "artwork": {
+      "href": "https://artwork.api.espn.com/artwork/collections/media/82dc4177-07ff-4933-a42b-b22e0aa80c13"
+     },
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/video/clips/50132288"
+     }
+    },
+    "web": {
+     "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in",
+     "self": {
+      "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in"
+     }
+    }
+   },
+   "type": "Media",
+   "section": "MLB",
+   "id": 50132288,
+   "categorized": "2026-10-08T12:49:42Z",
+   "description": "Aaron Judge: Yankees front office should go 'all-in'",
+   "nowId": "1-50132288",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 576,
+     "height": 324,
+     "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+     "name": "Aaron Judge: Yankees front office should go 'all-in'",
+     "caption": "Aaron Judge: Yankees front office should go 'all-in'"
+    }
+   ],
+   "categories": [
+    {
+     "id": 80311,
+     "uid": "s:1~l:10",
+     "description": "MLB",
+     "type": "league",
+     "sportId": 10,
+     "leagueId": 10,
+     "league": {
+      "id": 10,
+      "abbreviation": "MLB",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 711826,
+     "description": "2 Star Rating",
+     "type": "editorialindicator"
+    },
+    {
+     "id": 61,
+     "uid": "s:1~l:10~t:10",
+     "description": "New York Yankees",
+     "type": "team",
+     "sportId": 10,
+     "team": {
+      "id": 10,
+      "abbreviation": "NYY",
+      "links": {
+       "web": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       },
+       "mobile": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       }
+      }
+     }
+    },
+    "\u2026(+3 more, len=6)"
+   ],
+   "published": "2026-10-08T12:49:38.000+00:00",
+   "video": [
+    {
+     "source": "espn",
+     "id": 50132288,
+     "headline": "Aaron Judge: Yankees front office should go 'all-in'",
+     "title": "Aaron Judge: Yankees front office should go 'all-in'",
+     "caption": "Aaron Judge: Yankees front office should go 'all-in'",
+     "description": "Aaron Judge: Yankees front office should go 'all-in'",
+     "premium": false,
+     "ad": {
+      "sport": "mlb",
+      "bundle": "sportscenter"
+     },
+     "tracking": {
+      "sportName": "baseball",
+      "leagueName": "MLB",
+      "coverageType": "PressConference",
+      "trackingName": "COM_MLB Presser (Aaron Judge: Yankees front office should go 'all-in') 2026/10/08 SC",
+      "trackingId": "dm_MLB_aaron_judge_yankees_front_office_should_go_allin"
+     },
+     "cerebroId": "6ac78b6559b1b36a3e089746",
+     "lastModified": "2026-10-08T12:49:38.000+00:00",
+     "originalPublishDate": "2026-10-08T12:24:05.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-08T12:23:57.000+00:00",
+      "expirationDate": "2026-11-10T14:23:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 39,
+     "categories": [
+      {
+       "id": 80311,
+       "uid": "s:1~l:10",
+       "description": "MLB",
+       "type": "league",
+       "sportId": 10,
+       "leagueId": 10,
+       "league": {
+        "id": 10,
+        "abbreviation": "MLB",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 711826,
+       "description": "2 Star Rating",
+       "type": "editorialindicator"
+      },
+      {
+       "id": 61,
+       "uid": "s:1~l:10~t:10",
+       "description": "New York Yankees",
+       "type": "team",
+       "sportId": 10,
+       "team": {
+        "id": 10,
+        "abbreviation": "NYY",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/thu\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50132288&videoDSI=611b0bae404ff"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50132288"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/82dc4177-07ff-4933-a42b-b22e0aa80c13"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50132288"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/pla\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/pla\u2026"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "dataSourceIdentifier": "611b0bae404ff"
+  },
+  {
+   "headline": "As Yankees fall short again, Aaron Judge says front office 'should go all-in'",
+   "lastModified": "2026-10-08T13:03:42.000+00:00",
+   "root": "mlb",
+   "premium": false,
+   "links": {
+    "api": {
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/sports/news/50131001"
+     }
+    },
+    "mobile": {
+     "href": "http://m.espn.go.com/mlb/story?storyId=50131001"
+    },
+    "web": {
+     "href": "https://www.espn.com/mlb/story/_/id/50131001/aaron-judge-reacts-yankees-postseason-elimination-rays"
+    }
+   },
+   "type": "HeadlineNews",
+   "section": "MLB",
+   "id": 50131001,
+   "linkText": "Judge 'just hating every single moment of' watching Yankees' elimination",
+   "categorized": "2026-10-28T16:47:53Z",
+   "description": "Aaron Judge stuck around the home dugout at Yankee Stadium to watch a familiar final October scene unfold: an opponent c\u2026",
+   "nowId": "1-50131001",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 600,
+     "height": 400,
+     "url": "https://a.espncdn.com/photo/2026/1008/r1727721_600x400_3-2.jpg",
+     "name": "Aaron Judge  [600x400]",
+     "caption": "\u201cThere\u2019s a standard to win a championship,\u201d Aaron Judge said Wednesday night. \u201cIt\u2019s black and white. There\u2019s no gray are\u2026",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1008/r1727721_1296x1296_1-1.jpg",
+       "name": "Aaron Judge  [1296x1296]",
+       "caption": "\u201cThere\u2019s a standard to win a championship,\u201d Aaron Judge said Wednesday night. \u201cIt\u2019s black and white. There\u2019s no gray are\u2026"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2026/1008/r1727721_1296x729_16-9.jpg",
+       "name": "Aaron Judge  [1296x729]",
+       "caption": "\u201cThere\u2019s a standard to win a championship,\u201d Aaron Judge said Wednesday night. \u201cIt\u2019s black and white. There\u2019s no gray are\u2026"
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1008/r1727721_864x1296_2-3.jpg",
+       "name": "Aaron Judge  [864x1296]",
+       "caption": "\u201cThere\u2019s a standard to win a championship,\u201d Aaron Judge said Wednesday night. \u201cIt\u2019s black and white. There\u2019s no gray are\u2026"
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 576,
+     "height": 324,
+     "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+     "name": "Aaron Judge: Yankees front office should go 'all-in'",
+     "caption": "Aaron Judge: Yankees front office should go 'all-in'"
+    }
+   ],
+   "categories": [
+    {
+     "id": 409224,
+     "description": "news",
+     "type": "topic",
+     "sportId": 0
+    },
+    {
+     "id": 80311,
+     "uid": "s:1~l:10",
+     "description": "MLB",
+     "type": "league",
+     "sportId": 10,
+     "leagueId": 10,
+     "league": {
+      "id": 10,
+      "abbreviation": "MLB",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 61,
+     "uid": "s:1~l:10~t:10",
+     "description": "New York Yankees",
+     "type": "team",
+     "sportId": 10,
+     "team": {
+      "id": 10,
+      "abbreviation": "NYY",
+      "links": {
+       "web": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       },
+       "mobile": {
+        "teams": {
+         "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees"
+        }
+       }
+      }
+     }
+    },
+    "\u2026(+3 more, len=6)"
+   ],
+   "published": "2026-10-08T13:03:42.000+00:00",
+   "video": [
+    {
+     "source": "espn",
+     "id": 50132288,
+     "headline": "Aaron Judge: Yankees front office should go 'all-in'",
+     "title": "Aaron Judge: Yankees front office should go 'all-in'",
+     "caption": "Aaron Judge: Yankees front office should go 'all-in'",
+     "description": "Aaron Judge: Yankees front office should go 'all-in'",
+     "premium": false,
+     "ad": {
+      "sport": "mlb",
+      "bundle": "sportscenter"
+     },
+     "tracking": {
+      "sportName": "baseball",
+      "leagueName": "MLB",
+      "coverageType": "PressConference",
+      "trackingName": "COM_MLB Presser (Aaron Judge: Yankees front office should go 'all-in') 2026/10/08 SC",
+      "trackingId": "dm_MLB_aaron_judge_yankees_front_office_should_go_allin"
+     },
+     "cerebroId": "6ac78b6559b1b36a3e089746",
+     "lastModified": "2026-10-08T12:49:38.000+00:00",
+     "originalPublishDate": "2026-10-08T12:24:05.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-08T12:23:57.000+00:00",
+      "expirationDate": "2026-11-10T14:23:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 39,
+     "categories": [
+      {
+       "id": 80311,
+       "uid": "s:1~l:10",
+       "description": "MLB",
+       "type": "league",
+       "sportId": 10,
+       "leagueId": 10,
+       "league": {
+        "id": 10,
+        "abbreviation": "MLB",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 711826,
+       "description": "2 Star Rating",
+       "type": "editorialindicator"
+      },
+      {
+       "id": 61,
+       "uid": "s:1~l:10~t:10",
+       "description": "New York Yankees",
+       "type": "team",
+       "sportId": 10,
+       "team": {
+        "id": 10,
+        "abbreviation": "NYY",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/thu\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50132288&videoDSI=611b0bae404ff"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50132288/yankees-front-office-go-all-in"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50132288"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/82dc4177-07ff-4933-a42b-b22e0aa80c13/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/82dc4177-07ff-4933-a42b-b22e0aa80c13"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50132288"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_368867\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/pla\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1008/ss_20261008_082408299_3688675/ss_20261008_082408299_3688675/pla\u2026"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "byline": "Jorge Castillo",
+   "authors": [
+    {
+     "firstName": "Jorge",
+     "lastName": "Castillo",
+     "displayName": "Jorge Castillo",
+     "shortName": "J. Castillo",
+     "contactInfo": "jorge.castillo@espn.com",
+     "biography": "ESPN baseball reporter. Covered the Washington Wizards from 2014 to 2016 and the Washington Nationals from 2016 to 2018 \u2026",
+     "sourceLine": "ESPN Staff Writer ",
+     "images": [
+      {
+       "url": "https://a.espncdn.com/photo/2024/1022/r1404132_4_130x180_smallmug.png"
+      }
+     ],
+     "links": {
+      "api": {
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/sports/news/39708247"
+       }
+      }
+     }
+    }
+   ],
+   "dataSourceIdentifier": "d8e11ea1c5915"
+  },
+  "\u2026(+10 more, len=13)"
+ ],
+ "nextGame": {
+  "displayName": "Previous Game",
+  "league": {
+   "id": "10",
+   "uid": "s:1~l:10",
+   "name": "Major League Baseball",
+   "shortName": "MLB",
+   "abbreviation": "MLB",
+   "slug": "mlb",
+   "events": [
+    {
+     "id": "401907987",
+     "competitionId": "401907987",
+     "uid": "s:1~l:10~e:401907987",
+     "date": "2026-10-08T00:00:00.000+00:00",
+     "timeValid": true,
+     "name": "Tampa Bay Rays at New York Yankees",
+     "shortName": "TB @ NYY",
+     "location": "Yankee Stadium",
+     "season": 2026,
+     "seasonStartDate": "2026-02-19T08:00:00.000+00:00",
+     "seasonEndDate": "2026-11-12T07:59:00.000+00:00",
+     "seasonType": 3,
+     "seasonTypeHasGroups": false,
+     "period": 9,
+     "clock": "0.0",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401907987/rays-yankees",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401907987",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "now",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401907987",
+       "text": "Now",
+       "shortText": "Now",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "status": "post",
+     "fullStatus": {
+      "clock": "0.0",
+      "displayClock": "0:00",
+      "period": 9,
+      "type": {
+       "id": "3",
+       "name": "STATUS_FINAL",
+       "description": "Final",
+       "detail": "Final",
+       "shortDetail": "Final",
+       "state": "post",
+       "completed": true
+      },
+      "featuredAthletes": [
+       {
+        "name": "winningPitcher",
+        "displayName": "Winning Pitcher",
+        "shortDisplayName": "Win",
+        "abbreviation": "WP",
+        "playerId": "4669425"
+       },
+       {
+        "name": "losingPitcher",
+        "displayName": "Losing Pitcher",
+        "shortDisplayName": "Loss",
+        "abbreviation": "LP",
+        "playerId": "32685"
+       },
+       {
+        "name": "savingPitcher",
+        "displayName": "Saving Pitcher",
+        "shortDisplayName": "Save",
+        "abbreviation": "S",
+        "playerId": "40884"
+       }
+      ]
+     },
+     "broadcasts": [
+      {
+       "type": "TV",
+       "typeId": 1,
+       "isNational": true,
+       "broadcasterId": 487,
+       "broadcastId": 487,
+       "priority": 1,
+       "name": "TBS",
+       "shortName": "TBS",
+       "callLetters": "TBS",
+       "station": "TBS",
+       "region": "us",
+       "language": "en"
+      }
+     ],
+     "broadcast": "TBS",
+     "competitors": [
+      {
+       "id": "10",
+       "uid": "s:1~l:10~t:10",
+       "type": "team",
+       "order": 0,
+       "color": "132448",
+       "alternateColor": "c4ced4",
+       "group": "1",
+       "homeAway": "home",
+       "abbreviation": "NYY",
+       "location": "New York",
+       "displayName": "New York Yankees",
+       "score": "3",
+       "record": "93-68",
+       "winner": false,
+       "name": "Yankees",
+       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+       "logoDark": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/nyy.png"
+      },
+      {
+       "id": "30",
+       "uid": "s:1~l:10~t:30",
+       "type": "team",
+       "order": 1,
+       "color": "092c5c",
+       "alternateColor": "8fbce6",
+       "group": "1",
+       "homeAway": "away",
+       "abbreviation": "TB",
+       "location": "Tampa Bay",
+       "displayName": "Tampa Bay Rays",
+       "score": "4",
+       "record": "98-64",
+       "winner": true,
+       "name": "Rays",
+       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+       "logoDark": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tb.png"
+      }
+     ],
+     "onWatch": false,
+     "recent": false,
+     "notes": [
+      {
+       "type": "event",
+       "headline": "ALDS - Game 3"
+      }
+     ],
+     "seriesSummary": "TB wins series 3-0",
+     "odds": {
+      "provider": {
+       "id": "100",
+       "name": "DraftKings",
+       "priority": 1
+      },
+      "details": "NYY -175",
+      "overUnder": 7.0,
+      "spread": -1.5,
+      "overOdds": -113,
+      "underOdds": -106,
+      "awayTeamOdds": {
+       "team": {
+        "id": "30",
+        "abbreviation": "TB"
+       },
+       "favorite": false,
+       "underdog": true,
+       "moneyLine": 144,
+       "spreadOdds": null
+      },
+      "homeTeamOdds": {
+       "team": {
+        "id": "10",
+        "abbreviation": "NYY"
+       },
+       "favorite": true,
+       "underdog": false,
+       "moneyLine": -175,
+       "spreadOdds": null
+      },
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "home",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Home Bet",
+        "shortText": "Home Bet",
+        "isExternal": true,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "away",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Away Bet",
+        "shortText": "Away Bet",
+        "isExternal": true,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "homeSpread",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Home Point Spread",
+        "shortText": "Home Point Spread",
+        "isExternal": true,
+        "isPremium": false
+       },
+       "\u2026(+4 more, len=7)"
+      ],
+      "moneylineWinner": false,
+      "spreadWinner": false
+     },
+     "appLinks": [
+      {
+       "language": "en",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401907987",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "boxscore",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401907987",
+       "text": "Box Score",
+       "shortText": "Box Score",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "gamecast",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401907987",
+       "text": "Gamecast",
+       "shortText": "Gamecast",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "outsText": "0 Outs"
+    }
+   ]
+  },
+  "summaryStatistics": [
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "AVG",
+    "displayValue": ".241",
+    "splitBy": "lastSevenDays",
+    "name": "avg",
+    "displayName": "Batting Average",
+    "abbreviation": "AVG"
+   },
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "HR",
+    "displayValue": "18",
+    "splitBy": "lastSevenDays",
+    "name": "homeRuns",
+    "displayName": "Home Runs",
+    "abbreviation": "HR"
+   },
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "RBI",
+    "displayValue": "41",
+    "splitBy": "lastSevenDays",
+    "name": "RBIs",
+    "displayName": "Runs Batted In",
+    "abbreviation": "RBI"
+   },
+   "\u2026(+1 more, len=4)"
+  ],
+  "statistics": {
+   "labels": [
+    "GP",
+    "AB",
+    "R",
+    "\u2026(+7 more, len=10)"
+   ],
+   "names": [
+    "gamesPlayed",
+    "atBats",
+    "runs",
+    "\u2026(+7 more, len=10)"
+   ],
+   "displayNames": [
+    "Games Played",
+    "At Bats",
+    "Runs",
+    "\u2026(+7 more, len=10)"
+   ],
+   "splits": [
+    {
+     "displayName": "vs. TB",
+     "stats": [
+      "5",
+      "18",
+      "4",
+      "\u2026(+7 more, len=10)"
+     ],
+     "type": "byOpponent"
+    },
+    {
+     "displayName": "Home",
+     "stats": [
+      "31",
+      "114",
+      "26",
+      "\u2026(+7 more, len=10)"
+     ],
+     "type": "splits"
+    },
+    {
+     "displayName": "vs. AL",
+     "stats": [
+      "49",
+      "174",
+      "33",
+      "\u2026(+7 more, len=10)"
+     ],
+     "type": "byLeague"
+    }
+   ]
+  }
+ },
+ "gameLog": {
+  "displayName": "Recent Games",
+  "statistics": [
+   {
+    "displayName": "Batting",
+    "labels": [
+     "AB",
+     "R",
+     "H",
+     "\u2026(+6 more, len=9)"
+    ],
+    "names": [
+     "atBats",
+     "runs",
+     "hits",
+     "\u2026(+6 more, len=9)"
+    ],
+    "displayNames": [
+     "At Bats",
+     "Runs",
+     "Hits",
+     "\u2026(+6 more, len=9)"
+    ],
+    "events": [
+     {
+      "eventId": "401816968",
+      "stats": [
+       "2",
+       "0",
+       "0",
+       "\u2026(+6 more, len=9)"
+      ]
+     },
+     {
+      "eventId": "401816938",
+      "stats": [
+       "4",
+       "1",
+       "1",
+       "\u2026(+6 more, len=9)"
+      ]
+     },
+     {
+      "eventId": "401816924",
+      "stats": [
+       "3",
+       "0",
+       "0",
+       "\u2026(+6 more, len=9)"
+      ]
+     },
+     "\u2026(+2 more, len=5)"
+    ]
+   }
+  ],
+  "events": {
+   "401816894": {
+    "id": "401816894",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816894/mets-yankees",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401816894",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816894",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "vs",
+    "gameDate": "2026-09-11T23:05:00.000+00:00",
+    "score": "6-4",
+    "homeTeamId": "10",
+    "awayTeamId": "21",
+    "homeTeamScore": "6",
+    "awayTeamScore": "4",
+    "gameResult": "W",
+    "opponent": {
+     "id": "21",
+     "uid": "s:1~l:10~t:21",
+     "displayName": "New York Mets",
+     "abbreviation": "NYM",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nym/new-york-mets",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nym/new-york-mets",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:21&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png"
+    },
+    "leagueName": "Major League Baseball",
+    "leagueAbbreviation": "MLB",
+    "leagueShortName": "MLB",
+    "team": {
+     "id": "10",
+     "uid": "s:1~l:10~t:10",
+     "abbreviation": "NYY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nyy/new-york-yankees",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+     "isAllStar": false
+    }
+   },
+   "401816909": {
+    "id": "401816909",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816909/mets-yankees",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401816909",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816909",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "vs",
+    "gameDate": "2026-09-12T17:35:00.000+00:00",
+    "score": "12-2",
+    "homeTeamId": "10",
+    "awayTeamId": "21",
+    "homeTeamScore": "2",
+    "awayTeamScore": "12",
+    "gameResult": "L",
+    "opponent": {
+     "id": "21",
+     "uid": "s:1~l:10~t:21",
+     "displayName": "New York Mets",
+     "abbreviation": "NYM",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nym/new-york-mets",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nym/new-york-mets",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:21&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png"
+    },
+    "leagueName": "Major League Baseball",
+    "leagueAbbreviation": "MLB",
+    "leagueShortName": "MLB",
+    "team": {
+     "id": "10",
+     "uid": "s:1~l:10~t:10",
+     "abbreviation": "NYY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nyy/new-york-yankees",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+     "isAllStar": false
+    }
+   },
+   "401816968": {
+    "id": "401816968",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816968/yankees-twins",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401816968",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816968",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "@",
+    "gameDate": "2026-09-16T17:40:00.000+00:00",
+    "score": "5-4 F/13",
+    "homeTeamId": "9",
+    "awayTeamId": "10",
+    "homeTeamScore": "5",
+    "awayTeamScore": "4",
+    "gameResult": "L",
+    "opponent": {
+     "id": "9",
+     "uid": "s:1~l:10~t:9",
+     "displayName": "Minnesota Twins",
+     "abbreviation": "MIN",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/min/minnesota-twins",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/min/minnesota-twins",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:9&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
+    },
+    "leagueName": "Major League Baseball",
+    "leagueAbbreviation": "MLB",
+    "leagueShortName": "MLB",
+    "team": {
+     "id": "10",
+     "uid": "s:1~l:10~t:10",
+     "abbreviation": "NYY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nyy/new-york-yankees",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+     "isAllStar": false
+    }
+   },
+   "401816924": {
+    "id": "401816924",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816924/mets-yankees",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401816924",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816924",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "vs",
+    "gameDate": "2026-09-13T17:35:00.000+00:00",
+    "score": "2-0",
+    "homeTeamId": "10",
+    "awayTeamId": "21",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "gameResult": "W",
+    "opponent": {
+     "id": "21",
+     "uid": "s:1~l:10~t:21",
+     "displayName": "New York Mets",
+     "abbreviation": "NYM",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nym/new-york-mets",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nym/new-york-mets",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:21&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png"
+    },
+    "leagueName": "Major League Baseball",
+    "leagueAbbreviation": "MLB",
+    "leagueShortName": "MLB",
+    "team": {
+     "id": "10",
+     "uid": "s:1~l:10~t:10",
+     "abbreviation": "NYY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nyy/new-york-yankees",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+     "isAllStar": false
+    }
+   },
+   "401816938": {
+    "id": "401816938",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816938/yankees-twins",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401816938",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/mlb/game/_/gameId/401816938",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "@",
+    "gameDate": "2026-09-14T23:40:00.000+00:00",
+    "score": "8-3",
+    "homeTeamId": "9",
+    "awayTeamId": "10",
+    "homeTeamScore": "3",
+    "awayTeamScore": "8",
+    "gameResult": "W",
+    "opponent": {
+     "id": "9",
+     "uid": "s:1~l:10~t:9",
+     "displayName": "Minnesota Twins",
+     "abbreviation": "MIN",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/min/minnesota-twins",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/min/minnesota-twins",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:9&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png"
+    },
+    "leagueName": "Major League Baseball",
+    "leagueAbbreviation": "MLB",
+    "leagueShortName": "MLB",
+    "team": {
+     "id": "10",
+     "uid": "s:1~l:10~t:10",
+     "abbreviation": "NYY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/mlb/team/roster/_/name/nyy/new-york-yankees",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+10 more, len=13)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+     "isAllStar": false
+    }
+   }
+  }
+ },
+ "rotowire": {
+  "headline": "Yankees general manager Brian Cashman said Wednesday that Judge has a follow-up exam scheduled with Dr. Gregory Pearl re\u2026",
+  "story": "A calf strain prematurely ended his season, but Judge missed more than three months of action during the regular season \u2026",
+  "description": "Yankees general manager Brian Cashman said Wednesday that Judge has a follow-up exam scheduled with Dr. Gregory Pearl re\u2026",
+  "published": "Wed Oct 21 08:25:32 PDT 2026"
+ },
+ "awards": [
+  {
+   "id": "61",
+   "league": "mlb",
+   "name": "Silver Slugger",
+   "displayCount": "5x",
+   "seasons": [
+    "2025",
+    "2024",
+    "2022",
+    "\u2026(+2 more, len=5)"
+   ]
+  },
+  {
+   "id": "63",
+   "league": "mlb",
+   "name": "MVP",
+   "displayCount": "3x",
+   "seasons": [
+    "2025",
+    "2024",
+    "2022"
+   ]
+  },
+  {
+   "id": "70",
+   "league": "mlb",
+   "name": "Hank Aaron Award",
+   "displayCount": "3x",
+   "seasons": [
+    "2025",
+    "2024",
+    "2022"
+   ]
+  },
+  "\u2026(+4 more, len=7)"
+ ]
+}

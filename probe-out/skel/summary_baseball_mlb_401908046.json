@@ -1,0 +1,6666 @@
+{
+ "situation": {
+  "lastPlay": {
+   "id": "4019080460301010001"
+  },
+  "balls": 0,
+  "strikes": 0,
+  "outs": 0,
+  "pitcher": {
+   "playerId": 5080761
+  },
+  "batter": {
+   "playerId": 5005912
+  },
+  "situationNotes": [
+   {
+    "type": "CHANCES_TO_SCORE_1PLUS",
+    "text": "Chance of scoring 1+ runs this inning (0 outs, Bases Empty): 29.16%"
+   },
+   {
+    "type": "CHANCES_TO_SCORE_2PLUS",
+    "text": "Chance of scoring 2+ runs this inning (0 outs, Bases Empty): 13.90%"
+   }
+  ]
+ },
+ "notes": [],
+ "boxscore": {
+  "teams": [
+   {
+    "team": {
+     "id": "8",
+     "uid": "s:1~l:10~t:8",
+     "slug": "milwaukee-brewers",
+     "location": "Milwaukee",
+     "name": "Brewers",
+     "abbreviation": "MIL",
+     "displayName": "Milwaukee Brewers",
+     "shortDisplayName": "Brewers",
+     "color": "13294b",
+     "alternateColor": "ffc72c",
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png"
+    },
+    "statistics": [
+     {
+      "name": "batting",
+      "displayName": "Batting",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "hitByPitch",
+        "displayName": "Hit By Pitch",
+        "shortDisplayName": "HBP",
+        "description": "The number of times a player has been by a pitch.",
+        "abbreviation": "HBP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       "\u2026(+56 more, len=59)"
+      ]
+     },
+     {
+      "name": "pitching",
+      "displayName": "Pitching",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "saves",
+        "displayName": "Saves",
+        "shortDisplayName": "SV",
+        "description": "The number of times a pitcher enters and finishes the game without surrendering the lead in a save opportunity.",
+        "abbreviation": "SV",
+        "value": 0.0,
+        "displayValue": "0"
+       },
+       "\u2026(+74 more, len=77)"
+      ]
+     },
+     {
+      "name": "fielding",
+      "displayName": "Fielding",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "doublePlays",
+        "displayName": "Double Plays",
+        "shortDisplayName": "DP",
+        "description": "The number of double plays a fielder has been a part of as either the assister or putouter.",
+        "abbreviation": "DP",
+        "value": 0.0,
+        "displayValue": "0"
+       },
+       "\u2026(+32 more, len=35)"
+      ]
+     },
+     "\u2026(+1 more, len=4)"
+    ],
+    "displayOrder": 1,
+    "homeAway": "away",
+    "details": [
+     {
+      "name": "battingDetails",
+      "displayName": "Batting",
+      "stats": [
+       {
+        "name": "doubles",
+        "displayName": "Doubles",
+        "shortDisplayName": "2B",
+        "abbreviation": "2B",
+        "displayValue": "Turang (4, Rasmussen)"
+       },
+       {
+        "name": "rbi",
+        "displayName": "Runs Batted In",
+        "shortDisplayName": "RBI",
+        "abbreviation": "RBI",
+        "displayValue": "Pratt (6)"
+       },
+       {
+        "name": "teamLOB",
+        "displayName": "Team Left On Base",
+        "shortDisplayName": "Team LOB",
+        "abbreviation": "Team LOB",
+        "displayValue": "1"
+       },
+       "\u2026(+1 more, len=4)"
+      ]
+     },
+     {
+      "name": "pitchingDetails",
+      "displayName": "Pitching",
+      "stats": [
+       {
+        "name": "firstPitchStrikesBattersFaced",
+        "displayName": "First-pitch strikes/Batters Faced",
+        "shortDisplayName": "FPS-BF",
+        "abbreviation": "FPS-BF",
+        "displayValue": "Misiorowski 2/4"
+       },
+       {
+        "name": "strikeRatio",
+        "displayName": "Called strikes-Swinging strikes-Foul balls-In play strikes",
+        "shortDisplayName": "CS-SS-FB-IPS",
+        "abbreviation": "CS-SS-FB-IPS",
+        "displayValue": "Misiorowski-1-3-1-4"
+       },
+       {
+        "name": "groundballFlyballRatio",
+        "displayName": "Ground Balls-Fly Balls",
+        "shortDisplayName": "GB-FB",
+        "abbreviation": "GB-FB",
+        "displayValue": "Misiorowski 0-3"
+       },
+       "\u2026(+1 more, len=4)"
+      ]
+     }
+    ]
+   },
+   {
+    "team": {
+     "id": "30",
+     "uid": "s:1~l:10~t:30",
+     "slug": "tampa-bay-rays",
+     "location": "Tampa Bay",
+     "name": "Rays",
+     "abbreviation": "TB",
+     "displayName": "Tampa Bay Rays",
+     "shortDisplayName": "Rays",
+     "color": "092c5c",
+     "alternateColor": "8fbce6",
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png"
+    },
+    "statistics": [
+     {
+      "name": "batting",
+      "displayName": "Batting",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "hitByPitch",
+        "displayName": "Hit By Pitch",
+        "shortDisplayName": "HBP",
+        "description": "The number of times a player has been by a pitch.",
+        "abbreviation": "HBP",
+        "value": 0.0,
+        "displayValue": "0"
+       },
+       "\u2026(+56 more, len=59)"
+      ]
+     },
+     {
+      "name": "pitching",
+      "displayName": "Pitching",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "saves",
+        "displayName": "Saves",
+        "shortDisplayName": "SV",
+        "description": "The number of times a pitcher enters and finishes the game without surrendering the lead in a save opportunity.",
+        "abbreviation": "SV",
+        "value": 0.0,
+        "displayValue": "0"
+       },
+       "\u2026(+74 more, len=77)"
+      ]
+     },
+     {
+      "name": "fielding",
+      "displayName": "Fielding",
+      "stats": [
+       {
+        "name": "gamesPlayed",
+        "displayName": "Games Played",
+        "shortDisplayName": "GP",
+        "description": "Games Played",
+        "abbreviation": "GP",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "teamGamesPlayed",
+        "displayName": "Team Games Played",
+        "shortDisplayName": "G",
+        "description": "The number of games played by a team.",
+        "abbreviation": "G",
+        "value": 1.0,
+        "displayValue": "1"
+       },
+       {
+        "name": "doublePlays",
+        "displayName": "Double Plays",
+        "shortDisplayName": "DP",
+        "description": "The number of double plays a fielder has been a part of as either the assister or putouter.",
+        "abbreviation": "DP",
+        "value": 0.0,
+        "displayValue": "0"
+       },
+       "\u2026(+32 more, len=35)"
+      ]
+     },
+     "\u2026(+1 more, len=4)"
+    ],
+    "displayOrder": 2,
+    "homeAway": "home",
+    "details": [
+     {
+      "name": "battingDetails",
+      "displayName": "Batting",
+      "stats": [
+       {
+        "name": "teamLOB",
+        "displayName": "Team Left On Base",
+        "shortDisplayName": "Team LOB",
+        "abbreviation": "Team LOB",
+        "displayValue": "1"
+       }
+      ]
+     },
+     {
+      "name": "pitchingDetails",
+      "displayName": "Pitching",
+      "stats": [
+       {
+        "name": "hitByPitch",
+        "displayName": "Hit By Pitch",
+        "shortDisplayName": "HBP",
+        "abbreviation": "HBP",
+        "displayValue": "Frelick (by Rasmussen)"
+       },
+       {
+        "name": "firstPitchStrikesBattersFaced",
+        "displayName": "First-pitch strikes/Batters Faced",
+        "shortDisplayName": "FPS-BF",
+        "abbreviation": "FPS-BF",
+        "displayValue": "Rasmussen 7/8"
+       },
+       {
+        "name": "strikeRatio",
+        "displayName": "Called strikes-Swinging strikes-Foul balls-In play strikes",
+        "shortDisplayName": "CS-SS-FB-IPS",
+        "abbreviation": "CS-SS-FB-IPS",
+        "displayValue": "Rasmussen-8-1-9-4"
+       },
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     {
+      "name": "fieldingDetails",
+      "displayName": "Fielding",
+      "stats": [
+       {
+        "name": "outfieldAssists",
+        "displayName": "Assists",
+        "shortDisplayName": "A",
+        "abbreviation": "A",
+        "displayValue": "DeLuca (Pratt at 2nd base)."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "players": [
+   {
+    "team": {
+     "id": "8",
+     "uid": "s:1~l:10~t:8",
+     "slug": "milwaukee-brewers",
+     "location": "Milwaukee",
+     "name": "Brewers",
+     "abbreviation": "MIL",
+     "displayName": "Milwaukee Brewers",
+     "shortDisplayName": "Brewers",
+     "color": "13294b",
+     "alternateColor": "ffc72c",
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png"
+    },
+    "statistics": [
+     {
+      "type": "batting",
+      "names": [
+       "H-AB",
+       "AB",
+       "R",
+       "\u2026(+9 more, len=12)"
+      ],
+      "keys": [
+       "hits-atBats",
+       "atBats",
+       "runs",
+       "\u2026(+9 more, len=12)"
+      ],
+      "labels": [
+       "H-AB",
+       "AB",
+       "R",
+       "\u2026(+9 more, len=12)"
+      ],
+      "descriptions": [
+       "Hits per At Bats",
+       "At Bats",
+       "Runs",
+       "\u2026(+9 more, len=12)"
+      ],
+      "totals": [
+       "2-7",
+       "7",
+       "1",
+       "\u2026(+9 more, len=12)"
+      ],
+      "athletes": [
+       {
+        "active": true,
+        "athlete": {
+         "id": "4917869",
+         "uid": "s:1~l:10~a:4917869",
+         "guid": "84dbf7f2-04ba-3bb6-98c0-c4bc68934584",
+         "displayName": "Jackson Chourio",
+         "shortName": "J. Chourio",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026",
+          "\u2026",
+          "\u2026(+2 more, len=5)"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 1,
+        "position": {
+         "id": "7",
+         "name": "Left Field",
+         "displayName": "Left Fielder",
+         "abbreviation": "LF"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "0-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       {
+        "active": true,
+        "athlete": {
+         "id": "35013",
+         "uid": "s:1~l:10~a:35013",
+         "guid": "fb61ce47-001c-a99c-eab5-77eb5c782968",
+         "displayName": "Jake Bauers",
+         "shortName": "J. Bauers",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026",
+          "\u2026",
+          "\u2026(+2 more, len=5)"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 2,
+        "position": {
+         "id": "3",
+         "name": "First Base",
+         "displayName": "First Baseman",
+         "abbreviation": "1B"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "0-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       {
+        "active": true,
+        "athlete": {
+         "id": "31283",
+         "uid": "s:1~l:10~a:31283",
+         "guid": "6a3df5fe-0c7d-f3fa-0c18-4850378dceba",
+         "displayName": "Christian Yelich",
+         "shortName": "C. Yelich",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026",
+          "\u2026",
+          "\u2026(+1 more, len=4)"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 3,
+        "position": {
+         "id": "10",
+         "name": "Designated Hitter",
+         "displayName": "Designated Hitter",
+         "abbreviation": "DH"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "0-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       "\u2026(+6 more, len=9)"
+      ]
+     },
+     {
+      "type": "pitching",
+      "names": [
+       "IP",
+       "H",
+       "R",
+       "\u2026(+7 more, len=10)"
+      ],
+      "keys": [
+       "fullInnings.partInnings",
+       "hits",
+       "runs",
+       "\u2026(+7 more, len=10)"
+      ],
+      "labels": [
+       "IP",
+       "H",
+       "R",
+       "\u2026(+7 more, len=10)"
+      ],
+      "descriptions": [
+       "Innings Pitched",
+       "Hits",
+       "Runs",
+       "\u2026(+7 more, len=10)"
+      ],
+      "totals": [
+       "1.0",
+       "1",
+       "0",
+       "\u2026(+7 more, len=10)"
+      ],
+      "athletes": [
+       {
+        "active": true,
+        "athlete": {
+         "id": "5080761",
+         "uid": "s:1~l:10~a:5080761",
+         "guid": "0ea828df-ab12-3e43-8900-dee0563e68d4",
+         "displayName": "Jacob Misiorowski",
+         "shortName": "J. Misiorowski",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026"
+         ],
+         "throws": "RHP"
+        },
+        "starter": true,
+        "batOrder": 0,
+        "position": {
+         "id": "1",
+         "name": "Pitcher",
+         "displayName": "Pitcher",
+         "abbreviation": "P"
+        },
+        "stats": [
+         "1.0",
+         "1",
+         "0",
+         "\u2026(+7 more, len=10)"
+        ]
+       }
+      ]
+     }
+    ],
+    "displayOrder": 1
+   },
+   {
+    "team": {
+     "id": "30",
+     "uid": "s:1~l:10~t:30",
+     "slug": "tampa-bay-rays",
+     "location": "Tampa Bay",
+     "name": "Rays",
+     "abbreviation": "TB",
+     "displayName": "Tampa Bay Rays",
+     "shortDisplayName": "Rays",
+     "color": "092c5c",
+     "alternateColor": "8fbce6",
+     "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png"
+    },
+    "statistics": [
+     {
+      "type": "batting",
+      "names": [
+       "H-AB",
+       "AB",
+       "R",
+       "\u2026(+9 more, len=12)"
+      ],
+      "keys": [
+       "hits-atBats",
+       "atBats",
+       "runs",
+       "\u2026(+9 more, len=12)"
+      ],
+      "labels": [
+       "H-AB",
+       "AB",
+       "R",
+       "\u2026(+9 more, len=12)"
+      ],
+      "descriptions": [
+       "Hits per At Bats",
+       "At Bats",
+       "Runs",
+       "\u2026(+9 more, len=12)"
+      ],
+      "totals": [
+       "1-4",
+       "4",
+       "0",
+       "\u2026(+9 more, len=12)"
+      ],
+      "athletes": [
+       {
+        "active": true,
+        "athlete": {
+         "id": "33481",
+         "uid": "s:1~l:10~a:33481",
+         "guid": "b7385cff-51b5-1174-5c73-bd5f2309c73e",
+         "displayName": "Yandy Diaz",
+         "shortName": "Y. Diaz",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 1,
+        "position": {
+         "id": "10",
+         "name": "Designated Hitter",
+         "displayName": "Designated Hitter",
+         "abbreviation": "DH"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "0-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       {
+        "active": true,
+        "athlete": {
+         "id": "40810",
+         "uid": "s:1~l:10~a:40810",
+         "guid": "4d197bc2-9bdd-0f37-fb96-21bd05f8ce1e",
+         "displayName": "Jonathan Aranda",
+         "shortName": "J. Aranda",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 2,
+        "position": {
+         "id": "3",
+         "name": "First Base",
+         "displayName": "First Baseman",
+         "abbreviation": "1B"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "0-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       {
+        "active": true,
+        "athlete": {
+         "id": "4905921",
+         "uid": "s:1~l:10~a:4905921",
+         "guid": "64b000df-915b-374c-81eb-e1b79b1e81f2",
+         "displayName": "Junior Caminero",
+         "shortName": "J. Caminero",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026"
+         ],
+         "hotZones": [
+          "\u2026"
+         ]
+        },
+        "starter": true,
+        "batOrder": 3,
+        "position": {
+         "id": "5",
+         "name": "Third Base",
+         "displayName": "Third Baseman",
+         "abbreviation": "3B"
+        },
+        "atBats": [
+         {
+          "id": "\u2026",
+          "atBatId": "\u2026",
+          "playId": "\u2026"
+         }
+        ],
+        "stats": [
+         "1-1",
+         "1",
+         "0",
+         "\u2026(+9 more, len=12)"
+        ]
+       },
+       "\u2026(+6 more, len=9)"
+      ]
+     },
+     {
+      "type": "pitching",
+      "names": [
+       "IP",
+       "H",
+       "R",
+       "\u2026(+7 more, len=10)"
+      ],
+      "keys": [
+       "fullInnings.partInnings",
+       "hits",
+       "runs",
+       "\u2026(+7 more, len=10)"
+      ],
+      "labels": [
+       "IP",
+       "H",
+       "R",
+       "\u2026(+7 more, len=10)"
+      ],
+      "descriptions": [
+       "Innings Pitched",
+       "Hits",
+       "Runs",
+       "\u2026(+7 more, len=10)"
+      ],
+      "totals": [
+       "2.0",
+       "2",
+       "1",
+       "\u2026(+7 more, len=10)"
+      ],
+      "athletes": [
+       {
+        "active": true,
+        "athlete": {
+         "id": "42584",
+         "uid": "s:1~l:10~a:42584",
+         "guid": "dbb3ce22-44f1-32e7-aa53-30f4fed7ec6d",
+         "displayName": "Drew Rasmussen",
+         "shortName": "D. Rasmussen",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "positions": [
+          "\u2026",
+          "\u2026"
+         ],
+         "throws": "RHP"
+        },
+        "starter": true,
+        "batOrder": 0,
+        "position": {
+         "id": "1",
+         "name": "Pitcher",
+         "displayName": "Pitcher",
+         "abbreviation": "P"
+        },
+        "stats": [
+         "2.0",
+         "2",
+         "1",
+         "\u2026(+7 more, len=10)"
+        ]
+       }
+      ]
+     }
+    ],
+    "displayOrder": 2
+   }
+  ]
+ },
+ "format": {
+  "regulation": {
+   "periods": 9,
+   "displayName": "Inning",
+   "slug": "inning"
+  }
+ },
+ "gameInfo": {
+  "venue": {
+   "id": "31",
+   "fullName": "Tropicana Field",
+   "shortName": "Tropicana Field",
+   "address": {
+    "city": "St. Petersburg",
+    "state": "Florida",
+    "zipCode": "33705"
+   },
+   "images": [
+    {
+     "href": "https://a.espncdn.com/i/venues/mlb/day/31.jpg",
+     "width": 2000,
+     "height": 1125,
+     "alt": "",
+     "rel": [
+      "full",
+      "day"
+     ]
+    }
+   ]
+  },
+  "weather": {
+   "temperature": 78,
+   "highTemperature": 78,
+   "lowTemperature": 78,
+   "conditionId": "Mostly cloudy",
+   "gust": 18,
+   "precipitation": 40,
+   "link": {
+    "language": "en-US",
+    "rel": [
+     "33705"
+    ],
+    "href": "http://www.accuweather.com/en/us/tropicana-field-fl/33712/current-weather/44502_poi?lang=en-us",
+    "text": "Weather",
+    "shortText": "Weather",
+    "isExternal": true,
+    "isPremium": false
+   }
+  },
+  "officials": [
+   {
+    "displayName": "Vic Carapazza",
+    "position": {
+     "name": "Home Plate Umpire",
+     "displayName": "Home Plate Umpire",
+     "id": "206"
+    },
+    "order": 1
+   },
+   {
+    "displayName": "Tripp Gibson",
+    "position": {
+     "name": "First Base Umpire",
+     "displayName": "First Base Umpire",
+     "id": "207"
+    },
+    "order": 2
+   },
+   {
+    "displayName": "Gabe Morales",
+    "position": {
+     "name": "Second Base Umpire",
+     "displayName": "Second Base Umpire",
+     "id": "208"
+    },
+    "order": 3
+   },
+   "\u2026(+3 more, len=6)"
+  ]
+ },
+ "seasonseries": [
+  {
+   "type": "current",
+   "title": "Current Series",
+   "description": "Current Series",
+   "summary": "MIL leads series 3-1",
+   "completed": false,
+   "totalCompetitions": 7,
+   "seriesScore": "3-1",
+   "events": [
+    {
+     "id": "401908042",
+     "uid": "s:1~l:10~e:401908042~c:401908042",
+     "date": "2026-10-24T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "3"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "2"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908042/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908042",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401908043",
+     "uid": "s:1~l:10~e:401908043~c:401908043",
+     "date": "2026-10-25T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "5"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "4"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908043/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908043",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401908044",
+     "uid": "s:1~l:10~e:401908044~c:401908044",
+     "date": "2026-10-27T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "1"
+      },
+      {
+       "homeAway": "away",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "10"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908044/brewers-rays",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908044",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    "\u2026(+4 more, len=7)"
+   ]
+  },
+  {
+   "type": "season",
+   "title": "Regular Season Series",
+   "description": "Regular Season Series",
+   "summary": "MIL wins series 2-1",
+   "completed": true,
+   "totalCompetitions": 3,
+   "seriesLabel": "Regular Season",
+   "seriesScore": "2-1",
+   "shortSummary": "MIL wins season",
+   "events": [
+    {
+     "id": "401814745",
+     "uid": "s:1~l:10~e:401814745~c:401814745",
+     "date": "2026-03-30T23:40:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": false,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "2"
+      },
+      {
+       "homeAway": "away",
+       "winner": true,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "3"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401814745/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401814745",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401814759",
+     "uid": "s:1~l:10~e:401814759~c:401814759",
+     "date": "2026-03-31T23:40:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "6"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "2"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401814759/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401814759",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401814774",
+     "uid": "s:1~l:10~e:401814774~c:401814774",
+     "date": "2026-04-01T17:40:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "8"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "2"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401814774/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401814774",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "playoff",
+   "title": "Playoff Series",
+   "description": "Playoff Series",
+   "summary": "MIL leads series 3-1",
+   "completed": false,
+   "totalCompetitions": 7,
+   "seriesLabel": "Playoffs",
+   "seriesScore": "3-1",
+   "shortSummary": "MIL leads series",
+   "round": "World Series",
+   "events": [
+    {
+     "id": "401908042",
+     "uid": "s:1~l:10~e:401908042~c:401908042",
+     "date": "2026-10-24T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "3"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "2"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908042/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908042",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401908043",
+     "uid": "s:1~l:10~e:401908043~c:401908043",
+     "date": "2026-10-25T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "5"
+      },
+      {
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "4"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908043/rays-brewers",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908043",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    {
+     "id": "401908044",
+     "uid": "s:1~l:10~e:401908044~c:401908044",
+     "date": "2026-10-27T00:00:00Z",
+     "timeValid": true,
+     "status": "post",
+     "statusType": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "neutralSite": false,
+     "competitors": [
+      {
+       "homeAway": "home",
+       "winner": false,
+       "team": {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "displayName": "Tampa Bay Rays",
+        "abbreviation": "TB",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "1"
+      },
+      {
+       "homeAway": "away",
+       "winner": true,
+       "team": {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "displayName": "Milwaukee Brewers",
+        "abbreviation": "MIL",
+        "links": [
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "text": "\u2026"
+         }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+        "logos": [
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "width": "\u2026",
+          "height": "\u2026",
+          "alt": "\u2026",
+          "rel": "\u2026",
+          "lastUpdated": "\u2026"
+         },
+         "\u2026(+1 more, len=4)"
+        ]
+       },
+       "score": "10"
+      }
+     ],
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/mlb/game/_/gameId/401908044/brewers-rays",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401908044",
+       "text": "Gamecast",
+       "shortText": "Summary",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ]
+    },
+    "\u2026(+4 more, len=7)"
+   ]
+  }
+ ],
+ "injuries": [
+  {
+   "team": {
+    "id": "30",
+    "uid": "s:1~l:10~t:30",
+    "displayName": "Tampa Bay Rays",
+    "abbreviation": "TB",
+    "links": [
+     {
+      "href": "https://www.espn.com/mlb/team/_/name/tb/tampa-bay-rays",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mlb/team/schedule/_/name/tb",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-08-15T19:26Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     "\u2026(+1 more, len=4)"
+    ]
+   },
+   "injuries": [
+    {
+     "status": "60-Day-IL",
+     "date": "2026-09-11T21:41Z",
+     "athlete": {
+      "id": "40423",
+      "uid": "s:1~l:10~a:40423",
+      "guid": "1203bbaf-c0c9-1f1c-68d0-f3f7924e2b47",
+      "lastName": "Lux",
+      "fullName": "Gavin Lux",
+      "displayName": "Gavin Lux",
+      "shortName": "G. Lux",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/40423",
+        "text": "Player Card"
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/40423.png",
+       "alt": "Gavin Lux"
+      },
+      "jersey": "11",
+      "position": {
+       "name": "Left Field",
+       "displayName": "Left Fielder",
+       "abbreviation": "LF"
+      },
+      "status": {
+       "id": "10",
+       "name": "Injured/60",
+       "type": "injured60",
+       "abbreviation": "IL60"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "type": {
+      "id": "11",
+      "name": "INJURY_STATUS_60DAYIL",
+      "description": "60-day IL",
+      "abbreviation": "IL60"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "60-Day IL",
+       "abbreviation": "60-Day IL",
+       "displayDescription": "60-Day IL"
+      },
+      "type": "Shoulder",
+      "detail": "Inflammation",
+      "side": "Left",
+      "returnDate": "2026-10-28"
+     }
+    },
+    {
+     "status": "Out",
+     "date": "2026-10-11T17:45Z",
+     "athlete": {
+      "id": "41199",
+      "uid": "s:1~l:10~a:41199",
+      "guid": "55168fbe-35ba-1b6f-26b1-474f3fa29dd7",
+      "lastName": "McClanahan",
+      "fullName": "Shane McClanahan",
+      "displayName": "Shane McClanahan",
+      "shortName": "S. McClanahan",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/41199",
+        "text": "Player Card"
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/41199.png",
+       "alt": "Shane McClanahan"
+      },
+      "jersey": "18",
+      "position": {
+       "name": "Starting Pitcher",
+       "displayName": "Starting Pitcher",
+       "abbreviation": "SP"
+      },
+      "status": {
+       "id": "28",
+       "name": "Active 40-Man",
+       "type": "active-40-man",
+       "abbreviation": "Active 40-Man"
+      },
+      "throws": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      }
+     },
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "OUT",
+       "abbreviation": "OUT",
+       "displayDescription": "Out"
+      },
+      "type": "Forearm",
+      "detail": "Soreness",
+      "side": "Left",
+      "returnDate": "2027-02-01"
+     }
+    },
+    {
+     "status": "60-Day-IL",
+     "date": "2026-09-15T18:08Z",
+     "athlete": {
+      "id": "4635337",
+      "uid": "s:1~l:10~a:4635337",
+      "guid": "8d16f250-8981-3a36-af0f-d73311925be0",
+      "lastName": "Melton",
+      "fullName": "Jacob Melton",
+      "displayName": "Jacob Melton",
+      "shortName": "J. Melton",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/4635337",
+        "text": "Player Card"
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/4635337.png",
+       "alt": "Jacob Melton"
+      },
+      "jersey": "29",
+      "position": {
+       "name": "Left Field",
+       "displayName": "Left Fielder",
+       "abbreviation": "LF"
+      },
+      "status": {
+       "id": "10",
+       "name": "Injured/60",
+       "type": "injured60",
+       "abbreviation": "IL60"
+      },
+      "throws": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      }
+     },
+     "type": {
+      "id": "11",
+      "name": "INJURY_STATUS_60DAYIL",
+      "description": "60-day IL",
+      "abbreviation": "IL60"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "60-Day IL",
+       "abbreviation": "60-Day IL",
+       "displayDescription": "60-Day IL"
+      },
+      "type": "Hamstring",
+      "detail": "Strain",
+      "side": "Right",
+      "returnDate": "2027-02-01"
+     }
+    },
+    "\u2026(+2 more, len=5)"
+   ]
+  },
+  {
+   "team": {
+    "id": "8",
+    "uid": "s:1~l:10~t:8",
+    "displayName": "Milwaukee Brewers",
+    "abbreviation": "MIL",
+    "links": [
+     {
+      "href": "https://www.espn.com/mlb/team/_/name/mil/milwaukee-brewers",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mlb/team/schedule/_/name/mil",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2024-07-01T17:49Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     "\u2026(+1 more, len=4)"
+    ]
+   },
+   "injuries": [
+    {
+     "status": "60-Day-IL",
+     "date": "2026-06-18T15:25Z",
+     "athlete": {
+      "id": "42449",
+      "uid": "s:1~l:10~a:42449",
+      "guid": "320d3bc5-be84-3c59-b976-399ebbb453a6",
+      "lastName": "Priester",
+      "fullName": "Quinn Priester",
+      "displayName": "Quinn Priester",
+      "shortName": "Q. Priester",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/42449",
+        "text": "Player Card"
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/42449.png",
+       "alt": "Quinn Priester"
+      },
+      "jersey": "46",
+      "position": {
+       "name": "Starting Pitcher",
+       "displayName": "Starting Pitcher",
+       "abbreviation": "SP"
+      },
+      "status": {
+       "id": "10",
+       "name": "Injured/60",
+       "type": "injured60",
+       "abbreviation": "IL60"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "type": {
+      "id": "11",
+      "name": "INJURY_STATUS_60DAYIL",
+      "description": "60-day IL",
+      "abbreviation": "IL60"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "60-Day IL",
+       "abbreviation": "60-Day IL",
+       "displayDescription": "60-Day IL"
+      },
+      "type": "Shoulder",
+      "detail": "Surgery",
+      "side": "Right",
+      "returnDate": "2027-02-01"
+     }
+    },
+    {
+     "status": "60-Day-IL",
+     "date": "2026-05-31T17:56Z",
+     "athlete": {
+      "id": "4705673",
+      "uid": "s:1~l:10~a:4705673",
+      "guid": "f0f5ec27-997d-3bf9-803c-277ae80e1a96",
+      "lastName": "Zerpa",
+      "fullName": "Angel Zerpa",
+      "displayName": "Angel Zerpa",
+      "shortName": "A. Zerpa",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/4705673",
+        "text": "Player Card"
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/4705673.png",
+       "alt": "Angel Zerpa"
+      },
+      "jersey": "61",
+      "position": {
+       "name": "Relief Pitcher",
+       "displayName": "Relief Pitcher",
+       "abbreviation": "RP"
+      },
+      "status": {
+       "id": "10",
+       "name": "Injured/60",
+       "type": "injured60",
+       "abbreviation": "IL60"
+      },
+      "throws": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      }
+     },
+     "type": {
+      "id": "11",
+      "name": "INJURY_STATUS_60DAYIL",
+      "description": "60-day IL",
+      "abbreviation": "IL60"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "60-Day IL",
+       "abbreviation": "60-Day IL",
+       "displayDescription": "60-Day IL"
+      },
+      "type": "Elbow",
+      "detail": "Surgery",
+      "side": "Left",
+      "returnDate": "2027-07-01"
+     }
+    },
+    {
+     "status": "60-Day-IL",
+     "date": "2026-07-05T00:09Z",
+     "athlete": {
+      "id": "4621433",
+      "uid": "s:1~l:10~a:4621433",
+      "guid": "73564480-0672-3ead-965a-b20a8dd059e7",
+      "lastName": "Fitzpatrick",
+      "fullName": "Brian Fitzpatrick",
+      "displayName": "Brian Fitzpatrick",
+      "shortName": "B. Fitzpatrick",
+      "links": [
+       {
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/4621433",
+        "text": "Player Card"
+       }
+      ],
+      "jersey": "35",
+      "position": {
+       "name": "Relief Pitcher",
+       "displayName": "Relief Pitcher",
+       "abbreviation": "RP"
+      },
+      "status": {
+       "id": "10",
+       "name": "Injured/60",
+       "type": "injured60",
+       "abbreviation": "IL60"
+      },
+      "throws": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      }
+     },
+     "type": {
+      "id": "11",
+      "name": "INJURY_STATUS_60DAYIL",
+      "description": "60-day IL",
+      "abbreviation": "IL60"
+     },
+     "details": {
+      "fantasyStatus": {
+       "description": "60-Day IL",
+       "abbreviation": "60-Day IL",
+       "displayDescription": "60-Day IL"
+      },
+      "type": "Elbow",
+      "detail": "Surgery",
+      "side": "Left",
+      "returnDate": "2027-08-01"
+     }
+    }
+   ]
+  }
+ ],
+ "broadcasts": [
+  {
+   "type": {
+    "id": "5",
+    "shortName": "Radio",
+    "longName": "Radio",
+    "slug": "radio"
+   },
+   "station": "13715732",
+   "stationKey": "espn",
+   "market": {
+    "id": "1",
+    "type": "National"
+   },
+   "media": {
+    "callLetters": "ERADM",
+    "name": "ESPN Radio",
+    "shortName": "ERADM"
+   },
+   "lang": "en",
+   "region": "us",
+   "isNational": true
+  }
+ ],
+ "pickcenter": [
+  {
+   "provider": {
+    "id": "100",
+    "name": "DraftKings",
+    "priority": 1,
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+      "rel": [
+       "light"
+      ]
+     },
+     {
+      "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+      "rel": [
+       "dark"
+      ]
+     }
+    ]
+   },
+   "details": "MIL -137",
+   "overUnder": 6.0,
+   "spread": 1.5,
+   "overOdds": -112.0,
+   "underOdds": -107.0,
+   "awayTeamOdds": {
+    "favorite": true,
+    "underdog": false,
+    "moneyLine": -137,
+    "team": {
+     "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/8?lang=en&region=us"
+    },
+    "teamId": "8",
+    "favoriteAtOpen": true
+   },
+   "homeTeamOdds": {
+    "favorite": false,
+    "underdog": true,
+    "moneyLine": 122,
+    "team": {
+     "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/30?lang=en&region=us"
+    },
+    "teamId": "30",
+    "favoriteAtOpen": false
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "home",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+     "text": "Home Bet",
+     "shortText": "Home Bet",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mlb",
+       "sport": "baseball",
+       "gameId": 401908046,
+       "betSide": "home",
+       "betType": "straight"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "away",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+     "text": "Away Bet",
+     "shortText": "Away Bet",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mlb",
+       "sport": "baseball",
+       "gameId": 401908046,
+       "betSide": "away",
+       "betType": "straight"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "homeSpread",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+     "text": "Home Point Spread",
+     "shortText": "Home Point Spread",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mlb",
+       "sport": "baseball",
+       "gameId": 401908046,
+       "betSide": "none",
+       "betType": "straight",
+       "betDetails": "Spread:TB+1.5"
+      }
+     }
+    },
+    "\u2026(+4 more, len=7)"
+   ],
+   "moneyline": {
+    "displayName": "Moneyline",
+    "shortDisplayName": "ML",
+    "home": {
+     "close": {
+      "odds": "+122",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "home",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Home Bet",
+       "shortText": "Home Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "home",
+         "betType": "straight"
+        }
+       }
+      }
+     },
+     "open": {
+      "odds": "+116"
+     },
+     "live": {
+      "odds": "+168",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "home",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Home Bet",
+       "shortText": "Home Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "home",
+         "betType": "straight"
+        }
+       }
+      }
+     }
+    },
+    "away": {
+     "close": {
+      "odds": "-137",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "away",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Away Bet",
+       "shortText": "Away Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "away",
+         "betType": "straight"
+        }
+       }
+      }
+     },
+     "open": {
+      "odds": "-140"
+     },
+     "live": {
+      "odds": "-224",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "away",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Away Bet",
+       "shortText": "Away Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "away",
+         "betType": "straight"
+        }
+       }
+      }
+     }
+    }
+   },
+   "pointSpread": {
+    "displayName": "Runline",
+    "shortDisplayName": "RL",
+    "home": {
+     "close": {
+      "line": "+1.5",
+      "odds": "-162",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "homeSpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Home Point Spread",
+       "shortText": "Home Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:TB+1.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "+1.5",
+      "odds": "-196"
+     },
+     "live": {
+      "line": "+1.5",
+      "odds": "-120",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "homeSpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Home Point Spread",
+       "shortText": "Home Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:TB+1.5"
+        }
+       }
+      }
+     }
+    },
+    "away": {
+     "close": {
+      "line": "-1.5",
+      "odds": "+134",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "awaySpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Away Point Spread",
+       "shortText": "Away Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:MIL-1.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "-1.5",
+      "odds": "+160"
+     },
+     "live": {
+      "line": "-1.5",
+      "odds": "-108",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "awaySpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Away Point Spread",
+       "shortText": "Away Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:MIL-1.5"
+        }
+       }
+      }
+     }
+    }
+   },
+   "total": {
+    "displayName": "Total Runs",
+    "shortDisplayName": "Total",
+    "over": {
+     "close": {
+      "line": "o6",
+      "odds": "-112",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "over",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Over Odds",
+       "shortText": "Over Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "over",
+         "betType": "straight",
+         "betDetails": "Over:6"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "o6.5",
+      "odds": "-105"
+     },
+     "live": {
+      "line": "o5.5",
+      "odds": "-138",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "over",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Over Odds",
+       "shortText": "Over Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "over",
+         "betType": "straight",
+         "betDetails": "Over:5.5"
+        }
+       }
+      }
+     }
+    },
+    "under": {
+     "close": {
+      "line": "u6",
+      "odds": "-107",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "under",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Under Odds",
+       "shortText": "Under Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "under",
+         "betType": "straight",
+         "betDetails": "Under:6"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "u6.5",
+      "odds": "-115"
+     },
+     "live": {
+      "line": "u5.5",
+      "odds": "+106",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "under",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+       "text": "Under Odds",
+       "shortText": "Under Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mlb",
+         "sport": "baseball",
+         "gameId": 401908046,
+         "betSide": "under",
+         "betType": "straight",
+         "betDetails": "Under:5.5"
+        }
+       }
+      }
+     }
+    }
+   },
+   "link": {
+    "language": "en-US",
+    "rel": [
+     "odds",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mlb/odds/_/gameId/401908046",
+    "text": "See More Odds and Props",
+    "shortText": "Odds",
+    "isExternal": false,
+    "isPremium": false
+   },
+   "header": {
+    "logo": {
+     "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+     "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+     "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+     "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+    },
+    "text": "Game Odds"
+   },
+   "footer": {
+    "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+   }
+  }
+ ],
+ "odds": [],
+ "againstTheSpread": [
+  {
+   "team": {
+    "id": "8",
+    "uid": "s:1~l:10~t:8",
+    "displayName": "Milwaukee Brewers",
+    "abbreviation": "MIL",
+    "links": [
+     {
+      "href": "https://www.espn.com/mlb/team/_/name/mil/milwaukee-brewers",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mlb/team/schedule/_/name/mil",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2024-07-01T17:49Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     "\u2026(+1 more, len=4)"
+    ]
+   },
+   "records": []
+  },
+  {
+   "team": {
+    "id": "30",
+    "uid": "s:1~l:10~t:30",
+    "displayName": "Tampa Bay Rays",
+    "abbreviation": "TB",
+    "links": [
+     {
+      "href": "https://www.espn.com/mlb/team/_/name/tb/tampa-bay-rays",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mlb/team/schedule/_/name/tb",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-08-15T19:26Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     "\u2026(+1 more, len=4)"
+    ]
+   },
+   "records": []
+  }
+ ],
+ "rosters": [
+  {
+   "homeAway": "home",
+   "team": {
+    "id": "30",
+    "abbreviation": "TB",
+    "displayName": "Tampa Bay Rays",
+    "color": "092c5c",
+    "alternateColor": "8fbce6",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-08-15T19:26Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2023-08-15T19:27Z"
+     },
+     "\u2026(+13 more, len=16)"
+    ]
+   },
+   "roster": [
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "33481",
+      "uid": "s:1~l:10~a:33481",
+      "guid": "b7385cff-51b5-1174-5c73-bd5f2309c73e",
+      "lastName": "Diaz",
+      "fullName": "Yandy Diaz",
+      "displayName": "Yandy Diaz",
+      "shortName": "Y. Diaz",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/33481",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/33481.png",
+       "alt": "Yandy Diaz"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/10?lang=en&region=us",
+        "id": "10",
+        "name": "Designated Hitter",
+        "displayName": "Designated Hitter",
+        "abbreviation": "DH",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/18?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/33481/statistics/86?lang=en\u2026"
+        }
+       }
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "position": {
+      "name": "Designated Hitter",
+      "displayName": "Designated Hitter",
+      "abbreviation": "DH"
+     },
+     "batOrder": 1,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "2"
+    },
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "40810",
+      "uid": "s:1~l:10~a:40810",
+      "guid": "4d197bc2-9bdd-0f37-fb96-21bd05f8ce1e",
+      "lastName": "Aranda",
+      "fullName": "Jonathan Aranda",
+      "displayName": "Jonathan Aranda",
+      "shortName": "J. Aranda",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/40810",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/40810.png",
+       "alt": "Jonathan Aranda"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/3?lang=en&region=us",
+        "id": "3",
+        "name": "First Base",
+        "displayName": "First Baseman",
+        "abbreviation": "1B",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/13?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/40810/statistics/79?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/10?lang=en&region=us",
+        "id": "10",
+        "name": "Designated Hitter",
+        "displayName": "Designated Hitter",
+        "abbreviation": "DH",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/18?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/40810/statistics/86?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/11?lang=en&region=us",
+        "id": "11",
+        "name": "Pinch Hitter",
+        "displayName": "Pinch Hitter",
+        "abbreviation": "PH",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/18?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/40810/statistics/87?lang=en\u2026"
+        }
+       }
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "position": {
+      "name": "First Base",
+      "displayName": "First Baseman",
+      "abbreviation": "1B"
+     },
+     "batOrder": 2,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "8"
+    },
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "4905921",
+      "uid": "s:1~l:10~a:4905921",
+      "guid": "64b000df-915b-374c-81eb-e1b79b1e81f2",
+      "lastName": "Caminero",
+      "fullName": "Junior Caminero",
+      "displayName": "Junior Caminero",
+      "shortName": "J. Caminero",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/4905921",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/4905921.png",
+       "alt": "Junior Caminero"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/3?lang=en&region=us",
+        "id": "3",
+        "name": "First Base",
+        "displayName": "First Baseman",
+        "abbreviation": "1B",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/13?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/4905921/statistics/79?lang=\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/5?lang=en&region=us",
+        "id": "5",
+        "name": "Third Base",
+        "displayName": "Third Baseman",
+        "abbreviation": "3B",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/13?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/4905921/statistics/81?lang=\u2026"
+        }
+       }
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "position": {
+      "name": "Third Base",
+      "displayName": "Third Baseman",
+      "abbreviation": "3B"
+     },
+     "batOrder": 3,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 1.0,
+       "displayValue": "1"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "13"
+    },
+    "\u2026(+6 more, len=9)"
+   ]
+  },
+  {
+   "homeAway": "away",
+   "team": {
+    "id": "8",
+    "abbreviation": "MIL",
+    "displayName": "Milwaukee Brewers",
+    "color": "13294b",
+    "alternateColor": "ffc72c",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2024-07-01T17:49Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "scoreboard"
+      ],
+      "lastUpdated": "2024-07-01T17:48Z"
+     },
+     "\u2026(+13 more, len=16)"
+    ]
+   },
+   "roster": [
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "4917869",
+      "uid": "s:1~l:10~a:4917869",
+      "guid": "84dbf7f2-04ba-3bb6-98c0-c4bc68934584",
+      "lastName": "Chourio",
+      "fullName": "Jackson Chourio",
+      "displayName": "Jackson Chourio",
+      "shortName": "J. Chourio",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/4917869",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/4917869.png",
+       "alt": "Jackson Chourio"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/7?lang=en&region=us",
+        "id": "7",
+        "name": "Left Field",
+        "displayName": "Left Fielder",
+        "abbreviation": "LF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/4917869/statistics/83?lang=\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/8?lang=en&region=us",
+        "id": "8",
+        "name": "Center Field",
+        "displayName": "Center Fielder",
+        "abbreviation": "CF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/4917869/statistics/84?lang=\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/9?lang=en&region=us",
+        "id": "9",
+        "name": "Right Field",
+        "displayName": "Right Fielder",
+        "abbreviation": "RF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/4917869/statistics/85?lang=\u2026"
+        }
+       },
+       "\u2026(+2 more, len=5)"
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "position": {
+      "name": "Left Field",
+      "displayName": "Left Fielder",
+      "abbreviation": "LF"
+     },
+     "batOrder": 1,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "11"
+    },
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "35013",
+      "uid": "s:1~l:10~a:35013",
+      "guid": "fb61ce47-001c-a99c-eab5-77eb5c782968",
+      "lastName": "Bauers",
+      "fullName": "Jake Bauers",
+      "displayName": "Jake Bauers",
+      "shortName": "J. Bauers",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/35013",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/35013.png",
+       "alt": "Jake Bauers"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/3?lang=en&region=us",
+        "id": "3",
+        "name": "First Base",
+        "displayName": "First Baseman",
+        "abbreviation": "1B",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/13?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/35013/statistics/79?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/7?lang=en&region=us",
+        "id": "7",
+        "name": "Left Field",
+        "displayName": "Left Fielder",
+        "abbreviation": "LF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/35013/statistics/83?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/9?lang=en&region=us",
+        "id": "9",
+        "name": "Right Field",
+        "displayName": "Right Fielder",
+        "abbreviation": "RF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/35013/statistics/85?lang=en\u2026"
+        }
+       },
+       "\u2026(+2 more, len=5)"
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      },
+      "throws": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      }
+     },
+     "position": {
+      "name": "First Base",
+      "displayName": "First Baseman",
+      "abbreviation": "1B"
+     },
+     "batOrder": 2,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "9"
+    },
+    {
+     "active": true,
+     "starter": true,
+     "athlete": {
+      "id": "31283",
+      "uid": "s:1~l:10~a:31283",
+      "guid": "6a3df5fe-0c7d-f3fa-0c18-4850378dceba",
+      "lastName": "Yelich",
+      "fullName": "Christian Yelich",
+      "displayName": "Christian Yelich",
+      "shortName": "C. Yelich",
+      "links": [
+       {
+        "language": "en-US",
+        "rel": [
+         "playercard",
+         "desktop",
+         "athlete"
+        ],
+        "href": "https://www.espn.com/mlb/player/_/id/31283",
+        "text": "Player Card",
+        "shortText": "Player Card",
+        "isExternal": false,
+        "isPremium": false
+       }
+      ],
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/mlb/players/full/31283.png",
+       "alt": "Christian Yelich"
+      },
+      "positions": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/7?lang=en&region=us",
+        "id": "7",
+        "name": "Left Field",
+        "displayName": "Left Fielder",
+        "abbreviation": "LF",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/14?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/31283/statistics/83?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/10?lang=en&region=us",
+        "id": "10",
+        "name": "Designated Hitter",
+        "displayName": "Designated Hitter",
+        "abbreviation": "DH",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/18?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/31283/statistics/86?lang=en\u2026"
+        }
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/11?lang=en&region=us",
+        "id": "11",
+        "name": "Pinch Hitter",
+        "displayName": "Pinch Hitter",
+        "abbreviation": "PH",
+        "leaf": true,
+        "parent": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/positions/18?lang=en&region=us"
+        },
+        "statistics": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/types/2/athletes/31283/statistics/87?lang=en\u2026"
+        }
+       },
+       "\u2026(+1 more, len=4)"
+      ],
+      "hotZones": [
+       {
+        "configurationId": 0,
+        "name": "gamecast",
+        "active": true,
+        "splitTypeId": 0,
+        "season": 2026,
+        "seasonType": 0,
+        "zones": [
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         {
+          "zoneId": "\u2026",
+          "xMin": "\u2026",
+          "xMax": "\u2026",
+          "yMin": "\u2026",
+          "yMax": "\u2026",
+          "atBats": "\u2026",
+          "hits": "\u2026",
+          "battingAvg": "\u2026",
+          "battingAvgScore": "\u2026",
+          "slugging": "\u2026",
+          "sluggingScore": "\u2026"
+         },
+         "\u2026(+6 more, len=9)"
+        ]
+       }
+      ],
+      "bats": {
+       "type": "LEFT",
+       "abbreviation": "L",
+       "displayValue": "Left"
+      },
+      "throws": {
+       "type": "RIGHT",
+       "abbreviation": "R",
+       "displayValue": "Right"
+      }
+     },
+     "position": {
+      "name": "Designated Hitter",
+      "displayName": "Designated Hitter",
+      "abbreviation": "DH"
+     },
+     "batOrder": 3,
+     "subbedIn": false,
+     "subbedOut": false,
+     "media": {},
+     "stats": [
+      {
+       "name": "RBIs",
+       "displayName": "Runs Batted In",
+       "shortDisplayName": "RBI",
+       "description": "The number of runs scored by a batter's play.",
+       "abbreviation": "RBI",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "hits",
+       "displayName": "Hits",
+       "shortDisplayName": "H",
+       "description": "The number of hits.",
+       "abbreviation": "H",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      {
+       "name": "stolenBases",
+       "displayName": "Stolen Bases",
+       "shortDisplayName": "SB",
+       "description": "The number of bases stolen.",
+       "abbreviation": "SB",
+       "value": 0.0,
+       "displayValue": "0"
+      },
+      "\u2026(+3 more, len=6)"
+     ],
+     "jersey": "22"
+    },
+    "\u2026(+6 more, len=9)"
+   ]
+  }
+ ],
+ "videos": [],
+ "news": {
+  "header": "MLB News",
+  "link": {
+   "language": "en",
+   "rel": [
+    "index",
+    "desktop",
+    "league"
+   ],
+   "href": "https://www.espn.com/mlb/",
+   "text": "All MLB News",
+   "shortText": "All News",
+   "isExternal": false,
+   "isPremium": false
+  },
+  "articles": [
+   {
+    "id": 50241136,
+    "nowId": "1-50241136",
+    "contentKey": "50241136-1-6-1",
+    "dataSourceIdentifier": "c16920d8ac028",
+    "type": "Story",
+    "headline": "World Series Game 5: Live updates from Brewers-Rays",
+    "description": "After a dramatic Game 4, the Fall Classic continues tonight at Tropicana Field. Here's the latest.",
+    "lastModified": "2026-10-29T00:35:21Z",
+    "published": "2026-10-29T00:35:21Z",
+    "images": [
+     {
+      "dataSourceIdentifier": "dda41d4fa9b7a",
+      "id": 50312349,
+      "type": "header",
+      "name": "Drew_Rasmussen_G5 [608x342]",
+      "alt": "Drew Rasmussen #57 of the Tampa Bay Rays throws a pitch during the first inning against the Milwaukee Brewers in Game 5 \u2026",
+      "credit": "Carmen Mandato/Getty Images",
+      "height": 342,
+      "width": 608,
+      "url": "https://a.espncdn.com/photo/2026/1029/r1737823_608x342_16-9.jpg"
+     },
+     {
+      "dataSourceIdentifier": "c87e99d56a82d",
+      "id": 50306473,
+      "type": "header",
+      "name": "Brewers_Rays_G5LF [608x342]",
+      "alt": "Cedric Mullins #31 of the Tampa Bay Rays scores the tying run in the twelfth inning as William Contreras #24 of the Milw\u2026",
+      "credit": "Mike Carlson/MLB Photos via Getty Images",
+      "height": 342,
+      "width": 608,
+      "url": "https://a.espncdn.com/photo/2026/1028/r1737426_608x342_16-9.jpg"
+     }
+    ],
+    "categories": [
+     {
+      "id": 80311,
+      "type": "league",
+      "uid": "s:1~l:10",
+      "guid": "b38f959b-7865-31ac-8841-b88355519e10",
+      "description": "MLB",
+      "sportId": 10,
+      "leagueId": 10,
+      "league": {
+       "id": 10,
+       "description": "MLB",
+       "abbreviation": "MLB",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 118,
+      "type": "team",
+      "uid": "s:1~l:10~t:30",
+      "guid": "f8a579c6-08b9-7584-141d-317d0645763b",
+      "description": "Tampa Bay Rays",
+      "sportId": 10,
+      "teamId": 30,
+      "team": {
+       "id": 30,
+       "description": "Tampa Bay Rays",
+       "abbreviation": "TB",
+       "shortDisplayName": "Rays",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 527,
+      "type": "team",
+      "uid": "s:1~l:10~t:8",
+      "guid": "4750d73d-d92e-b390-758c-2c7b44a810db",
+      "description": "Milwaukee Brewers",
+      "sportId": 10,
+      "teamId": 8,
+      "team": {
+       "id": 8,
+       "description": "Milwaukee Brewers",
+       "abbreviation": "MIL",
+       "shortDisplayName": "Brewers",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     "\u2026(+2 more, len=5)"
+    ],
+    "byline": "ESPN",
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50241136"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50241136"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/mlb/story?storyId=50241136"
+     },
+     "web": {
+      "href": "https://www.espn.com/mlb/story/_/id/50241136/world-series-game-5-brewers-rays-live-updates-takeaways"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50311560,
+    "nowId": "1-50311560",
+    "contentKey": "50311560-1-5-1",
+    "dataSourceIdentifier": "55138c44e58f4",
+    "type": "HeadlineNews",
+    "headline": "Pat Murphy defends decision to save Brewers ace Jacob Misiorowski for Game 5",
+    "description": "Pat Murphy shrugged off criticism he should've turned to Jacob Misiorowski to close out Game 4, saying he's happy with g\u2026",
+    "lastModified": "2026-10-28T22:27:56Z",
+    "published": "2026-10-28T22:27:56Z",
+    "images": [
+     {
+      "dataSourceIdentifier": "b3367357d5ce3",
+      "id": 50266843,
+      "type": "header",
+      "name": "Jacob Misiorowski [600x400]",
+      "caption": "Jacob Misiorowski picked up the Game 1 win as the Brewers widened their odds lead to win the World Series.",
+      "alt": "Jacob Misiorowski #32 of the Milwaukee Brewers throws a pitch during the first inning against the Tampa Bay Rays in game\u2026",
+      "credit": "Patrick McDermott/Getty Images",
+      "height": 400,
+      "width": 600,
+      "url": "https://a.espncdn.com/photo/2026/1024/r1735471_600x400_3-2.jpg"
+     }
+    ],
+    "categories": [
+     {
+      "id": 409224,
+      "type": "topic",
+      "guid": "52313677-19f8-b106-ec91-d8d17e6087fe",
+      "description": "news",
+      "sportId": 0,
+      "topicId": 781
+     },
+     {
+      "id": 80311,
+      "type": "league",
+      "uid": "s:1~l:10",
+      "guid": "b38f959b-7865-31ac-8841-b88355519e10",
+      "description": "MLB",
+      "sportId": 10,
+      "leagueId": 10,
+      "league": {
+       "id": 10,
+       "description": "MLB",
+       "abbreviation": "MLB",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 527,
+      "type": "team",
+      "uid": "s:1~l:10~t:8",
+      "guid": "4750d73d-d92e-b390-758c-2c7b44a810db",
+      "description": "Milwaukee Brewers",
+      "sportId": 10,
+      "teamId": 8,
+      "team": {
+       "id": 8,
+       "description": "Milwaukee Brewers",
+       "abbreviation": "MIL",
+       "shortDisplayName": "Brewers",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     "\u2026(+1 more, len=4)"
+    ],
+    "byline": "Bradford Doolittle",
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50311560"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50311560"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/mlb/story?storyId=50311560"
+     },
+     "web": {
+      "href": "https://www.espn.com/mlb/story/_/id/50311560/murphy-defends-decision-save-ace-misiorowski-game-5"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50310462,
+    "nowId": "1-50310462",
+    "contentKey": "50310462-1-21-1",
+    "dataSourceIdentifier": "f02c29ee45327",
+    "type": "Recap",
+    "headline": "Rays stun Brewers with 2-run rally in 12th inning and force World Series Game 5 with 4-3 win",
+    "description": "- Milwaukee was three outs from its first World Series title when Junior Camerino started the bottom of the 12th inning \u2026",
+    "lastModified": "2026-10-28T20:06:26Z",
+    "published": "2026-10-28T20:06:26Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/baseball/mlb/events/401908045.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/baseball/mlb/events/401908045.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/baseball/mlb/events/401908045.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     "\u2026(+10 more, len=13)"
+    ],
+    "categories": [
+     {
+      "id": 80311,
+      "type": "league",
+      "uid": "s:1~l:10",
+      "guid": "b38f959b-7865-31ac-8841-b88355519e10",
+      "description": "MLB",
+      "sportId": 10,
+      "leagueId": 10,
+      "league": {
+       "id": 10,
+       "description": "MLB",
+       "abbreviation": "MLB",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 527,
+      "type": "team",
+      "uid": "s:1~l:10~t:8",
+      "guid": "4750d73d-d92e-b390-758c-2c7b44a810db",
+      "description": "Milwaukee Brewers",
+      "sportId": 10,
+      "teamId": 8,
+      "team": {
+       "id": 8,
+       "description": "Milwaukee Brewers",
+       "abbreviation": "MIL",
+       "shortDisplayName": "Brewers",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 118,
+      "type": "team",
+      "uid": "s:1~l:10~t:30",
+      "guid": "f8a579c6-08b9-7584-141d-317d0645763b",
+      "description": "Tampa Bay Rays",
+      "sportId": 10,
+      "teamId": 30,
+      "team": {
+       "id": 30,
+       "description": "Tampa Bay Rays",
+       "abbreviation": "TB",
+       "shortDisplayName": "Rays",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "\u2026"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "\u2026"
+         }
+        }
+       }
+      }
+     },
+     "\u2026(+1 more, len=4)"
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50310462"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50310462"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/mlb/story?storyId=50310462"
+     },
+     "web": {
+      "href": "http://www.espn.com/mlb/recap?gameId=401908045"
+     }
+    },
+    "premium": false
+   },
+   "\u2026(+3 more, len=6)"
+  ]
+ },
+ "winprobability": [
+  {
+   "homeWinPercentage": 0.428,
+   "tiePercentage": 0.0,
+   "playId": "4019080460001990057"
+  },
+  {
+   "homeWinPercentage": 0.438,
+   "tiePercentage": 0.0,
+   "playId": "4019080460002990057"
+  },
+  {
+   "homeWinPercentage": 0.443,
+   "tiePercentage": 0.0,
+   "playId": "4019080460003990057"
+  },
+  "\u2026(+9 more, len=12)"
+ ],
+ "header": {
+  "id": "401908046",
+  "uid": "s:1~l:10~e:401908046",
+  "season": {
+   "year": 2026,
+   "current": true,
+   "type": 3
+  },
+  "timeValid": true,
+  "competitions": [
+   {
+    "id": "401908046",
+    "uid": "s:1~l:10~e:401908046~c:401908046",
+    "date": "2026-10-29T00:00Z",
+    "neutralSite": false,
+    "conferenceCompetition": false,
+    "boxscoreAvailable": true,
+    "commentaryAvailable": false,
+    "liveAvailable": true,
+    "onWatchESPN": false,
+    "recent": true,
+    "wallclockAvailable": true,
+    "boxscoreSource": "full",
+    "playByPlaySource": "full",
+    "competitors": [
+     {
+      "id": "30",
+      "uid": "s:1~l:10~t:30",
+      "order": 0,
+      "homeAway": "home",
+      "team": {
+       "id": "30",
+       "guid": "f8a579c6-08b9-7584-141d-317d0645763b",
+       "uid": "s:1~l:10~t:30",
+       "location": "Tampa Bay",
+       "name": "Rays",
+       "abbreviation": "TB",
+       "displayName": "Tampa Bay Rays",
+       "color": "092c5c",
+       "alternateColor": "8fbce6",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2023-08-15T19:27Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tb.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2023-08-15T19:26Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2023-08-15T19:27Z"
+        },
+        "\u2026(+13 more, len=16)"
+       ],
+       "links": [
+        {
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/mlb/team/_/name/tb/tampa-bay-rays",
+         "text": "Clubhouse"
+        }
+       ]
+      },
+      "score": "0",
+      "linescores": [
+       {
+        "displayValue": "0",
+        "hits": 1,
+        "errors": 0
+       },
+       {
+        "displayValue": "0",
+        "hits": 0,
+        "errors": 0
+       }
+      ],
+      "record": [
+       {
+        "type": "total",
+        "summary": "98-64",
+        "displayValue": "98-64"
+       },
+       {
+        "type": "home",
+        "summary": "55-26",
+        "displayValue": "55-26"
+       }
+      ],
+      "probables": [
+       {
+        "name": "probableStartingPitcher",
+        "displayName": "Probable Starting Pitcher",
+        "shortDisplayName": "Starter",
+        "abbreviation": "SP",
+        "playerId": 42584,
+        "athlete": {
+         "id": "42584",
+         "uid": "s:1~l:10~a:42584",
+         "guid": "dbb3ce22-44f1-32e7-aa53-30f4fed7ec6d",
+         "lastName": "Rasmussen",
+         "fullName": "Drew Rasmussen",
+         "displayName": "Drew Rasmussen",
+         "shortName": "D. Rasmussen",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "jersey": "57",
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "throws": {
+          "type": "\u2026",
+          "abbreviation": "\u2026",
+          "displayValue": "\u2026"
+         }
+        },
+        "statistics": {
+         "splits": {
+          "categories": "\u2026"
+         }
+        }
+       }
+      ],
+      "possession": false,
+      "hits": 1,
+      "errors": 0
+     },
+     {
+      "id": "8",
+      "uid": "s:1~l:10~t:8",
+      "order": 1,
+      "homeAway": "away",
+      "team": {
+       "id": "8",
+       "guid": "4750d73d-d92e-b390-758c-2c7b44a810db",
+       "uid": "s:1~l:10~t:8",
+       "location": "Milwaukee",
+       "name": "Brewers",
+       "abbreviation": "MIL",
+       "displayName": "Milwaukee Brewers",
+       "color": "13294b",
+       "alternateColor": "ffc72c",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/mil.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:49Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        "\u2026(+13 more, len=16)"
+       ],
+       "links": [
+        {
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/mlb/team/_/name/mil/milwaukee-brewers",
+         "text": "Clubhouse"
+        }
+       ]
+      },
+      "score": "1",
+      "linescores": [
+       {
+        "displayValue": "0",
+        "hits": 0,
+        "errors": 0
+       },
+       {
+        "displayValue": "1",
+        "hits": 2,
+        "errors": 0
+       }
+      ],
+      "record": [
+       {
+        "type": "total",
+        "summary": "103-59",
+        "displayValue": "103-59"
+       },
+       {
+        "type": "road",
+        "summary": "48-33",
+        "displayValue": "48-33"
+       }
+      ],
+      "probables": [
+       {
+        "name": "probableStartingPitcher",
+        "displayName": "Probable Starting Pitcher",
+        "shortDisplayName": "Starter",
+        "abbreviation": "SP",
+        "playerId": 5080761,
+        "athlete": {
+         "id": "5080761",
+         "uid": "s:1~l:10~a:5080761",
+         "guid": "0ea828df-ab12-3e43-8900-dee0563e68d4",
+         "lastName": "Misiorowski",
+         "fullName": "Jacob Misiorowski",
+         "displayName": "Jacob Misiorowski",
+         "shortName": "J. Misiorowski",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": {
+          "href": "\u2026",
+          "alt": "\u2026"
+         },
+         "jersey": "32",
+         "position": {
+          "name": "\u2026",
+          "displayName": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "throws": {
+          "type": "\u2026",
+          "abbreviation": "\u2026",
+          "displayValue": "\u2026"
+         }
+        },
+        "statistics": {
+         "splits": {
+          "categories": "\u2026"
+         }
+        }
+       }
+      ],
+      "possession": false,
+      "hits": 2,
+      "errors": 0
+     }
+    ],
+    "status": {
+     "displayClock": "0:00",
+     "period": 2,
+     "type": {
+      "id": "2",
+      "name": "STATUS_IN_PROGRESS",
+      "state": "in",
+      "completed": false,
+      "description": "In Progress",
+      "detail": "Bottom 2nd",
+      "shortDetail": "Bot 2nd",
+      "statusPrimary": "Bot 2nd"
+     },
+     "periodPrefix": "Bottom",
+     "displayPeriod": "2nd"
+    },
+    "broadcasts": [
+     {
+      "type": {
+       "id": "1",
+       "shortName": "TV"
+      },
+      "market": {
+       "id": "1",
+       "type": "National"
+      },
+      "media": {
+       "shortName": "Fox"
+      },
+      "lang": "en",
+      "region": "us",
+      "isNational": true
+     },
+     {
+      "type": {
+       "id": "5",
+       "shortName": "Radio"
+      },
+      "market": {
+       "id": "1",
+       "type": "National"
+      },
+      "media": {
+       "shortName": "ERADM"
+      },
+      "lang": "en",
+      "region": "us",
+      "isNational": true
+     }
+    ],
+    "series": [
+     {
+      "type": "current",
+      "title": "Current Series",
+      "description": "Current Series",
+      "summary": "MIL leads series 3-1",
+      "completed": false,
+      "totalCompetitions": 7,
+      "competitors": [
+       {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "wins": 1,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/30?lang=en&region=us"
+        }
+       },
+       {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "wins": 3,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/8?lang=en&region=us"
+        }
+       }
+      ],
+      "events": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908042?lang=en&region=us",
+        "id": "401908042"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908043?lang=en&region=us",
+        "id": "401908043"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908044?lang=en&region=us",
+        "id": "401908044"
+       },
+       "\u2026(+4 more, len=7)"
+      ],
+      "startDate": "2026-10-23T04:00Z"
+     },
+     {
+      "type": "season",
+      "title": "Regular Season Series",
+      "description": "Regular Season Series",
+      "summary": "MIL wins series 2-1",
+      "completed": true,
+      "totalCompetitions": 3,
+      "competitors": [
+       {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "wins": 1,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/30?lang=en&region=us"
+        }
+       },
+       {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "wins": 2,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/8?lang=en&region=us"
+        }
+       }
+      ],
+      "events": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401814745?lang=en&region=us",
+        "id": "401814745"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401814759?lang=en&region=us",
+        "id": "401814759"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401814774?lang=en&region=us",
+        "id": "401814774"
+       }
+      ],
+      "startDate": "2026-03-30T23:40Z"
+     },
+     {
+      "type": "playoff",
+      "title": "Playoff Series",
+      "description": "Playoff Series",
+      "summary": "MIL leads series 3-1",
+      "completed": false,
+      "totalCompetitions": 7,
+      "competitors": [
+       {
+        "id": "30",
+        "uid": "s:1~l:10~t:30",
+        "wins": 1,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/30?lang=en&region=us"
+        }
+       },
+       {
+        "id": "8",
+        "uid": "s:1~l:10~t:8",
+        "wins": 3,
+        "ties": 0,
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2026/teams/8?lang=en&region=us"
+        }
+       }
+      ],
+      "events": [
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908042?lang=en&region=us",
+        "id": "401908042"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908043?lang=en&region=us",
+        "id": "401908043"
+       },
+       {
+        "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/events/401908044?lang=en&region=us",
+        "id": "401908044"
+       },
+       "\u2026(+4 more, len=7)"
+      ],
+      "startDate": "2026-10-24T00:00Z"
+     }
+    ],
+    "boxscoreMinutes": true,
+    "outs": 0
+   }
+  ],
+  "links": [
+   {
+    "rel": [
+     "live",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mlb/game/_/gameId/401908046",
+    "text": "Gamecast",
+    "shortText": "Gamecast",
+    "isExternal": false,
+    "isPremium": false
+   },
+   {
+    "rel": [
+     "boxscore",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mlb/boxscore/_/gameId/401908046",
+    "text": "Box Score",
+    "shortText": "Box Score",
+    "isExternal": false,
+    "isPremium": false
+   },
+   {
+    "rel": [
+     "pbp",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mlb/playbyplay/_/gameId/401908046",
+    "text": "Play-by-Play",
+    "shortText": "Play-by-Play",
+    "isExternal": false,
+    "isPremium": false
+   }
+  ],
+  "league": {
+   "id": "10",
+   "uid": "s:1~l:10",
+   "name": "Major League Baseball",
+   "abbreviation": "MLB",
+   "shortName": "MLB",
+   "midsizeName": "MLB",
+   "slug": "mlb",
+   "isTournament": false,
+   "links": [
+    {
+     "rel": [
+      "index",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mlb/",
+     "text": "Index"
+    },
+    {
+     "rel": [
+      "index",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10",
+     "text": "Index"
+    },
+    {
+     "rel": [
+      "schedule",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mlb/schedule",
+     "text": "Schedule"
+    },
+    "\u2026(+16 more, len=19)"
+   ],
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png",
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500-dark/mlb.png&w=500&h=500&transparent=true",
+     "rel": [
+      "full",
+      "dark"
+     ]
+    }
+   ]
+  },
+  "gameNote": "World Series - Game 5"
+ },
+ "plays": [
+  {
+   "id": "4019080460000000059",
+   "sequenceNumber": "1",
+   "type": {
+    "id": "59",
+    "text": "Start Inning",
+    "type": "start-inning"
+   },
+   "text": "Top of the 1st inning",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "type": "Top",
+    "number": 1,
+    "displayValue": "1st Inning"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "team": {
+    "id": "8"
+   },
+   "wallclock": "2026-10-29T00:08:58Z",
+   "atBatId": "4019080460001",
+   "summaryType": "I",
+   "pitchCount": {
+    "balls": 0,
+    "strikes": 0
+   },
+   "resultCount": {
+    "balls": 0,
+    "strikes": 0
+   },
+   "outs": 0
+  },
+  {
+   "id": "4019080460001010001",
+   "sequenceNumber": "1",
+   "type": {
+    "id": "1",
+    "text": "Start Batter/Pitcher",
+    "alternativeText": "Now at bat",
+    "type": "start-batterpitcher"
+   },
+   "text": "Drew Rasmussen pitches to Jackson Chourio",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "type": "Top",
+    "number": 1,
+    "displayValue": "1st Inning"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "team": {
+    "id": "8"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "42584"
+     },
+     "type": "pitcher"
+    },
+    {
+     "athlete": {
+      "id": "4917869"
+     },
+     "type": "batter"
+    }
+   ],
+   "wallclock": "2026-10-29T00:08:58Z",
+   "atBatId": "4019080460001",
+   "batOrder": 1,
+   "bats": {
+    "type": "RIGHT",
+    "abbreviation": "R",
+    "displayValue": "Right"
+   },
+   "summaryType": "A",
+   "pitchCount": {
+    "balls": 0,
+    "strikes": 0
+   },
+   "resultCount": {
+    "balls": 0,
+    "strikes": 0
+   },
+   "outs": 1
+  },
+  {
+   "id": "4019080460001020021",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "21",
+    "text": "Foul Ball",
+    "abbreviation": "F",
+    "type": "foul-ball"
+   },
+   "text": "Pitch 1 : Strike 1 Foul",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "type": "Top",
+    "number": 1,
+    "displayValue": "1st Inning"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "team": {
+    "id": "30"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "42584"
+     },
+     "type": "pitcher"
+    },
+    {
+     "athlete": {
+      "id": "4917869"
+     },
+     "type": "batter"
+    }
+   ],
+   "wallclock": "2026-10-29T00:08:58Z",
+   "atBatId": "4019080460001",
+   "batOrder": 1,
+   "bats": {
+    "type": "RIGHT",
+    "abbreviation": "R",
+    "displayValue": "Right"
+   },
+   "atBatPitchNumber": 1,
+   "pitchCoordinate": {
+    "x": 138,
+    "y": 178
+   },
+   "pitchType": {
+    "id": "2",
+    "text": "Sinker",
+    "abbreviation": "SI"
+   },
+   "pitchVelocity": 95,
+   "summaryType": "P",
+   "pitchCount": {
+    "balls": 0,
+    "strikes": 0
+   },
+   "resultCount": {
+    "balls": 0,
+    "strikes": 1
+   },
+   "outs": 1
+  },
+  "\u2026(+83 more, len=86)"
+ ],
+ "playsMap": {
+  "4019080460000000059": {
+   "$ref": "#/plays/0"
+  },
+  "4019080460001010001": {
+   "$ref": "#/plays/1"
+  },
+  "4019080460001020021": {
+   "$ref": "#/plays/2"
+  },
+  "4019080460001030021": {
+   "$ref": "#/plays/3"
+  },
+  "4019080460001040021": {
+   "$ref": "#/plays/4"
+  },
+  "4019080460001050021": {
+   "$ref": "#/plays/5"
+  },
+  "4019080460001060005": {
+   "$ref": "#/plays/6"
+  },
+  "4019080460001070005": {
+   "$ref": "#/plays/7"
+  },
+  "4019080460001080036": {
+   "$ref": "#/plays/8"
+  },
+  "4019080460001990057": {
+   "$ref": "#/plays/9"
+  },
+  "4019080460001990099": {
+   "$ref": "#/plays/10"
+  },
+  "4019080460002010001": {
+   "$ref": "#/plays/11"
+  },
+  "4019080460002020036": {
+   "$ref": "#/plays/12"
+  },
+  "4019080460002030021": {
+   "$ref": "#/plays/13"
+  },
+  "4019080460002040037": {
+   "$ref": "#/plays/14"
+  },
+  "4019080460002990057": {
+   "$ref": "#/plays/15"
+  },
+  "4019080460002990099": {
+   "$ref": "#/plays/16"
+  },
+  "4019080460003010001": {
+   "$ref": "#/plays/17"
+  },
+  "4019080460003020024": {
+   "$ref": "#/plays/18"
+  },
+  "4019080460003990057": {
+   "$ref": "#/plays/19"
+  },
+  "4019080460003990099": {
+   "$ref": "#/plays/20"
+  },
+  "4019080460099990058": {
+   "$ref": "#/plays/21"
+  },
+  "4019080460100000059": {
+   "$ref": "#/plays/22"
+  },
+  "4019080460101010001": {
+   "$ref": "#/plays/23"
+  },
+  "4019080460101020036": {
+   "$ref": "#/plays/24"
+  },
+  "4019080460101030021": {
+   "$ref": "#/plays/25"
+  },
+  "4019080460101040022": {
+   "$ref": "#/plays/26"
+  },
+  "4019080460101990057": {
+   "$ref": "#/plays/27"
+  },
+  "4019080460101990099": {
+   "$ref": "#/plays/28"
+  },
+  "4019080460102010001": {
+   "$ref": "#/plays/29"
+  },
+  "4019080460102020037": {
+   "$ref": "#/plays/30"
+  },
+  "4019080460102030037": {
+   "$ref": "#/plays/31"
+  },
+  "4019080460102040022": {
+   "$ref": "#/plays/32"
+  },
+  "4019080460102990057": {
+   "$ref": "#/plays/33"
+  },
+  "4019080460102990099": {
+   "$ref": "#/plays/34"
+  },
+  "4019080460103010001": {
+   "$ref": "#/plays/35"
+  },
+  "4019080460103020005": {
+   "$ref": "#/plays/36"
+  },
+  "4019080460103030037": {
+   "$ref": "#/plays/37"
+  },
+  "4019080460103040005": {
+   "$ref": "#/plays/38"
+  },
+  "4019080460103050005": {
+   "$ref": "#/plays/39"
+  },
+  "4019080460103060002": {
+   "$ref": "#/plays/40"
+  },
+  "4019080460103990057": {
+   "$ref": "#/plays/41"
+  },
+  "4019080460103990099": {
+   "$ref": "#/plays/42"
+  },
+  "4019080460104010001": {
+   "$ref": "#/plays/43"
+  },
+  "4019080460104020005": {
+   "$ref": "#/plays/44"
+  },
+  "4019080460104030032": {
+   "$ref": "#/plays/45"
+  },
+  "4019080460104990057": {
+   "$ref": "#/plays/46"
+  },
+  "4019080460104990099": {
+   "$ref": "#/plays/47"
+  },
+  "4019080460199990058": {
+   "$ref": "#/plays/48"
+  },
+  "4019080460200000059": {
+   "$ref": "#/plays/49"
+  },
+  "4019080460201010001": {
+   "$ref": "#/plays/50"
+  },
+  "4019080460201020036": {
+   "$ref": "#/plays/51"
+  },
+  "4019080460201030021": {
+   "$ref": "#/plays/52"
+  },
+  "4019080460201040005": {
+   "$ref": "#/plays/53"
+  },
+  "4019080460201050021": {
+   "$ref": "#/plays/54"
+  },
+  "4019080460201060021": {
+   "$ref": "#/plays/55"
+  },
+  "4019080460201070033": {
+   "$ref": "#/plays/56"
+  },
+  "4019080460201990057": {
+   "$ref": "#/plays/57"
+  },
+  "4019080460201990099": {
+   "$ref": "#/plays/58"
+  },
+  "4019080460202010001": {
+   "$ref": "#/plays/59"
+  },
+  "4019080460202020005": {
+   "$ref": "#/plays/60"
+  },
+  "4019080460202030036": {
+   "$ref": "#/plays/61"
+  },
+  "4019080460202040003": {
+   "$ref": "#/plays/62"
+  },
+  "4019080460202990057": {
+   "$ref": "#/plays/63"
+  },
+  "4019080460202990099": {
+   "$ref": "#/plays/64"
+  },
+  "4019080460203010001": {
+   "$ref": "#/plays/65"
+  },
+  "4019080460203020036": {
+   "$ref": "#/plays/66"
+  },
+  "4019080460203030026": {
+   "$ref": "#/plays/67"
+  },
+  "4019080460203990057": {
+   "$ref": "#/plays/68"
+  },
+  "4019080460203990099": {
+   "$ref": "#/plays/69"
+  },
+  "4019080460204010001": {
+   "$ref": "#/plays/70"
+  },
+  "4019080460204020002": {
+   "$ref": "#/plays/71"
+  },
+  "4019080460204990057": {
+   "$ref": "#/plays/72"
+  },
+  "4019080460204990099": {
+   "$ref": "#/plays/73"
+  },
+  "4019080460205010001": {
+   "$ref": "#/plays/74"
+  },
+  "4019080460205020005": {
+   "$ref": "#/plays/75"
+  },
+  "4019080460205030037": {
+   "$ref": "#/plays/76"
+  },
+  "4019080460205040005": {
+   "$ref": "#/plays/77"
+  },
+  "4019080460205050036": {
+   "$ref": "#/plays/78"
+  },
+  "4019080460205060021": {
+   "$ref": "#/plays/79"
+  },
+  "4019080460205070036": {
+   "$ref": "#/plays/80"
+  },
+  "4019080460205990057": {
+   "$ref": "#/plays/81"
+  },
+  "4019080460205990099": {
+   "$ref": "#/plays/82"
+  },
+  "4019080460299990058": {
+   "$ref": "#/plays/83"
+  },
+  "4019080460300000059": {
+   "$ref": "#/plays/84"
+  },
+  "4019080460301010001": {
+   "$ref": "#/plays/85"
+  }
+ },
+ "atBats": {
+  "4019080460001": [
+   {
+    "$ref": "#/plays/0"
+   },
+   {
+    "$ref": "#/plays/1"
+   },
+   {
+    "$ref": "#/plays/2"
+   },
+   "\u2026(+8 more, len=11)"
+  ],
+  "4019080460002": [
+   {
+    "$ref": "#/plays/11"
+   },
+   {
+    "$ref": "#/plays/12"
+   },
+   {
+    "$ref": "#/plays/13"
+   },
+   "\u2026(+3 more, len=6)"
+  ],
+  "4019080460003": [
+   {
+    "$ref": "#/plays/17"
+   },
+   {
+    "$ref": "#/plays/18"
+   },
+   {
+    "$ref": "#/plays/19"
+   },
+   "\u2026(+2 more, len=5)"
+  ],
+  "4019080460101": [
+   {
+    "$ref": "#/plays/22"
+   },
+   {
+    "$ref": "#/plays/23"
+   },
+   {
+    "$ref": "#/plays/24"
+   },
+   "\u2026(+4 more, len=7)"
+  ],
+  "4019080460102": [
+   {
+    "$ref": "#/plays/29"
+   },
+   {
+    "$ref": "#/plays/30"
+   },
+   {
+    "$ref": "#/plays/31"
+   },
+   "\u2026(+3 more, len=6)"
+  ],
+  "4019080460103": [
+   {
+    "$ref": "#/plays/35"
+   },
+   {
+    "$ref": "#/plays/36"
+   },
+   {
+    "$ref": "#/plays/37"
+   },
+   "\u2026(+5 more, len=8)"
+  ],
+  "4019080460104": [
+   {
+    "$ref": "#/plays/43"
+   },
+   {
+    "$ref": "#/plays/44"
+   },
+   {
+    "$ref": "#/plays/45"
+   },
+   "\u2026(+3 more, len=6)"
+  ],
+  "4019080460201": [
+   {
+    "$ref": "#/plays/49"
+   },
+   {
+    "$ref": "#/plays/50"
+   },
+   {
+    "$ref": "#/plays/51"
+   },
+   "\u2026(+7 more, len=10)"
+  ],
+  "4019080460202": [
+   {
+    "$ref": "#/plays/59"
+   },
+   {
+    "$ref": "#/plays/60"
+   },
+   {
+    "$ref": "#/plays/61"
+   },
+   "\u2026(+3 more, len=6)"
+  ],
+  "4019080460203": [
+   {
+    "$ref": "#/plays/65"
+   },
+   {
+    "$ref": "#/plays/66"
+   },
+   {
+    "$ref": "#/plays/67"
+   },
+   "\u2026(+2 more, len=5)"
+  ],
+  "4019080460204": [
+   {
+    "$ref": "#/plays/70"
+   },
+   {
+    "$ref": "#/plays/71"
+   },
+   {
+    "$ref": "#/plays/72"
+   },
+   "\u2026(+1 more, len=4)"
+  ],
+  "4019080460205": [
+   {
+    "$ref": "#/plays/74"
+   },
+   {
+    "$ref": "#/plays/75"
+   },
+   {
+    "$ref": "#/plays/76"
+   },
+   "\u2026(+7 more, len=10)"
+  ],
+  "4019080460301": [
+   {
+    "$ref": "#/plays/84"
+   },
+   {
+    "$ref": "#/plays/85"
+   }
+  ]
+ },
+ "wallclockAvailable": true,
+ "meta": {
+  "gp_topic": "gp-baseball-mlb-401908046",
+  "gameSwitcherEnabled": false,
+  "picker_topic": "picker-baseball-mlb",
+  "lastUpdatedAt": "2026-10-29T00:37:22Z",
+  "firstPlayWallClock": "2026-10-29T00:08:58Z",
+  "lastPlayWallClock": "2026-10-29T00:37:22Z",
+  "gameState": "in",
+  "syncUrl": "https://client.espncdn.com/fauxcast/stats/10/401908046/en/us/"
+ },
+ "standings": {
+  "fullViewLink": {
+   "text": "Full Standings",
+   "href": "https://www.espn.com/mlb/standings"
+  },
+  "groups": [
+   {
+    "standings": {
+     "entries": [
+      {
+       "team": "Milwaukee",
+       "link": "https://www.espn.com/mlb/team/_/name/mil/milwaukee-brewers",
+       "id": "8",
+       "uid": "s:1~l:10~t:8",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 59.0,
+         "displayValue": "59"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": 5.0,
+         "displayValue": "W5"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/mil.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:49Z"
+        }
+       ]
+      },
+      {
+       "team": "Chicago",
+       "link": "https://www.espn.com/mlb/team/_/name/chc/chicago-cubs",
+       "id": "16",
+       "uid": "s:1~l:10~t:16",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 14.0,
+         "displayValue": "14"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 73.0,
+         "displayValue": "73"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": 1.0,
+         "displayValue": "W1"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/chc.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:49Z"
+        }
+       ]
+      },
+      {
+       "team": "Pittsburgh",
+       "link": "https://www.espn.com/mlb/team/_/name/pit/pittsburgh-pirates",
+       "id": "23",
+       "uid": "s:1~l:10~t:23",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 21.0,
+         "displayValue": "21"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 80.0,
+         "displayValue": "80"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": 1.0,
+         "displayValue": "W1"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-02T15:01Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/pit.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2019-03-25T15:22Z"
+        }
+       ]
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    "header": "2026 National League Central Standings",
+    "href": "https://www.espn.com/mlb/standings/_/group/5"
+   },
+   {
+    "standings": {
+     "entries": [
+      {
+       "team": "Tampa Bay",
+       "link": "https://www.espn.com/mlb/team/_/name/tb/tampa-bay-rays",
+       "id": "30",
+       "uid": "s:1~l:10~t:30",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 64.0,
+         "displayValue": "64"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": -1.0,
+         "displayValue": "L1"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2023-08-15T19:27Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/tb.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2023-08-15T19:26Z"
+        }
+       ]
+      },
+      {
+       "team": "New York",
+       "link": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+       "id": "10",
+       "uid": "s:1~l:10~t:10",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 4.5,
+         "displayValue": "4.5"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 68.0,
+         "displayValue": "68"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": 1.0,
+         "displayValue": "W1"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/nyy.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:49Z"
+        }
+       ]
+      },
+      {
+       "team": "Boston",
+       "link": "https://www.espn.com/mlb/team/_/name/bos/boston-red-sox",
+       "id": "2",
+       "uid": "s:1~l:10~t:2",
+       "stats": [
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "gamesbehind",
+         "value": 11.0,
+         "displayValue": "11"
+        },
+        {
+         "name": "losses",
+         "displayName": "Losses",
+         "shortDisplayName": "L",
+         "description": "Losses",
+         "abbreviation": "L",
+         "type": "losses",
+         "value": 75.0,
+         "displayValue": "75"
+        },
+        {
+         "name": "streak",
+         "displayName": "Streak",
+         "shortDisplayName": "STRK",
+         "description": "Current Streak",
+         "abbreviation": "STRK",
+         "type": "streak",
+         "value": -1.0,
+         "displayValue": "L1"
+        },
+        "\u2026(+2 more, len=5)"
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:48Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/bos.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "lastUpdated": "2024-07-01T17:49Z"
+        }
+       ]
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    "header": "2026 American League East Standings",
+    "href": "https://www.espn.com/mlb/standings/_/group/1"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1 @@
+{"code": 400, "message": "Error invoking GET: http://sports.core.api.espn.pvt/v2/sports/tennis/leagues/wta/events/232-2026/competitions/232-2026/status, status=400, duration=7 ms, message=null, cache=CACHE_MISS"}

@@ -1,0 +1,2039 @@
+{
+ "leagues": [
+  {
+   "id": "28",
+   "uid": "s:20~l:28",
+   "name": "National Football League",
+   "abbreviation": "NFL",
+   "slug": "nfl",
+   "season": {
+    "year": 2026,
+    "startDate": "2026-08-06T07:00Z",
+    "endDate": "2027-02-16T07:59Z",
+    "displayName": "2026",
+    "type": {
+     "id": "2",
+     "type": 2,
+     "name": "Regular Season",
+     "abbreviation": "reg"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2018-06-05T12:07Z"
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500-dark/nfl.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "dark"
+     ],
+     "lastUpdated": "2024-07-22T16:53Z"
+    }
+   ],
+   "calendarType": "list",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-08-06T07:00Z",
+   "calendarEndDate": "2027-02-16T07:59Z",
+   "calendar": [
+    {
+     "label": "Preseason",
+     "value": "1",
+     "startDate": "2026-08-06T07:00Z",
+     "endDate": "2026-09-06T06:59Z",
+     "entries": [
+      {
+       "label": "Hall of Fame Weekend",
+       "alternateLabel": "HOF",
+       "detail": "Aug 6-12",
+       "value": "1",
+       "startDate": "2026-08-06T07:00Z",
+       "endDate": "2026-08-13T06:59Z"
+      },
+      {
+       "label": "Preseason Week 1",
+       "alternateLabel": "Pre Wk 1",
+       "detail": "Aug 13-19",
+       "value": "2",
+       "startDate": "2026-08-13T07:00Z",
+       "endDate": "2026-08-20T06:59Z"
+      },
+      {
+       "label": "Preseason Week 2",
+       "alternateLabel": "Pre Wk 2",
+       "detail": "Aug 20-26",
+       "value": "3",
+       "startDate": "2026-08-20T07:00Z",
+       "endDate": "2026-08-27T06:59Z"
+      },
+      "\u2026(+1 more, len=4)"
+     ]
+    },
+    {
+     "label": "Regular Season",
+     "value": "2",
+     "startDate": "2026-09-06T07:00Z",
+     "endDate": "2027-01-13T07:59Z",
+     "entries": [
+      {
+       "label": "Week 1",
+       "alternateLabel": "Week 1",
+       "detail": "Sep 6-15",
+       "value": "1",
+       "startDate": "2026-09-06T07:00Z",
+       "endDate": "2026-09-16T06:59Z"
+      },
+      {
+       "label": "Week 2",
+       "alternateLabel": "Week 2",
+       "detail": "Sep 16-22",
+       "value": "2",
+       "startDate": "2026-09-16T07:00Z",
+       "endDate": "2026-09-23T06:59Z"
+      },
+      {
+       "label": "Week 3",
+       "alternateLabel": "Week 3",
+       "detail": "Sep 23-29",
+       "value": "3",
+       "startDate": "2026-09-23T07:00Z",
+       "endDate": "2026-09-30T06:59Z"
+      },
+      "\u2026(+15 more, len=18)"
+     ]
+    },
+    {
+     "label": "Postseason",
+     "value": "3",
+     "startDate": "2027-01-13T08:00Z",
+     "endDate": "2027-02-16T07:59Z",
+     "entries": [
+      {
+       "label": "Wild Card",
+       "alternateLabel": "Wild Card",
+       "detail": "Jan 13-19",
+       "value": "1",
+       "startDate": "2027-01-13T08:00Z",
+       "endDate": "2027-01-20T07:59Z"
+      },
+      {
+       "label": "Divisional Round",
+       "alternateLabel": "Div Rd",
+       "detail": "Jan 20-26",
+       "value": "2",
+       "startDate": "2027-01-20T08:00Z",
+       "endDate": "2027-01-27T07:59Z"
+      },
+      {
+       "label": "Conference Championship",
+       "alternateLabel": "Conf Champ",
+       "detail": "Jan 27-Feb 2",
+       "value": "3",
+       "startDate": "2027-01-27T08:00Z",
+       "endDate": "2027-02-03T07:59Z"
+      },
+      "\u2026(+1 more, len=4)"
+     ]
+    },
+    "\u2026(+1 more, len=4)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 2,
+  "year": 2026
+ },
+ "week": {
+  "number": 8,
+  "teamsOnBye": [
+   {
+    "id": "18",
+    "uid": "s:20~l:28~t:18",
+    "location": "New Orleans",
+    "name": "Saints",
+    "abbreviation": "NO",
+    "displayName": "New Orleans Saints",
+    "shortDisplayName": "Saints",
+    "isActive": true,
+    "links": [
+     {
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nfl/team/_/name/no/new-orleans-saints",
+      "text": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+    "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/no.png"
+   },
+   {
+    "id": "19",
+    "uid": "s:20~l:28~t:19",
+    "location": "New York",
+    "name": "Giants",
+    "abbreviation": "NYG",
+    "displayName": "New York Giants",
+    "shortDisplayName": "Giants",
+    "isActive": true,
+    "links": [
+     {
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nfl/team/_/name/nyg/new-york-giants",
+      "text": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+    "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/nyg.png"
+   },
+   {
+    "id": "25",
+    "uid": "s:20~l:28~t:25",
+    "location": "San Francisco",
+    "name": "49ers",
+    "abbreviation": "SF",
+    "displayName": "San Francisco 49ers",
+    "shortDisplayName": "49ers",
+    "isActive": true,
+    "links": [
+     {
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/nfl/team/_/name/sf/san-francisco-49ers",
+      "text": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+    "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/sf.png"
+   },
+   "\u2026(+1 more, len=4)"
+  ]
+ },
+ "events": [
+  {
+   "id": "401873023",
+   "uid": "s:20~l:28~e:401873023",
+   "date": "2026-10-30T00:15Z",
+   "name": "Carolina Panthers at Green Bay Packers",
+   "shortName": "CAR @ GB",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "week": {
+    "number": 8
+   },
+   "competitions": [
+    {
+     "id": "401873023",
+     "uid": "s:20~l:28~e:401873023~c:401873023",
+     "date": "2026-10-30T00:15Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "conferenceCompetition": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "3798",
+      "fullName": "Lambeau Field",
+      "address": {
+       "city": "Green Bay",
+       "state": "WI",
+       "country": "USA"
+      },
+      "indoor": false
+     },
+     "competitors": [
+      {
+       "id": "9",
+       "uid": "s:20~l:28~t:9",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "9",
+        "uid": "s:20~l:28~t:9",
+        "location": "Green Bay",
+        "name": "Packers",
+        "abbreviation": "GB",
+        "displayName": "Green Bay Packers",
+        "shortDisplayName": "Packers",
+        "color": "204e32",
+        "alternateColor": "ffb612",
+        "isActive": true,
+        "venue": {
+         "id": "3798"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/gb.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "4-3"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "2-1"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "2-2"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "29",
+       "uid": "s:20~l:28~t:29",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "29",
+        "uid": "s:20~l:28~t:29",
+        "location": "Carolina",
+        "name": "Panthers",
+        "abbreviation": "CAR",
+        "displayName": "Carolina Panthers",
+        "shortDisplayName": "Panthers",
+        "color": "0085ca",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "3628"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/car.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "3-3"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "1-2"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "2-1"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0:00",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Thu, October 29th at 8:15 PM EDT",
+       "shortDetail": "10/29 - 8:15 PM EDT"
+      },
+      "isTBDFlex": false
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Prime Video"
+       ]
+      }
+     ],
+     "leaders": [
+      {
+       "name": "passingYards",
+       "displayName": "Passing Leader",
+       "shortDisplayName": "PASS",
+       "abbreviation": "PYDS",
+       "leaders": [
+        {
+         "displayValue": "1958 YDS, 13 TD, 5 INT",
+         "value": 1958.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "rushingYards",
+       "displayName": "Rushing Leader",
+       "shortDisplayName": "RUSH",
+       "abbreviation": "RYDS",
+       "leaders": [
+        {
+         "displayValue": "96 CAR, 459 YDS, 4 TD",
+         "value": 459.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "receivingYards",
+       "displayName": "Receiving Leader",
+       "shortDisplayName": "REC",
+       "abbreviation": "RECYDS",
+       "leaders": [
+        {
+         "displayValue": "34 REC, 595 YDS, 6 TD",
+         "value": 595.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 4
+      },
+      "overtime": {
+       "periods": 1
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $78",
+       "numberAvailable": 9063,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/green-bay-packers-tickets-green-bay-lambeau-field-3-6-2026/production/6489945?wsUser=717"
+        },
+        {
+         "href": "https://www.vividseats.com/lambeau-field-tickets/venue/895?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "startDate": "2026-10-30T00:15Z",
+     "broadcast": "Prime Video",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Prime Video"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ],
+        "displayName": "DraftKings"
+       },
+       "details": "GB -3.5",
+       "overUnder": 47.5,
+       "spread": -3.5,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "29",
+         "uid": "s:20~l:28~t:29",
+         "abbreviation": "CAR",
+         "name": "Panthers",
+         "displayName": "Carolina Panthers",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "9",
+         "uid": "s:20~l:28~t:9",
+         "abbreviation": "GB",
+         "name": "Packers",
+         "displayName": "Green Bay Packers",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "\u2026",
+          "sport": "\u2026",
+          "gameId": "\u2026",
+          "betSide": "\u2026",
+          "betType": "\u2026"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nfl/game/_/gameId/401873023/panthers-packers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "weather": {
+    "displayValue": "Mostly cloudy",
+    "temperature": 52,
+    "highTemperature": 52,
+    "conditionId": "38",
+    "link": {
+     "language": "en-US",
+     "rel": [
+      "54304"
+     ],
+     "href": "http://www.accuweather.com/en/us/lambeau-field-wi/54303/hourly-weather-forecast/29742_poi?day=2&hbhhour=19&lang=en-us",
+     "text": "Weather",
+     "shortText": "Weather",
+     "isExternal": true,
+     "isPremium": false
+    }
+   },
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Thu, October 29th at 8:15 PM EDT",
+     "shortDetail": "10/29 - 8:15 PM EDT"
+    }
+   }
+  },
+  {
+   "id": "401873026",
+   "uid": "s:20~l:28~e:401873026",
+   "date": "2026-11-01T18:00Z",
+   "name": "Baltimore Ravens at Buffalo Bills",
+   "shortName": "BAL @ BUF",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "week": {
+    "number": 8
+   },
+   "competitions": [
+    {
+     "id": "401873026",
+     "uid": "s:20~l:28~e:401873026~c:401873026",
+     "date": "2026-11-01T18:00Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "conferenceCompetition": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "11938",
+      "fullName": "Highmark Stadium",
+      "address": {
+       "city": "Orchard Park",
+       "state": "NY",
+       "country": "USA"
+      },
+      "indoor": false
+     },
+     "competitors": [
+      {
+       "id": "2",
+       "uid": "s:20~l:28~t:2",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "2",
+        "uid": "s:20~l:28~t:2",
+        "location": "Buffalo",
+        "name": "Bills",
+        "abbreviation": "BUF",
+        "displayName": "Buffalo Bills",
+        "shortDisplayName": "Bills",
+        "color": "00338d",
+        "alternateColor": "d50a0a",
+        "isActive": true,
+        "venue": {
+         "id": "3883"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/buf.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "5-1"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "2-1"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "3-0"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "33",
+       "uid": "s:20~l:28~t:33",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "33",
+        "uid": "s:20~l:28~t:33",
+        "location": "Baltimore",
+        "name": "Ravens",
+        "abbreviation": "BAL",
+        "displayName": "Baltimore Ravens",
+        "shortDisplayName": "Ravens",
+        "color": "29126f",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "3814"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/bal.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "4-3"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "1-2"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "3-1"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0:00",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sun, November 1st at 1:00 PM EST",
+       "shortDetail": "11/1 - 1:00 PM EST"
+      },
+      "isTBDFlex": false
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "CBS"
+       ]
+      }
+     ],
+     "leaders": [
+      {
+       "name": "passingYards",
+       "displayName": "Passing Leader",
+       "shortDisplayName": "PASS",
+       "abbreviation": "PYDS",
+       "leaders": [
+        {
+         "displayValue": "1504 YDS, 9 TD, 4 INT",
+         "value": 1504.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "rushingYards",
+       "displayName": "Rushing Leader",
+       "shortDisplayName": "RUSH",
+       "abbreviation": "RYDS",
+       "leaders": [
+        {
+         "displayValue": "117 CAR, 627 YDS, 6 TD",
+         "value": 627.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "receivingYards",
+       "displayName": "Receiving Leader",
+       "shortDisplayName": "REC",
+       "abbreviation": "RECYDS",
+       "leaders": [
+        {
+         "displayValue": "40 REC, 608 YDS, 3 TD",
+         "value": 608.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 4
+      },
+      "overtime": {
+       "periods": 1
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $261",
+       "numberAvailable": 4239,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/buffalo-bills-tickets-orchard-park-highmark-stadium-3-8-2026/production/6488380?wsUser=717"
+        },
+        {
+         "href": "https://www.vividseats.com/highmark-stadium-tickets/venue/1385?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "startDate": "2026-11-01T18:00Z",
+     "broadcast": "CBS",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "CBS"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ]
+       },
+       "details": "BUF -3",
+       "overUnder": 54.5,
+       "spread": -3.0,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "33",
+         "uid": "s:20~l:28~t:33",
+         "abbreviation": "BAL",
+         "name": "Ravens",
+         "displayName": "Baltimore Ravens",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "2",
+         "uid": "s:20~l:28~t:2",
+         "abbreviation": "BUF",
+         "name": "Bills",
+         "displayName": "Buffalo Bills",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "\u2026",
+          "sport": "\u2026",
+          "gameId": "\u2026",
+          "betSide": "\u2026",
+          "betType": "\u2026"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nfl/game/_/gameId/401873026/ravens-bills",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "weather": {
+    "displayValue": "Intermittent clouds",
+    "temperature": 65,
+    "highTemperature": 65,
+    "conditionId": "4"
+   },
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Sun, November 1st at 1:00 PM EST",
+     "shortDetail": "11/1 - 1:00 PM EST"
+    }
+   }
+  },
+  {
+   "id": "401873031",
+   "uid": "s:20~l:28~e:401873031",
+   "date": "2026-11-01T18:00Z",
+   "name": "Tennessee Titans at Cincinnati Bengals",
+   "shortName": "TEN @ CIN",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "week": {
+    "number": 8
+   },
+   "competitions": [
+    {
+     "id": "401873031",
+     "uid": "s:20~l:28~e:401873031~c:401873031",
+     "date": "2026-11-01T18:00Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "conferenceCompetition": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "3874",
+      "fullName": "Paycor Stadium",
+      "address": {
+       "city": "Cincinnati",
+       "state": "OH",
+       "country": "USA"
+      },
+      "indoor": false
+     },
+     "competitors": [
+      {
+       "id": "4",
+       "uid": "s:20~l:28~t:4",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "4",
+        "uid": "s:20~l:28~t:4",
+        "location": "Cincinnati",
+        "name": "Bengals",
+        "abbreviation": "CIN",
+        "displayName": "Cincinnati Bengals",
+        "shortDisplayName": "Bengals",
+        "color": "fb4f14",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "3874"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/cin.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "4-2"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "1-1"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "3-1"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "10",
+       "uid": "s:20~l:28~t:10",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "10",
+        "uid": "s:20~l:28~t:10",
+        "location": "Tennessee",
+        "name": "Titans",
+        "abbreviation": "TEN",
+        "displayName": "Tennessee Titans",
+        "shortDisplayName": "Titans",
+        "color": "4495d2",
+        "alternateColor": "001532",
+        "isActive": true,
+        "venue": {
+         "id": "3810"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/ten.png"
+       },
+       "score": "0",
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Any",
+         "type": "total",
+         "summary": "1-6"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "0-4"
+        },
+        {
+         "name": "Road",
+         "type": "road",
+         "summary": "1-2"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "passingLeader",
+         "displayName": "Passing Leader",
+         "shortDisplayName": "PASS",
+         "abbreviation": "PYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "rushingLeader",
+         "displayName": "Rushing Leader",
+         "shortDisplayName": "RUSH",
+         "abbreviation": "RYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "receivingLeader",
+         "displayName": "Receiving Leader",
+         "shortDisplayName": "REC",
+         "abbreviation": "RECYDS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0:00",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sun, November 1st at 1:00 PM EST",
+       "shortDetail": "11/1 - 1:00 PM EST"
+      },
+      "isTBDFlex": false
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "CBS"
+       ]
+      }
+     ],
+     "leaders": [
+      {
+       "name": "passingYards",
+       "displayName": "Passing Leader",
+       "shortDisplayName": "PASS",
+       "abbreviation": "PYDS",
+       "leaders": [
+        {
+         "displayValue": "1653 YDS, 15 TD, 3 INT",
+         "value": 1653.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "rushingYards",
+       "displayName": "Rushing Leader",
+       "shortDisplayName": "RUSH",
+       "abbreviation": "RYDS",
+       "leaders": [
+        {
+         "displayValue": "112 CAR, 478 YDS, 4 TD",
+         "value": 478.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      },
+      {
+       "name": "receivingYards",
+       "displayName": "Receiving Leader",
+       "shortDisplayName": "REC",
+       "abbreviation": "RECYDS",
+       "leaders": [
+        {
+         "displayValue": "33 REC, 571 YDS, 2 TD",
+         "value": 571.0,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026",
+          "active": "\u2026"
+         },
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 4
+      },
+      "overtime": {
+       "periods": 1
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $81",
+       "numberAvailable": 4262,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/cincinnati-bengals-tickets-cincinnati-paycor-stadium-3-5-2026/production/6489036?wsUser=717"
+        },
+        {
+         "href": "https://www.vividseats.com/paul-brown-stadium-tickets/venue/1942?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "startDate": "2026-11-01T18:00Z",
+     "broadcast": "CBS",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "CBS"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ]
+       },
+       "details": "CIN -10",
+       "overUnder": 46.5,
+       "spread": -10.0,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "10",
+         "uid": "s:20~l:28~t:10",
+         "abbreviation": "TEN",
+         "name": "Titans",
+         "displayName": "Tennessee Titans",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "4",
+         "uid": "s:20~l:28~t:4",
+         "abbreviation": "CIN",
+         "name": "Bengals",
+         "displayName": "Cincinnati Bengals",
+         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "\u2026",
+          "sport": "\u2026",
+          "gameId": "\u2026",
+          "betSide": "\u2026",
+          "betType": "\u2026"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nfl/game/_/gameId/401873031/titans-bengals",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "weather": {
+    "displayValue": "Cloudy",
+    "temperature": 66,
+    "highTemperature": 66,
+    "conditionId": "7",
+    "link": {
+     "language": "en-US",
+     "rel": [
+      "45202"
+     ],
+     "href": "http://www.accuweather.com/en/us/paycor-stadium-oh/45212/hourly-weather-forecast/53622_poi?day=5&hbhhour=14&lang=en-us",
+     "text": "Weather",
+     "shortText": "Weather",
+     "isExternal": true,
+     "isPremium": false
+    }
+   },
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Sun, November 1st at 1:00 PM EST",
+     "shortDetail": "11/1 - 1:00 PM EST"
+    }
+   }
+  },
+  "\u2026(+11 more, len=14)"
+ ],
+ "provider": {
+  "id": "100",
+  "name": "DraftKings",
+  "priority": 1,
+  "logos": [
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+    "rel": [
+     "light"
+    ]
+   },
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+    "rel": [
+     "dark"
+    ]
+   }
+  ],
+  "displayName": "DraftKings"
+ }
+}

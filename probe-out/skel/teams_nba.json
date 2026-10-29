@@ -1,0 +1,250 @@
+{
+ "sports": [
+  {
+   "id": "40",
+   "leagues": [
+    {
+     "abbreviation": "NBA",
+     "id": "46",
+     "name": "National Basketball Association",
+     "season": {
+      "displayName": "2026-27",
+      "year": 2027
+     },
+     "shortName": "NBA",
+     "slug": "nba",
+     "teams": [
+      {
+       "team": {
+        "abbreviation": "ATL",
+        "alternateColor": "fdb927",
+        "color": "c8102e",
+        "displayName": "Atlanta Hawks",
+        "id": "1",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Atlanta",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+13 more, len=16)"
+        ],
+        "name": "Hawks",
+        "nickname": "Atlanta",
+        "shortDisplayName": "Hawks",
+        "slug": "atlanta-hawks",
+        "uid": "s:40~l:46~t:1"
+       }
+      },
+      {
+       "team": {
+        "abbreviation": "BOS",
+        "alternateColor": "ffffff",
+        "color": "008348",
+        "displayName": "Boston Celtics",
+        "id": "2",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Boston",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+13 more, len=16)"
+        ],
+        "name": "Celtics",
+        "nickname": "Boston",
+        "shortDisplayName": "Celtics",
+        "slug": "boston-celtics",
+        "uid": "s:40~l:46~t:2"
+       }
+      },
+      {
+       "team": {
+        "abbreviation": "BKN",
+        "alternateColor": "ffffff",
+        "color": "000000",
+        "displayName": "Brooklyn Nets",
+        "id": "17",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Brooklyn",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+13 more, len=16)"
+        ],
+        "name": "Nets",
+        "nickname": "Brooklyn",
+        "shortDisplayName": "Nets",
+        "slug": "brooklyn-nets",
+        "uid": "s:40~l:46~t:17"
+       }
+      },
+      "\u2026(+27 more, len=30)"
+     ],
+     "uid": "s:40~l:46",
+     "year": 2027
+    }
+   ],
+   "name": "Basketball",
+   "slug": "basketball",
+   "uid": "s:40"
+  }
+ ]
+}

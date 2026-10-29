@@ -1,0 +1,148 @@
+{
+ "status": "success",
+ "results": {
+  "stats": {
+   "id": "0",
+   "name": "All Splits",
+   "abbreviation": "Total",
+   "categories": [
+    {
+     "name": "general",
+     "displayName": "General",
+     "abbreviation": "gen",
+     "stats": [
+      {
+       "name": "avgRebounds",
+       "displayName": "Rebounds Per Game",
+       "shortDisplayName": "RPG",
+       "description": "The average rebounds per game.",
+       "abbreviation": "REB",
+       "value": 41.5,
+       "displayValue": "41.5"
+      },
+      {
+       "name": "assistTurnoverRatio",
+       "displayName": "Assist To Turnover Ratio",
+       "shortDisplayName": "AST/TO",
+       "description": "The average number of assists a player or team records per turnover",
+       "abbreviation": "AST/TO",
+       "value": 2.1276596,
+       "displayValue": "2.1",
+       "perGameValue": 2.2727272510528564,
+       "perGameDisplayValue": "2.273"
+      },
+      {
+       "name": "avgFouls",
+       "displayName": "Fouls Per Game",
+       "shortDisplayName": "PFPG",
+       "description": "The average fouls committed per game.",
+       "abbreviation": "PF",
+       "value": 23.0,
+       "displayValue": "23.0"
+      },
+      "\u2026(+6 more, len=9)"
+     ]
+    },
+    {
+     "name": "offensive",
+     "displayName": "Offensive",
+     "abbreviation": "off",
+     "stats": [
+      {
+       "name": "freeThrowPct",
+       "displayName": "Free Throw Percentage",
+       "shortDisplayName": "FT%",
+       "description": "The ratio of free throws made to free throws attempted: FTM / FTA",
+       "abbreviation": "FT%",
+       "value": 75.43900299072266,
+       "displayValue": "75.4",
+       "perGameValue": 0.7540000081062317,
+       "perGameDisplayValue": "0.754"
+      },
+      {
+       "name": "threePointPct",
+       "displayName": "3-Point Field Goal Percentage",
+       "shortDisplayName": "3P%",
+       "description": "The ratio of 3pt field goals made to 3pt field goals attempted: 3PM / 3PA.",
+       "abbreviation": "3P%",
+       "value": 31.655000686645508,
+       "displayValue": "31.7",
+       "perGameValue": 0.31700000166893005,
+       "perGameDisplayValue": "0.317"
+      },
+      {
+       "name": "avgFieldGoalsMade",
+       "displayName": "Average Field Goals Made",
+       "shortDisplayName": "AFGM",
+       "description": "The average field goals made per game.",
+       "abbreviation": "FGM",
+       "value": 38.75,
+       "displayValue": "38.8"
+      },
+      "\u2026(+28 more, len=31)"
+     ]
+    },
+    {
+     "name": "defensive",
+     "displayName": "Defensive",
+     "abbreviation": "def",
+     "stats": [
+      {
+       "name": "avgDefensiveRebounds",
+       "displayName": "Defensive Rebounds Per Game",
+       "shortDisplayName": "DRPG",
+       "description": "The average defensive rebounds per game.",
+       "abbreviation": "DR",
+       "value": 32.75,
+       "displayValue": "32.8"
+      },
+      {
+       "name": "avgBlocks",
+       "displayName": "Blocks Per Game",
+       "shortDisplayName": "BPG",
+       "description": "The average blocks per game.",
+       "abbreviation": "BLK",
+       "value": 5.75,
+       "displayValue": "5.8"
+      },
+      {
+       "name": "avgSteals",
+       "displayName": "Steals Per Game",
+       "shortDisplayName": "SPG",
+       "description": "The average steals per game.",
+       "abbreviation": "STL",
+       "value": 10.5,
+       "displayValue": "10.5"
+      },
+      "\u2026(+3 more, len=6)"
+     ]
+    }
+   ]
+  }
+ },
+ "season": {
+  "year": 2027,
+  "type": 2,
+  "name": "Regular Season",
+  "displayName": "2026-27"
+ },
+ "requestedSeason": {
+  "year": 2027,
+  "type": 2,
+  "name": "Regular Season",
+  "displayName": "2026-27",
+  "qualifiedPostSeason": false
+ },
+ "team": {
+  "id": "20",
+  "abbreviation": "PHI",
+  "location": "Philadelphia",
+  "name": "76ers",
+  "displayName": "Philadelphia 76ers",
+  "color": "1d428a",
+  "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+  "recordSummary": "3-1",
+  "seasonSummary": "2026-27",
+  "standingSummary": "1st in Atlantic Division"
+ }
+}

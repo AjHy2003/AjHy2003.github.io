@@ -1,0 +1,406 @@
+{
+ "MRData": {
+  "xmlns": "",
+  "series": "f1",
+  "url": "https://api.jolpi.ca/ergast/f1/2025/results.json",
+  "limit": "100",
+  "offset": "0",
+  "total": "479",
+  "RaceTable": {
+   "season": "2025",
+   "Races": [
+    {
+     "season": "2025",
+     "round": "1",
+     "url": "https://en.wikipedia.org/wiki/2025_Australian_Grand_Prix",
+     "raceName": "Australian Grand Prix",
+     "Circuit": {
+      "circuitId": "albert_park",
+      "url": "https://en.wikipedia.org/wiki/Albert_Park_Circuit",
+      "circuitName": "Albert Park Grand Prix Circuit",
+      "Location": {
+       "lat": "-37.8497",
+       "long": "144.968",
+       "locality": "Melbourne",
+       "country": "Australia"
+      }
+     },
+     "date": "2025-03-16",
+     "time": "04:00:00Z",
+     "Results": [
+      {
+       "number": "4",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "norris",
+        "permanentNumber": "1",
+        "code": "NOR",
+        "url": "http://en.wikipedia.org/wiki/Lando_Norris",
+        "givenName": "Lando",
+        "familyName": "Norris",
+        "dateOfBirth": "1999-11-13",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "1",
+       "laps": "57",
+       "status": "Finished",
+       "Time": {
+        "millis": "6126304",
+        "time": "1:42:06.304"
+       },
+       "FastestLap": {
+        "rank": "1",
+        "lap": "43",
+        "Time": {
+         "time": "1:22.167"
+        }
+       }
+      },
+      {
+       "number": "1",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "max_verstappen",
+        "permanentNumber": "3",
+        "code": "VER",
+        "url": "http://en.wikipedia.org/wiki/Max_Verstappen",
+        "givenName": "Max",
+        "familyName": "Verstappen",
+        "dateOfBirth": "1997-09-30",
+        "nationality": "Dutch"
+       },
+       "Constructor": {
+        "constructorId": "red_bull",
+        "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+        "name": "Red Bull",
+        "nationality": "Austrian"
+       },
+       "grid": "3",
+       "laps": "57",
+       "status": "Finished",
+       "Time": {
+        "millis": "6127199",
+        "time": "+0.895"
+       },
+       "FastestLap": {
+        "rank": "3",
+        "lap": "43",
+        "Time": {
+         "time": "1:23.081"
+        }
+       }
+      },
+      {
+       "number": "63",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "russell",
+        "permanentNumber": "63",
+        "code": "RUS",
+        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)",
+        "givenName": "George",
+        "familyName": "Russell",
+        "dateOfBirth": "1998-02-15",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "4",
+       "laps": "57",
+       "status": "Finished",
+       "Time": {
+        "millis": "6134785",
+        "time": "+8.481"
+       },
+       "FastestLap": {
+        "rank": "11",
+        "lap": "43",
+        "Time": {
+         "time": "1:25.065"
+        }
+       }
+      },
+      "\u2026(+17 more, len=20)"
+     ]
+    },
+    {
+     "season": "2025",
+     "round": "2",
+     "url": "https://en.wikipedia.org/wiki/2025_Chinese_Grand_Prix",
+     "raceName": "Chinese Grand Prix",
+     "Circuit": {
+      "circuitId": "shanghai",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_International_Circuit",
+      "circuitName": "Shanghai International Circuit",
+      "Location": {
+       "lat": "31.3389",
+       "long": "121.22",
+       "locality": "Shanghai",
+       "country": "China"
+      }
+     },
+     "date": "2025-03-23",
+     "time": "07:00:00Z",
+     "Results": [
+      {
+       "number": "81",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "piastri",
+        "permanentNumber": "81",
+        "code": "PIA",
+        "url": "http://en.wikipedia.org/wiki/Oscar_Piastri",
+        "givenName": "Oscar",
+        "familyName": "Piastri",
+        "dateOfBirth": "2001-04-06",
+        "nationality": "Australian"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "1",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5455026",
+        "time": "1:30:55.026"
+       },
+       "FastestLap": {
+        "rank": "3",
+        "lap": "53",
+        "Time": {
+         "time": "1:35.520"
+        }
+       }
+      },
+      {
+       "number": "4",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "norris",
+        "permanentNumber": "1",
+        "code": "NOR",
+        "url": "http://en.wikipedia.org/wiki/Lando_Norris",
+        "givenName": "Lando",
+        "familyName": "Norris",
+        "dateOfBirth": "1999-11-13",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "3",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5464774",
+        "time": "+9.748"
+       },
+       "FastestLap": {
+        "rank": "1",
+        "lap": "53",
+        "Time": {
+         "time": "1:35.454"
+        }
+       }
+      },
+      {
+       "number": "63",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "russell",
+        "permanentNumber": "63",
+        "code": "RUS",
+        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)",
+        "givenName": "George",
+        "familyName": "Russell",
+        "dateOfBirth": "1998-02-15",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "name": "Mercedes",
+        "nationality": "German"
+       },
+       "grid": "2",
+       "laps": "56",
+       "status": "Finished",
+       "Time": {
+        "millis": "5466123",
+        "time": "+11.097"
+       },
+       "FastestLap": {
+        "rank": "5",
+        "lap": "55",
+        "Time": {
+         "time": "1:35.816"
+        }
+       }
+      },
+      "\u2026(+17 more, len=20)"
+     ]
+    },
+    {
+     "season": "2025",
+     "round": "3",
+     "url": "https://en.wikipedia.org/wiki/2025_Japanese_Grand_Prix",
+     "raceName": "Japanese Grand Prix",
+     "Circuit": {
+      "circuitId": "suzuka",
+      "url": "https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course",
+      "circuitName": "Suzuka Circuit",
+      "Location": {
+       "lat": "34.8431",
+       "long": "136.541",
+       "locality": "Suzuka",
+       "country": "Japan"
+      }
+     },
+     "date": "2025-04-06",
+     "time": "05:00:00Z",
+     "Results": [
+      {
+       "number": "1",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "max_verstappen",
+        "permanentNumber": "3",
+        "code": "VER",
+        "url": "http://en.wikipedia.org/wiki/Max_Verstappen",
+        "givenName": "Max",
+        "familyName": "Verstappen",
+        "dateOfBirth": "1997-09-30",
+        "nationality": "Dutch"
+       },
+       "Constructor": {
+        "constructorId": "red_bull",
+        "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+        "name": "Red Bull",
+        "nationality": "Austrian"
+       },
+       "grid": "1",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "4926983",
+        "time": "1:22:06.983"
+       },
+       "FastestLap": {
+        "rank": "3",
+        "lap": "52",
+        "Time": {
+         "time": "1:31.041"
+        }
+       }
+      },
+      {
+       "number": "4",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "norris",
+        "permanentNumber": "1",
+        "code": "NOR",
+        "url": "http://en.wikipedia.org/wiki/Lando_Norris",
+        "givenName": "Lando",
+        "familyName": "Norris",
+        "dateOfBirth": "1999-11-13",
+        "nationality": "British"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "2",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "4928406",
+        "time": "+1.423"
+       },
+       "FastestLap": {
+        "rank": "5",
+        "lap": "51",
+        "Time": {
+         "time": "1:31.116"
+        }
+       }
+      },
+      {
+       "number": "81",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "piastri",
+        "permanentNumber": "81",
+        "code": "PIA",
+        "url": "http://en.wikipedia.org/wiki/Oscar_Piastri",
+        "givenName": "Oscar",
+        "familyName": "Piastri",
+        "dateOfBirth": "2001-04-06",
+        "nationality": "Australian"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "url": "https://en.wikipedia.org/wiki/McLaren",
+        "name": "McLaren",
+        "nationality": "British"
+       },
+       "grid": "3",
+       "laps": "53",
+       "status": "Finished",
+       "Time": {
+        "millis": "4929112",
+        "time": "+2.129"
+       },
+       "FastestLap": {
+        "rank": "2",
+        "lap": "53",
+        "Time": {
+         "time": "1:31.039"
+        }
+       }
+      },
+      "\u2026(+17 more, len=20)"
+     ]
+    },
+    "\u2026(+2 more, len=5)"
+   ]
+  }
+ }
+}

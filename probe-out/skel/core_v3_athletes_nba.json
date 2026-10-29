@@ -1,0 +1,89 @@
+{
+ "count": 754,
+ "pageIndex": 1,
+ "pageSize": 1000,
+ "pageCount": 1,
+ "items": [
+  {
+   "id": "4431679",
+   "uid": "s:40~l:46~a:4431679",
+   "guid": "79540e31-b541-3156-9ed2-fea920e18b17",
+   "firstName": "Precious",
+   "lastName": "Achiuwa",
+   "fullName": "Precious Achiuwa",
+   "displayName": "Precious Achiuwa",
+   "slug": "precious-achiuwa",
+   "shortName": "P. Achiuwa",
+   "weight": 243.0,
+   "displayWeight": "243 lbs",
+   "height": 80.0,
+   "displayHeight": "6' 8\"",
+   "age": 27,
+   "dateOfBirth": "1999-09-19T07:00Z",
+   "birthPlace": {
+    "city": "Queens",
+    "state": "NY",
+    "country": "USA"
+   },
+   "experience": {
+    "years": 7
+   },
+   "jersey": "9",
+   "active": true
+  },
+  {
+   "id": "5142620",
+   "uid": "s:40~l:46~a:5142620",
+   "guid": "2d9a5748-cbb5-3a2d-81d9-01a474f70dfd",
+   "firstName": "Darius",
+   "lastName": "Acuff Jr.",
+   "fullName": "Darius Acuff Jr.",
+   "displayName": "Darius Acuff Jr.",
+   "slug": "darius-acuff-jr",
+   "shortName": "D. Acuff Jr.",
+   "weight": 186.0,
+   "displayWeight": "186 lbs",
+   "height": 74.0,
+   "displayHeight": "6' 2\"",
+   "age": 19,
+   "dateOfBirth": "2006-11-16T08:00Z",
+   "birthPlace": {
+    "city": "Detroit",
+    "state": "MI",
+    "country": "USA"
+   },
+   "experience": {
+    "years": 0
+   },
+   "jersey": "5",
+   "active": true
+  },
+  {
+   "id": "6576",
+   "uid": "s:40~l:46~a:6576",
+   "guid": "fb251ab7-8c98-4574-4d72-32479390a356",
+   "firstName": "Quincy",
+   "lastName": "Acy",
+   "fullName": "Quincy Acy",
+   "displayName": "Quincy Acy",
+   "slug": "quincy-acy",
+   "shortName": "Q. Acy",
+   "weight": 240.0,
+   "displayWeight": "240 lbs",
+   "height": 79.0,
+   "displayHeight": "6' 7\"",
+   "age": 36,
+   "dateOfBirth": "1990-10-06T07:00Z",
+   "birthPlace": {
+    "city": "Mesquite",
+    "state": "TX",
+    "country": "USA"
+   },
+   "experience": {
+    "years": 4
+   },
+   "active": false
+  },
+  "\u2026(+751 more, len=754)"
+ ]
+}

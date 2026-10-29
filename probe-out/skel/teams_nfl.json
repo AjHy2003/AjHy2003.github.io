@@ -1,0 +1,250 @@
+{
+ "sports": [
+  {
+   "id": "20",
+   "leagues": [
+    {
+     "abbreviation": "NFL",
+     "id": "28",
+     "name": "National Football League",
+     "season": {
+      "displayName": "2026",
+      "year": 2026
+     },
+     "shortName": "NFL",
+     "slug": "nfl",
+     "teams": [
+      {
+       "team": {
+        "abbreviation": "ARI",
+        "alternateColor": "ffffff",
+        "color": "a40227",
+        "displayName": "Arizona Cardinals",
+        "id": "22",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Arizona",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+14 more, len=17)"
+        ],
+        "name": "Cardinals",
+        "nickname": "Cardinals",
+        "shortDisplayName": "Cardinals",
+        "slug": "arizona-cardinals",
+        "uid": "s:20~l:28~t:22"
+       }
+      },
+      {
+       "team": {
+        "abbreviation": "ATL",
+        "alternateColor": "000000",
+        "color": "a71930",
+        "displayName": "Atlanta Falcons",
+        "id": "1",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Atlanta",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+14 more, len=17)"
+        ],
+        "name": "Falcons",
+        "nickname": "Falcons",
+        "shortDisplayName": "Falcons",
+        "slug": "atlanta-falcons",
+        "uid": "s:20~l:28~t:1"
+       }
+      },
+      {
+       "team": {
+        "abbreviation": "BAL",
+        "alternateColor": "000000",
+        "color": "29126f",
+        "displayName": "Baltimore Ravens",
+        "id": "33",
+        "isActive": true,
+        "isAllStar": false,
+        "links": [
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "isExternal": "\u2026",
+          "isHidden": "\u2026",
+          "isPremium": "\u2026",
+          "language": "\u2026",
+          "rel": "\u2026",
+          "shortText": "\u2026",
+          "text": "\u2026"
+         },
+         "\u2026(+3 more, len=6)"
+        ],
+        "location": "Baltimore",
+        "logos": [
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         {
+          "alt": "\u2026",
+          "height": "\u2026",
+          "href": "\u2026",
+          "rel": "\u2026",
+          "width": "\u2026"
+         },
+         "\u2026(+14 more, len=17)"
+        ],
+        "name": "Ravens",
+        "nickname": "Ravens",
+        "shortDisplayName": "Ravens",
+        "slug": "baltimore-ravens",
+        "uid": "s:20~l:28~t:33"
+       }
+      },
+      "\u2026(+29 more, len=32)"
+     ],
+     "uid": "s:20~l:28",
+     "year": 2026
+    }
+   ],
+   "name": "Football",
+   "slug": "football",
+   "uid": "s:20"
+  }
+ ]
+}

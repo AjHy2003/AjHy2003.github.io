@@ -1,0 +1,45 @@
+{
+ "count": 20325,
+ "pageIndex": 1,
+ "pageSize": 200,
+ "pageCount": 102,
+ "items": [
+  {
+   "id": "4246273",
+   "uid": "s:20~l:28~a:4246273",
+   "guid": "64cf2ccf-8d24-d1be-3ff4-d46499bdd9a6",
+   "lastName": "[35]",
+   "fullName": " [35]",
+   "displayName": " [35]",
+   "slug": "35",
+   "shortName": "[35]",
+   "jersey": "35",
+   "active": false
+  },
+  {
+   "id": "4246281",
+   "uid": "s:20~l:28~a:4246281",
+   "guid": "c6323fce-962f-a112-b136-9a4ed1d4282b",
+   "lastName": "[Downed]",
+   "fullName": " [Downed]",
+   "displayName": " [Downed]",
+   "slug": "downed",
+   "shortName": "[Downed]",
+   "jersey": "00",
+   "active": false
+  },
+  {
+   "id": "4246289",
+   "uid": "s:20~l:28~a:4246289",
+   "guid": "21d50db4-55e3-a493-d76d-30b5a6786bd5",
+   "lastName": "[Downed]",
+   "fullName": " [Downed]",
+   "displayName": " [Downed]",
+   "slug": "downed",
+   "shortName": "[Downed]",
+   "jersey": "00",
+   "active": false
+  },
+  "\u2026(+197 more, len=200)"
+ ]
+}

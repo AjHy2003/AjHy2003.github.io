@@ -1,0 +1,1400 @@
+{
+ "filters": [
+  {
+   "displayName": "Season",
+   "name": "season",
+   "value": "2026",
+   "options": [
+    {
+     "value": "2026",
+     "displayValue": "2026-27"
+    },
+    {
+     "value": "2025",
+     "displayValue": "2025-26"
+    },
+    {
+     "value": "2024",
+     "displayValue": "2024-25"
+    },
+    "\u2026(+2 more, len=5)"
+   ]
+  },
+  {
+   "displayName": "Team",
+   "name": "team",
+   "value": "382",
+   "options": [
+    {
+     "value": "124",
+     "displayValue": "Borussia Dortmund"
+    },
+    {
+     "value": "382",
+     "displayValue": "Manchester City"
+    },
+    {
+     "value": "2715",
+     "displayValue": "Molde"
+    },
+    "\u2026(+4 more, len=7)"
+   ]
+  },
+  {
+   "displayName": "League",
+   "name": "league",
+   "value": "eng.1",
+   "options": [
+    {
+     "value": "eng.fa",
+     "displayValue": "English FA Cup",
+     "shortDisplayName": "English FA Cup"
+    },
+    {
+     "value": "eng.1",
+     "displayValue": "English Premier League",
+     "shortDisplayName": "Premier League"
+    },
+    {
+     "value": "uefa.champions",
+     "displayValue": "UEFA Champions League",
+     "shortDisplayName": "UEFA Champions League"
+    },
+    "\u2026(+5 more, len=8)"
+   ]
+  }
+ ],
+ "labels": [
+  "G",
+  "A",
+  "SHOT",
+  "\u2026(+6 more, len=9)"
+ ],
+ "names": [
+  "totalGoals",
+  "goalAssists",
+  "totalShots",
+  "\u2026(+6 more, len=9)"
+ ],
+ "displayNames": [
+  "Total Goals",
+  "Assists",
+  "Shots",
+  "\u2026(+6 more, len=9)"
+ ],
+ "events": {
+  "401879256": {
+   "id": "401879256",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879256/manchester-city-aston-villa",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879256&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879256",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-24T11:30:00.000+00:00",
+   "score": "2-1",
+   "homeTeamId": "362",
+   "awayTeamId": "382",
+   "homeTeamScore": "2",
+   "awayTeamScore": "1",
+   "gameResult": "L",
+   "opponent": {
+    "id": "362",
+    "uid": "s:600~t:362",
+    "displayName": "Aston Villa",
+    "abbreviation": "AVL",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/362/aston-villa",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/362/aston-villa",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:362&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879259": {
+   "id": "401879259",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879259/ipswich-town-manchester-city",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879259&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879259",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-10-17T14:00:00.000+00:00",
+   "score": "3-2",
+   "homeTeamId": "382",
+   "awayTeamId": "373",
+   "homeTeamScore": "3",
+   "awayTeamScore": "2",
+   "gameResult": "W",
+   "opponent": {
+    "id": "373",
+    "uid": "s:600~t:373",
+    "displayName": "Ipswich Town",
+    "abbreviation": "IPS",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/373/ipswich-town",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/373/ipswich-town",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:373&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879264": {
+   "id": "401879264",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879264/manchester-city-liverpool",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879264&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879264",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-10-11T15:30:00.000+00:00",
+   "score": "3-0",
+   "homeTeamId": "364",
+   "awayTeamId": "382",
+   "homeTeamScore": "0",
+   "awayTeamScore": "3",
+   "gameResult": "W",
+   "opponent": {
+    "id": "364",
+    "uid": "s:600~t:364",
+    "displayName": "Liverpool",
+    "abbreviation": "LIV",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/364/liverpool",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/364/liverpool",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:364&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879272": {
+   "id": "401879272",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879272/sunderland-manchester-city",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879272&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879272",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-09-20T13:00:00.000+00:00",
+   "score": "5-3",
+   "homeTeamId": "382",
+   "awayTeamId": "366",
+   "homeTeamScore": "5",
+   "awayTeamScore": "3",
+   "gameResult": "W",
+   "opponent": {
+    "id": "366",
+    "uid": "s:600~t:366",
+    "displayName": "Sunderland",
+    "abbreviation": "SUN",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/366/sunderland",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/366/sunderland",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:366&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879278": {
+   "id": "401879278",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879278/manchester-city-manchester-united",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879278&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879278",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-09-13T15:30:00.000+00:00",
+   "score": "1-0",
+   "homeTeamId": "360",
+   "awayTeamId": "382",
+   "homeTeamScore": "0",
+   "awayTeamScore": "1",
+   "gameResult": "W",
+   "opponent": {
+    "id": "360",
+    "uid": "s:600~t:360",
+    "displayName": "Manchester United",
+    "abbreviation": "MAN",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/360/manchester-united",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/360/manchester-united",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:360&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879287": {
+   "id": "401879287",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879287/coventry-city-manchester-city",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879287&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879287",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-09-05T14:00:00.000+00:00",
+   "score": "1-0",
+   "homeTeamId": "382",
+   "awayTeamId": "388",
+   "homeTeamScore": "1",
+   "awayTeamScore": "0",
+   "gameResult": "W",
+   "opponent": {
+    "id": "388",
+    "uid": "s:600~t:388",
+    "displayName": "Coventry City",
+    "abbreviation": "COV",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/388/coventry-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/388/coventry-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:388&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879294": {
+   "id": "401879294",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879294/manchester-city-crystal-palace",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879294&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879294",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "@",
+   "gameDate": "2026-08-28T19:00:00.000+00:00",
+   "score": "4-1",
+   "homeTeamId": "384",
+   "awayTeamId": "382",
+   "homeTeamScore": "1",
+   "awayTeamScore": "4",
+   "gameResult": "W",
+   "opponent": {
+    "id": "384",
+    "uid": "s:600~t:384",
+    "displayName": "Crystal Palace",
+    "abbreviation": "CRY",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/384/crystal-palace",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/384/crystal-palace",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:384&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  },
+  "401879320": {
+   "id": "401879320",
+   "links": [
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/football/match/_/gameId/401879320/afc-bournemouth-manchester-city",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "mobile",
+      "event"
+     ],
+     "href": "https://m.espn.com/soccer/match?gameId=401879320&action=summary",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en",
+     "rel": [
+      "summary",
+      "sportscenter",
+      "app",
+      "\u2026(+1 more, len=4)"
+     ],
+     "href": "sportscenter://x-callback-url/showGame?sportName=soccer&leagueAbbrev=eng.1&gameId=401879320",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+13 more, len=16)"
+   ],
+   "atVs": "vs",
+   "gameDate": "2026-08-23T13:00:00.000+00:00",
+   "score": "2-1",
+   "homeTeamId": "382",
+   "awayTeamId": "349",
+   "homeTeamScore": "2",
+   "awayTeamScore": "1",
+   "gameResult": "W",
+   "opponent": {
+    "id": "349",
+    "uid": "s:600~t:349",
+    "displayName": "AFC Bournemouth",
+    "abbreviation": "BOU",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/349/afc-bournemouth",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/349/afc-bournemouth",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:349&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+   },
+   "leagueName": "English Premier League",
+   "leagueAbbreviation": "Premier League",
+   "leagueShortName": "Premier League",
+   "team": {
+    "id": "382",
+    "uid": "s:600~t:382",
+    "abbreviation": "MNC",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "clubhouse",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/football/club/_/id/382/manchester-city",
+      "text": "Clubhouse",
+      "shortText": "Clubhouse",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "desktop",
+       "team"
+      ],
+      "href": "https://www.espn.com/soccer/team/stats/_/id/382/manchester-city",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "stats",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:382&section=stats",
+      "text": "Stats",
+      "shortText": "Stats",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+8 more, len=11)"
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "isAllStar": false
+   }
+  }
+ },
+ "seasonTypes": [
+  {
+   "displayName": "2026-27 English Premier League",
+   "categories": [
+    {
+     "displayName": "2026-27 English Premier League Stats",
+     "type": "event",
+     "splitType": "1",
+     "events": [
+      {
+       "eventId": "401879256",
+       "stats": [
+        "1",
+        "0",
+        "3",
+        "\u2026(+6 more, len=9)"
+       ]
+      },
+      {
+       "eventId": "401879259",
+       "stats": [
+        "2",
+        "0",
+        "5",
+        "\u2026(+6 more, len=9)"
+       ]
+      },
+      {
+       "eventId": "401879264",
+       "stats": [
+        "1",
+        "0",
+        "2",
+        "\u2026(+6 more, len=9)"
+       ]
+      },
+      "\u2026(+5 more, len=8)"
+     ]
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "abbreviation": "A",
+   "displayName": "Assists"
+  },
+  {
+   "abbreviation": "FA",
+   "displayName": "Fouls Suffered"
+  },
+  {
+   "abbreviation": "FC",
+   "displayName": "Fouls Committed"
+  },
+  "\u2026(+6 more, len=9)"
+ ]
+}

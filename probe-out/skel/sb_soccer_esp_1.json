@@ -1,0 +1,537 @@
+{
+ "leagues": [
+  {
+   "id": "740",
+   "uid": "s:600~l:740",
+   "name": "Spanish LALIGA",
+   "abbreviation": "LALIGA",
+   "midsizeName": "ESP.1",
+   "slug": "esp.1",
+   "season": {
+    "year": 2026,
+    "startDate": "2026-06-01T04:00Z",
+    "endDate": "2027-06-01T03:59Z",
+    "displayName": "2026-27 Spanish LALIGA",
+    "type": {
+     "id": "1",
+     "type": 14357,
+     "name": "2026-27 LALIGA",
+     "abbreviation": "2026-27 LALIGA"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/leaguelogos/soccer/500/15.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2025-07-30T16:01Z"
+    },
+    {
+     "href": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/15.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "dark"
+     ],
+     "lastUpdated": "2025-07-30T13:25Z"
+    }
+   ],
+   "calendarType": "day",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-06-01T04:00Z",
+   "calendarEndDate": "2027-06-01T03:59Z",
+   "calendar": [
+    "2026-08-15T07:00Z",
+    "2026-08-16T07:00Z",
+    "2026-08-17T07:00Z",
+    "\u2026(+77 more, len=80)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 14357,
+  "year": 2026
+ },
+ "day": {
+  "date": "2026-10-30"
+ },
+ "events": [
+  {
+   "id": "401882817",
+   "uid": "s:600~l:740~e:401882817",
+   "date": "2026-10-30T20:00Z",
+   "name": "Espanyol at Villarreal",
+   "shortName": "ESP @ VIL",
+   "season": {
+    "year": 2026,
+    "type": 14357,
+    "slug": "2026-27-laliga"
+   },
+   "competitions": [
+    {
+     "id": "401882817",
+     "uid": "s:600~l:740~e:401882817~c:401882817",
+     "date": "2026-10-30T20:00Z",
+     "startDate": "2026-10-30T20:00Z",
+     "attendance": 0,
+     "timeValid": true,
+     "recent": false,
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0'",
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Fri, October 30th at 4:00 PM EDT",
+       "shortDetail": "Scheduled"
+      }
+     },
+     "venue": {
+      "id": "55",
+      "fullName": "Estadio de la Cer\u00e1mica",
+      "address": {
+       "city": "Villarreal",
+       "country": "Spain"
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $506",
+       "numberAvailable": 10,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/villarreal-cf-tickets-estadio-de-la-ceramica-11-1-2026--sports-soccer/production/7236493?wsUs\u2026"
+        },
+        {
+         "href": "https://www.vividseats.com/venues/estadio-de-la-ceramica-tickets.html?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 2
+      }
+     },
+     "altGameNote": "LALIGA",
+     "notes": [],
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "ESPN Deportes",
+        "logo": "https://a.espncdn.com/guid/58f5b8d0-704b-35dc-b6a6-b32e0e123050/logos/default.png",
+        "darkLogo": "https://a.espncdn.com/guid/58f5b8d0-704b-35dc-b6a6-b32e0e123050/logos/default-dark.png"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "4",
+        "shortName": "STREAMING"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "ESPN+",
+        "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+        "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "ESPN Deportes",
+        "ESPN+"
+       ]
+      }
+     ],
+     "broadcast": "",
+     "competitors": [
+      {
+       "id": "102",
+       "uid": "s:600~t:102",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "winner": false,
+       "form": "DWLDW",
+       "score": "0",
+       "records": [
+        {
+         "name": "All Splits",
+         "type": "total",
+         "summary": "3-3-4",
+         "abbreviation": "Total"
+        }
+       ],
+       "team": {
+        "id": "102",
+        "uid": "s:600~t:102",
+        "abbreviation": "VIL",
+        "displayName": "Villarreal",
+        "shortDisplayName": "Villarreal",
+        "name": "Villarreal",
+        "location": "Villarreal",
+        "color": "ffff00",
+        "alternateColor": "6cace4",
+        "isActive": true,
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "venue": {
+         "id": "55"
+        }
+       },
+       "statistics": [],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "goalsLeaders",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "88",
+       "uid": "s:600~t:88",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "winner": false,
+       "form": "DLLDL",
+       "score": "0",
+       "records": [
+        {
+         "name": "All Splits",
+         "type": "total",
+         "summary": "2-2-6",
+         "abbreviation": "Total"
+        }
+       ],
+       "team": {
+        "id": "88",
+        "uid": "s:600~t:88",
+        "abbreviation": "ESP",
+        "displayName": "Espanyol",
+        "shortDisplayName": "Espanyol",
+        "name": "Espanyol",
+        "location": "Espanyol",
+        "color": "3366CC",
+        "alternateColor": "C8142F",
+        "isActive": true,
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026",
+          "isHidden": "\u2026"
+         },
+         "\u2026(+4 more, len=7)"
+        ],
+        "venue": {
+         "id": "4159"
+        }
+       },
+       "statistics": [],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "goalsLeaders",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "details": [],
+     "odds": [
+      {
+       "overUnder": 3.5,
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Game",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "isHidden": false
+       },
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "displayName": "DraftKings",
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ]
+       },
+       "drawOdds": {
+        "moneyLine": 400,
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026",
+          "\u2026(+1 more, len=4)"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+         "text": "Draw Bet",
+         "shortText": "Draw Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "isHidden": false
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         },
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        },
+        "under": {
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         },
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         },
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        },
+        "away": {
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         },
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        }
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "open": {
+          "odds": "\u2026"
+         },
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        },
+        "away": {
+         "open": {
+          "odds": "\u2026"
+         },
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        },
+        "draw": {
+         "open": {
+          "odds": "\u2026"
+         },
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         }
+        }
+       },
+       "details": "VIL -240"
+      }
+     ],
+     "wasSuspended": false,
+     "playByPlayAvailable": true,
+     "playByPlayAthletes": true
+    }
+   ],
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0'",
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Fri, October 30th at 4:00 PM EDT",
+     "shortDetail": "Scheduled"
+    }
+   },
+   "venue": {
+    "displayName": "Estadio de la Cer\u00e1mica"
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/soccer/match/_/gameId/401882817/espanyol-villarreal",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    }
+   ]
+  }
+ ],
+ "provider": {
+  "id": "100",
+  "name": "DraftKings",
+  "priority": 1,
+  "displayName": "DraftKings",
+  "logos": [
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+    "rel": [
+     "light"
+    ]
+   },
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+    "rel": [
+     "dark"
+    ]
+   }
+  ]
+ }
+}

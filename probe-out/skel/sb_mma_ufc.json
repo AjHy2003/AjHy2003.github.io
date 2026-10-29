@@ -1,0 +1,528 @@
+{
+ "leagues": [
+  {
+   "id": "3321",
+   "uid": "s:3301~l:3321",
+   "name": "Ultimate Fighting Championship",
+   "displayName": "UFC",
+   "abbreviation": "UFC",
+   "shortName": "UFC",
+   "slug": "ufc",
+   "season": {
+    "year": 2026,
+    "startDate": "2026-01-01T08:00Z",
+    "endDate": "2026-12-31T08:00Z",
+    "displayName": "2026",
+    "type": {
+     "id": "2",
+     "type": 2,
+     "name": "Regular Season",
+     "abbreviation": "reg"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500/ufc.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2018-12-21T18:30Z"
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500/ufc.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "dark"
+     ],
+     "lastUpdated": "2018-12-21T18:30Z"
+    }
+   ],
+   "calendarType": "list",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-01-01T08:00Z",
+   "calendarEndDate": "2026-12-31T08:00Z",
+   "calendar": [
+    {
+     "label": "UFC 324: Gaethje vs. Pimblett",
+     "startDate": "2026-01-25T01:30Z",
+     "endDate": "2026-01-25T07:59Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/mma/leagues/ufc/events/600057024?lang=en&region=us"
+     }
+    },
+    {
+     "label": "UFC 325: Volkanovski vs. Lopes 2",
+     "startDate": "2026-02-01T01:00Z",
+     "endDate": "2026-02-01T07:59Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/mma/leagues/ufc/events/600057025?lang=en&region=us"
+     }
+    },
+    {
+     "label": "UFC Fight Night: Bautista vs. Oliveira",
+     "startDate": "2026-02-08T01:00Z",
+     "endDate": "2026-02-08T07:59Z",
+     "event": {
+      "$ref": "http://sports.core.api.espn.pvt/v2/sports/mma/leagues/ufc/events/600057328?lang=en&region=us"
+     }
+    },
+    "\u2026(+49 more, len=52)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 2,
+  "year": 2026
+ },
+ "day": {
+  "date": "2026-10-31"
+ },
+ "events": [
+  {
+   "id": "600061420",
+   "uid": "s:3301~l:3321~e:600061420",
+   "date": "2026-10-31T21:00Z",
+   "name": "UFC Fight Night: Moicano vs. Nolan",
+   "shortName": "UFC Fight Night",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401914105",
+     "uid": "s:3301~l:3321~e:600061420~c:401914105",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "1007",
+      "abbreviation": "W Flyweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4418809",
+       "uid": "s:3301~a:4418809",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Tainara Lisboa",
+        "displayName": "Tainara Lisboa",
+        "shortName": "T. Lisboa",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "7-4-0"
+        }
+       ]
+      },
+      {
+       "id": "5130185",
+       "uid": "s:3301~a:5130185",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Lucia Szabov\u00e1",
+        "displayName": "Lucia Szabov\u00e1",
+        "shortName": "L. Szabov\u00e1",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
+         "alt": "Slovakia",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "12-0-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401928105",
+     "uid": "s:3301~l:3321~e:600061420~c:401928105",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "1006",
+      "abbreviation": "W Strawweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4816066",
+       "uid": "s:3301~a:4816066",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Piera Rodriguez",
+        "displayName": "Piera Rodriguez",
+        "shortName": "P. Rodriguez",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+         "alt": "Venezuela",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "12-2-0"
+        }
+       ]
+      },
+      {
+       "id": "5139556",
+       "uid": "s:3301~a:5139556",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Talita Alencar",
+        "displayName": "Talita Alencar",
+        "shortName": "T. Alencar",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "8-1-1"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401914106",
+     "uid": "s:3301~l:3321~e:600061420~c:401914106",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "972",
+      "abbreviation": "Middleweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4687604",
+       "uid": "s:3301~a:4687604",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Joe Kropschot",
+        "displayName": "Joe Kropschot",
+        "shortName": "J. Kropschot",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "9-3-0"
+        }
+       ]
+      },
+      {
+       "id": "5134399",
+       "uid": "s:3301~a:5134399",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Nick Klein",
+        "displayName": "Nick Klein",
+        "shortName": "N. Klein",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "\u2026"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "6-3-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    "\u2026(+9 more, len=12)"
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/mma/fightcenter/_/id/600061420/league/ufc",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "venues": [
+    {
+     "id": "6176",
+     "fullName": "Meta APEX",
+     "address": {
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "USA"
+     }
+    }
+   ],
+   "status": {
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Scheduled",
+     "shortDetail": "Scheduled"
+    }
+   }
+  }
+ ],
+ "provider": {
+  "id": "100",
+  "name": "Draft Kings",
+  "displayName": "Draft Kings",
+  "priority": 1
+ }
+}

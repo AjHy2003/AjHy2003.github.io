@@ -1,0 +1,1807 @@
+{
+ "leagues": [
+  {
+   "id": "90",
+   "uid": "s:70~l:90",
+   "name": "National Hockey League",
+   "abbreviation": "NHL",
+   "slug": "nhl",
+   "season": {
+    "year": 2027,
+    "startDate": "2026-09-15T07:00Z",
+    "endDate": "2027-07-01T06:59Z",
+    "displayName": "2026-27",
+    "type": {
+     "id": "2",
+     "type": 2,
+     "name": "Regular Season",
+     "abbreviation": "reg"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500/nhl.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2018-06-05T12:07Z"
+    },
+    {
+     "href": "https://a.espncdn.com/i/teamlogos/leagues/500-dark/nhl.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "dark"
+     ],
+     "lastUpdated": "2021-08-10T20:37Z"
+    }
+   ],
+   "calendarType": "day",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-09-15T07:00Z",
+   "calendarEndDate": "2027-07-01T06:59Z",
+   "calendar": [
+    "2026-09-19T07:00Z",
+    "2026-09-20T07:00Z",
+    "2026-09-21T07:00Z",
+    "\u2026(+190 more, len=193)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 2,
+  "year": 2027
+ },
+ "day": {
+  "date": "2026-10-28"
+ },
+ "events": [
+  {
+   "id": "401892596",
+   "uid": "s:70~l:90~e:401892596",
+   "date": "2026-10-28T23:30Z",
+   "name": "Philadelphia Flyers at Washington Capitals",
+   "shortName": "PHI @ WSH",
+   "season": {
+    "year": 2027,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401892596",
+     "uid": "s:70~l:90~e:401892596~c:401892596",
+     "date": "2026-10-28T23:30Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": true,
+     "recent": true,
+     "venue": {
+      "id": "1823",
+      "fullName": "Capital One Arena",
+      "address": {
+       "city": "Washington",
+       "state": "DC",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "23",
+       "uid": "s:70~l:90~t:23",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "23",
+        "uid": "s:70~l:90~t:23",
+        "location": "Washington",
+        "name": "Capitals",
+        "abbreviation": "WSH",
+        "displayName": "Washington Capitals",
+        "shortDisplayName": "Capitals",
+        "color": "d71830",
+        "alternateColor": "0b1f41",
+        "isActive": true,
+        "venue": {
+         "id": "1823"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/wsh.png"
+       },
+       "score": "1",
+       "linescores": [
+        {
+         "value": 1.0,
+         "displayValue": "1",
+         "period": 1
+        },
+        {
+         "value": 0.0,
+         "displayValue": "0",
+         "period": 2
+        }
+       ],
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "11"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": "1.000"
+        },
+        {
+         "name": "goals",
+         "abbreviation": "G",
+         "displayValue": "1"
+        },
+        "\u2026(+3 more, len=6)"
+       ],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "assists",
+         "displayName": "Assists",
+         "shortDisplayName": "Assists",
+         "abbreviation": "A",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Points",
+         "abbreviation": "PTS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ],
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 4272888,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "6-4-0"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "5-2-0"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "1-2-0"
+        }
+       ]
+      },
+      {
+       "id": "15",
+       "uid": "s:70~l:90~t:15",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "15",
+        "uid": "s:70~l:90~t:15",
+        "location": "Philadelphia",
+        "name": "Flyers",
+        "abbreviation": "PHI",
+        "displayName": "Philadelphia Flyers",
+        "shortDisplayName": "Flyers",
+        "color": "fe5823",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "1845"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/phi.png"
+       },
+       "score": "0",
+       "linescores": [
+        {
+         "value": 0.0,
+         "displayValue": "0",
+         "period": 1
+        },
+        {
+         "value": 0.0,
+         "displayValue": "0",
+         "period": 2
+        }
+       ],
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "13"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": ".929"
+        },
+        {
+         "name": "goals",
+         "abbreviation": "G",
+         "displayValue": "0"
+        },
+        "\u2026(+3 more, len=6)"
+       ],
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 4271575,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "3-7-4"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "2-3-3"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "1-4-1"
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "situation": {
+      "lastPlay": {
+       "id": "401892596000004480",
+       "type": {
+        "id": "502",
+        "text": "Face Off",
+        "abbreviation": "faceoff"
+       },
+       "text": "Boone Jenner faceoff won against Trevor Zegras",
+       "scoreValue": 0,
+       "team": {
+        "id": "23"
+       },
+       "athletesInvolved": [
+        {
+         "id": "2563054",
+         "fullName": "Boone Jenner",
+         "displayName": "Boone Jenner",
+         "shortName": "B. Jenner",
+         "links": [
+          "\u2026"
+         ],
+         "headshot": "https://a.espncdn.com/i/headshots/nhl/players/full/2563054.png",
+         "jersey": "22",
+         "position": "C",
+         "team": {
+          "id": "\u2026"
+         }
+        }
+       ]
+      }
+     },
+     "status": {
+      "clock": 1000.0,
+      "displayClock": "16:40",
+      "period": 2,
+      "type": {
+       "id": "2",
+       "name": "STATUS_IN_PROGRESS",
+       "state": "in",
+       "completed": false,
+       "description": "In Progress",
+       "detail": "16:40 - 2nd Period",
+       "shortDetail": "16:40 - 2nd"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "TNT",
+        "truTV"
+       ]
+      },
+      {
+       "market": "away",
+       "names": [
+        "NBC Sports Phil +"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-28T23:30Z",
+     "broadcast": "TNT/truTV",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "TNT"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "truTV"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "3",
+        "type": "Away"
+       },
+       "media": {
+        "shortName": "NBC Sports Phil +"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "live",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892596",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "boxscore",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/boxscore/_/gameId/401892596",
+     "text": "Box Score",
+     "shortText": "Box Score",
+     "isExternal": false,
+     "isPremium": false
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "highlights",
+      "desktop"
+     ],
+     "href": "https://www.espn.com/nhl/video?gameId=401892596",
+     "text": "Highlights",
+     "shortText": "Highlights",
+     "isExternal": false,
+     "isPremium": false
+    },
+    "\u2026(+1 more, len=4)"
+   ],
+   "status": {
+    "clock": 1000.0,
+    "displayClock": "16:40",
+    "period": 2,
+    "type": {
+     "id": "2",
+     "name": "STATUS_IN_PROGRESS",
+     "state": "in",
+     "completed": false,
+     "description": "In Progress",
+     "detail": "16:40 - 2nd Period",
+     "shortDetail": "16:40 - 2nd"
+    }
+   }
+  },
+  {
+   "id": "401892597",
+   "uid": "s:70~l:90~e:401892597",
+   "date": "2026-10-29T00:30Z",
+   "name": "Calgary Flames at Edmonton Oilers",
+   "shortName": "CGY @ EDM",
+   "season": {
+    "year": 2027,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401892597",
+     "uid": "s:70~l:90~e:401892597~c:401892597",
+     "date": "2026-10-29T00:30Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": true,
+     "venue": {
+      "id": "5282",
+      "fullName": "Rogers Place",
+      "address": {
+       "city": "Edmonton",
+       "state": "AB",
+       "country": "Canada"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "6",
+       "uid": "s:70~l:90~t:6",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "6",
+        "uid": "s:70~l:90~t:6",
+        "location": "Edmonton",
+        "name": "Oilers",
+        "abbreviation": "EDM",
+        "displayName": "Edmonton Oilers",
+        "shortDisplayName": "Oilers",
+        "color": "00205b",
+        "alternateColor": "ff4c00",
+        "isActive": true,
+        "venue": {
+         "id": "5282"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/edm.png"
+       },
+       "score": "0",
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 3042020,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "284",
+         "rankDisplayValue": "21st"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": ".877",
+         "rankDisplayValue": "28th"
+        },
+        {
+         "name": "plusMinus",
+         "abbreviation": "+/-",
+         "displayValue": "0"
+        },
+        "\u2026(+4 more, len=7)"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "8-2-2"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "3-2-2"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "5-0-0"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "assists",
+         "displayName": "Assists",
+         "shortDisplayName": "Assists",
+         "abbreviation": "A",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Points",
+         "abbreviation": "PTS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3",
+       "uid": "s:70~l:90~t:3",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "3",
+        "uid": "s:70~l:90~t:3",
+        "location": "Calgary",
+        "name": "Flames",
+        "abbreviation": "CGY",
+        "displayName": "Calgary Flames",
+        "shortDisplayName": "Flames",
+        "color": "dd1a32",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "1843"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/cgy.png"
+       },
+       "score": "0",
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 4319911,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "292",
+         "rankDisplayValue": "Tied-17th"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": ".880",
+         "rankDisplayValue": "27th"
+        },
+        {
+         "name": "plusMinus",
+         "abbreviation": "+/-",
+         "displayValue": "0"
+        },
+        "\u2026(+4 more, len=7)"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "5-6-0"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "4-3-0"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "1-3-0"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "assists",
+         "displayName": "Assists",
+         "shortDisplayName": "Assists",
+         "abbreviation": "A",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Points",
+         "abbreviation": "PTS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0:00",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Wed, October 28th at 8:30 PM EDT",
+       "shortDetail": "10/28 - 8:30 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "ESPN+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $70",
+       "numberAvailable": 81,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/edmonton-oilers-tickets-rogers-place-10-28-2026/production/7300941?wsUser=717"
+        },
+        {
+         "href": "https://www.vividseats.com/venues/rogers-place-tickets.html?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "startDate": "2026-10-29T00:30Z",
+     "broadcast": "ESPN+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "ESPN+",
+        "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+        "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ],
+        "displayName": "DraftKings"
+       },
+       "details": "EDM -185",
+       "overUnder": 6.5,
+       "spread": -1.5,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "3",
+         "uid": "s:70~l:90~t:3",
+         "abbreviation": "CGY",
+         "name": "Flames",
+         "displayName": "Calgary Flames",
+         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "6",
+         "uid": "s:70~l:90~t:6",
+         "abbreviation": "EDM",
+         "name": "Oilers",
+         "displayName": "Edmonton Oilers",
+         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "\u2026",
+          "sport": "\u2026",
+          "gameId": "\u2026",
+          "betSide": "\u2026",
+          "betType": "\u2026"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892597/flames-oilers",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Wed, October 28th at 8:30 PM EDT",
+     "shortDetail": "10/28 - 8:30 PM EDT"
+    }
+   }
+  },
+  {
+   "id": "401892598",
+   "uid": "s:70~l:90~e:401892598",
+   "date": "2026-10-29T01:00Z",
+   "name": "New Jersey Devils at Colorado Avalanche",
+   "shortName": "NJ @ COL",
+   "season": {
+    "year": 2027,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401892598",
+     "uid": "s:70~l:90~e:401892598~c:401892598",
+     "date": "2026-10-29T01:00Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": true,
+     "venue": {
+      "id": "892",
+      "fullName": "Ball Arena",
+      "address": {
+       "city": "Denver",
+       "state": "CO",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "17",
+       "uid": "s:70~l:90~t:17",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "17",
+        "uid": "s:70~l:90~t:17",
+        "location": "Colorado",
+        "name": "Avalanche",
+        "abbreviation": "COL",
+        "displayName": "Colorado Avalanche",
+        "shortDisplayName": "Avalanche",
+        "color": "860038",
+        "alternateColor": "005ea3",
+        "isActive": true,
+        "venue": {
+         "id": "892"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/col.png"
+       },
+       "score": "0",
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 3904177,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "303",
+         "rankDisplayValue": "Tied-13th"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": ".891",
+         "rankDisplayValue": "19th"
+        },
+        {
+         "name": "plusMinus",
+         "abbreviation": "+/-",
+         "displayValue": "0"
+        },
+        "\u2026(+4 more, len=7)"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "6-5-1"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "4-1-1"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "2-4-0"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "assists",
+         "displayName": "Assists",
+         "shortDisplayName": "Assists",
+         "abbreviation": "A",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Points",
+         "abbreviation": "PTS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "11",
+       "uid": "s:70~l:90~t:11",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "11",
+        "uid": "s:70~l:90~t:11",
+        "location": "New Jersey",
+        "name": "Devils",
+        "abbreviation": "NJ",
+        "displayName": "New Jersey Devils",
+        "shortDisplayName": "Devils",
+        "color": "e30b2b",
+        "alternateColor": "000000",
+        "isActive": true,
+        "venue": {
+         "id": "2562"
+        },
+        "links": [
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         {
+          "rel": "\u2026",
+          "href": "\u2026",
+          "text": "\u2026",
+          "isExternal": "\u2026",
+          "isPremium": "\u2026"
+         },
+         "\u2026(+5 more, len=8)"
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nj.png"
+       },
+       "score": "0",
+       "probables": [
+        {
+         "name": "probableStartingGoalie",
+         "displayName": "Probable Starting Goalie",
+         "shortDisplayName": "Starter",
+         "abbreviation": "SG",
+         "playerId": 5111,
+         "athlete": {
+          "id": "\u2026",
+          "fullName": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "links": "\u2026",
+          "headshot": "\u2026",
+          "jersey": "\u2026",
+          "position": "\u2026",
+          "team": "\u2026"
+         },
+         "status": {
+          "id": "\u2026",
+          "name": "\u2026",
+          "type": "\u2026",
+          "abbreviation": "\u2026"
+         },
+         "statistics": [],
+         "record": ""
+        }
+       ],
+       "curatedRank": {
+        "current": 99
+       },
+       "statistics": [
+        {
+         "name": "saves",
+         "abbreviation": "SV",
+         "displayValue": "248",
+         "rankDisplayValue": "29th"
+        },
+        {
+         "name": "savePct",
+         "abbreviation": "SV%",
+         "displayValue": ".886",
+         "rankDisplayValue": "Tied-24th"
+        },
+        {
+         "name": "plusMinus",
+         "abbreviation": "+/-",
+         "displayValue": "0"
+        },
+        "\u2026(+4 more, len=7)"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOTAL",
+         "type": "total",
+         "summary": "8-4-0"
+        },
+        {
+         "name": "Home",
+         "abbreviation": "HOME",
+         "type": "home",
+         "summary": "6-2-0"
+        },
+        {
+         "name": "Road",
+         "abbreviation": "AWAY",
+         "type": "road",
+         "summary": "2-2-0"
+        }
+       ],
+       "leaders": [
+        {
+         "name": "goals",
+         "displayName": "Goals",
+         "shortDisplayName": "Goals",
+         "abbreviation": "G",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "assists",
+         "displayName": "Assists",
+         "shortDisplayName": "Assists",
+         "abbreviation": "A",
+         "leaders": [
+          "\u2026"
+         ]
+        },
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Points",
+         "abbreviation": "PTS",
+         "leaders": [
+          "\u2026"
+         ]
+        }
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0:00",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Wed, October 28th at 9:00 PM EDT",
+       "shortDetail": "10/28 - 9:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "ESPN+"
+       ]
+      },
+      {
+       "market": "away",
+       "names": [
+        "MSGSN"
+       ]
+      },
+      {
+       "market": "home",
+       "names": [
+        "Altitude Sports"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $66",
+       "numberAvailable": 493,
+       "links": [
+        {
+         "href": "https://www.vividseats.com/colorado-avalanche-tickets-ball-arena-10-28-2026/production/7300431?wsUser=717"
+        },
+        {
+         "href": "https://www.vividseats.com/ball-arena-tickets/venue/1315?wsUser=717"
+        }
+       ]
+      }
+     ],
+     "startDate": "2026-10-29T01:00Z",
+     "broadcast": "ESPN+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "ESPN+",
+        "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+        "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "3",
+        "type": "Away"
+       },
+       "media": {
+        "shortName": "MSGSN"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "2",
+        "type": "Home"
+       },
+       "media": {
+        "shortName": "Altitude Sports"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         },
+         {
+          "href": "\u2026",
+          "rel": "\u2026"
+         }
+        ]
+       },
+       "details": "COL -148",
+       "overUnder": 6.5,
+       "spread": -1.5,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "11",
+         "uid": "s:70~l:90~t:11",
+         "abbreviation": "NJ",
+         "name": "Devils",
+         "displayName": "New Jersey Devils",
+         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "17",
+         "uid": "s:70~l:90~t:17",
+         "abbreviation": "COL",
+         "name": "Avalanche",
+         "displayName": "Colorado Avalanche",
+         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "odds": "\u2026"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "\u2026",
+          "odds": "\u2026",
+          "link": "\u2026"
+         },
+         "open": {
+          "line": "\u2026",
+          "odds": "\u2026"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "\u2026",
+          "sport": "\u2026",
+          "gameId": "\u2026",
+          "betSide": "\u2026",
+          "betType": "\u2026"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-\u2026"
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/nhl/game/_/gameId/401892598/devils-avalanche",
+     "text": "Gamecast",
+     "shortText": "Gamecast",
+     "isExternal": false,
+     "isPremium": false
+    }
+   ],
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Wed, October 28th at 9:00 PM EDT",
+     "shortDetail": "10/28 - 9:00 PM EDT"
+    }
+   }
+  },
+  "\u2026(+1 more, len=4)"
+ ],
+ "provider": {
+  "id": "100",
+  "name": "DraftKings",
+  "priority": 1,
+  "logos": [
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+    "rel": [
+     "light"
+    ]
+   },
+   {
+    "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+    "rel": [
+     "dark"
+    ]
+   }
+  ],
+  "displayName": "DraftKings"
+ }
+}

@@ -1,0 +1,2064 @@
+{
+ "statistics": {
+  "displayName": "Stats",
+  "labels": [
+   "GP",
+   "MIN",
+   "FG%",
+   "\u2026(+9 more, len=12)"
+  ],
+  "names": [
+   "gamesPlayed",
+   "avgMinutes",
+   "fieldGoalPct",
+   "\u2026(+9 more, len=12)"
+  ],
+  "displayNames": [
+   "Games Played",
+   "Minutes Per Game",
+   "Field Goal Percentage",
+   "\u2026(+9 more, len=12)"
+  ],
+  "splits": [
+   {
+    "displayName": "Regular Season",
+    "stats": [
+     "3",
+     "33.3",
+     "42.9",
+     "\u2026(+9 more, len=12)"
+    ]
+   },
+   {
+    "displayName": "Career",
+    "stats": [
+     "1625",
+     "37.6",
+     "50.7",
+     "\u2026(+9 more, len=12)"
+    ]
+   }
+  ]
+ },
+ "news": [
+  {
+   "headline": "LeBron, Durant headline NBA draft classes of the early 2000s",
+   "lastModified": "2026-10-28T14:21:58.000+00:00",
+   "root": "nba",
+   "premium": false,
+   "links": {
+    "api": {
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/sports/news/42377368"
+     }
+    },
+    "mobile": {
+     "href": "http://m.espn.go.com/nba/story?storyId=42377368"
+    },
+    "web": {
+     "href": "https://www.espn.com/nba/story/_/id/42377368/nba-fewest-active-players-respective-drafts"
+    }
+   },
+   "type": "Story",
+   "section": "NBA",
+   "id": 42377368,
+   "linkText": "From LeBron to KD to PG: NBA draft classes of the early 2000s",
+   "categorized": "2026-10-28T19:19:23Z",
+   "description": "The aughts are over? Here's a look at the players who remain from the early 2000s draft classes.",
+   "nowId": "1-42377368",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 608,
+     "height": 342,
+     "url": "https://a.espncdn.com/photo/2026/1027/r1737261_608x342_16-9.jpg",
+     "name": "lebron [608x342]",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737261_1296x1296_1-1.jpg",
+       "name": "lebron [1296x1296]"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737261_1296x729_16-9.jpg",
+       "name": "lebron [1296x729]"
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737261_864x1296_2-3.jpg",
+       "name": "lebron [864x1296]"
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 608,
+     "height": 342,
+     "url": "https://a.espncdn.com/photo/2024/1114/r1414537_608x342_16-9.jpg",
+     "name": "kevin durant draft [608x342]",
+     "caption": "Kevin Durant speaks to reporters after being selected during the 2007 NBA draft.",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2024/1114/r1414537_1296x1296_1-1.jpg",
+       "name": "kevin durant draft [1296x1296]",
+       "caption": "Kevin Durant speaks to the media after being selected during the 2007 NBA Draft."
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2024/1114/r1414537_1296x729_16-9.jpg",
+       "name": "kevin durant draft [1296x729]",
+       "caption": "Kevin Durant speaks to the media after being selected during the 2007 NBA Draft."
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2024/1114/r1414537_864x1296_2-3.jpg",
+       "name": "kevin durant draft [864x1296]",
+       "caption": "Kevin Durant speaks to the media after being selected during the 2007 NBA Draft."
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 608,
+     "height": 342,
+     "url": "https://a.espncdn.com/photo/2026/1027/r1737266_608x342_16-9.jpg",
+     "name": "brook lopez [608x342]",
+     "caption": "Brook Lopez remains one of two active players from the 2008 NBA draft.",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737266_1296x1296_1-1.jpg",
+       "name": "brook lopez [1296x1296]",
+       "caption": "Brook Lopez remains one of two active players from the 2008 NBA draft."
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737266_1296x729_16-9.jpg",
+       "name": "brook lopez [1296x729]",
+       "caption": "Brook Lopez remains one of two active players from the 2008 NBA draft."
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737266_864x1296_2-3.jpg",
+       "name": "brook lopez [864x1296]",
+       "caption": "Brook Lopez remains one of two active players from the 2008 NBA draft."
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    "\u2026(+3 more, len=6)"
+   ],
+   "categories": [
+    {
+     "id": 9577,
+     "uid": "s:40~l:46",
+     "description": "NBA",
+     "type": "league",
+     "sportId": 46,
+     "leagueId": 46,
+     "league": {
+      "id": 46,
+      "abbreviation": "NBA",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 9385,
+     "uid": "s:40~l:46~a:1966",
+     "description": "LeBron James",
+     "type": "athlete",
+     "sportId": 46,
+     "athleteId": 1966,
+     "athlete": {
+      "id": 1966,
+      "links": {
+       "web": {
+        "athletes": {
+         "href": "https://www.espn.com/nba/player/_/id/1966/lebron-james"
+        }
+       },
+       "mobile": {
+        "athletes": {
+         "href": "https://www.espn.com/nba/player/_/id/1966/lebron-james"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": 4323,
+     "uid": "s:40~l:46~t:20",
+     "description": "Philadelphia 76ers",
+     "type": "team",
+     "sportId": 46,
+     "team": {
+      "id": 20,
+      "abbreviation": "PHI",
+      "links": {
+       "web": {
+        "teams": {
+         "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers"
+        }
+       },
+       "mobile": {
+        "teams": {
+         "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers"
+        }
+       }
+      }
+     }
+    },
+    "\u2026(+5 more, len=8)"
+   ],
+   "published": "2026-10-28T14:21:58.000+00:00",
+   "video": [
+    {
+     "source": "espn",
+     "id": 50258115,
+     "headline": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
+     "title": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
+     "caption": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
+     "description": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
+     "premium": false,
+     "ad": {
+      "sport": "nba",
+      "bundle": "sportscenter"
+     },
+     "tracking": {
+      "sportName": "basketball",
+      "leagueName": "NBA",
+      "coverageType": "Analysis",
+      "trackingName": "COM_NBA Analysis (Stephen A.: 76ers' biggest strength is their togetherness as a team) 2026/10/23 FT ESHEET",
+      "trackingId": "dm_NBA_stephen_a_76ers_biggest_strength_is_their_togetherness_as_a_team"
+     },
+     "cerebroId": "6adb72f15b1c8b13e055096c",
+     "lastModified": "2026-10-23T14:49:49.000+00:00",
+     "originalPublishDate": "2026-10-23T14:45:06.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-23T14:44:59.000+00:00",
+      "expirationDate": "2027-07-31T04:00:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "geoRestrictions": {
+      "type": "whitelist",
+      "countries": [
+       "PR",
+       "HN",
+       "PY",
+       "\u2026(+101 more, len=104)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 92,
+     "categories": [
+      {
+       "id": 711826,
+       "description": "2 Star Rating",
+       "type": "editorialindicator"
+      },
+      {
+       "id": 9577,
+       "uid": "s:40~l:46",
+       "description": "NBA",
+       "type": "league",
+       "sportId": 46,
+       "leagueId": 46,
+       "league": {
+        "id": 46,
+        "abbreviation": "NBA",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 4323,
+       "uid": "s:40~l:46~t:20",
+       "description": "Philadelphia 76ers",
+       "type": "team",
+       "sportId": 46,
+       "team": {
+        "id": 20,
+        "abbreviation": "PHI",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      "\u2026(+6 more, len=9)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706740/thu\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50258115&videoDSI=49295edd8ef39"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50258115/76ers-biggest-strength-their-togetherness-team",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50258115/76ers-biggest-strength-their-togetherness-team"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/fda0f43b-d7bd-4633-9297-342d0c1f3fe2/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50258115"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/fda0f43b-d7bd-4633-9297-342d0c1f3fe2/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/fda0f43b-d7bd-4633-9297-342d0c1f3fe2/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/fda0f43b-d7bd-4633-9297-342d0c1f3fe2"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50258115"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_370674\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706740/pla\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/2026/1023/ss_20261023_104509647_3706740/ss_20261023_104509647_3706740/pla\u2026"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "byline": "Anthony Gharib",
+   "authors": [
+    {
+     "firstName": "Anthony",
+     "lastName": "Gharib",
+     "displayName": "Anthony Gharib",
+     "shortName": "A. Gharib",
+     "contactInfo": "anthony.gharib@espn.com",
+     "sourceLine": "ESPN",
+     "images": [
+      {
+       "url": "https://a.espncdn.com/i/columnists/espn_generic_m.jpg"
+      }
+     ],
+     "links": {
+      "api": {
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/sports/news/38393204"
+       }
+      }
+     }
+    }
+   ],
+   "dataSourceIdentifier": "97bfe3c9317ec"
+  },
+  {
+   "headline": "Karabell's notebook: Murray's hot start, Adebayo's struggles, other early trends",
+   "lastModified": "2026-10-27T21:14:44.000+00:00",
+   "root": "fba",
+   "premium": false,
+   "links": {
+    "api": {
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/sports/news/50299852"
+     }
+    },
+    "mobile": {
+     "href": "http://m.espn.go.com/wireless/story?storyId=50299852"
+    },
+    "web": {
+     "href": "https://www.espn.com/fantasy/basketball/story/_/id/50299852/fantasy-basketball-trends-nba-2026-2027"
+    }
+   },
+   "type": "Story",
+   "section": "Fantasy NBA",
+   "id": 50299852,
+   "linkText": "Fantasy basketball: Making sense of Murray, Adebayo, Sabonis and other early trends",
+   "categorized": "2026-10-27T21:14:45Z",
+   "description": "Eric Karabell empties out the notebook with all that he's noticing around the NBA, and what it means for fantasy.",
+   "nowId": "1-50299852",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 1296,
+     "height": 729,
+     "alt": "Dejounte Murray drives to the basket.",
+     "url": "https://a.espncdn.com/photo/2026/1027/r1737097_1296x729_16-9.jpg",
+     "name": "Dejounte Murray [1296x729]",
+     "caption": "Pelican guard Dejounte Murray is delivering across the board for fantasy managers so far this season.",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "alt": "Dejounte Murray drives to the basket.",
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737097_1296x1296_1-1.jpg",
+       "name": "Dejounte Murray [1296x1296]",
+       "caption": "Pelican guard Dejounte Murray is delivering across the board for fantasy managers so far this season."
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "alt": "Dejounte Murray drives to the basket.",
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737097_1296x729_16-9.jpg",
+       "name": "Dejounte Murray [1296x729]",
+       "caption": "Pelican guard Dejounte Murray is delivering across the board for fantasy managers so far this season."
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "alt": "Dejounte Murray drives to the basket.",
+       "url": "https://a.espncdn.com/photo/2026/1027/r1737097_864x1296_2-3.jpg",
+       "name": "Dejounte Murray [864x1296]",
+       "caption": "Pelican guard Dejounte Murray is delivering across the board for fantasy managers so far this season."
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 576,
+     "height": 324,
+     "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026",
+     "name": "Jaylen Brown drains 3-point shot vs. Milwaukee Bucks",
+     "caption": "Jaylen Brown buries trey against vs. Milwaukee Bucks"
+    }
+   ],
+   "categories": [
+    {
+     "id": 12025,
+     "description": "Fantasy NBA",
+     "type": "league",
+     "sportId": 0,
+     "leagueId": 3090,
+     "league": {
+      "id": 3090
+     }
+    },
+    {
+     "id": 9577,
+     "uid": "s:40~l:46",
+     "description": "NBA",
+     "type": "league",
+     "sportId": 46,
+     "leagueId": 46,
+     "league": {
+      "id": 46,
+      "abbreviation": "NBA",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 141870,
+     "description": "news - fantasy",
+     "type": "topic",
+     "sportId": 0
+    },
+    "\u2026(+12 more, len=15)"
+   ],
+   "published": "2026-10-27T21:14:44.000+00:00",
+   "video": [
+    {
+     "source": "espn",
+     "id": 50271877,
+     "headline": "Jaylen Brown drains 3-point shot vs. Milwaukee Bucks",
+     "title": "Jaylen Brown drains 3-point shot vs. Milwaukee Bucks",
+     "caption": "Jaylen Brown buries trey against vs. Milwaukee Bucks",
+     "description": "Jaylen Brown buries trey against vs. Milwaukee Bucks",
+     "premium": false,
+     "ad": {
+      "sport": "nba",
+      "bundle": "nba_top_plays"
+     },
+     "tracking": {
+      "sportName": "basketball",
+      "leagueName": "NBA",
+      "coverageType": "OnePlay",
+      "trackingName": "NBA_One-Play (Jaylen Brown drains 3-point shot vs. Milwaukee Bucks) 2026/10/24 ESHEET",
+      "trackingId": "dm_20261024_NBA_jaylen_brown_drains_3point_shot_vs_milwaukee_bucks"
+     },
+     "cerebroId": "6add4d875337f73c2d0ba8d9",
+     "lastModified": "2026-10-25T00:30:10.000+00:00",
+     "originalPublishDate": "2026-10-25T00:29:59.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-25T00:29:53.000+00:00",
+      "expirationDate": "2027-07-31T04:00:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "geoRestrictions": {
+      "type": "whitelist",
+      "countries": [
+       "PR",
+       "HN",
+       "PY",
+       "\u2026(+101 more, len=104)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 18,
+     "categories": [
+      {
+       "id": 4323,
+       "uid": "s:40~l:46~t:20",
+       "description": "Philadelphia 76ers",
+       "type": "team",
+       "sportId": 46,
+       "team": {
+        "id": 20,
+        "abbreviation": "PHI",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      {
+       "id": 9577,
+       "uid": "s:40~l:46",
+       "description": "NBA",
+       "type": "league",
+       "sportId": 46,
+       "leagueId": 46,
+       "league": {
+        "id": 46,
+        "abbreviation": "NBA",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      {
+       "id": 711827,
+       "description": "3 Star Rating",
+       "type": "editorialindicator"
+      },
+      "\u2026(+5 more, len=8)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45db-b64\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026"
+      },
+      "vertical": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026"
+      },
+      "verticalFirstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/9x16/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-4\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50271877&videoDSI=6eacbe8999c0a"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50271877/jaylen-brown-drains-3-point-shot-vs-milwaukee-bucks",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50271877/jaylen-brown-drains-3-point-shot-vs-milwaukee-bucks"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/4e15d2c4-bc30-40db-abdf-6c60d679fe85/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50271877"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/4e15d2c4-bc30-40db-abdf-6c60d679fe85/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/4e15d2c4-bc30-40db-abdf-6c60d679fe85/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/4e15d2c4-bc30-40db-abdf-6c60d679fe85"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50271877"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45d\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45db-b64\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/1025/16cb4ed7-6776-45db-b649-5ae816cb0c75/16cb4ed7-6776-45db-b64\u2026"
+        }
+       }
+      }
+     }
+    },
+    {
+     "source": "espn",
+     "id": 50284191,
+     "headline": "Darius Acuff Jr. gets up for the rejection",
+     "title": "Darius Acuff Jr. gets up for the rejection",
+     "caption": "Darius Acuff Jr. gets up for the rejection",
+     "description": "Darius Acuff Jr. gets up for the rejection",
+     "premium": false,
+     "ad": {
+      "sport": "nba",
+      "bundle": "nba_top_plays"
+     },
+     "tracking": {
+      "sportName": "basketball",
+      "leagueName": "NBA",
+      "coverageType": "OnePlay",
+      "trackingName": "NBA_One-Play (Darius Acuff Jr. gets up for the rejection) 2026/10/26 ESHEET",
+      "trackingId": "dm_20261026_NBA_darius_acuff_jr_gets_up_for_the_rejection"
+     },
+     "cerebroId": "6adebea8f0bf21503838508b",
+     "lastModified": "2026-10-26T02:45:04.000+00:00",
+     "originalPublishDate": "2026-10-26T02:44:56.000+00:00",
+     "timeRestrictions": {
+      "embargoDate": "2026-10-26T02:44:48.000+00:00",
+      "expirationDate": "2027-07-31T04:00:00.000+00:00"
+     },
+     "deviceRestrictions": {
+      "type": "whitelist",
+      "devices": [
+       "settop",
+       "tablet",
+       "handset",
+       "\u2026(+2 more, len=5)"
+      ]
+     },
+     "geoRestrictions": {
+      "type": "whitelist",
+      "countries": [
+       "PR",
+       "HN",
+       "PY",
+       "\u2026(+101 more, len=104)"
+      ]
+     },
+     "syndicatable": true,
+     "duration": 19,
+     "categories": [
+      {
+       "id": 737643,
+       "uid": "s:40~l:46~a:5142620",
+       "description": "Darius Acuff Jr",
+       "type": "athlete",
+       "sportId": 46,
+       "athleteId": 5142620,
+       "athlete": {
+        "id": 5142620,
+        "links": {
+         "web": {
+          "athletes": "\u2026"
+         },
+         "mobile": {
+          "athletes": "\u2026"
+         }
+        }
+       }
+      },
+      {
+       "id": 4584,
+       "uid": "s:40~l:46~t:29",
+       "description": "Memphis Grizzlies",
+       "type": "team",
+       "sportId": 46,
+       "team": {
+        "id": 29,
+        "abbreviation": "MEM",
+        "links": {
+         "web": {
+          "teams": "\u2026"
+         },
+         "mobile": {
+          "teams": "\u2026"
+         }
+        }
+       }
+      },
+      {
+       "id": 9577,
+       "uid": "s:40~l:46",
+       "description": "NBA",
+       "type": "league",
+       "sportId": 46,
+       "leagueId": 46,
+       "league": {
+        "id": 46,
+        "abbreviation": "NBA",
+        "links": {
+         "web": {},
+         "mobile": {}
+        }
+       }
+      },
+      "\u2026(+5 more, len=8)"
+     ],
+     "posterImages": {
+      "square": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026"
+      },
+      "default": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026",
+       "width": 576,
+       "height": 324
+      },
+      "firstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4290-8b3\u2026"
+      },
+      "wide": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026"
+      },
+      "vertical": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026"
+      },
+      "full": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026"
+      },
+      "verticalFirstFrame": {
+       "href": "https://cmp-espn.media.dssott.com/opp/img/espn/9x16/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+      }
+     },
+     "images": [
+      {
+       "width": 576,
+       "height": 324,
+       "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026",
+       "name": "Poster Image"
+      }
+     ],
+     "thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4\u2026",
+     "links": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showVideo?videoID=50284191&videoDSI=3da4c4d5c82cc"
+      },
+      "web": {
+       "href": "https://www.espn.com/video/clip/_/id/50284191/darius-acuff-jr-gets-rejection",
+       "self": {
+        "href": "https://www.espn.com/video/clip/_/id/50284191/darius-acuff-jr-gets-rejection"
+       }
+      },
+      "mobile": {
+       "href": "https://watch.auth.api.espn.com/video/auth/brightcove/cf4e3148-99e5-4e52-9720-45a292c75043/asset?UMADPARAMreferer=https:\u2026",
+       "alert": {
+        "href": "https://m.espn.com/general/video/videoAlert?vid=50284191"
+       },
+       "progressiveDownload": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/cf4e3148-99e5-4e52-9720-45a292c75043/asset?UMADPARAMreferer=https:\u2026"
+       },
+       "source": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+       },
+       "streaming": {
+        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/cf4e3148-99e5-4e52-9720-45a292c75043/asset?UMADPARAMreferer=https:\u2026"
+       }
+      },
+      "api": {
+       "artwork": {
+        "href": "https://artwork.api.espn.com/artwork/collections/media/cf4e3148-99e5-4e52-9720-45a292c75043"
+       },
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/video/clips/50284191"
+       }
+      },
+      "source": {
+       "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026",
+       "flash": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+       },
+       "full": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+       },
+       "mezzanine": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+       },
+       "HD": {
+        "href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-429\u2026"
+       },
+       "HLS": {
+        "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4290-8b3\u2026",
+        "HD": {
+         "href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/1026/a31ec918-067d-4290-8b37-0fec58239a0b/a31ec918-067d-4290-8b3\u2026"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "byline": "Eric Karabell",
+   "authors": [
+    {
+     "firstName": "Eric",
+     "lastName": "Karabell",
+     "displayName": "Eric Karabell",
+     "shortName": "E. Karabell",
+     "contactInfo": "eric.karabell@espn.com",
+     "biography": "Eric Karabell is a senior writer covering fantasy football, baseball and basketball at ESPN. Eric is a charter member of\u2026",
+     "sourceLine": "ESPN Senior Writer",
+     "images": [
+      {
+       "url": "https://www.espn.com/i/columnists/full/eric-karabell.png"
+      }
+     ],
+     "links": {
+      "api": {
+       "self": {
+        "href": "https://content.core.api.espn.com/v1/sports/news/2082376"
+       }
+      }
+     }
+    }
+   ],
+   "dataSourceIdentifier": "55f96f13e50e7"
+  },
+  {
+   "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his Super Bowl show",
+   "lastModified": "2026-10-27T01:52:27.000+00:00",
+   "root": "gen",
+   "premium": false,
+   "links": {
+    "api": {
+     "self": {
+      "href": "https://content.core.api.espn.com/v1/sports/news/50232827"
+     }
+    },
+    "mobile": {
+     "href": "http://m.espn.go.com/wireless/story?storyId=50232827"
+    },
+    "web": {
+     "href": "https://www.espn.com/espn/story/_/id/50232827/jayz-best-sports-references-sofi-stadium"
+    }
+   },
+   "type": "Story",
+   "section": "NBA",
+   "id": 50232827,
+   "linkText": "From Jordan to LeBron: Ranking Jay-Z's best sports references",
+   "categorized": "2026-10-27T19:55:51Z",
+   "description": "The Super Bowl headliner's catalog is packed with sports references -- here are the ones that top our list.",
+   "nowId": "1-50232827",
+   "allowComments": true,
+   "images": [
+    {
+     "width": 1296,
+     "height": 729,
+     "alt": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan",
+     "url": "https://a.espncdn.com/photo/2026/1022/and_jay-z_Jay-Z's_best_athlete_references_ranked_cr_16x9.jpg",
+     "name": "Jay-Z's best athlete references, ranked ahead of SoFi shows [1296x729]",
+     "caption": "Jay-Z's catalog is packed with sports references -- here are the ones that top our list.",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "alt": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan",
+       "url": "https://a.espncdn.com/photo/2026/1022/and_jay-z_Jay-Z's_best_athlete_references_ranked_cr_1x1.jpg",
+       "name": "Jay-Z's best athlete references, ranked ahead of SoFi shows [1296x1296]",
+       "caption": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "alt": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan",
+       "url": "https://a.espncdn.com/photo/2026/1022/and_jay-z_Jay-Z's_best_athlete_references_ranked_cr_16x9.jpg",
+       "name": "Jay-Z's best athlete references, ranked ahead of SoFi shows [1296x729]",
+       "caption": "Jay-Z's catalog is packed with sports references -- here are the ones that top our list."
+      },
+      {
+       "width": 1296,
+       "height": 864,
+       "alt": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan",
+       "url": "https://a.espncdn.com/photo/2026/1022/and_jay-z_Jay-Z's_best_athlete_references_ranked_cr_3x2.jpg",
+       "name": "Jay-Z's best athlete references, ranked ahead of SoFi shows [1296x864]",
+       "caption": "Mike Tyson, LeBron James, Jay-z, Dwyane Wade, Shaquille O'Neal, Kobe Bryant & Michael Jordan"
+      },
+      "\u2026(+1 more, len=4)"
+     ]
+    },
+    {
+     "width": 608,
+     "height": 342,
+     "alt": "(L-R) Michael Jordan, Chris Paul, and Jay-Z attend the 2010 World Basketball Festival Tip Off after party",
+     "url": "https://a.espncdn.com/photo/2026/1020/r1733677_608x342_16-9.jpg",
+     "name": "Jay Z MJ [608x342]",
+     "caption": "Jordan is a recurring reference in Jay-Z\u2019s lyrics, with the rapper frequently name-dropping the basketball legend throug\u2026",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "alt": "(L-R) Michael Jordan, Chris Paul, and Jay-Z attend the 2010 World Basketball Festival Tip Off after party",
+       "url": "https://a.espncdn.com/photo/2026/1020/r1733677_1296x1296_1-1.jpg",
+       "name": "Jay Z MJ [1296x1296]",
+       "caption": "Jordan is a recurring reference in Jay-Z\u2019s lyrics, with the rapper frequently name-dropping the basketball legend throug\u2026"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "alt": "(L-R) Michael Jordan, Chris Paul, and Jay-Z attend the 2010 World Basketball Festival Tip Off after party",
+       "url": "https://a.espncdn.com/photo/2026/1020/r1733677_1296x729_16-9.jpg",
+       "name": "Jay Z MJ [1296x729]",
+       "caption": "Jordan is a recurring reference in Jay-Z\u2019s lyrics, with the rapper frequently name-dropping the basketball legend throug\u2026"
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "alt": "(L-R) Michael Jordan, Chris Paul, and Jay-Z attend the 2010 World Basketball Festival Tip Off after party",
+       "url": "https://a.espncdn.com/photo/2026/1020/r1733677_864x1296_2-3.jpg",
+       "name": "Jay Z MJ [864x1296]",
+       "caption": "Jordan is a recurring reference in Jay-Z\u2019s lyrics, with the rapper frequently name-dropping the basketball legend throug\u2026"
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    {
+     "width": 608,
+     "height": 342,
+     "alt": "Kobe Bryant #8 and Shaquille O'Neal #34 of the Los Angeles Lakers celebrate winning in Game Six of the 2000 NBA Finals a\u2026",
+     "url": "https://a.espncdn.com/photo/2026/1021/r1733733_608x342_16-9.jpg",
+     "name": "Shaq lifting Kobe [608x342]",
+     "caption": "O\u2019Neal memorably hoisted Bryant in the air as the Lakers celebrated their title-clinching Game 6 win over the Pacers in \u2026",
+     "peers": [
+      {
+       "width": 1296,
+       "height": 1296,
+       "alt": "Kobe Bryant #8 and Shaquille O'Neal #34 of the Los Angeles Lakers celebrate winning in Game Six of the 2000 NBA Finals a\u2026",
+       "url": "https://a.espncdn.com/photo/2026/1021/r1733733_1296x1296_1-1.jpg",
+       "name": "Shaq lifting Kobe [1296x1296]",
+       "caption": "O\u2019Neal memorably hoisted Bryant in the air as the Lakers celebrated their title-clinching Game 6 win over the Pacers in \u2026"
+      },
+      {
+       "width": 1296,
+       "height": 729,
+       "alt": "Kobe Bryant #8 and Shaquille O'Neal #34 of the Los Angeles Lakers celebrate winning in Game Six of the 2000 NBA Finals a\u2026",
+       "url": "https://a.espncdn.com/photo/2026/1021/r1733733_1296x729_16-9.jpg",
+       "name": "Shaq lifting Kobe [1296x729]",
+       "caption": "O\u2019Neal memorably hoisted Bryant in the air as the Lakers celebrated their title-clinching Game 6 win over the Pacers in \u2026"
+      },
+      {
+       "width": 864,
+       "height": 1296,
+       "alt": "Kobe Bryant #8 and Shaquille O'Neal #34 of the Los Angeles Lakers celebrate winning in Game Six of the 2000 NBA Finals a\u2026",
+       "url": "https://a.espncdn.com/photo/2026/1021/r1733733_864x1296_2-3.jpg",
+       "name": "Shaq lifting Kobe [864x1296]",
+       "caption": "O\u2019Neal memorably hoisted Bryant in the air as the Lakers celebrated their title-clinching Game 6 win over the Pacers in \u2026"
+      },
+      "\u2026(+2 more, len=5)"
+     ]
+    },
+    "\u2026(+8 more, len=11)"
+   ],
+   "categories": [
+    {
+     "id": 9577,
+     "uid": "s:40~l:46",
+     "description": "NBA",
+     "type": "league",
+     "sportId": 46,
+     "leagueId": 46,
+     "league": {
+      "id": 46,
+      "abbreviation": "NBA",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 9572,
+     "uid": "s:20~l:28",
+     "description": "NFL",
+     "type": "league",
+     "sportId": 28,
+     "leagueId": 28,
+     "league": {
+      "id": 28,
+      "abbreviation": "NFL",
+      "links": {
+       "web": {},
+       "mobile": {}
+      }
+     }
+    },
+    {
+     "id": 9385,
+     "uid": "s:40~l:46~a:1966",
+     "description": "LeBron James",
+     "type": "athlete",
+     "sportId": 46,
+     "athleteId": 1966,
+     "athlete": {
+      "id": 1966,
+      "links": {
+       "web": {
+        "athletes": {
+         "href": "https://www.espn.com/nba/player/_/id/1966/lebron-james"
+        }
+       },
+       "mobile": {
+        "athletes": {
+         "href": "https://www.espn.com/nba/player/_/id/1966/lebron-james"
+        }
+       }
+      }
+     }
+    },
+    "\u2026(+10 more, len=13)"
+   ],
+   "published": "2026-10-27T01:52:27.000+00:00",
+   "byline": "David Dennis Jr. and Justin Tinsley",
+   "dataSourceIdentifier": "07f99f99cf396"
+  },
+  "\u2026(+10 more, len=13)"
+ ],
+ "nextGame": {
+  "displayName": "Current Game",
+  "league": {
+   "id": "46",
+   "uid": "s:40~l:46",
+   "name": "National Basketball Association",
+   "shortName": "NBA",
+   "abbreviation": "NBA",
+   "slug": "nba",
+   "events": [
+    {
+     "id": "401909884",
+     "competitionId": "401909884",
+     "uid": "s:40~l:46~e:401909884",
+     "date": "2026-10-28T23:00:00.000+00:00",
+     "timeValid": true,
+     "name": "Philadelphia 76ers at Indiana Pacers",
+     "shortName": "PHI @ IND",
+     "location": "Gainbridge Fieldhouse",
+     "season": 2027,
+     "seasonStartDate": "2026-09-30T07:00:00.000+00:00",
+     "seasonEndDate": "2027-06-26T06:59:00.000+00:00",
+     "seasonType": 2,
+     "seasonTypeHasGroups": false,
+     "period": 2,
+     "clock": "0.0",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "live",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/nba/game?gameId=401909884",
+       "text": "Gamecast",
+       "shortText": "Gamecast",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "live",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909884",
+       "text": "Gamecast",
+       "shortText": "Gamecast",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "now",
+        "desktop",
+        "event"
+       ],
+       "href": "https://www.espn.com/nba/game/_/gameId/401909884",
+       "text": "Now",
+       "shortText": "Now",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+12 more, len=15)"
+     ],
+     "status": "in",
+     "fullStatus": {
+      "clock": "0.0",
+      "displayClock": "0.0",
+      "period": 2,
+      "type": {
+       "id": "23",
+       "name": "STATUS_HALFTIME",
+       "description": "Halftime",
+       "detail": "Halftime",
+       "shortDetail": "Halftime",
+       "state": "in",
+       "completed": false
+      }
+     },
+     "broadcasts": [
+      {
+       "type": "TV",
+       "typeId": 1,
+       "isNational": true,
+       "broadcasterId": 126,
+       "broadcastId": 126,
+       "priority": 1,
+       "name": "ESPN",
+       "shortName": "ESPN",
+       "callLetters": "ESPN",
+       "station": "ESPN",
+       "region": "us",
+       "language": "en"
+      }
+     ],
+     "broadcast": "ESPN",
+     "competitors": [
+      {
+       "id": "11",
+       "uid": "s:40~l:46~t:11",
+       "type": "team",
+       "order": 0,
+       "color": "0c2340",
+       "alternateColor": "ffd520",
+       "group": "2",
+       "homeAway": "home",
+       "abbreviation": "IND",
+       "location": "Indiana",
+       "displayName": "Indiana Pacers",
+       "score": "52",
+       "record": "2-2",
+       "name": "Pacers",
+       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+       "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/ind.png"
+      },
+      {
+       "id": "20",
+       "uid": "s:40~l:46~t:20",
+       "type": "team",
+       "order": 1,
+       "color": "1d428a",
+       "alternateColor": "e01234",
+       "group": "1",
+       "homeAway": "away",
+       "abbreviation": "PHI",
+       "location": "Philadelphia",
+       "displayName": "Philadelphia 76ers",
+       "score": "62",
+       "record": "3-1",
+       "name": "76ers",
+       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+       "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/phi.png"
+      }
+     ],
+     "onWatch": true,
+     "recent": true,
+     "odds": {
+      "provider": {
+       "id": "100",
+       "name": "DraftKings",
+       "priority": 1
+      },
+      "details": "PHI -7.5",
+      "overUnder": 234.5,
+      "spread": 7.5,
+      "overOdds": -105,
+      "underOdds": -115,
+      "awayTeamOdds": {
+       "team": {
+        "id": "20",
+        "abbreviation": "PHI"
+       },
+       "favorite": true,
+       "underdog": false,
+       "moneyLine": -278,
+       "spreadOdds": -110
+      },
+      "homeTeamOdds": {
+       "team": {
+        "id": "11",
+        "abbreviation": "IND"
+       },
+       "favorite": false,
+       "underdog": true,
+       "moneyLine": 225,
+       "spreadOdds": -110
+      },
+      "links": [
+       {
+        "language": "en",
+        "rel": [
+         "home",
+         "desktop",
+         "bets",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Home Bet",
+        "shortText": "Home Bet",
+        "isExternal": true,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "away",
+         "desktop",
+         "bets",
+         "\u2026(+1 more, len=4)"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Away Bet",
+        "shortText": "Away Bet",
+        "isExternal": true,
+        "isPremium": false
+       },
+       {
+        "language": "en",
+        "rel": [
+         "homeSpread",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink\u2026",
+        "text": "Home Point Spread",
+        "shortText": "Home Point Spread",
+        "isExternal": true,
+        "isPremium": false
+       },
+       "\u2026(+4 more, len=7)"
+      ],
+      "moneylineWinner": false,
+      "spreadWinner": false
+     },
+     "appLinks": [
+      {
+       "language": "en",
+       "rel": [
+        "live",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909884",
+       "text": "Gamecast",
+       "shortText": "Gamecast",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "boxscore",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909884",
+       "text": "Box Score",
+       "shortText": "Box Score",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "gamecast",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909884",
+       "text": "Gamecast",
+       "shortText": "Gamecast",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+1 more, len=4)"
+     ]
+    }
+   ]
+  },
+  "summaryStatistics": [
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "PPG",
+    "displayValue": "6.0",
+    "splitBy": "lastTenGames",
+    "name": "avgPoints",
+    "displayName": "Points Per Game",
+    "abbreviation": "PTS"
+   },
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "APG",
+    "displayValue": "5.0",
+    "splitBy": "lastTenGames",
+    "name": "avgAssists",
+    "displayName": "Assists Per Game",
+    "abbreviation": "AST"
+   },
+   {
+    "splitId": "0",
+    "splitAbbreviation": "Total",
+    "splitName": "All Splits",
+    "shortDisplayName": "3P%",
+    "displayValue": "0.0",
+    "splitBy": "lastTenGames",
+    "name": "threePointPct",
+    "displayName": "3-Point Field Goal Percentage",
+    "abbreviation": "3P%"
+   },
+   "\u2026(+1 more, len=4)"
+  ],
+  "statistics": {
+   "labels": [
+    "GP",
+    "MIN",
+    "FG%",
+    "\u2026(+9 more, len=12)"
+   ],
+   "names": [
+    "gamesPlayed",
+    "avgMinutes",
+    "fieldGoalPct",
+    "\u2026(+9 more, len=12)"
+   ],
+   "displayNames": [
+    "Games Played",
+    "Minutes Per Game",
+    "Field Goal Percentage",
+    "\u2026(+9 more, len=12)"
+   ],
+   "splits": [
+    {
+     "displayName": "This Game",
+     "stats": [
+      "1",
+      "15.0",
+      "60.0",
+      "\u2026(+9 more, len=12)"
+     ]
+    },
+    {
+     "displayName": "L10",
+     "stats": [
+      "3",
+      "33.3",
+      "42.9",
+      "\u2026(+9 more, len=12)"
+     ],
+     "type": "lastTenGames"
+    },
+    {
+     "displayName": "Road",
+     "stats": [
+      "1",
+      "34.0",
+      "38.5",
+      "\u2026(+9 more, len=12)"
+     ],
+     "type": "split"
+    }
+   ]
+  }
+ },
+ "gameLog": {
+  "displayName": "Recent Games",
+  "statistics": [
+   {
+    "displayName": "totals",
+    "labels": [
+     "MIN",
+     "FG%",
+     "3P%",
+     "\u2026(+8 more, len=11)"
+    ],
+    "names": [
+     "minutes",
+     "fieldGoalPct",
+     "threePointPct",
+     "\u2026(+8 more, len=11)"
+    ],
+    "displayNames": [
+     "Minutes",
+     "Field Goal Percentage",
+     "3-Point Field Goal Percentage",
+     "\u2026(+8 more, len=11)"
+    ],
+    "events": [
+     {
+      "eventId": "401909866",
+      "stats": [
+       "33",
+       "53.3",
+       "0.0",
+       "\u2026(+8 more, len=11)"
+      ]
+     },
+     {
+      "eventId": "401909093",
+      "stats": [
+       "33",
+       "35.7",
+       "25.0",
+       "\u2026(+8 more, len=11)"
+      ]
+     },
+     {
+      "eventId": "401909089",
+      "stats": [
+       "34",
+       "38.5",
+       "0.0",
+       "\u2026(+8 more, len=11)"
+      ]
+     }
+    ]
+   }
+  ],
+  "events": {
+   "401909089": {
+    "id": "401909089",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909089/76ers-knicks",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909089",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909089",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "@",
+    "gameDate": "2026-10-20T23:00:00.000+00:00",
+    "score": "106-100",
+    "homeTeamId": "18",
+    "awayTeamId": "20",
+    "homeTeamScore": "100",
+    "awayTeamScore": "106",
+    "gameResult": "W",
+    "opponent": {
+     "id": "18",
+     "uid": "s:40~l:46~t:18",
+     "displayName": "New York Knicks",
+     "abbreviation": "NY",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/ny/new-york-knicks",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/ny/new-york-knicks",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:18&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+    },
+    "leagueName": "National Basketball Association",
+    "leagueAbbreviation": "NBA",
+    "leagueShortName": "NBA",
+    "team": {
+     "id": "20",
+     "uid": "s:40~l:46~t:20",
+     "abbreviation": "PHI",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/phi/philadelphia-76ers",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+     "isAllStar": false
+    }
+   },
+   "401909866": {
+    "id": "401909866",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909866/pistons-76ers",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909866",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909866",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+11 more, len=14)"
+    ],
+    "atVs": "vs",
+    "gameDate": "2026-10-25T23:30:00.000+00:00",
+    "score": "106-93",
+    "homeTeamId": "20",
+    "awayTeamId": "8",
+    "homeTeamScore": "93",
+    "awayTeamScore": "106",
+    "gameResult": "L",
+    "opponent": {
+     "id": "8",
+     "uid": "s:40~l:46~t:8",
+     "displayName": "Detroit Pistons",
+     "abbreviation": "DET",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/det/detroit-pistons",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/det/detroit-pistons",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:8&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+    },
+    "leagueName": "National Basketball Association",
+    "leagueAbbreviation": "NBA",
+    "leagueShortName": "NBA",
+    "team": {
+     "id": "20",
+     "uid": "s:40~l:46~t:20",
+     "abbreviation": "PHI",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/phi/philadelphia-76ers",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+     "isAllStar": false
+    }
+   },
+   "401909093": {
+    "id": "401909093",
+    "links": [
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909093/cavaliers-76ers",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "summary",
+       "sportscenter",
+       "app",
+       "\u2026(+1 more, len=4)"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=nba&gameId=401909093",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+     },
+     {
+      "language": "en",
+      "rel": [
+       "now",
+       "desktop",
+       "event"
+      ],
+      "href": "https://www.espn.com/nba/game/_/gameId/401909093",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+     },
+     "\u2026(+13 more, len=16)"
+    ],
+    "atVs": "vs",
+    "gameDate": "2026-10-22T23:00:00.000+00:00",
+    "score": "114-106",
+    "homeTeamId": "20",
+    "awayTeamId": "5",
+    "homeTeamScore": "114",
+    "awayTeamScore": "106",
+    "gameResult": "W",
+    "opponent": {
+     "id": "5",
+     "uid": "s:40~l:46~t:5",
+     "displayName": "Cleveland Cavaliers",
+     "abbreviation": "CLE",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/cle/cleveland-cavaliers",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/cle/cleveland-cavaliers",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:5&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+    },
+    "leagueName": "National Basketball Association",
+    "leagueAbbreviation": "NBA",
+    "leagueShortName": "NBA",
+    "team": {
+     "id": "20",
+     "uid": "s:40~l:46~t:20",
+     "abbreviation": "PHI",
+     "links": [
+      {
+       "language": "en",
+       "rel": [
+        "clubhouse",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers",
+       "text": "Clubhouse",
+       "shortText": "Clubhouse",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "desktop",
+        "team"
+       ],
+       "href": "https://www.espn.com/nba/team/roster/_/name/phi/philadelphia-76ers",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en",
+       "rel": [
+        "roster",
+        "sportscenter",
+        "app",
+        "\u2026(+1 more, len=4)"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20&section=roster",
+       "text": "Roster",
+       "shortText": "Roster",
+       "isExternal": false,
+       "isPremium": false
+      },
+      "\u2026(+11 more, len=14)"
+     ],
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+     "isAllStar": false
+    }
+   }
+  }
+ },
+ "rotowire": {
+  "headline": "James finished with 18 points (8-15 FG, 0-3 3Pt, 2-6 FT), two rebounds, five assists and two steals across 33 minutes in\u2026",
+  "story": "James returned after sitting out Saturday's win over Milwaukee, taking on a larger offensive role with Joel Embiid (heel\u2026",
+  "description": "James finished with 18 points (8-15 FG, 0-3 3Pt, 2-6 FT), two rebounds, five assists and two steals across 33 minutes in\u2026",
+  "published": "Mon Oct 26 07:53:01 PDT 2026"
+ },
+ "awards": [
+  {
+   "id": "45",
+   "league": "nba",
+   "name": "All-NBA 2nd Team",
+   "displayCount": "4x",
+   "seasons": [
+    "2025",
+    "2021",
+    "2007",
+    "\u2026(+1 more, len=4)"
+   ]
+  },
+  {
+   "id": "46",
+   "league": "nba",
+   "name": "All-NBA 3rd Team",
+   "displayCount": "4x",
+   "seasons": [
+    "2024",
+    "2023",
+    "2022",
+    "\u2026(+1 more, len=4)"
+   ]
+  },
+  {
+   "id": "377",
+   "league": "nba",
+   "name": "NBA Cup MVP",
+   "displayCount": "1x",
+   "seasons": [
+    "2024"
+   ]
+  },
+  "\u2026(+9 more, len=12)"
+ ],
+ "fantasy": {
+  "draftRank": "42",
+  "positionRank": "30",
+  "percentOwned": "99.11",
+  "last7Days": "0.07",
+  "projection": "James willingly accepted a third option role with the Lakers last season, allowing Luka Doncic and Austin Reaves to oper\u2026"
+ }
+}

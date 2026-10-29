@@ -1,0 +1,1504 @@
+{
+ "leagues": [
+  {
+   "id": "851",
+   "uid": "s:850~l:851",
+   "name": "ATP",
+   "abbreviation": "ATP",
+   "midsizeName": "ATP",
+   "slug": "atp",
+   "season": {
+    "year": 2026,
+    "startDate": "2026-01-01T08:00Z",
+    "endDate": "2027-01-01T07:59Z",
+    "displayName": "2026",
+    "type": {
+     "id": "2",
+     "type": 2,
+     "name": "Regular Season",
+     "abbreviation": "reg"
+    }
+   },
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/combiner/i?img=/redesign/assets/img/icons/ESPN-icon-tennis.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "default"
+     ],
+     "lastUpdated": "2026-10-28T04:13Z"
+    },
+    {
+     "href": "https://a.espncdn.com/combiner/i?img=/redesign/assets/img/icons/ESPN-icon-tennis.png",
+     "width": 500,
+     "height": 500,
+     "alt": "",
+     "rel": [
+      "full",
+      "dark"
+     ],
+     "lastUpdated": "2026-10-28T04:13Z"
+    }
+   ],
+   "calendarType": "day",
+   "calendarIsWhitelist": true,
+   "calendarStartDate": "2026-01-01T08:00Z",
+   "calendarEndDate": "2027-01-01T07:59Z",
+   "calendar": [
+    "2026-01-01T08:00Z",
+    "2026-01-02T08:00Z",
+    "2026-01-03T08:00Z",
+    "\u2026(+305 more, len=308)"
+   ]
+  }
+ ],
+ "season": {
+  "type": 2,
+  "year": 2026
+ },
+ "day": {
+  "date": "2026-10-28"
+ },
+ "events": [
+  {
+   "id": "10-2026",
+   "uid": "s:850~l:851~e:10-2026",
+   "date": "2026-10-24T04:00Z",
+   "endDate": "2026-11-02T04:59Z",
+   "major": false,
+   "name": "Erste Bank Open",
+   "shortName": "Erste Bank Open",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "187149",
+       "uid": "s:850~l:851~e:10-2026~c:187149",
+       "date": "2026-10-24T09:00Z",
+       "startDate": "2026-10-24T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Jacob Fearnley (GBR) bt Pablo Carreno Busta (ESP) 6-4 3-6 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1590",
+         "uid": "s:850~l:851~a:1590",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "11685",
+         "uid": "s:850~l:851~a:11685",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187148",
+       "uid": "s:850~l:851~e:10-2026~c:187148",
+       "date": "2026-10-24T09:30Z",
+       "startDate": "2026-10-24T09:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Centre Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Lukas Neumayer (AUT) bt Vit Kopriva (CZE) 6-4 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "7794",
+         "uid": "s:850~l:851~a:7794",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3809",
+         "uid": "s:850~l:851~a:3809",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187154",
+       "uid": "s:850~l:851~e:10-2026~c:187154",
+       "date": "2026-10-24T10:30Z",
+       "startDate": "2026-10-24T10:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Lorenzo Sonego (ITA) bt Adolfo Daniel Vallejo (PAR) 6-2 3-6 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3052",
+         "uid": "s:850~l:851~a:3052",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "11396",
+         "uid": "s:850~l:851~a:11396",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "\u2026(+40 more, len=43)"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "3",
+      "slug": "mens-doubles",
+      "displayName": "Men's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "187264",
+       "uid": "s:850~l:851~e:10-2026~c:187264",
+       "date": "2026-10-27T10:30Z",
+       "startDate": "2026-10-27T10:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Maximo Gonzalez (ARG) & Andres Molteni (ARG) bt Santiago Gonzalez (MEX) & Bart Stevens (NED) 7-5 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1045-2152",
+         "uid": "s:850~l:851~t:1045-2152",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "666-3162",
+         "uid": "s:850~l:851~t:666-3162",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187263",
+       "uid": "s:850~l:851~e:10-2026~c:187263",
+       "date": "2026-10-27T12:00Z",
+       "startDate": "2026-10-27T12:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Sander Arends (NED) & Luke Johnson (GBR) bt Skander Mansouri (TUN) & Maximilian Neuchrist (AUT) 7-5 7-6 (8-6)",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3768-1599",
+         "uid": "s:850~l:851~t:3768-1599",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3338-11262",
+         "uid": "s:850~l:851~t:3338-11262",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187265",
+       "uid": "s:850~l:851~e:10-2026~c:187265",
+       "date": "2026-10-28T12:00Z",
+       "startDate": "2026-10-28T12:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Fairplay Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Maximo Gonzalez (ARG) & Andres Molteni (ARG) bt Sander Arends (NED) & Luke Johnson (GBR) 7-5 7-6 (7-5)",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1045-2152",
+         "uid": "s:850~l:851~t:1045-2152",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3338-11262",
+         "uid": "s:850~l:851~t:3338-11262",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "14",
+        "displayName": "Qualifying Final"
+       },
+       "wasSuspended": false
+      },
+      "\u2026(+15 more, len=18)"
+     ]
+    }
+   ],
+   "status": {
+    "period": 3,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "Vienna, Austria"
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/competitionType/1",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "bracket",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/bracket/_/year/2026/tournamentId/10/type/1",
+     "text": "Bracket",
+     "shortText": "Bracket",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    }
+   ],
+   "previousWinners": [
+    {
+     "displayName": "Jannik Sinner",
+     "shortDisplayName": "J. Sinner",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     },
+     "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/3623.png",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/3623/jannik-sinner",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false,
+       "isHidden": false
+      }
+     ]
+    },
+    {
+     "displayName": "Julian Cash / Lloyd Glasspool",
+     "shortDisplayName": "J. Cash / L. Glasspool",
+     "type": {
+      "id": "3",
+      "text": "Men's Doubles",
+      "slug": "mens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Julian Cash",
+       "shortDisplayName": "J. Cash",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/2420/julian-cash",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      },
+      {
+       "displayName": "Lloyd Glasspool",
+       "shortDisplayName": "L. Glasspool",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/3064/lloyd-glasspool",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "calendar": {
+    "type": "day",
+    "timeZone": "America/New_York",
+    "startDate": "2026-10-24T04:00Z",
+    "endDate": "2026-11-01T04:00Z",
+    "calendar": [
+     "2026-10-24T04:00Z",
+     "2026-10-25T04:00Z",
+     "2026-10-26T04:00Z",
+     "\u2026(+6 more, len=9)"
+    ]
+   }
+  },
+  {
+   "id": "23-2026",
+   "uid": "s:850~l:851~e:23-2026",
+   "date": "2026-10-24T04:00Z",
+   "endDate": "2026-11-02T04:59Z",
+   "major": false,
+   "name": "Swiss Indoors Basel",
+   "shortName": "Swiss Indoors Basel",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "187216",
+       "uid": "s:850~l:851~e:23-2026~c:187216",
+       "date": "2026-10-24T09:00Z",
+       "startDate": "2026-10-24T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "Center Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Yannick Hanfmann (GER) bt Marcos Giron (USA) 6-2 5-7 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3322",
+         "uid": "s:850~l:851~a:3322",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "1993",
+         "uid": "s:850~l:851~a:1993",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187219",
+       "uid": "s:850~l:851~e:23-2026~c:187219",
+       "date": "2026-10-24T09:00Z",
+       "startDate": "2026-10-24T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "IWB Court 1"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Rinky Hijikata (AUS) bt Miomir Kecmanovic (SER) 7-6 (7-5) 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3716",
+         "uid": "s:850~l:851~a:3716",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "2874",
+         "uid": "s:850~l:851~a:2874",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187215",
+       "uid": "s:850~l:851~e:23-2026~c:187215",
+       "date": "2026-10-24T10:30Z",
+       "startDate": "2026-10-24T10:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "Center Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Mika Brunold (SUI) bt Jaime Faria (POR) 7-6 (7-4) 7-6 (7-5)",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "10212",
+         "uid": "s:850~l:851~a:10212",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "10219",
+         "uid": "s:850~l:851~a:10219",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "athlete": {
+          "guid": "\u2026",
+          "displayName": "\u2026",
+          "shortName": "\u2026",
+          "fullName": "\u2026",
+          "flag": "\u2026",
+          "links": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "\u2026(+40 more, len=43)"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "3",
+      "slug": "mens-doubles",
+      "displayName": "Men's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "187261",
+       "uid": "s:850~l:851~e:23-2026~c:187261",
+       "date": "2026-10-24T15:00Z",
+       "startDate": "2026-10-24T15:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "IWB Court 1"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Arthur Reymond (FRA) & Luca Sanchez (FRA) bt Paolo Schiavone (ITA) & Augusto Virgili (ITA) 6-1 6-1",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "4037-10885",
+         "uid": "s:850~l:851~t:4037-10885",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "19249-10515",
+         "uid": "s:850~l:851~t:19249-10515",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187260",
+       "uid": "s:850~l:851~e:23-2026~c:187260",
+       "date": "2026-10-24T15:30Z",
+       "startDate": "2026-10-24T15:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "Center Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Romain Arneodo (MON) & Hendrik Jebens (GER) bt Sander Gille (BEL) & Sem Verbeek (NED) 7-6 (7-2) 6-7 (5-7) 10-7",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1867-10294",
+         "uid": "s:850~l:851~t:1867-10294",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3491-3718",
+         "uid": "s:850~l:851~t:3491-3718",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187262",
+       "uid": "s:850~l:851~e:23-2026~c:187262",
+       "date": "2026-10-25T13:30Z",
+       "startDate": "2026-10-25T13:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Basel, Switzerland",
+        "court": "IWB Court 1"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Arthur Reymond (FRA) & Luca Sanchez (FRA) bt Romain Arneodo (MON) & Hendrik Jebens (GER) 6-3 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "4037-10885",
+         "uid": "s:850~l:851~t:4037-10885",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        },
+        {
+         "id": "1867-10294",
+         "uid": "s:850~l:851~t:1867-10294",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          "\u2026",
+          "\u2026"
+         ],
+         "roster": {
+          "displayName": "\u2026",
+          "shortDisplayName": "\u2026",
+          "athletes": "\u2026"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 23,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "14",
+        "displayName": "Qualifying Final"
+       },
+       "wasSuspended": false
+      },
+      "\u2026(+15 more, len=18)"
+     ]
+    }
+   ],
+   "status": {
+    "period": 3,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "Basel, Switzerland"
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/23-2026/competitionType/1",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "bracket",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/bracket/_/year/2026/tournamentId/23/type/1",
+     "text": "Bracket",
+     "shortText": "Bracket",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    }
+   ],
+   "previousWinners": [
+    {
+     "displayName": "Joao Fonseca",
+     "shortDisplayName": "J. Fonseca",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     },
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/11745/joao-fonseca",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false,
+       "isHidden": false
+      }
+     ]
+    },
+    {
+     "displayName": "Marcel Granollers / Horacio Zeballos",
+     "shortDisplayName": "M. Granollers / H. Zeballos",
+     "type": {
+      "id": "3",
+      "text": "Men's Doubles",
+      "slug": "mens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Marcel Granollers",
+       "shortDisplayName": "M. Granollers",
+       "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/698.png",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/698/marcel-granollers",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      },
+      {
+       "displayName": "Horacio Zeballos",
+       "shortDisplayName": "H. Zeballos",
+       "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/1513.png",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "\u2026",
+          "\u2026",
+          "\u2026"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/1513/horacio-zeballos",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "calendar": {
+    "type": "day",
+    "timeZone": "America/New_York",
+    "startDate": "2026-10-24T04:00Z",
+    "endDate": "2026-11-01T04:00Z",
+    "calendar": [
+     "2026-10-24T04:00Z",
+     "2026-10-25T04:00Z",
+     "2026-10-26T04:00Z",
+     "\u2026(+6 more, len=9)"
+    ]
+   }
+  }
+ ],
+ "provider": {
+  "id": "100",
+  "name": "Draft Kings",
+  "displayName": "Draft Kings",
+  "priority": 1
+ }
+}
