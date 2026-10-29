@@ -10,6 +10,7 @@ import { renderGolf } from "./views/golf.js";
 import { renderEvents } from "./views/events.js";
 import { renderCustom } from "./views/custom.js";
 import { renderPicks } from "./views/picks.js";
+import { renderToday } from "./views/today.js";
 
 const app = $("#app");
 let navToken = 0;
@@ -34,6 +35,7 @@ async function route() {
     if (!parts.length) return renderHome(ctx);
     if (parts[0] === "custom") return renderCustom(ctx, q);
     if (parts[0] === "picks") return renderPicks(ctx, q);
+    if (parts[0] === "today") return renderToday(ctx, q);
     if (parts[0] === "l") {
       const L = leagueById(parts[1]);
       if (!L) throw new Error("Unknown league");

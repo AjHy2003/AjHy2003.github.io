@@ -2,7 +2,8 @@ import { api, loadGamelogs, parseProps, standingsTable } from "../espn.js";
 import * as M from "../model.js";
 import { esc, loading, errorBox, setTitle, pct, fx, signed, fmtDate, fmtTime, hitTile, gameChart, wireChartTips, toast } from "../ui.js";
 import { addPick } from "../store.js";
-import { loadDeep, loadDeepPlayer, deepPlayerPanel, deepGameStats } from "../deep.js";
+import { loadDeep, loadDeepPlayer, deepPlayerPanel } from "../deep.js";
+import { mergeDeepStats } from "../scan.js";
 import { MODEL_SAMPLE, marketsFor, defaultMarket, opponentFactor, runProp, playedGames, PREV_SEASON_W, OLD_TEAM_W } from "../props.js";
 
 export async function renderPlayer(ctx, L, id, q) {
@@ -312,17 +313,6 @@ export async function renderPlayer(ctx, L, id, q) {
   $("#f-opp").addEventListener("change", (e) => { state.useOpp = e.target.value === "1"; render(); });
 
   render();
-}
-
-// Fill stats ESPN's game log lacks (NHL hits/blocks) from pipeline rows, matched by event id.
-export function mergeDeepStats(L, games, deepPlayer) {
-  const extra = deepGameStats(L, deepPlayer);
-  if (!extra) return;
-  for (const g of games) {
-    const x = extra.get(String(g.eventId));
-    if (!x) continue;
-    for (const [k, v] of Object.entries(x)) if (g.stats[k] == null && v != null) g.stats[k] = v;
-  }
 }
 
 // Upcoming (or in-progress) game: athlete overview first, team schedule as fallback.

@@ -22,7 +22,7 @@ const pages = [
   ["nfl-slate", "#/l/nfl"], ["chase", "#/l/nfl/p/4362628"], ["lamar", "#/l/nfl/p/3916387"], ["mahomes", "#/l/nfl/p/3139477"],
   ["mlb-judge", "#/l/mlb/p/33192"], ["nhl-slate", "#/l/nhl"], ["mcdavid", "#/l/nhl/p/3895074"], ["epl-slate", "#/l/epl"], ["haaland", "#/l/epl/p/253989"],
   ["f1", "#/l/f1"], ["nascar", "#/l/nascar"], ["indycar", "#/l/indycar"], ["pga", "#/l/pga"], ["atp", "#/l/atp"], ["ufc", "#/l/ufc"],
-  ["ncaaf", "#/l/ncaaf"], ["custom", "#/custom"], ["picks", "#/picks"],
+  ["ncaaf", "#/l/ncaaf"], ["ncaab", "#/l/ncaab"], ["custom", "#/custom"], ["picks", "#/picks"],
 ];
 
 (async () => {
@@ -60,6 +60,24 @@ const pages = [
       if (scan) { await scan.click(); await pg.waitForFunction(() => !document.querySelector("#scan") || !/Scanning/.test(document.querySelector("#scan").textContent), null, { timeout: 120000 }).catch(() => {}); }
     });
   }
+  // Today page: default ticket, a $5 basketball-only parlay, then a same-game parlay.
+  await visit("today", "#/today");
+  await visit("today-bball-5-parlay", "#/today?sport=basketball", async (pg) => {
+    await pg.click('#t-budget .chip[data-b="5"]');
+    await pg.click('#t-mode button[data-m="parlay"]');
+    await pg.waitForTimeout(500);
+  });
+  for (const sport of ["football", "ncaaf", "basketball"]) {
+    await visit(`today-sgp-${sport}`, `#/today?sport=${sport}`, async (pg) => {
+      const opts = await pg.$$eval("#t-sgp-game option", (o) => o.map((x) => x.value).filter(Boolean));
+      if (!opts.length) return;
+      await pg.selectOption("#t-sgp-game", opts[0]);
+      await pg.waitForFunction(() => !document.querySelector("#t-sgp-body .spinner"), null, { timeout: 120000 }).catch(() => {});
+      const use = await pg.$("#t-sgp-use");
+      if (use) { await use.click(); await pg.waitForTimeout(300); }
+    });
+  }
+  await visit("home-with-picks", "#/");
   fs.writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 1));
   await browser.close();
   server.close();

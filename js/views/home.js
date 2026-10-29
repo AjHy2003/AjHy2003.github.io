@@ -1,7 +1,8 @@
 import { LEAGUES } from "../sports.js";
 import { esc, setTitle } from "../ui.js";
+import { todayTeaser } from "./today.js";
 
-export function renderHome({ app }) {
+export function renderHome({ app, alive }) {
   setTitle("");
   const groups = [...new Set(LEAGUES.map((l) => l.group))];
   app.innerHTML = `
@@ -9,11 +10,13 @@ export function renderHome({ app }) {
       <h1>Research the bet before you make it.</h1>
       <p class="sub">Game logs, hit rates, matchups and a projection for any prop, spread or total. Lines load automatically from DraftKings via ESPN when they're posted. Search any player above, or pick a league.</p>
       <div class="row">
-        <a class="btn" href="#/l/nba">Today's NBA</a>
+        <a class="btn" href="#/today">🔥 Today's picks</a>
+        <a class="btn ghost" href="#/l/nba">Today's NBA</a>
         <a class="btn ghost" href="#/l/nfl">This week's NFL</a>
         <a class="btn ghost" href="#/custom">Custom calculator</a>
       </div>
     </section>
+    <div id="home-today"></div>
     ${groups.map((g) => `
       <div class="league-group">${esc(g)}</div>
       <div class="league-grid">
@@ -42,4 +45,5 @@ export function renderHome({ app }) {
         </ul>
       </div>
     </div>`;
+  todayTeaser().then((html) => { if (alive()) { const el = app.querySelector("#home-today"); if (el) el.innerHTML = html; } }).catch(() => {});
 }

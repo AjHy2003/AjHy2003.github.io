@@ -1,15 +1,10 @@
-import { api, pickcenterOdds, standingsTable, scheduleResults, parseProps, loadGamelogs, pool } from "../espn.js";
-import { MARKETS } from "../sports.js";
+import { api, standingsTable, parseProps } from "../espn.js";
 import * as M from "../model.js";
 import { esc, loading, errorBox, setTitle, pct, fx, signed, fmtDate, fmtTime, cmpRow, toast } from "../ui.js";
 import { addPick } from "../store.js";
-import { loadDeep, loadDeepPlayer, deepGamePanel } from "../deep.js";
-import { mergeDeepStats } from "./player.js";
-import { marketsFor, opponentFactor, runProp, playedGames } from "../props.js";
-
-// Games of shrinkage toward league average for team scoring rates.
-const TEAM_REGRESS = { basketball: 8, football: 3, baseball: 20, hockey: 10, soccer: 6 };
-const DEFAULT_AVG = { nba: 114, wnba: 82, ncaab: 72, ncaaw: 66, nfl: 22.5, ncaaf: 28, mlb: 4.4, nhl: 3.05 };
+import { loadDeep, deepGamePanel } from "../deep.js";
+import { gameContext, defaultLines, evaluateLines, sideOdds } from "../gamemodel.js";
+import { loadPeople, propRows, scanRows } from "../scan.js";
 
 export async function renderGame(ctx, L, ev, q) {
   const { app } = ctx;
@@ -21,55 +16,28 @@ export async function renderGame(ctx, L, ev, q) {
     if (ctx.alive()) app.innerHTML = errorBox(e);
     return;
   }
-  const comp = sum.header?.competitions?.[0];
-  if (!comp) { app.innerHTML = errorBox("No game data"); return; }
-  const home = comp.competitors.find((c) => c.homeAway === "home");
-  const away = comp.competitors.find((c) => c.homeAway === "away");
-  const status = comp.status?.type || {};
-  const fam = L.markets;
+  const comp0 = sum.header?.competitions?.[0];
+  if (!comp0) { app.innerHTML = errorBox("No game data"); return; }
+  const homeId = comp0.competitors.find((c) => c.homeAway === "home").team.id;
+  const awayId = comp0.competitors.find((c) => c.homeAway === "away").team.id;
+  const state0 = comp0.status?.type?.state;
 
   const [standings, schedH, schedA, deep, propsAll] = await Promise.all([
     api.standings(L).then(standingsTable).catch(() => null),
-    api.schedule(L, home.team.id).catch(() => null),
-    api.schedule(L, away.team.id).catch(() => null),
+    api.schedule(L, homeId).catch(() => null),
+    api.schedule(L, awayId).catch(() => null),
     loadDeep(L).catch(() => null),
-    status.state !== "post" ? api.propBets(L, ev).then((items) => parseProps(items, L.markets)).catch(() => null) : null,
+    state0 !== "post" ? api.propBets(L, ev).then((items) => parseProps(items, L.markets)).catch(() => null) : null,
   ]);
   if (!ctx.alive()) return;
 
-  const resH = schedH ? scheduleResults(schedH, home.team.id).filter((g) => new Date(g.date) < new Date(comp.date)) : [];
-  const resA = schedA ? scheduleResults(schedA, away.team.id).filter((g) => new Date(g.date) < new Date(comp.date)) : [];
-  // Pre-game box score carries season per-game stats for some leagues (NFL).
-  const boxStand = (team, res) => {
-    const t = (sum.boxscore?.teams || []).find((x) => String(x.team?.id) === String(team.id));
-    const val = (n) => parseFloat(t?.statistics?.find((x) => x.name === n)?.displayValue);
-    const pf = val("totalPointsPerGame"), pa = val("totalPointsPerGameAllowed");
-    const rec = comp.competitors.find((c) => String(c.team.id) === String(team.id))?.record?.[0]?.summary;
-    const gp = rec ? rec.split("-").reduce((s, x) => s + (Number(x) || 0), 0) : res.length;
-    return isFinite(pf) && isFinite(pa) && gp ? { pf, pa, gp } : null;
-  };
-  const standH = standings?.teams?.[home.team.id] || boxStand(home.team, resH);
-  const standA = standings?.teams?.[away.team.id] || boxStand(away.team, resA);
-  const lg = standings?.leagueAvg || DEFAULT_AVG[L.id] || avgFromResults(resH, resA) || 1;
-  const rating = (stand, res) => teamRating(stand, res, lg, TEAM_REGRESS[fam] || 8);
-  const rH = rating(standH, resH);
-  const rA = rating(standA, resA);
-  const minGames = Math.min(standH?.gp ?? resH.length, standA?.gp ?? resA.length);
-  // Weight on our model vs the no-vig market: game lines are sharp, so the model only nudges.
-  const wModel = minGames >= 4 ? 0.35 : 0.2;
-
-  const odds = pickcenterOdds(sum.pickcenter?.[0]) || {};
-  const params = M.gameParams(L.espn.split("/")[1], fam === "soccer" ? "soccer" : L.espn.split("/")[1]);
+  const gc = gameContext(L, sum, standings, schedH, schedA);
+  const { comp, home, away, H, A, status, resH, resA, rH, rA, lg, params, wModel, odds, fam } = gc;
   const isSoccer = fam === "soccer";
-  const st = {
-    spreadHome: q.sp != null ? Number(q.sp) : odds.spreadHome,
-    spreadHomeOdds: odds.spreadHomeOdds ?? -110, spreadAwayOdds: odds.spreadAwayOdds ?? -110,
-    total: q.t != null ? Number(q.t) : odds.total,
-    overOdds: odds.overOdds ?? -110, underOdds: odds.underOdds ?? -110,
-    mlHome: odds.mlHome, mlAway: odds.mlAway, draw: odds.draw,
-  };
+  const st = defaultLines(odds);
+  if (q.sp != null) st.spreadHome = Number(q.sp);
+  if (q.t != null) st.total = Number(q.t);
 
-  const H = home.team, A = away.team;
   setTitle(`${A.abbreviation} @ ${H.abbreviation}`);
   const logo = (t) => t.logos?.[0]?.href || t.logo || "";
   const rec = (c) => (c.record || c.records || [])[0]?.summary || "";
@@ -83,6 +51,7 @@ export async function renderGame(ctx, L, ev, q) {
         <div style="text-align:center"><div style="font-weight:800;font-size:18px">${scoreLine}</div><div class="muted small">${esc(sum.gameInfo?.venue?.fullName || "")}</div></div>
         <div class="row"><div style="text-align:right"><h2 style="margin:0">${esc(H.displayName)}</h2><div class="muted small">${esc(rec(home))} · Home</div></div><img src="${esc(logo(H))}" alt="" style="width:46px;height:46px"/></div>
       </div>
+      ${status.state === "pre" ? `<div class="row" style="margin-top:10px"><a class="btn sm" href="#/today?sgp=${L.id}:${ev}">Build a same-game parlay ›</a></div>` : ""}
     </div>
     <div class="grid two" style="margin-top:14px">
       <div class="card">
@@ -125,18 +94,18 @@ export async function renderGame(ctx, L, ev, q) {
   const binds = { "#g-sp": "spreadHome", "#g-spo-h": "spreadHomeOdds", "#g-spo-a": "spreadAwayOdds", "#g-t": "total", "#g-oo": "overOdds", "#g-uo": "underOdds", "#g-mla": "mlAway", "#g-mlh": "mlHome", "#g-draw": "draw" };
   for (const [sel, key] of Object.entries(binds)) $(sel)?.addEventListener("input", (e) => { st[key] = e.target.value === "" ? null : Number(e.target.value); renderModel(); });
 
-  const deepHtml = deep ? deepGamePanel(L, deep, H, A) : "";
-  $("#g-deep").innerHTML = deepHtml || "";
+  $("#g-deep").innerHTML = deep ? deepGamePanel(L, deep, H, A) || "" : "";
 
   const unit = { basketball: "PPG", football: "PPG", baseball: "Runs/G", hockey: "Goals/G", soccer: "Goals/G" }[fam] || "PPG";
-  const statRows = [];
-  statRows.push(cmpRow(`${unit} (season)`, rA.pfSeason, rH.pfSeason));
-  statRows.push(cmpRow(`${unit} allowed`, rA.paSeason, rH.paSeason, { higherIsBetter: false }));
-  statRows.push(cmpRow(`${unit} last 5`, rA.pf5, rH.pf5));
-  statRows.push(cmpRow(`Allowed last 5`, rA.pa5, rH.pa5, { higherIsBetter: false }));
-  statRows.push(cmpRow("Avg margin", rA.margin, rH.margin, { fmt: (v) => signed(v) }));
+  const statRows = [
+    cmpRow(`${unit} (season)`, rA.pfSeason, rH.pfSeason),
+    cmpRow(`${unit} allowed`, rA.paSeason, rH.paSeason, { higherIsBetter: false }),
+    cmpRow(`${unit} last 5`, rA.pf5, rH.pf5),
+    cmpRow(`Allowed last 5`, rA.pa5, rH.pa5, { higherIsBetter: false }),
+    cmpRow("Avg margin", rA.margin, rH.margin, { fmt: (v) => signed(v) }),
+  ];
   // Pre-game season stats ESPN attaches to the box score (NFL: yards for/allowed).
-  const bt = (sum.boxscore?.teams || []);
+  const bt = sum.boxscore?.teams || [];
   const bH = bt.find((t) => String(t.team?.id) === String(H.id));
   const bA = bt.find((t) => String(t.team?.id) === String(A.id));
   if (bH && bA && status.state === "pre") {
@@ -153,39 +122,8 @@ export async function renderGame(ctx, L, ev, q) {
   $("#g-cmp").innerHTML = `<div class="a"><b>${esc(A.abbreviation)}</b></div><div class="lbl"></div><div class="b"><b>${esc(H.abbreviation)}</b></div>${statRows.join("")}`;
 
   function renderModel() {
-    const g = M.analyzeGame({ pf: rH.pf, pa: rH.pa }, { pf: rA.pf, pa: rA.pa }, lg, params, { spreadHome: st.spreadHome, total: st.total });
+    const { g, rows } = evaluateLines(gc, st);
     const pred = sum.predictor;
-    const rows = [];
-    // Two-way market: model prob for side A (pushes excluded), anchored to the book.
-    const twoWay = (pA, pB, push, oA, oB, labels) => {
-      oA = oA ?? -110; oB = oB ?? -110;
-      const dec = pA / (pA + pB);
-      const fin = M.anchor(dec, oA, oB, wModel);
-      const a = fin * (1 - push), b = (1 - fin) * (1 - push);
-      return { v: M.makeVerdict(a, b, push, oA, oB, M.expectedValue(a, push, oA), M.expectedValue(b, push, oB), minGames, labels), model: dec, fin };
-    };
-    if (g.spread) {
-      const r = twoWay(g.spread.home, g.spread.away, g.spread.push, st.spreadHomeOdds, st.spreadAwayOdds, [`${H.abbreviation} ${fmtSpread(st.spreadHome)}`, `${A.abbreviation} ${fmtSpread(-st.spreadHome)}`]);
-      rows.push(["Spread", r.v, `${H.abbreviation} covers: model ${pct(r.model)} → blended ${pct(r.fin)}`]);
-    }
-    if (g.totalP) {
-      const r = twoWay(g.totalP.over, g.totalP.under, g.totalP.push, st.overOdds, st.underOdds, [`Over ${st.total}`, `Under ${st.total}`]);
-      rows.push(["Total", r.v, `Over: model ${pct(r.model)} → blended ${pct(r.fin)}`]);
-    }
-    if (isSoccer && st.mlHome != null && st.mlAway != null) {
-      let opts = [[`${H.abbreviation} win`, g.pHome, st.mlHome], ["Draw", g.pDraw, st.draw], [`${A.abbreviation} win`, g.pAway, st.mlAway]].filter((o) => o[2] != null);
-      if (opts.length === 3) {
-        const imp = opts.map((o) => M.impliedProb(o[2]));
-        const tot = imp.reduce((x, y) => x + y, 0);
-        opts = opts.map((o, i) => [o[0], wModel * o[1] + (1 - wModel) * (imp[i] / tot), o[2]]);
-      }
-      const best = opts.map(([lbl, p, o]) => ({ lbl, p, o, ev: M.expectedValue(p, 0, o), edge: p - M.impliedProb(o) })).sort((a, b) => b.ev - a.ev)[0];
-      const grade = best.edge >= 0.08 ? "A" : best.edge >= 0.05 ? "B" : best.edge >= 0.025 ? "C" : "PASS";
-      rows.push(["Result (1X2)", { side: grade === "PASS" ? null : best.lbl, lean: best.lbl, edge: best.edge, ev: best.ev, grade, prob: best.p }, `${H.abbreviation} ${pct(g.pHome)} · Draw ${pct(g.pDraw)} · ${A.abbreviation} ${pct(g.pAway)}`]);
-    } else if (st.mlHome != null && st.mlAway != null) {
-      const r = twoWay(g.pHome, g.pAway, 0, st.mlHome, st.mlAway, [`${H.abbreviation} ML`, `${A.abbreviation} ML`]);
-      rows.push(["Moneyline", r.v, `${H.abbreviation} wins: model ${pct(r.model)} → blended ${pct(r.fin)}`]);
-    }
     const dec = isSoccer || fam === "hockey" || fam === "baseball" ? 2 : 1;
     $("#g-model").innerHTML = `
       <h3>Model</h3>
@@ -196,53 +134,21 @@ export async function renderGame(ctx, L, ev, q) {
         <div class="kpi"><div class="k">Total</div><div class="v">${fx(g.total, dec)}</div></div>
       </div>
       <table style="margin-top:12px"><thead><tr><th>Market</th><th>Pick</th><th class="r">Prob</th><th class="r">Edge</th><th class="r">Grade</th><th></th></tr></thead><tbody>
-      ${rows.map(([mk, v, info], i) => `<tr><td>${mk}<div class="faint small">${esc(info)}</div></td><td><b>${esc(v.side || `lean ${v.lean}`)}</b></td><td class="r">${pct(v.prob, 1)}</td><td class="r ${v.edge > 0 ? "pos" : "neg"}">${signed(v.edge * 100, 1)}</td><td class="r"><b>${v.grade}</b></td><td><button class="btn ghost sm" data-save="${i}">★</button></td></tr>`).join("") || `<tr><td colspan="6" class="muted">Enter a spread or total to evaluate.</td></tr>`}
+      ${rows.map((r, i) => `<tr><td>${r.label}<div class="faint small">${esc(r.info)}</div></td><td><b>${esc(r.v.side || `lean ${r.v.lean}`)}</b></td><td class="r">${pct(r.v.prob, 1)}</td><td class="r ${r.v.edge > 0 ? "pos" : "neg"}">${signed(r.v.edge * 100, 1)}</td><td class="r"><b>${r.v.grade}</b></td><td><button class="btn ghost sm" data-save="${i}">★</button></td></tr>`).join("") || `<tr><td colspan="6" class="muted">Enter a spread or total to evaluate.</td></tr>`}
       </tbody></table>
       ${pred?.homeTeam?.gameProjection ? `<p class="small muted" style="margin:10px 0 0">ESPN Matchup Predictor: ${esc(H.abbreviation)} ${fx(Number(pred.homeTeam.gameProjection))}% to win.</p>` : ""}
       <details class="explain" style="margin-top:8px"><summary>How this is calculated</summary>
         <p>Each team's scoring rate = season ${unit} shrunk toward the league average (${fx(lg, dec)}) by sample size, blended 70/30 with the last 5 games. Projected score = team offense × opponent defense ÷ league average, plus ${fx(params.hfa, 2)} home edge. ${params.kind === "poisson" ? "Scores are modelled as Poisson, so low-scoring sports get real draw/one-goal probabilities." : `Margin SD ${params.sdMargin}, total SD ${params.sdTotal}.`} Because game lines are very efficient, the final probability is ${Math.round(wModel * 100)}% this model and ${Math.round((1 - wModel) * 100)}% the sportsbook's no-vig price, so a grade only appears when the stats disagree with the market by a lot. The model doesn't know about injuries, rest or weather.</p>
       </details>`;
     $("#g-model").querySelectorAll("[data-save]").forEach((b) => b.addEventListener("click", () => {
-      const [mk, v] = rows[Number(b.dataset.save)];
-      const side = v.side || v.lean;
-      addPick({ league: L.id, eventId: ev, eventDate: comp.date, athlete: `${A.abbreviation} @ ${H.abbreviation}`, marketLabel: mk, market: mk.toLowerCase(), side, prob: v.prob, grade: v.grade, game: true, homeId: H.id, awayId: A.id, homeAbbr: H.abbreviation, awayAbbr: A.abbreviation, line: mk === "Total" ? st.total : mk === "Spread" ? st.spreadHome : null, odds: oddsForSide(mk, side, st, H, A) });
+      const r = rows[Number(b.dataset.save)];
+      const side = r.v.side || r.v.lean;
+      addPick({ league: L.id, eventId: ev, eventDate: comp.date, athlete: `${A.abbreviation} @ ${H.abbreviation}`, marketLabel: r.label, market: r.key, side, prob: r.v.prob, grade: r.v.grade, game: true, homeId: H.id, awayId: A.id, homeAbbr: H.abbreviation, awayAbbr: A.abbreviation, line: r.line ?? null, odds: sideOdds(r, side) });
       toast(`Saved: ${side}`);
     }));
   }
   renderModel();
   renderPropsBoard(ctx, L, ev, comp, H, A, propsAll, standings, deep);
-}
-
-function oddsForSide(mk, side, st, H, A) {
-  if (mk === "Spread") return side.startsWith(H.abbreviation) ? st.spreadHomeOdds : st.spreadAwayOdds;
-  if (mk === "Total") return side.startsWith("Over") ? st.overOdds : st.underOdds;
-  if (mk === "Moneyline") return side.startsWith(H.abbreviation) ? st.mlHome : st.mlAway;
-  if (side === "Draw") return st.draw;
-  return side.startsWith(H.abbreviation) ? st.mlHome : st.mlAway;
-}
-
-const fmtSpread = (s) => (s == null || !isFinite(s) ? "" : s > 0 ? `+${s}` : `${s}`);
-
-function avgFromResults(a, b) {
-  const all = [...a, ...b];
-  return all.length ? M.mean(all.map((g) => g.pf)) : null;
-}
-
-// Blend season (shrunk to league average) with last-5 form.
-function teamRating(stand, res, lg, k) {
-  const gp = stand?.gp || res.length;
-  const pfS = stand?.pf ?? (res.length ? M.mean(res.map((g) => g.pf)) : lg);
-  const paS = stand?.pa ?? (res.length ? M.mean(res.map((g) => g.pa)) : lg);
-  const shrink = (v) => (gp * v + k * lg) / (gp + k);
-  const last5 = res.slice(0, 5);
-  const pf5 = last5.length ? M.mean(last5.map((g) => g.pf)) : NaN;
-  const pa5 = last5.length ? M.mean(last5.map((g) => g.pa)) : NaN;
-  const blend = (s, r) => (last5.length >= 3 ? 0.7 * shrink(s) + 0.3 * shrink(r) : shrink(s));
-  return {
-    pfSeason: pfS, paSeason: paS, pf5, pa5,
-    margin: res.length ? M.mean(res.slice(0, 10).map((g) => g.pf - g.pa)) : NaN,
-    pf: blend(pfS, pf5), pa: blend(paS, pa5),
-  };
 }
 
 function recentTable(res) {
@@ -254,7 +160,7 @@ function recentTable(res) {
 
 function injuries(sum) {
   const teams = sum.injuries || [];
-  const rows = teams.flatMap((t) => (t.injuries || []).map((i) => ({ team: t.team?.abbreviation, name: i.athlete?.displayName, pos: i.athlete?.position?.abbreviation, status: i.status, type: i.type?.description || i.details?.type || "" })));
+  const rows = teams.flatMap((t) => (t.injuries || []).map((i) => ({ team: t.team?.abbreviation, name: i.athlete?.displayName, pos: i.athlete?.position?.abbreviation, status: i.status })));
   if (!rows.length) return `<div class="muted small">No injuries reported.</div>`;
   return `<div class="table-wrap"><table><tbody>${rows.slice(0, 30).map((r) => `<tr><td>${esc(r.team)}</td><td>${esc(r.name)} <span class="faint">${esc(r.pos || "")}</span></td><td class="${/out/i.test(r.status) ? "neg" : ""}">${esc(r.status)}</td></tr>`).join("")}</tbody></table></div>`;
 }
@@ -276,27 +182,10 @@ async function renderPropsBoard(ctx, L, ev, comp, H, A, propsAll, standings, dee
     return;
   }
   box.innerHTML = `<h3>Player props</h3>${loading("Loading rosters…")}`;
-  const people = new Map();
-  await Promise.all([H, A].map(async (t) => {
-    try {
-      const r = await api.roster(L, t.id);
-      const groups = Array.isArray(r.athletes?.[0]?.items) ? r.athletes.flatMap((g) => g.items) : r.athletes || [];
-      for (const p of groups) people.set(String(p.id), { name: p.displayName, pos: p.position?.abbreviation, team: t, img: p.headshot?.href });
-    } catch { /* roster unavailable */ }
-  }));
+  const people = await loadPeople(L, [H, A]);
   if (!ctx.alive()) return;
+  const rows = propRows(L, propsAll, people);
 
-  const fam = L.markets;
-  const allMarkets = MARKETS[fam] || [];
-  const rows = [];
-  for (const [aid, mk] of propsAll) {
-    for (const [key, p] of Object.entries(mk)) {
-      const m = allMarkets.find((x) => x.key === key);
-      if (!m) continue;
-      const who = people.get(aid) || { name: `Player ${aid}`, team: null };
-      rows.push({ aid, key, m, p, who });
-    }
-  }
   const draw = () => {
     rows.sort((a, b) => (b.edge ?? -9) - (a.edge ?? -9) || a.who.name.localeCompare(b.who.name));
     box.innerHTML = `
@@ -317,36 +206,12 @@ async function renderPropsBoard(ctx, L, ev, comp, H, A, propsAll, standings, dee
   async function scan() {
     const btn = box.querySelector("#scan");
     btn.disabled = true;
-    const ids = [...new Set(rows.map((r) => r.aid))];
-    let done = 0;
-    btn.textContent = `Scanning 0/${ids.length}…`;
-    const logs = new Map();
-    const deepPlayers = new Map();
-    await pool(ids, 4, async (aid) => {
-      try {
-        const [lg, dp] = await Promise.all([loadGamelogs(L, aid, fam), loadDeepPlayer(L, aid).catch(() => null)]);
-        logs.set(aid, lg);
-        deepPlayers.set(aid, dp);
-      } catch { logs.set(aid, null); }
-      done++;
-      if (ctx.alive()) btn.textContent = `Scanning ${done}/${ids.length}…`;
+    btn.textContent = "Scanning…";
+    await scanRows(L, rows, {
+      game: { H, A, date: comp.date }, standings, deep,
+      onProgress: (d, n) => { if (ctx.alive()) btn.textContent = `Scanning ${d}/${n}…`; },
     });
-    if (!ctx.alive()) return;
-    for (const r of rows) {
-      const log = logs.get(r.aid);
-      if (!log) { r.err = true; continue; }
-      const games = playedGames(log, r.who.team?.id);
-      mergeDeepStats(L, games, deepPlayers.get(r.aid));
-      const fam2 = log.family;
-      const ok = marketsFor(fam2, games).some((x) => x.key === r.key);
-      if (!ok && !games.length) { r.err = true; continue; }
-      const myTeamIsHome = r.who.team && String(r.who.team.id) === String(H.id);
-      const next = r.who.team ? { oppId: myTeamIsHome ? A.id : H.id, opp: myTeamIsHome ? A.abbreviation : H.abbreviation, home: myTeamIsHome, date: comp.date } : null;
-      const opp = opponentFactor({ L, fam: fam2, m: r.m, next, standings, deep, athlete: { id: r.aid, position: { abbreviation: r.who.pos } } });
-      const { res } = runProp(fam2, r.m, games, { line: r.p.line, oddsOver: r.p.over, oddsUnder: r.p.under, opp, posted: r.p });
-      if (res.n) { r.res = res; r.edge = res.verdict?.edge; }
-    }
-    draw();
+    if (ctx.alive()) draw();
   }
   draw();
 }
