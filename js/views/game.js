@@ -141,7 +141,8 @@ export async function renderGame(ctx, L, ev, q) {
   const bA = bt.find((t) => String(t.team?.id) === String(A.id));
   if (bH && bA && status.state === "pre") {
     for (const s of bH.statistics || []) {
-      if (/PointsPerGame/.test(s.name)) continue;
+      // Only the yardage splits are useful here (NFL); other leagues send records and totals.
+      if (!/Yards/i.test(s.name)) continue;
       const o = (bA.statistics || []).find((x) => x.name === s.name);
       if (!o) continue;
       const a = parseFloat(o.displayValue), h = parseFloat(s.displayValue);

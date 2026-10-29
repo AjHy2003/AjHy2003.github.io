@@ -26,7 +26,12 @@ def season_events(path, cache_dir, key):
             with open(cache) as f:
                 day = json.load(f)
         else:
-            js = get(f"{SITE}/{path}/scoreboard?dates={ymd}") or {}
+            try:
+                js = get(f"{SITE}/{path}/scoreboard?dates={ymd}") or {}
+            except Exception as e:  # noqa: BLE001 - one bad day shouldn't sink the season; retried next run
+                print(f"  skip scoreboard {ymd}: {e!r}", flush=True)
+                d += dt.timedelta(days=1)
+                continue
             day = [{"id": e["id"], "type": e.get("season", {}).get("type"), "done": e["status"]["type"]["completed"]} for e in js.get("events", [])]
             # Only cache days that are fully final (late games may still be running).
             if all(e["done"] for e in day) and d < today - dt.timedelta(days=1):
@@ -47,8 +52,12 @@ def load_boxes(path, cache_dir, key, events, parse, workers=6):
         if os.path.exists(f):
             with open(f) as fh:
                 return ev, json.load(fh)
-        js = get(f"{SITE}/{path}/summary?event={ev}")
-        box = parse(js) if js else None
+        try:
+            js = get(f"{SITE}/{path}/summary?event={ev}")
+            box = parse(js) if js else None
+        except Exception as e:  # noqa: BLE001 - skip and retry on the next run
+            print(f"  skip summary {ev}: {e!r}", flush=True)
+            return ev, None
         if box:
             with open(f, "w") as fh:
                 json.dump(box, fh)

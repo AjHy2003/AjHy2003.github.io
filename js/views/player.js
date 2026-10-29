@@ -274,7 +274,7 @@ export async function renderPlayer(ctx, L, id, q) {
       ${wg.map((g) => {
         const cls = g.value > line ? "o" : g.value < line ? "u" : "p";
         return `<tr><td>${fmtDate(g.date)}${g.seasonType === "post" ? ` <span class="pill">PO</span>` : ""}${g.oldTeam ? ` <span class="pill" title="Played for a previous team">old team</span>` : ""}</td><td>${g.home ? "vs" : "@"} ${esc(g.opp)}</td><td>${esc(g.result || "")} ${esc(g.score || "")}</td>
-          ${cols.map((c) => `<td class="r">${g.stats[c[0]] ?? "—"}</td>`).join("")}
+          ${cols.map((c) => { const x = g.stats[c[0]]; return `<td class="r">${x == null ? "—" : Number.isInteger(x) ? x : x.toFixed(1)}</td>`; }).join("")}
           <td class="r ${cls}">${fx(g.value, Number.isInteger(g.value) ? 0 : 1)}</td><td class="${cls}">${cls === "o" ? "O" : cls === "u" ? "U" : "P"}</td></tr>`;
       }).join("")}</tbody></table>`;
 
