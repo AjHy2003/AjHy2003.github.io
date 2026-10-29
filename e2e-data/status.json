@@ -1,1 +1,1 @@
-{"nfl":{"ok":true,"built":"2026-10-29T01:34:24.670512Z"},"nba":{"ok":false,"error":"JSONDecodeError('Expecting value: line 1 column 1 (char 0)')","attempted":"2026-10-29T01:34:36.819684Z","stale":false},"nhl":{"ok":true,"built":"2026-10-29T01:34:46.223743Z"},"nascar":{"ok":true,"built":"2026-10-29T01:34:53.435291Z"}}
+{"nfl":{"ok":true,"built":"2026-10-29T01:39:35.555605Z"},"nba":{"ok":true,"built":"2026-10-29T01:39:46.777852Z"},"nhl":{"ok":true,"built":"2026-10-29T01:39:48.913937Z"},"nascar":{"ok":true,"built":"2026-10-29T01:39:54.051915Z"}}
