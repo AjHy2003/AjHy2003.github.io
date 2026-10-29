@@ -263,7 +263,23 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 16px 40px; color: var(--f
 .tabs button { border: 0; background: none; padding: 8px 12px; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; font-weight: 600; white-space: nowrap; }
 .tabs button.on { color: var(--text); border-bottom-color: var(--accent); }
 
+details.more summary { display: inline; cursor: pointer; color: var(--accent-2); list-style: none; }
+details.more summary::-webkit-details-marker { display: none; }
+details.more[open] summary { display: none; }
+
 @media (max-width: 640px) {
+  .chips.scroll { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+  .chips.scroll .chip { flex: 0 0 auto; }
+  .seg { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
+  .seg button { flex: 0 0 auto; }
+  .form-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .field label { font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card { padding: 13px; }
+  .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .kpi .v { font-size: 17px; }
+  .hits { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .hit { padding: 8px 4px; }
+  .hit .pct { font-size: 18px; }
   .topbar { flex-wrap: wrap; }
   .search { order: 3; flex-basis: 100%; max-width: none; }
   h1 { font-size: 22px; }

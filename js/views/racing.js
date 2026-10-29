@@ -5,7 +5,7 @@ import { addPick } from "../store.js";
 
 const JOLPICA = "https://api.jolpi.ca/ergast/f1";
 const NASCAR = "https://cf.nascar.com";
-const ESPN_SB = "https://site.api.espn.com/apis/site/v2/sports";
+const ESPN_SB = "https://site.web.api.espn.com/apis/site/v2/sports";
 const SIMS = 5000;
 
 const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]/g, "");
@@ -224,7 +224,7 @@ export async function renderRacing(ctx, L, q) {
       <div class="table-wrap"><table><thead><tr><th>Driver</th><th class="r">Win</th><th class="r">Top 3</th><th class="r">Top 5</th><th class="r">Top 10</th><th class="r">Fair win</th><th class="r">Avg fin</th><th class="r">${nx ? "At track" : ""}</th><th class="r">Wins</th><th class="r">DNF</th><th>Last 5</th></tr></thead><tbody>
       ${drivers.map((d) => `<tr data-d="${esc(d.id)}" style="cursor:pointer" class="${focus?.id === d.id ? "hl" : ""}"><td><b>${esc(d.name)}</b> <span class="faint">${esc(d.team || "")}</span>${hasGrid && nx.grid[d.id] ? ` <span class="pill">P${nx.grid[d.id]}</span>` : ""}</td>
         <td class="r">${pct(d.p.win, 1)}</td><td class="r">${pct(d.p.top3)}</td><td class="r">${pct(d.p.top5)}</td><td class="r">${pct(d.p.top10)}</td>
-        <td class="r">${M.fmtOdds(M.toAmerican(Math.min(0.99, Math.max(0.002, d.p.win))))}</td><td class="r">${fx(d.season.avg)}</td><td class="r">${d.track.n ? `${fx(d.track.avg)} <span class="faint">(${d.track.n})</span>` : "—"}</td>
+        <td class="r">${d.p.win >= 0.005 ? M.fmtOdds(M.toAmerican(Math.min(0.99, d.p.win))) : "—"}</td><td class="r">${fx(d.season.avg)}</td><td class="r">${d.track.n ? `${fx(d.track.avg)} <span class="faint">(${d.track.n})</span>` : "—"}</td>
         <td class="r">${d.season.wins}</td><td class="r">${d.season.dnf}</td><td>${d.starts.slice(0, 5).map((s) => `<span class="pill" title="${esc(s.race)}">${s.pos}</span>`).join(" ")}</td></tr>`).join("")}
       </tbody></table></div>
       <details class="explain" style="margin-top:10px"><summary>How this is calculated</summary>
@@ -239,7 +239,8 @@ export async function renderRacing(ctx, L, q) {
   function showDriver(id) {
     const d = drivers[byId(id)];
     if (!d) return;
-    const games = d.starts.slice(0, 20).map((s) => ({ value: s.pos, date: s.date, opp: s.track?.split(" ")[0], home: true, result: s.dnf ? "DNF" : "", score: s.race }));
+    const short = (s) => (s.race || s.track || "").replace(/^(the|formula 1|nascar cup series at)\s+/i, "").replace(/grand prix|gp\b/i, "").trim().slice(0, 6);
+    const games = d.starts.slice(0, 16).map((s) => ({ value: s.pos, date: s.date, opp: short(s), home: true, result: s.dnf ? "DNF" : "", score: s.race }));
     $("#r-driver").innerHTML = `<h3>${esc(d.name)} · recent finishes</h3>
       <div class="kpis" style="margin-top:0">
         <div class="kpi"><div class="k">Avg finish</div><div class="v">${fx(d.season.avg)}</div></div>
@@ -249,7 +250,7 @@ export async function renderRacing(ctx, L, q) {
         ${isFinite(d.season.rating) ? `<div class="kpi"><div class="k">Driver rating</div><div class="v">${fx(d.season.rating)}</div></div>` : ""}
       </div>
       <p class="small muted">Bars are finishing positions (lower is better); green = top 10.</p>
-      ${gameChart(games, 10.5, d.mu, { height: 180, invert: true, label: (g) => (g.opp || "").slice(0, 5) })}`;
+      ${gameChart(games, 10.5, d.mu, { height: 180, invert: true })}`;
   }
 
   function check() {

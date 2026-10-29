@@ -1,10 +1,11 @@
-// ESPN public JSON endpoints (all send Access-Control-Allow-Origin: *).
+// ESPN public JSON endpoints. Browsers are blocked on site.api.espn.com, so
+// everything goes through site.web.api.espn.com, which serves the same paths with CORS.
 import { LEAGUES } from "./sports.js";
 
-const SITE = "https://site.api.espn.com/apis/site/v2/sports";
+const SITE = "https://site.web.api.espn.com/apis/site/v2/sports";
 const WEB = "https://site.web.api.espn.com/apis/common/v3/sports";
 const CORE = "https://sports.core.api.espn.com/v2/sports";
-const STAND = "https://site.api.espn.com/apis/v2/sports";
+const STAND = "https://site.web.api.espn.com/apis/v2/sports";
 
 const cache = new Map();
 
@@ -277,6 +278,8 @@ const PROP_TYPES = [
 ];
 
 export function propMarketKey(typeName) {
+  // Full-game props only: skip halves, quarters, periods, innings, first-X specials.
+  if (/half|quarter|period|inning|\b(1st|2nd|3rd|4th|first|last)\b|\bq[1-4]\b|milestone|alt(ernate)?\b|\+\s*$/i.test(typeName)) return null;
   for (const [re, key] of PROP_TYPES) if (re.test(typeName)) return key;
   return null;
 }
@@ -308,7 +311,11 @@ export function parseProps(items) {
   const out = new Map(); // athleteId -> { market -> {line, over, under, open, alts} }
   for (const [key, list] of cands) {
     const [aid, market] = key.split("|");
-    const best = list.reduce((a, b) => (Math.abs(imp(a.over) - imp(a.under)) <= Math.abs(imp(b.over) - imp(b.under)) ? a : b));
+    const priced = list.filter((c) => c.over != null && c.under != null);
+    // Unpriced ladders (common for NFL): alternates surround the main line, so take the median.
+    const best = priced.length
+      ? priced.reduce((a, b) => (Math.abs(imp(a.over) - imp(a.under)) <= Math.abs(imp(b.over) - imp(b.under)) ? a : b))
+      : [...list].sort((a, b) => a.line - b.line)[Math.floor((list.length - 1) / 2)];
     const m = out.get(aid) || {};
     m[market] = { line: best.line, over: best.over, under: best.under, open: best.open, type: best.type, alts: list.length };
     out.set(aid, m);

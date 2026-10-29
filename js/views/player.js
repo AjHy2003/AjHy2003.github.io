@@ -70,7 +70,7 @@ export async function renderPlayer(ctx, L, id, q) {
     ${header(L, a, next, ov)}
     <div class="card" style="margin-top:14px">
       <h3>Market</h3>
-      <div class="chips" id="mk">${markets.map((m) => `<button class="chip" data-k="${m.key}">${esc(m.label)}${myProps[m.key] ? ` <span class="pill gold" style="padding:0 6px">${myProps[m.key].line}</span>` : ""}</button>`).join("")}</div>
+      <div class="chips scroll" id="mk">${markets.map((m) => `<button class="chip" data-k="${m.key}">${esc(m.label)}${myProps[m.key] ? ` <span class="pill gold" style="padding:0 6px">${myProps[m.key].line}</span>` : ""}</button>`).join("")}</div>
     </div>
     <div class="grid two" style="margin-top:14px">
       <div class="card">
@@ -355,6 +355,6 @@ function header(L, a, next, ov) {
       </div>
     </div>
     ${inj ? `<div class="notice warn" style="margin-top:10px">Injury: ${esc(inj.status || "")} ${esc(inj.details?.type || "")}</div>` : ""}
-    ${news?.headline ? `<p class="small muted" style="margin:10px 0 0"><b>Latest:</b> ${esc(news.headline)}${news.story ? ` <span class="faint">${esc(news.story)}</span>` : ""}</p>` : ""}
+    ${news?.headline ? `<p class="small muted" style="margin:10px 0 0"><b>Latest:</b> ${esc(news.headline)}${news.story ? ` <details class="more" style="display:inline"><summary>more</summary><span class="faint">${esc(news.story)}</span></details>` : ""}</p>` : ""}
   </div>`;
 }

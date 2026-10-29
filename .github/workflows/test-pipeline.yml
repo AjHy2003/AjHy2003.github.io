@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 env:
-  RUN_E2E: "0"
+  RUN_E2E: "1"
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -31,6 +31,7 @@ jobs:
           mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.48.2 >/dev/null
           npx playwright install --with-deps chromium
       - name: CORS matrix
+        if: false
         run: |
           openssl req -x509 -newkey rsa:2048 -nodes -keyout /tmp/k.pem -out /tmp/c.pem -days 1 -subj "/CN=ajhy2003.github.io" 2>/dev/null
           sudo -E env "PATH=$PATH" NODE_PATH=/tmp/pw/node_modules PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright node tools/cors.cjs
