@@ -1,0 +1,40 @@
+name: test-pipeline-and-e2e
+on:
+  push:
+    branches: ["claude/sports-picks-probe"]
+    paths-ignore: ["e2e-out/**", "e2e-data/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r pipeline/requirements.txt
+      - name: Build data
+        run: python pipeline/build.py --out _site/data --cache cache
+      - name: Assemble site
+        run: cp -r index.html manifest.webmanifest sw.js css js icons _site/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Playwright
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.48.2 >/dev/null
+          npx playwright install --with-deps chromium
+      - name: End-to-end against live data
+        run: NODE_PATH=/tmp/pw/node_modules node tools/e2e.cjs _site e2e-out
+      - name: Commit results
+        if: always()
+        run: |
+          rm -rf e2e-data && cp -r _site/data e2e-data || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f e2e-out e2e-data || true
+          git commit -m "E2E results" || echo "nothing to commit"
+          git push
