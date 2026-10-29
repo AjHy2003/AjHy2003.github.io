@@ -22,7 +22,7 @@ jobs:
         if: ${{ env.RUN_E2E == '1' }}
         run: python pipeline/build.py --out _site/data --cache cache
       - name: Assemble site
-        run: cp -r index.html manifest.webmanifest sw.js css js icons _site/
+        run: mkdir -p _site && cp -r index.html manifest.webmanifest sw.js css js icons _site/
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
